@@ -1,0 +1,13 @@
+{
+  "variants": {
+
+      "facing=north": {"model": "npu:drink6" },
+      "facing=east": { "model": "npu:drink6", "y": 90, "uvlock": false},
+      "facing=south": { "model": "npu:drink6", "y": 180, "uvlock": false},
+      "facing=west": { "model": "npu:drink6", "y": 270, "uvlock": false}
+
+    }
+
+  }
+
+

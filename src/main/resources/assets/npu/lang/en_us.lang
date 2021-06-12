@@ -1,0 +1,8 @@
+entity.Plane.name=Plane
+item.plane.name=Plane
+itemGroup.npu=NPU
+
+tile.obsidian_block.name=Obsidian Block
+
+tile.obsidian_frame.name=Obsidian Frame
+tile.chair.name=Chair

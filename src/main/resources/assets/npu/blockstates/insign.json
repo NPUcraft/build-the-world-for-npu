@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "npu:insign" },
+    "facing=east": { "model": "npu:insign", "y": 90, "uvlock": false },
+    "facing=south": { "model": "npu:insign", "y": 180, "uvlock": false },
+    "facing=west": { "model": "npu:insign", "y": 270, "uvlock": false }
+  }
+}

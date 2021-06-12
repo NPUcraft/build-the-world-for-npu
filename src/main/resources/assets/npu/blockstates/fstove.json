@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "npu:fstove" },
+    "facing=east": { "model": "npu:fstove", "y": 90, "uvlock": false },
+    "facing=south": { "model": "npu:fstove", "y": 180, "uvlock": false },
+    "facing=west": { "model": "npu:fstove", "y": 270, "uvlock": false }
+  }
+}

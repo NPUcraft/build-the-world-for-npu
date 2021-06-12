@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "npu:fsmoke" },
+    "facing=east": { "model": "npu:fsmoke", "y": 90, "uvlock": false },
+    "facing=south": { "model": "npu:fsmoke", "y": 180, "uvlock": false },
+    "facing=west": { "model": "npu:fsmoke", "y": 270, "uvlock": false }
+  }
+}

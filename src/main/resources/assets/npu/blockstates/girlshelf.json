@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "npu:girlshelf" },
+    "facing=east": { "model": "npu:girlshelf", "y": 90, "uvlock": false },
+    "facing=south": { "model": "npu:girlshelf", "y": 180, "uvlock": false },
+    "facing=west": { "model": "npu:girlshelf", "y": 270, "uvlock": false }
+  }
+}

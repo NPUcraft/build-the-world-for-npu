@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "npu:blueclassroomdesk5" },
+    "facing=east": { "model": "npu:blueclassroomdesk5", "y": 90, "uvlock": false },
+    "facing=south": { "model": "npu:blueclassroomdesk5", "y": 180, "uvlock": false },
+    "facing=west": { "model": "npu:blueclassroomdesk5", "y": 270, "uvlock": false }
+  }
+}

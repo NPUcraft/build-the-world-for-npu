@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+issueTrackerURL="npucraft.top" #optional
+logoFile= "/logo.png"
+displayURL="npucraft.top" #optional
+[[mods]] #mandatory
+modId="npu"
+version="${file.jarVersion}"
+displayName="NPU Construction Mod"
+authors="TeachingFeelings"
+description='''
+This is a mod for building NPU!
+'''

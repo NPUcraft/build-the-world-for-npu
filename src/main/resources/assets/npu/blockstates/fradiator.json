@@ -1,0 +1,9 @@
+
+{
+  "variants": {
+    "facing=north": { "model": "npu:fradiator" },
+    "facing=east": { "model": "npu:fradiator", "y": 90, "uvlock": false },
+    "facing=south": { "model": "npu:fradiator", "y": 180, "uvlock": false },
+    "facing=west": { "model": "npu:fradiator", "y": 270, "uvlock": false }
+  }
+}

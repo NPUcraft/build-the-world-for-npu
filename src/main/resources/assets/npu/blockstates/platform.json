@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "npu:platform" },
+    "facing=east": { "model": "npu:platform", "y": 90, "uvlock": false },
+    "facing=south": { "model": "npu:platform", "y": 180, "uvlock": false },
+    "facing=west": { "model": "npu:platform", "y": 270, "uvlock": false }
+  }
+}

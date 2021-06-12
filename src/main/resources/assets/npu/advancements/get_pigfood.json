@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": { 
+			"item": "npu:pigfood"
+        },
+        "title": {
+			"translate": "advancements.npu.get_pigfood.title"
+		},
+        "description": {
+			"translate": "advancements.npu.get_pigfood.description"
+		}
+    },
+    "parent": "npu:burn_homework",
+    "criteria": {
+        "iron_plate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "npu:pigfood"
+                    }
+                ]
+            }
+        }
+    }
+}

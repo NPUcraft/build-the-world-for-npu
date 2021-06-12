@@ -1,0 +1,19 @@
+{
+  "type":"minecraft:crafting_shaped",
+  "pattern":[
+    "YXY",
+    "YXY",
+    "XYX"
+  ],
+  "key":{
+    "X":{
+      "item":"npu:ash"
+    },
+    "Y":{
+      "item":"minecraft:diamond"
+    }
+  },
+  "result":{
+    "item":"npu:rubbishsword"
+  }
+}

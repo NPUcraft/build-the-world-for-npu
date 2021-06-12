@@ -1,0 +1,45 @@
+{
+  "credit": "Made with Blockbench",
+  "textures": {
+    "8": "npu:blocks/stripe1",
+    "particle": "npu:blocks/stripe1"
+  },
+  "elements": [
+    {
+      "from": [0, 0, 0],
+      "to": [16, 16, 16],
+      "faces": {
+        "north": {"uv": [0, 0, 16, 16], "texture": "#8"},
+        "east": {"uv": [0, 0, 16, 16], "texture": "#8"},
+        "south": {"uv": [0, 0, 16, 16], "texture": "#8"},
+        "west": {"uv": [0, 0, 16, 16], "texture": "#8"},
+        "up": {"uv": [0, 0, 16, 16], "texture": "#8"},
+        "down": {"uv": [0, 0, 16, 16], "texture": "#8"}
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "scale": [0.16, 0.16, 0.16]
+    },
+    "thirdperson_lefthand": {
+      "scale": [0.23, 0.23, 0.23]
+    },
+    "firstperson_righthand": {
+      "scale": [0.22, 0.22, 0.22]
+    },
+    "firstperson_lefthand": {
+      "scale": [0.23, 0.23, 0.23]
+    },
+    "ground": {
+      "scale": [0.34, 0.34, 0.34]
+    },
+    "gui": {
+      "rotation": [30, -135, 0],
+      "scale": [0.5, 0.5, 0.5]
+    },
+    "fixed": {
+      "scale": [0.6, 0.6, 0.6]
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "npu:trash" },
+    "facing=east": { "model": "npu:trash", "y": 90, "uvlock": false },
+    "facing=south": { "model": "npu:trash", "y": 180, "uvlock": false },
+    "facing=west": { "model": "npu:trash", "y": 270, "uvlock": false }
+  }
+}

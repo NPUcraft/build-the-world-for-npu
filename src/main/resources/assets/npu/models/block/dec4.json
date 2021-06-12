@@ -1,0 +1,29 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "npu:blocks/wifi",
+		"particle": "npu:blocks/wifi"
+	},
+	"elements": [
+		{
+			"from": [6, 3, 15.75],
+			"to": [11, 6.25, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [15, 11, 23]},
+			"faces": {
+				"north": {"uv": [0, 5.3125, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 6.9375, 0.25, 9.9375], "texture": "#0"},
+				"south": {"uv": [1.34375, 10.46875, 2.8125, 9.0625], "texture": "#0"},
+				"west": {"uv": [0, 7.9375, 0.25, 10.9375], "texture": "#0"},
+				"up": {"uv": [1.875, 6.28125, 6.875, 6.53125], "texture": "#0"},
+				"down": {"uv": [6, 6.40625, 11, 6.65625], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"gui": {
+			"rotation": [30, -135, 0],
+			"translation": [11.25, 1, 0],
+			"scale": [1.9, 1.9, 1.9]
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+    "display": {
+        "icon": { 
+			"item": "npu:ash" 
+        },
+        "title": {
+			"translate": "advancements.npu.burn_homework.title"
+		},
+        "description": {
+			"translate": "advancements.npu.burn_homework.description"
+		}
+    },
+    "parent": "npu:root",
+    "criteria": {
+        "iron_plate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "npu:ash"
+                    }
+                ]
+            }
+        }
+    }
+}

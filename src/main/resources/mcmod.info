@@ -1,0 +1,16 @@
+[
+  {
+    "modid": "npu",
+    "name": "Project Npu Reconstruction",
+    "description": "A mod for building NPU. Project Npu Reconstruction",
+    "version": "3.02.0519",
+    "mcversion": "1.12.2",
+    "url": "npucraft.top",
+    "updateUrl": "",
+    "authorList": ["TeachingFeelings", "MarioRainFlower","All students contribute models and maps"],
+    "credits": "Powered by forge-1.12.2-14.23.5.2847, Created by TeachingFeelings.",
+    "logoFile": "/logo.png",
+    "screenshots": [],
+    "dependencies": []
+  }
+]

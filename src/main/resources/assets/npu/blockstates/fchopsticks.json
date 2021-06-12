@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "npu:fchopsticks" },
+    "facing=east": { "model": "npu:fchopsticks", "y": 90, "uvlock": false },
+    "facing=south": { "model": "npu:fchopsticks", "y": 180, "uvlock": false },
+    "facing=west": { "model": "npu:fchopsticks", "y": 270, "uvlock": false }
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "display": {
+        "icon": { 
+			"item": "npu:rubbishsword"
+        },
+        "title": {
+			"translate": "advancements.npu.get_sword.title"
+		},
+        "description": {
+			"translate": "advancements.npu.get_sword.description"
+		},
+      "frame":"challenge"
+    },
+    "parent": "npu:get_pigfood",
+    "criteria": {
+        "iron_plate": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "item": "npu:rubbishsword"
+                    }
+                ]
+            }
+        }
+    }
+}
