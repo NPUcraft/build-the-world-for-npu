@@ -87,37 +87,37 @@ public class ModBlocks {
     public static final Block Shop1 = new Shop1();
     public static final Block Shop2 = new Shop2();
     public static final Block Radiator = new Radiator();
-    public static final Block StraightAheadSign = new StraightAheadSign();
+    public static final Block StraightAheadSign = new StraightAheadSign().setLightLevel(0.1F);
     public static final Block PRINTER = new Printer();
-    public static final Block GBED = new GBed();
-    public static final Block BBEDL = new BBedL();
-    public static final Block BBEDR = new BBedR();
-    public static final Block BBED2L = new BBed2L();
-    public static final Block BBED2R = new BBed2R();
-    public static final Block BBED2R1 = new BBed2R1();
+    public static final Block GBED = new GBed().setLightLevel(0.1F);
+    public static final Block BBEDL = new BBedL().setLightLevel(0.1F);
+    public static final Block BBEDR = new BBedR().setLightLevel(0.1F);
+    public static final Block BBED2L = new BBed2L().setLightLevel(0.1F);
+    public static final Block BBED2R = new BBed2R().setLightLevel(0.1F);
+    public static final Block BBED2R1 = new BBed2R1().setLightLevel(0.1F);
     public static final Block WINDOWFRAME = new WindowFrame();
-    public static final Block CP = new CP();
+    public static final Block CP = new CP().setLightLevel(0.1F);
     public static final Block EXIT = new Exit();
     public static final Block ELAMP = new ELamp();
-    public static final Block BPDOWN = new BPDown();
+    public static final Block BPDOWN = new BPDown().setLightLevel(0.1F);
     public static final Block BPUP = new BPUp();
     public static final Block SDFRAME = new SDFrame();
     public static final Block WINDOWOUT = new WindowOut();
     public static final Block BFRAME = new BFrame();
     public static final Block BFRAME1 = new BFrame1();
     public static final Block BFRAME2 = new BFrame2();
-    public static final Block BRAILING = new BRailing();
+    public static final Block BRAILING = new BRailing().setLightLevel(0.1F);
     public static final Block TESTBLOCK = new TestBlock();
-    public static final Block AIRCONOUT = new AirConOut();
-    public static final Block AIRCONOUT1 = new AirConOut1();
-    public static final Block AIRCONOUT2 = new AirConOut2();
-    public static final Block AIRCONIN = new AirConIn();
+    public static final Block AIRCONOUT = new AirConOut().setLightLevel(0.1F);
+    public static final Block AIRCONOUT1 = new AirConOut1().setLightLevel(0.1F);
+    public static final Block AIRCONOUT2 = new AirConOut2().setLightLevel(0.1F);
+    public static final Block AIRCONIN = new AirConIn().setLightLevel(0.1F);
 
-    public static final Block TRASH = new Trash();
-    public static final Block TRASH1 = new Trash1();
-    public static final Block TRASH2 = new Trash2();
-    public static final Block TRASH3 = new Trash3();
-    public static final Block TRASH4 = new Trash4();
+    public static final Block TRASH = new Trash().setLightLevel(0.1F);
+    public static final Block TRASH1 = new Trash1().setLightLevel(0.1F);
+    public static final Block TRASH2 = new Trash2().setLightLevel(0.1F);
+    public static final Block TRASH3 = new Trash3().setLightLevel(0.1F);
+    public static final Block TRASH4 = new Trash4().setLightLevel(0.1F);
 
     public static final Block FLOOR2 = new Floor2();
     public static final Block FLOOR3 = new Floor3();
@@ -125,12 +125,12 @@ public class ModBlocks {
     public static final Block FLOOR5 = new Floor5();
     public static final Block FLOOR6 = new Floor6();
 
-    public static final Block GTABLE = new GTable();
+    public static final Block GTABLE = new GTable().setLightLevel(0.1F);
     public static final Block TOILET = new Toilet();
-    public static final Block SIGN = new Sign();
-    public static final Block AC = new AC();
-    public static final Block ACADD1 = new ACAdd1();
-    public static final Block ACADD2 = new ACAdd2();
+    public static final Block SIGN = new Sign().setLightLevel(0.1F);
+    public static final Block AC = new AC().setLightLevel(0.1F);
+    public static final Block ACADD1 = new ACAdd1().setLightLevel(0.1F);
+    public static final Block ACADD2 = new ACAdd2().setLightLevel(0.1F);
     public static final Block GROUND = new Ground();
     public static final Block ATLAS = new Atlas();
     public static final Block KNIGHT = new Knight();
@@ -149,12 +149,12 @@ public class ModBlocks {
     public static final Block STAIR6 = new Stair6();
 
 
-    public static final Block RAILING = new Railing();
-    public static final Block RAILING1 = new Railing1();
-    public static final Block RAILING2 = new Railing2();
-    public static final Block RAILING3 = new Railing3();
-    public static final Block RAILING4 = new Railing4();
-    public static final Block RAILING5 = new Railing5();
+    public static final Block RAILING = new Railing().setLightLevel(0.1F);
+    public static final Block RAILING1 = new Railing1().setLightLevel(0.1F);
+    public static final Block RAILING2 = new Railing2().setLightLevel(0.1F);
+    public static final Block RAILING3 = new Railing3().setLightLevel(0.1F);
+    public static final Block RAILING4 = new Railing4().setLightLevel(0.1F);
+    public static final Block RAILING5 = new Railing5().setLightLevel(0.1F);
 
     public static final Block DOOR = new Door();
     public static final Block DOOR1 = new Door1();
@@ -163,30 +163,30 @@ public class ModBlocks {
     public static final Block DOOR4 = new Door4();
     public static final Block DOOR5 = new Door5();
     public static final Block DOOR6 = new Door6();
-    public static final Block DOOR7 = new Door7();
-    public static final Block DOOR8 = new Door8();
+    public static final Block DOOR7 = new Door7().setLightLevel(0.1F);
+    public static final Block DOOR8 = new Door8().setLightLevel(0.1F);
     public static final Block DOOR9 = new Door9();
     public static final Block DOOR10 = new Door10();
 
-    public static final Block DB1 = new DB1();
-    public static final Block DB2 = new DB2();
-    public static final Block DB3 = new DB3();
-    public static final Block DB4 = new DB4();
-    public static final Block DB5 = new DB5();
-    public static final Block DB6 = new DB6();
-    public static final Block DB7 = new DB7();
-    public static final Block DB8 = new DB8();
+    public static final Block DB1 = new DB1().setLightLevel(0.1F);
+    public static final Block DB2 = new DB2().setLightLevel(0.1F);
+    public static final Block DB3 = new DB3().setLightLevel(0.1F);
+    public static final Block DB4 = new DB4().setLightLevel(0.1F);
+    public static final Block DB5 = new DB5().setLightLevel(0.1F);
+    public static final Block DB6 = new DB6().setLightLevel(0.1F);
+    public static final Block DB7 = new DB7().setLightLevel(0.1F);
+    public static final Block DB8 = new DB8().setLightLevel(0.1F);
 
-    public static final Block DW1 = new DW1();
-    public static final Block DW2 = new DW2();
-    public static final Block DW3 = new DW3();
-    public static final Block DW4 = new DW4();
-    public static final Block DW5 = new DW5();
-    public static final Block DW6 = new DW6();
-    public static final Block DW7 = new DW7();
-    public static final Block DW8 = new DW8();
-    public static final Block DW9 = new DW9();
-    public static final Block DW10 = new DW10();
+    public static final Block DW1 = new DW1().setLightLevel(0.1F);
+    public static final Block DW2 = new DW2().setLightLevel(0.1F);
+    public static final Block DW3 = new DW3().setLightLevel(0.1F);
+    public static final Block DW4 = new DW4().setLightLevel(0.1F);
+    public static final Block DW5 = new DW5().setLightLevel(0.1F);
+    public static final Block DW6 = new DW6().setLightLevel(0.1F);
+    public static final Block DW7 = new DW7().setLightLevel(0.1F);
+    public static final Block DW8 = new DW8().setLightLevel(0.1F);
+    public static final Block DW9 = new DW9().setLightLevel(0.1F);
+    public static final Block DW10 = new DW10().setLightLevel(0.1F);
 
 
     public static final Block LIGHT = new Light();
@@ -214,7 +214,7 @@ public class ModBlocks {
     public static final Block GUN = new Gun();
     public static final Block GUN1 = new Gun1();
 
-    public static final Block ATABLE = new ATable();
+    public static final Block ATABLE = new ATable().setLightLevel(0.1F);
 
     public static final Block FOX = new Fox();
 
@@ -222,69 +222,69 @@ public class ModBlocks {
 
     public static final Block BOX = new Box();
 
-    public static final Block WIN1 = new Win1();
-    public static final Block WIN2 = new Win2();
-    public static final Block WIN3 = new Win3();
-    public static final Block WIN4 = new Win4();
-    public static final Block WIN5 = new Win5();
-    public static final Block WIN6 = new Win6();
-    public static final Block WIN7 = new Win7();
-    public static final Block WIN8 = new Win8();
-    public static final Block WIN9 = new Win9();
-    public static final Block WIN10 = new Win10();
-    public static final Block WIN11 = new Win11();
-    public static final Block WINN1 = new Winn1();
-    public static final Block WINN2 = new Winn2();
-    public static final Block WINN3 = new Winn3();
-    public static final Block WINN4 = new Winn4();
-    public static final Block WINN5 = new Winn5();
-    public static final Block WINN6 = new Winn6();
-    public static final Block WINN7 = new Winn7();
-    public static final Block WINN8 = new Winn8();
-    public static final Block WINN9 = new Winn9();
-    public static final Block WINN10 = new Winn10();
-    public static final Block WINN11 = new Winn11();
-    public static final Block WINN12 = new Winn12();
-    public static final Block WINN13 = new Winn13();
-    public static final Block WINN14 = new Winn14();
-    public static final Block WINN15 = new Winn15();
-    public static final Block WINN16 = new Winn16();
-    public static final Block WINN17 = new Winn17();
-    public static final Block WINN18 = new Winn18();
-    public static final Block WINN19 = new Winn19();
-    public static final Block WINN20 = new Winn20();
+    public static final Block WIN1 = new Win1().setLightLevel(0.1F);
+    public static final Block WIN2 = new Win2().setLightLevel(0.1F);
+    public static final Block WIN3 = new Win3().setLightLevel(0.1F);
+    public static final Block WIN4 = new Win4().setLightLevel(0.1F);
+    public static final Block WIN5 = new Win5().setLightLevel(0.1F);
+    public static final Block WIN6 = new Win6().setLightLevel(0.1F);
+    public static final Block WIN7 = new Win7().setLightLevel(0.1F);
+    public static final Block WIN8 = new Win8().setLightLevel(0.1F);
+    public static final Block WIN9 = new Win9().setLightLevel(0.1F);
+    public static final Block WIN10 = new Win10().setLightLevel(0.1F);
+    public static final Block WIN11 = new Win11().setLightLevel(0.1F);
+    public static final Block WINN1 = new Winn1().setLightLevel(0.1F);
+    public static final Block WINN2 = new Winn2().setLightLevel(0.1F);
+    public static final Block WINN3 = new Winn3().setLightLevel(0.1F);
+    public static final Block WINN4 = new Winn4().setLightLevel(0.1F);
+    public static final Block WINN5 = new Winn5().setLightLevel(0.1F);
+    public static final Block WINN6 = new Winn6().setLightLevel(0.1F);
+    public static final Block WINN7 = new Winn7().setLightLevel(0.1F);
+    public static final Block WINN8 = new Winn8().setLightLevel(0.1F);
+    public static final Block WINN9 = new Winn9().setLightLevel(0.1F);
+    public static final Block WINN10 = new Winn10().setLightLevel(0.1F);
+    public static final Block WINN11 = new Winn11().setLightLevel(0.1F);
+    public static final Block WINN12 = new Winn12().setLightLevel(0.1F);
+    public static final Block WINN13 = new Winn13().setLightLevel(0.1F);
+    public static final Block WINN14 = new Winn14().setLightLevel(0.1F);
+    public static final Block WINN15 = new Winn15().setLightLevel(0.1F);
+    public static final Block WINN16 = new Winn16().setLightLevel(0.1F);
+    public static final Block WINN17 = new Winn17().setLightLevel(0.1F);
+    public static final Block WINN18 = new Winn18().setLightLevel(0.1F);
+    public static final Block WINN19 = new Winn19().setLightLevel(0.1F);
+    public static final Block WINN20 = new Winn20().setLightLevel(0.1F);
 
 
 
 
 
-    public static final Block WINNN1 = new Winnn1();
-    public static final Block WINNN2 = new Winnn2();
-    public static final Block WINNN3 = new Winnn3();
-    public static final Block WINNN4 = new Winnn4();
-    public static final Block WINNN5 = new Winnn5();
-    public static final Block WINNN6 = new Winnn6();
-    public static final Block WINNN7 = new Winnn7();
-    public static final Block WINNN8 = new Winnn8();
-    public static final Block WINNN9 = new Winnn9();
-    public static final Block WINNN10 = new Winnn10();
-    public static final Block WINNN11 = new Winnn11();
-    public static final Block WINNN12 = new Winnn12();
-    public static final Block WINNN13 = new Winnn13();
-    public static final Block WINNN14 = new Winnn14();
-    public static final Block WINNN15 = new Winnn15();
-    public static final Block WINNN16 = new Winnn16();
-    public static final Block WINNN17 = new Winnn17();
-    public static final Block WINNN18 = new Winnn18();
-    public static final Block WINNN19 = new Winnn19();
-    public static final Block WINNN20 = new Winnn20();
-    public static final Block WINNN21 = new Winnn21();
-    public static final Block WINNN22 = new Winnn22();
-    public static final Block WINNN23 = new Winnn23();
+    public static final Block WINNN1 = new Winnn1().setLightLevel(0.1F);
+    public static final Block WINNN2 = new Winnn2().setLightLevel(0.1F);
+    public static final Block WINNN3 = new Winnn3().setLightLevel(0.1F);
+    public static final Block WINNN4 = new Winnn4().setLightLevel(0.1F);
+    public static final Block WINNN5 = new Winnn5().setLightLevel(0.1F);
+    public static final Block WINNN6 = new Winnn6().setLightLevel(0.1F);
+    public static final Block WINNN7 = new Winnn7().setLightLevel(0.1F);
+    public static final Block WINNN8 = new Winnn8().setLightLevel(0.1F);
+    public static final Block WINNN9 = new Winnn9().setLightLevel(0.1F);
+    public static final Block WINNN10 = new Winnn10().setLightLevel(0.1F);
+    public static final Block WINNN11 = new Winnn11().setLightLevel(0.1F);
+    public static final Block WINNN12 = new Winnn12().setLightLevel(0.1F);
+    public static final Block WINNN13 = new Winnn13().setLightLevel(0.1F);
+    public static final Block WINNN14 = new Winnn14().setLightLevel(0.1F);
+    public static final Block WINNN15 = new Winnn15().setLightLevel(0.1F);
+    public static final Block WINNN16 = new Winnn16().setLightLevel(0.1F);
+    public static final Block WINNN17 = new Winnn17().setLightLevel(0.1F);
+    public static final Block WINNN18 = new Winnn18().setLightLevel(0.1F);
+    public static final Block WINNN19 = new Winnn19().setLightLevel(0.1F);
+    public static final Block WINNN20 = new Winnn20().setLightLevel(0.1F);
+    public static final Block WINNN21 = new Winnn21().setLightLevel(0.1F);
+    public static final Block WINNN22 = new Winnn22().setLightLevel(0.1F);
+    public static final Block WINNN23 = new Winnn23().setLightLevel(0.1F);
 
-    public static final Block WINW1 = new Winw1();
-    public static final Block WINW2 = new Winw2();
-    public static final Block WINW3 = new Winw3();
+    public static final Block WINW1 = new Winw1().setLightLevel(0.1F);
+    public static final Block WINW2 = new Winw2().setLightLevel(0.1F);
+    public static final Block WINW3 = new Winw3().setLightLevel(0.1F);
 
     public static final Block PAINTING = new Painting();
     public static final Block PAINTING1 = new Painting1();
@@ -322,8 +322,8 @@ public class ModBlocks {
     public static final Block G21A = new G21a();
     public static final Block G21B = new G21b();
     public static final Block G21C = new G21c();
-    public static final Block G22 = new G22();
-    public static final Block G23 = new G23();
+    public static final Block G22 = new G22().setLightLevel(0.1F);
+    public static final Block G23 = new G23().setLightLevel(0.1F);
     public static final Block G24 = new G24();
     public static final Block G25 = new G25();
     public static final Block G26 = new G26();
@@ -384,8 +384,8 @@ public class ModBlocks {
     public static final Block N1 = new N1();
     public static final Block N2 = new N2();
     public static final Block MIRROR = new Mirror();
-    public static final Block ALU = new Alu();
-    public static final Block CBB = new CBB();
+    public static final Block ALU = new Alu().setLightLevel(0.1F);
+    public static final Block CBB = new CBB().setLightLevel(0.1F);
     public static final Block FAN = new Fan();
 
     public static final Block C1 = new C1();
@@ -410,8 +410,8 @@ public class ModBlocks {
     public static final Block FC = new FC();
     public static final Block VOLTAGE = new Voltage();
 
-    public static final Block SC = new SC();
-    public static final Block WTABLE = new WTable();
+    public static final Block SC = new SC().setLightLevel(0.1F);
+    public static final Block WTABLE = new WTable().setLightLevel(0.1F);
 
     public static final Block CEMH = new CemH();
     public static final Block CEMT = new CemT();
@@ -431,7 +431,7 @@ public class ModBlocks {
     public static final Block WBOARD = new WBoard();
     public static final Block CAL = new Cal();
 
-    public static final Block HWATER = new HWater();
+    public static final Block HWATER = new HWater().setLightLevel(0.1F);
 
     public static final Block WASH1 = new Wash1();
     public static final Block WASH2 = new Wash2();
@@ -472,9 +472,9 @@ public class ModBlocks {
     public static final Block STONER = new StoneR();
     public static final Block STONER1 = new StoneR1();
 
-    public static final Block SIGN1 = new Sign1();
-    public static final Block SIGN2 = new Sign2();
-    public static final Block SIGN3 = new Sign3();
+    public static final Block SIGN1 = new Sign1().setLightLevel(0.1F);
+    public static final Block SIGN2 = new Sign2().setLightLevel(0.1F);
+    public static final Block SIGN3 = new Sign3().setLightLevel(0.1F);
 
     public static final Block SL1 = new SL1();
     public static final Block SL2 = new SL2();
@@ -497,12 +497,12 @@ public class ModBlocks {
     public static final Block TESTG = new TestG();
     public static final Block FEXT = new FExt();
     public static final Block FEXT1 = new FExt1();
-    public static final Block DRINK = new Drink();
-    public static final Block DRINK1 = new Drink1();
-    public static final Block DRINK3 = new Drink3();
-    public static final Block DRINK4 = new Drink4();
-    public static final Block DRINK5 = new Drink5();
-    public static final Block DRINK6 = new Drink6();
+    public static final Block DRINK = new Drink().setLightLevel(0.1F);
+    public static final Block DRINK1 = new Drink1().setLightLevel(0.1F);
+    public static final Block DRINK3 = new Drink3().setLightLevel(0.1F);
+    public static final Block DRINK4 = new Drink4().setLightLevel(0.1F);
+    public static final Block DRINK5 = new Drink5().setLightLevel(0.1F);
+    public static final Block DRINK6 = new Drink6().setLightLevel(0.1F);
     public static final Block BOX1 = new Box1();
 
 
@@ -515,22 +515,22 @@ public class ModBlocks {
     public static final Block ROADBLOCK = new RoadBlock();
     public static final Block MESH = new Mesh();
 
-    public static final Block GIRLBEDR = new GirlBedR();
-    public static final Block GIRLBEDL = new GirlBedL();
+    public static final Block GIRLBEDR = new GirlBedR().setLightLevel(0.1F);
+    public static final Block GIRLBEDL = new GirlBedL().setLightLevel(0.1F);
     public static final Block GIRLWASH = new GirlWash();
     public static final Block GIRLSHELF = new GirlShelf();
 
-    public static final Block FC1 = new Fence1();
-    public static final Block FC2 = new Fence2();
-    public static final Block FC3 = new Fence3();
-    public static final Block FC4 = new Fence4();
-    public static final Block FC5 = new Fence5();
-    public static final Block FC6 = new Fence6();
-    public static final Block FC7 = new Fence7();
-    public static final Block FC8 = new Fence8();
-    public static final Block FC9 = new Fence9();
-    public static final Block FC10 = new Fence10();
-    public static final Block FC11 = new Fence11();
+    public static final Block FC1 = new Fence1().setLightLevel(0.1F);
+    public static final Block FC2 = new Fence2().setLightLevel(0.1F);
+    public static final Block FC3 = new Fence3().setLightLevel(0.1F);
+    public static final Block FC4 = new Fence4().setLightLevel(0.1F);
+    public static final Block FC5 = new Fence5().setLightLevel(0.1F);
+    public static final Block FC6 = new Fence6().setLightLevel(0.1F);
+    public static final Block FC7 = new Fence7().setLightLevel(0.1F);
+    public static final Block FC8 = new Fence8().setLightLevel(0.1F);
+    public static final Block FC9 = new Fence9().setLightLevel(0.1F);
+    public static final Block FC10 = new Fence10().setLightLevel(0.1F);
+    public static final Block FC11 = new Fence11().setLightLevel(0.1F);
 
     public static final Block GTR = new GirlTR();
     public static final Block GTL = new GirlTL();
@@ -544,13 +544,13 @@ public class ModBlocks {
 
 
 
-    public static final Block TT = new TTable();
+    public static final Block TT = new TTable().setLightLevel(0.1F);
 
-    public static final Block ELECTRIC = new Electric();
+    public static final Block ELECTRIC = new Electric().setLightLevel(0.1F);
 
     public static final Block HR1 = new HR1();
     public static final Block HR2 = new HR2();
-    public static final Block HR3 = new HR3();
+    public static final Block HR3 = new HR3().setLightLevel(0.1F);
     public static final Block HR4 = new HR4();
     public static final Block HR5 = new HR5();
 
@@ -568,11 +568,11 @@ public class ModBlocks {
 
     public static final Block ELEV = new EleV();
 
-    public static final Block FlowerDid1 = new FNorthHall1();
-    public static final Block FlowerDid2 = new FNorthHall2();
-    public static final Block FlowerDid3 = new FNorthHall3();
-    public static final Block FlowerDid4 = new FNorthHall4();
-    public static final Block FlowerDid5 = new FNorthHall5();
+    public static final Block FlowerDid1 = new FNorthHall1().setLightLevel(0.1F);
+    public static final Block FlowerDid2 = new FNorthHall2().setLightLevel(0.1F);
+    public static final Block FlowerDid3 = new FNorthHall3().setLightLevel(0.1F);
+    public static final Block FlowerDid4 = new FNorthHall4().setLightLevel(0.1F);
+    public static final Block FlowerDid5 = new FNorthHall5().setLightLevel(0.1F);
 
     public static final Block FlowerDid6 = new FDoorScreen();
     public static final Block FlowerDid7 = new FDoorSwitch();
@@ -602,8 +602,8 @@ public class ModBlocks {
     public static final Block FDS67 = new FGirlTL1();
     public static final Block FDS68 = new FGirlTR1();
 
-    public static final Block FDD  = new FHTable();
-    public static final Block FDD1  = new FBTable();
+    public static final Block FDD  = new FHTable().setLightLevel(0.1F);
+    public static final Block FDD1  = new FBTable().setLightLevel(0.1F);
     public static final Block FDD2  = new FRadiator();
     public static final Block FDD3  = new FMP();
     public static final Block FDD4  = new FWashl();
@@ -633,9 +633,9 @@ public class ModBlocks {
     public static final Block FPIPE10 = new FPipe10();
 
     public static final Block FDOORNUM = new FDoorNum();
-    public static final Block FCART = new FCart();
+    public static final Block FCART = new FCart().setLightLevel(0.1F);
     public static final Block FTRASH = new FTrash();
-    public static final Block FCHOP = new FChopsticks();
+    public static final Block FCHOP = new FChopsticks().setLightLevel(0.1F);
 
     public static final Block DATE2101 = new FVent();
     public static final Block DATE2102 = new FTSigh();
@@ -656,7 +656,7 @@ public class ModBlocks {
     public static final Block DATE21027 = new FG91();
     public static final Block DATE21028 = new FG92();
 
-    public static final Block DATE02211 = new FCart1();
+    public static final Block DATE02211 = new FCart1().setLightLevel(0.1F);
     public static final Block DATE02212 = new FLChair();
     public static final Block DATE02213 = new FHump();
     public static final Block DATE02214 = new FHump1();
@@ -667,8 +667,8 @@ public class ModBlocks {
     public static final Block DATE02219 = new FLight11();
     public static final Block DATE022110 = new FStool();
     public static final Block DATE022111 = new FStool1();
-    public static final Block DATE022112 = new FBrailingl();
-    public static final Block DATE022113 = new FBrailingr();
+    public static final Block DATE022112 = new FBrailingl().setLightLevel(0.1F);
+    public static final Block DATE022113 = new FBrailingr().setLightLevel(0.1F);
     public static final Block DATE022114 = new FG77();
     public static final Block DATE022115 = new FG78();
     public static final Block DATE022116 = new FG79();
@@ -677,8 +677,8 @@ public class ModBlocks {
 
     public static final Block FENCEX = new FenceO();
 
-    public static final Block DATE02221 = new FCTable();
-    public static final Block DATE02222 = new FCTable1();
+    public static final Block DATE02221 = new FCTable().setLightLevel(0.1F);
+    public static final Block DATE02222 = new FCTable1().setLightLevel(0.1F);
     public static final Block DATE02223 = new FFan();
     public static final Block DATE02224 = new FVent1();
     public static final Block DATE0222401 = new FVent2();
@@ -710,17 +710,17 @@ public class ModBlocks {
     public static final Block DATE022230 = new FLine10();
     public static final Block DATE022231 = new FLine24();
 
-    public static final Block DATE02281 = new BlueDesk5();
-    public static final Block DATE02282 = new BlueDesk4();
-    public static final Block DATE02283 = new BlueDesk3();
-    public static final Block DATE02284 = new BlueDesk2();
-    public static final Block DATE02285 = new BlueDesk1();
+    public static final Block DATE02281 = new BlueDesk5().setLightLevel(0.1F);
+    public static final Block DATE02282 = new BlueDesk4().setLightLevel(0.1F);
+    public static final Block DATE02283 = new BlueDesk3().setLightLevel(0.1F);
+    public static final Block DATE02284 = new BlueDesk2().setLightLevel(0.1F);
+    public static final Block DATE02285 = new BlueDesk1().setLightLevel(0.1F);
 
-    public static final Block DATE02286 = new WoodDesk1();
-    public static final Block DATE02287 = new WoodDesk2();
-    public static final Block DATE02288 = new WoodDesk3();
-    public static final Block DATE02289 = new WoodDesk4();
-    public static final Block DATE022810 = new WoodDesk5();
+    public static final Block DATE02286 = new WoodDesk1().setLightLevel(0.1F);
+    public static final Block DATE02287 = new WoodDesk2().setLightLevel(0.1F);
+    public static final Block DATE02288 = new WoodDesk3().setLightLevel(0.1F);
+    public static final Block DATE02289 = new WoodDesk4().setLightLevel(0.1F);
+    public static final Block DATE022810 = new WoodDesk5().setLightLevel(0.1F);
 
     public static final Block DATE022811 = new FG82();
     public static final Block DATE022812 = new FG83();
@@ -740,93 +740,93 @@ public class ModBlocks {
     public static final Block DATE022826 = new FCFloor3();
     public static final Block DATE022827 = new FCFloor4();
 
-    public static final Block DATE03101 = new FContainer();
-    public static final Block DATE03102 = new FContainer1();
-    public static final Block DATE03103 = new FContainer2();
+    public static final Block DATE03101 = new FContainer().setLightLevel(0.1F);
+    public static final Block DATE03102 = new FContainer1().setLightLevel(0.1F);
+    public static final Block DATE03103 = new FContainer2().setLightLevel(0.1F);
     public static final Block DATE03104 = new FG93();
     public static final Block DATE03105 = new FG94();
     public static final Block DATE03106 = new FG95();
     public static final Block DATE03107 = new FG96();
     public static final Block DATE03108 = new FLight12();
     public static final Block DATE03109 = new FLight13();
-    public static final Block DATE031010 = new FSign();
-    public static final Block DATE031011 = new FSign2();
-    public static final Block DATE031012 = new FSign1();
-    public static final Block DATE031013 = new FSign3();
+    public static final Block DATE031010 = new FSign().setLightLevel(0.1F);
+    public static final Block DATE031011 = new FSign2().setLightLevel(0.1F);
+    public static final Block DATE031012 = new FSign1().setLightLevel(0.1F);
+    public static final Block DATE031013 = new FSign3().setLightLevel(0.1F);
     public static final Block DATE031014 = new FWindow();
     public static final Block DATE031015 = new FWindow1();
     public static final Block DATE031016 = new FWindow2();
     public static final Block DATE031017 = new FWindow3();
     public static final Block DATE031018 = new FWindow4();
     public static final Block DATE031019 = new FWindow5();
-    public static final Block DATE031020 = new InSign();
-    public static final Block DATE031021 = new InSign1();
-    public static final Block DATE031022 = new InSign2();
-    public static final Block DATE031023 = new InSign3();
-    public static final Block DATE031024 = new InSign4();
-    public static final Block DATE031025 = new InSign5();
-    public static final Block DATE031026 = new InSign6();
-    public static final Block DATE031027 = new OutSign();
+    public static final Block DATE031020 = new InSign().setLightLevel(0.1F);
+    public static final Block DATE031021 = new InSign1().setLightLevel(0.1F);
+    public static final Block DATE031022 = new InSign2().setLightLevel(0.1F);
+    public static final Block DATE031023 = new InSign3().setLightLevel(0.1F);
+    public static final Block DATE031024 = new InSign4().setLightLevel(0.1F);
+    public static final Block DATE031025 = new InSign5().setLightLevel(0.1F);
+    public static final Block DATE031026 = new InSign6().setLightLevel(0.1F);
+    public static final Block DATE031027 = new OutSign().setLightLevel(0.1F);
 
-    public static final Block PLANT = new Plant();
-    public static final Block PLANT1 = new Plant1();
-    public static final Block PLANT2 = new Plant2();
+    public static final Block PLANT = new Plant().setLightLevel(0.1F);
+    public static final Block PLANT1 = new Plant1().setLightLevel(0.1F);
+    public static final Block PLANT2 = new Plant2().setLightLevel(0.1F);
 
-    public static final Block DATE03121 = new FCTable2();
-    public static final Block DATE03122 = new FCTable3();
-    public static final Block DATE03123 = new FCTable4();
-    public static final Block DATE03124 = new FCTable5();
+    public static final Block DATE03121 = new FCTable2().setLightLevel(0.1F);
+    public static final Block DATE03122 = new FCTable3().setLightLevel(0.1F);
+    public static final Block DATE03123 = new FCTable4().setLightLevel(0.1F);
+    public static final Block DATE03124 = new FCTable5().setLightLevel(0.1F);
     public static final Block DATE03125 = new FRoadblocks();
     public static final Block DATE03126 = new FRod();
     public static final Block DATE03127 = new FRod1();
-    public static final Block DATE03128 = new FSign4();
-    public static final Block DATE03129 = new FSign5();
-    public static final Block DATE031210 = new FSign6();
-    public static final Block DATE031211 = new FSign7();
-    public static final Block DATE031212 = new FSign8();
+    public static final Block DATE03128 = new FSign4().setLightLevel(0.1F);
+    public static final Block DATE03129 = new FSign5().setLightLevel(0.1F);
+    public static final Block DATE031210 = new FSign6().setLightLevel(0.1F);
+    public static final Block DATE031211 = new FSign7().setLightLevel(0.1F);
+    public static final Block DATE031212 = new FSign8().setLightLevel(0.1F);
     public static final Block DATE031213 = new FSmoke();
-    public static final Block DATE031214 = new FCTable6();
-    public static final Block DATE031215 = new FShelf();
-    public static final Block DATE031216 = new FShelf1();
-    public static final Block DATE031217 = new FBox();
-    public static final Block DATE031218 = new FBox1();
+    public static final Block DATE031214 = new FCTable6().setLightLevel(0.1F);
+    public static final Block DATE031215 = new FShelf().setLightLevel(0.1F);
+    public static final Block DATE031216 = new FShelf1().setLightLevel(0.1F);
+    public static final Block DATE031217 = new FBox().setLightLevel(0.1F);
+    public static final Block DATE031218 = new FBox1().setLightLevel(0.1F);
     public static final Block DATE031219 = new FSwitch();
-    public static final Block DATE031220 = new FStove();
-    public static final Block DATE031221 = new FStove1(false);
-    public static final Block DATE031222 = new FStove2(false);
+    public static final Block DATE031220 = new FStove().setLightLevel(0.1F);
+    public static final Block DATE031221 = new FStove1(false).setLightLevel(0.1F);
+    public static final Block DATE031222 = new FStove2(false).setLightLevel(0.1F);
 
 
 
-    public static final Block DHALL = new DHall();
-    public static final Block DHALL1 = new DHall1();
-    public static final Block DHALL2 = new DHall2();
-    public static final Block DHALL3 = new DHall3();
-    public static final Block DHALL4 = new DHall4();
-    public static final Block DHALL5 = new DHall5();
-    public static final Block DHALL6 = new DHall6();
-    public static final Block DHALL7 = new DHall7();
-    public static final Block DHALL8 = new DHall8();
-    public static final Block DHALL9 = new DHall9();
-    public static final Block DHALL10 = new DHall10();
-    public static final Block DHALL11 = new DHall11();
-    public static final Block DHALL12 = new DHall12();
-    public static final Block DHALL13 = new DHall13();
+    public static final Block DHALL = new DHall().setLightLevel(0.1F);
+    public static final Block DHALL1 = new DHall1().setLightLevel(0.1F);
+    public static final Block DHALL2 = new DHall2().setLightLevel(0.1F);
+    public static final Block DHALL3 = new DHall3().setLightLevel(0.1F);
+    public static final Block DHALL4 = new DHall4().setLightLevel(0.1F);
+    public static final Block DHALL5 = new DHall5().setLightLevel(0.1F);
+    public static final Block DHALL6 = new DHall6().setLightLevel(0.1F);
+    public static final Block DHALL7 = new DHall7().setLightLevel(0.1F);
+    public static final Block DHALL8 = new DHall8().setLightLevel(0.1F);
+    public static final Block DHALL9 = new DHall9().setLightLevel(0.1F);
+    public static final Block DHALL10 = new DHall10().setLightLevel(0.1F);
+    public static final Block DHALL11 = new DHall11().setLightLevel(0.1F);
+    public static final Block DHALL12 = new DHall12().setLightLevel(0.1F);
+    public static final Block DHALL13 = new DHall13().setLightLevel(0.1F);
 
     public static final Block PROJ = new Projector();
 
-    public static final Block DATE04301 = new MarketCabinetFreezer();
-    public static final Block DATE04302 = new MarketCashierDeskLeft();
-    public static final Block DATE04303 = new MarketCashierDeskRight();
-    public static final Block DATE04304 = new MarketMilkBox();
-    public static final Block DATE04305 = new MarketOfficeCabinetDown();
-    public static final Block DATE04306 = new MarketOfficeCabinetUp();
+    public static final Block DATE04301 = new MarketCabinetFreezer().setLightLevel(0.1F);
+    public static final Block DATE04302 = new MarketCashierDeskLeft().setLightLevel(0.1F);
+    public static final Block DATE04303 = new MarketCashierDeskRight().setLightLevel(0.1F);
+    public static final Block DATE04304 = new MarketMilkBox().setLightLevel(0.1F);
+    public static final Block DATE04305 = new MarketOfficeCabinetDown().setLightLevel(0.1F);
+    public static final Block DATE04306 = new MarketOfficeCabinetUp().setLightLevel(0.1F);
     public static final Block DATE04307 = new CenterAirconditionerBias();
     public static final Block DATE04308 = new ClassroomMicrophone();
     public static final Block DATE04309 = new MetalTrashcan();
     public static final Block DATE04310 = new Platform();
     public static final Block DATE04311 = new PlatformChair();
     public static final Block DATE04312 = new PlatformCorner();
-    public static final Block DATE04313 = new PlatformDesk();
+    public static final Block DATE04313 = new PlatformDesk().setLightLevel(0.1F);
     public static final Block DATE04314 = new TopAirconditioner();
 
     public static final Block WINDOW10 = new Window10();
