@@ -2,11 +2,11 @@ package com.tf.npu.Items;
 
 /**
  * @author AoXiang_Soar
- * ×¢²áÎïÆ·Ä£ÐÍ
+ * ×¢ï¿½ï¿½ï¿½ï¿½Æ·Ä£ï¿½ï¿½
  */
 public class ItemRenderLoader {
-	
-	public ItemRenderLoader(){
-		ItemLoader.registerRenders();
-	}
+
+    public ItemRenderLoader() {
+        ItemLoader.registerRenders();
+    }
 }

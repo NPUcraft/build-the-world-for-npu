@@ -19,33 +19,29 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class FHallScreen2 extends Block implements IHasModel{
+public class FHallScreen2 extends Block implements IHasModel {
     //*******************不用管*********************
-    public static enum EnumMaterial implements IStringSerializable
-    {
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
     //*******************不用管*********************
-
-
 
 
     //*******************碰撞箱，如果是1x1x1就删掉*********************
@@ -56,10 +52,6 @@ public class FHallScreen2 extends Block implements IHasModel{
         return FHallScreen2_AABB;
     }
     //*******************碰撞箱，如果是1x1x1就删掉*********************
-
-
-
-
 
 
     //*******************完整方块就删掉*********************
@@ -75,20 +67,16 @@ public class FHallScreen2 extends Block implements IHasModel{
     //*******************完整方块就删掉*********************
 
 
-
-
-
-    public FHallScreen2(){
+    public FHallScreen2() {
         super(Material.ROCK);
-    //*******************改*********************
+        //*******************改*********************
         this.setUnlocalizedName("fhallscreen2");
-    //*******************改*********************
+        //*******************改*********************
         this.setRegistryName("npu:fhallscreen2");
-    //*******************2.5F是黑曜石硬度*********************
+        //*******************2.5F是黑曜石硬度*********************
         this.setHardness(2.5F);
-    //*******************改*********************
+        //*******************改*********************
         this.setCreativeTab(NPU.MY_TAB);
-
 
 
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
@@ -97,9 +85,9 @@ public class FHallScreen2 extends Block implements IHasModel{
 
 
     }
+
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer()
-    {
+    public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.TRANSLUCENT;
     }
 }

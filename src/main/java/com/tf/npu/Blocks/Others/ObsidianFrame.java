@@ -14,8 +14,8 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class ObsidianFrame extends Block implements IHasModel{
-    public ObsidianFrame(){
+public class ObsidianFrame extends Block implements IHasModel {
+    public ObsidianFrame() {
         super(Material.ROCK);
         setUnlocalizedName("obsidianframe");
         setRegistryName("npu:obsidianframe");
@@ -23,6 +23,7 @@ public class ObsidianFrame extends Block implements IHasModel{
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);
     }
+
     //x1,y1,z1,x2,y2,z2均为double类型
     public static final AxisAlignedBB OBSIDIAN_BLOCK_AABB = new AxisAlignedBB(0.2D, 0.2D, 0.2D, 0.8D, 0.8D, 0.8D);
 
@@ -30,6 +31,7 @@ public class ObsidianFrame extends Block implements IHasModel{
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return OBSIDIAN_BLOCK_AABB;
     }
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
@@ -39,8 +41,9 @@ public class ObsidianFrame extends Block implements IHasModel{
     public boolean isFullCube(IBlockState state) {
         return false;
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 

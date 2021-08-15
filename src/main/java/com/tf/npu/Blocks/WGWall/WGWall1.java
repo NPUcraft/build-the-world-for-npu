@@ -10,8 +10,8 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
-public class WGWall1 extends Block implements IHasModel{
-    public WGWall1(){
+public class WGWall1 extends Block implements IHasModel {
+    public WGWall1() {
         super(Material.ROCK);
         setUnlocalizedName("wgwall1");
         setRegistryName("npu:wgwall1");
@@ -20,8 +20,9 @@ public class WGWall1 extends Block implements IHasModel{
         ModBlocks.BLOCKS.add(this);
         setLightOpacity(5);
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 

@@ -22,33 +22,31 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class N2 extends Block implements IHasModel{
+public class N2 extends Block implements IHasModel {
 
-    public static enum EnumMaterial implements IStringSerializable
-    {
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
     }
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+
     @Override
-    protected BlockStateContainer createBlockState()
-    {
+    protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
     }
+
     //x1,y1,z1,x2,y2,z2均为double类型
     public static final AxisAlignedBB N2_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0D, 1.0D);
 
@@ -56,6 +54,7 @@ public class N2 extends Block implements IHasModel{
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return N2_AABB;
     }
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
@@ -65,12 +64,13 @@ public class N2 extends Block implements IHasModel{
     public boolean isFullCube(IBlockState state) {
         return false;
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public N2(){
+    public N2() {
         super(Material.ROCK);
         this.setUnlocalizedName("n2");
         this.setRegistryName("npu:n2");
@@ -81,19 +81,16 @@ public class N2 extends Block implements IHasModel{
         ModBlocks.BLOCKS.add(this);
 
 
-
     }
 
     @Override
-    public IBlockState getStateFromMeta(int meta)
-    {
+    public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
     @Override
-    public int getMetaFromState(IBlockState state)
-    {
+    public int getMetaFromState(IBlockState state) {
         int facing = state.getValue(FACING).getHorizontalIndex();
 
         return facing;

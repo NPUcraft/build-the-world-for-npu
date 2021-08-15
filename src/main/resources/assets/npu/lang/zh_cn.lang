@@ -149,10 +149,6 @@ tile.db8.name=黑小木门右-关-1x3
 
 
 
-
-
-
-
 tile.light.name=宿舍厕所灯
 tile.light1.name=宿舍走廊灯
 tile.light2.name=宿舍吊灯
@@ -306,9 +302,6 @@ tile.fyfdoor5.name=云F宿舍门后偏补上
 
 
 
-
-
-
 tile.n1.name=管理条例告示板1
 tile.n2.name=管理条例告示板2
 tile.mirror.name=全身镜
@@ -394,9 +387,6 @@ tile.wall15.name=通风管道口
 
 
 
-
-
-
 tile.stoner.name=石板路面
 tile.stoner1.name=石砖地面
 
@@ -417,7 +407,6 @@ tile.pipe6.name=白管道-3接口
 tile.pipe7.name=白管道-横转角
 tile.pipe8.name=白管道-直
 tile.pipe9.name=白管道-直带支架
-
 
 
 

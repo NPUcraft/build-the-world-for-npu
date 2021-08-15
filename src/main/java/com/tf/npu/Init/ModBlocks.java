@@ -255,9 +255,6 @@ public class ModBlocks {
     public static final Block WINN20 = new Winn20().setLightLevel(0.1F);
 
 
-
-
-
     public static final Block WINNN1 = new Winnn1().setLightLevel(0.1F);
     public static final Block WINNN2 = new Winnn2().setLightLevel(0.1F);
     public static final Block WINNN3 = new Winnn3().setLightLevel(0.1F);
@@ -458,17 +455,6 @@ public class ModBlocks {
     public static final Block WALL15 = new Wall15();
 
 
-
-
-
-
-
-
-
-
-
-
-
     public static final Block STONER = new StoneR();
     public static final Block STONER1 = new StoneR1();
 
@@ -543,7 +529,6 @@ public class ModBlocks {
     public static final Block DEC4 = new Dec4();
 
 
-
     public static final Block TT = new TTable().setLightLevel(0.1F);
 
     public static final Block ELECTRIC = new Electric().setLightLevel(0.1F);
@@ -602,16 +587,16 @@ public class ModBlocks {
     public static final Block FDS67 = new FGirlTL1();
     public static final Block FDS68 = new FGirlTR1();
 
-    public static final Block FDD  = new FHTable().setLightLevel(0.1F);
-    public static final Block FDD1  = new FBTable().setLightLevel(0.1F);
-    public static final Block FDD2  = new FRadiator();
-    public static final Block FDD3  = new FMP();
-    public static final Block FDD4  = new FWashl();
-    public static final Block FDD5  = new FWashr();
-    public static final Block FDD6  = new FYFdoor2();
-    public static final Block FDD7  = new FYFdoor3();
-    public static final Block FDD8  = new FYFdoor4();
-    public static final Block FDD9  = new FYFdoor5();
+    public static final Block FDD = new FHTable().setLightLevel(0.1F);
+    public static final Block FDD1 = new FBTable().setLightLevel(0.1F);
+    public static final Block FDD2 = new FRadiator();
+    public static final Block FDD3 = new FMP();
+    public static final Block FDD4 = new FWashl();
+    public static final Block FDD5 = new FWashr();
+    public static final Block FDD6 = new FYFdoor2();
+    public static final Block FDD7 = new FYFdoor3();
+    public static final Block FDD8 = new FYFdoor4();
+    public static final Block FDD9 = new FYFdoor5();
 
 
     public static final Block FG73 = new FG73();
@@ -794,7 +779,6 @@ public class ModBlocks {
     public static final Block DATE031220 = new FStove().setLightLevel(0.1F);
     public static final Block DATE031221 = new FStove1(false).setLightLevel(0.1F);
     public static final Block DATE031222 = new FStove2(false).setLightLevel(0.1F);
-
 
 
     public static final Block DHALL = new DHall().setLightLevel(0.1F);

@@ -22,34 +22,28 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class FLight10 extends Block implements IHasModel{
+public class FLight10 extends Block implements IHasModel {
     //*******************不用管*********************
-    public static enum EnumMaterial implements IStringSerializable
-    {
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
-
-
-
-
 
 
     //*******************完整方块就删掉*********************
@@ -65,29 +59,23 @@ public class FLight10 extends Block implements IHasModel{
     //*******************完整方块就删掉*********************
 
 
-
-
-
-    public FLight10(){
+    public FLight10() {
         super(Material.ROCK);
-    //*******************改*********************
+        //*******************改*********************
         this.setUnlocalizedName("flight10");
-    //*******************改*********************
+        //*******************改*********************
         this.setRegistryName("npu:flight10");
-    //*******************2.5F是黑曜石硬度*********************
+        //*******************2.5F是黑曜石硬度*********************
         this.setHardness(2.5F);
-    //*******************改*********************
+        //*******************改*********************
         this.setCreativeTab(NPU.MY_TAB);
-
-
-
 
 
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 
         ModBlocks.BLOCKS.add(this);
-    //*******************发光就加上这行，不发光就删掉*********************
-       this.setLightLevel(1);
+        //*******************发光就加上这行，不发光就删掉*********************
+        this.setLightLevel(1);
         //*******************发光就加上这行，不发光就删掉*********************
 
     }

@@ -10,19 +10,20 @@ import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 
-public class Wall11 extends Block implements IHasModel{
-public Wall11(){
-    super(Material.ROCK);
-    setUnlocalizedName("wall11");
-    setRegistryName("npu:wall11");
-    setCreativeTab(NPU.MY_TAB1);
-    ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-    ModBlocks.BLOCKS.add(this);
-    setLightOpacity(5);
-}
-@Override
-    public void registryItemRender(){
-    InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
-}
+public class Wall11 extends Block implements IHasModel {
+    public Wall11() {
+        super(Material.ROCK);
+        setUnlocalizedName("wall11");
+        setRegistryName("npu:wall11");
+        setCreativeTab(NPU.MY_TAB1);
+        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        ModBlocks.BLOCKS.add(this);
+        setLightOpacity(5);
+    }
+
+    @Override
+    public void registryItemRender() {
+        InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
+    }
 
 }

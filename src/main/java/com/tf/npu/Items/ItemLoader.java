@@ -8,70 +8,71 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 /**
  * @author AoXiang_Soar
- *
+ * <p>
  * You can loader your items in this class.
- * ÔÚÕâ¸öÀà×¢²áÄãµÄÎïÆ·
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·
  */
 public class ItemLoader {
-	//Write item objects here
-	//´´½¨ÎïÆ·¶ÔÏó
+    //Write item objects here
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
     public static Item GoldenEgg = new GoldenEgg();
     public static Item Plane = new Plane();
-	public static Item SchoolBus = new SchoolBus();
-	public static Item TitlePng = new TitlePng();
-	public static Item OutPng = new OutPng();
-	public static Item InnerPng = new InnerPng();
-	public static Item WinDoorPng = new WinDoorPng();
-	public static Item ConsPng = new ConsPng();
-	public static Item Ash = new Ash();
-	public static Item PigFood = new PigFood();
-	public static Item RubPaper = new RubPaper();
-	public static Item ItemRubbishSword = new ItemRubbishSword();
-	public static Item Homework = new Homework();
-	/**
-     * ×¢²áÎïÆ·£¬²ÎÊýÊÇÎïÆ·¶ÔÏó
-     */
-    public ItemLoader(){
-    	register(GoldenEgg);
-    	register(Plane);
-		register(SchoolBus);
-		register(TitlePng);
-		register(OutPng);
-		register(InnerPng);
-		register(WinDoorPng);
-		register(ConsPng);
-		register(Ash);
-		register(PigFood);
-		register(RubPaper);
-		register(ItemRubbishSword);
-		register(Homework);
-    }
-    
+    public static Item SchoolBus = new SchoolBus();
+    public static Item TitlePng = new TitlePng();
+    public static Item OutPng = new OutPng();
+    public static Item InnerPng = new InnerPng();
+    public static Item WinDoorPng = new WinDoorPng();
+    public static Item ConsPng = new ConsPng();
+    public static Item Ash = new Ash();
+    public static Item PigFood = new PigFood();
+    public static Item RubPaper = new RubPaper();
+    public static Item ItemRubbishSword = new ItemRubbishSword();
+    public static Item Homework = new Homework();
+
     /**
-     * ×¢²áÎïÆ·µÄÄ£ÐÍ£¬²ÎÊýÊÇÎïÆ·¶ÔÏó
+     * ×¢ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
+     */
+    public ItemLoader() {
+        register(GoldenEgg);
+        register(Plane);
+        register(SchoolBus);
+        register(TitlePng);
+        register(OutPng);
+        register(InnerPng);
+        register(WinDoorPng);
+        register(ConsPng);
+        register(Ash);
+        register(PigFood);
+        register(RubPaper);
+        register(ItemRubbishSword);
+        register(Homework);
+    }
+
+    /**
+     * ×¢ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½Ä£ï¿½Í£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½
      */
     public static void registerRenders() {
-    	registerRender(GoldenEgg);
-    	registerRender(Plane);
-		registerRender(SchoolBus);
-		registerRender(TitlePng);
-		registerRender(OutPng);
-		registerRender(InnerPng);
-		registerRender(WinDoorPng);
-		registerRender(ConsPng);
-		registerRender(Ash);
-		registerRender(PigFood);
-		registerRender(RubPaper);
-		registerRender(ItemRubbishSword);
-		registerRender(Homework);
-	}
+        registerRender(GoldenEgg);
+        registerRender(Plane);
+        registerRender(SchoolBus);
+        registerRender(TitlePng);
+        registerRender(OutPng);
+        registerRender(InnerPng);
+        registerRender(WinDoorPng);
+        registerRender(ConsPng);
+        registerRender(Ash);
+        registerRender(PigFood);
+        registerRender(RubPaper);
+        registerRender(ItemRubbishSword);
+        registerRender(Homework);
+    }
 
-	private static void register(Item item) {
-		String[] arr = item.getUnlocalizedName().toString().split("\\.");
-		ForgeRegistries.ITEMS.register(item.setRegistryName(arr[1]));
-	}
+    private static void register(Item item) {
+        String[] arr = item.getUnlocalizedName().toString().split("\\.");
+        ForgeRegistries.ITEMS.register(item.setRegistryName(arr[1]));
+    }
 
-	private static void registerRender(Item item) {
-		ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
-	}
+    private static void registerRender(Item item) {
+        ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
+    }
 }

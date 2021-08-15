@@ -15,22 +15,19 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class C3 extends Block implements IHasModel{
+public class C3 extends Block implements IHasModel {
 
-    public static enum EnumMaterial implements IStringSerializable
-    {
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
@@ -43,6 +40,7 @@ public class C3 extends Block implements IHasModel{
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return C3_AABB;
     }
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
@@ -52,12 +50,13 @@ public class C3 extends Block implements IHasModel{
     public boolean isFullCube(IBlockState state) {
         return false;
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public C3(){
+    public C3() {
         super(Material.ROCK);
         this.setUnlocalizedName("c3");
         this.setRegistryName("npu:c3");
@@ -65,7 +64,6 @@ public class C3 extends Block implements IHasModel{
         this.setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);
-
 
 
     }

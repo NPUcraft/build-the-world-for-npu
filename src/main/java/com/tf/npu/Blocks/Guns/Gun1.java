@@ -21,33 +21,31 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Gun1 extends Block implements IHasModel{
+public class Gun1 extends Block implements IHasModel {
 
-    public static enum EnumMaterial implements IStringSerializable
-    {
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
     }
 
     public static final PropertyDirection FGunING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+
     @Override
-    protected BlockStateContainer createBlockState()
-    {
+    protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FGunING);
     }
+
     //x1,y1,z1,x2,y2,z2均为double类型
     public static final AxisAlignedBB Gun1_AABB = new AxisAlignedBB(0.0D, 1.0D, 0.0D, 1.0D, 1.1D, 1.0D);
 
@@ -55,6 +53,7 @@ public class Gun1 extends Block implements IHasModel{
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return Gun1_AABB;
     }
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
@@ -64,12 +63,13 @@ public class Gun1 extends Block implements IHasModel{
     public boolean isFullCube(IBlockState state) {
         return false;
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public Gun1(){
+    public Gun1() {
         super(Material.ROCK);
         this.setUnlocalizedName("gun1");
         this.setRegistryName("npu:gun1");
@@ -80,19 +80,16 @@ public class Gun1 extends Block implements IHasModel{
         ModBlocks.BLOCKS.add(this);
 
 
-
     }
 
     @Override
-    public IBlockState getStateFromMeta(int meta)
-    {
+    public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
         return this.getDefaultState().withProperty(FGunING, facing);
     }
 
     @Override
-    public int getMetaFromState(IBlockState state)
-    {
+    public int getMetaFromState(IBlockState state) {
         int facing = state.getValue(FGunING).getHorizontalIndex();
 
         return facing;

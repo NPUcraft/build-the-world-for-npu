@@ -1,17 +1,17 @@
 package com.tf.npu.Blocks.Others;
 
-        import com.tf.npu.Init.ModBlocks;
-        import com.tf.npu.Init.ModItems;
-        import com.tf.npu.interfaces.IHasModel;
-        import com.tf.npu.NPU;
-        import com.tf.npu.util.InitHelper;
-        import net.minecraft.block.Block;
-        import net.minecraft.block.material.Material;
-        import net.minecraft.item.Item;
-        import net.minecraft.item.ItemBlock;
+import com.tf.npu.Init.ModBlocks;
+import com.tf.npu.Init.ModItems;
+import com.tf.npu.interfaces.IHasModel;
+import com.tf.npu.NPU;
+import com.tf.npu.util.InitHelper;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemBlock;
 
-public class ObsidianBlock extends Block implements IHasModel{
-    public ObsidianBlock(){
+public class ObsidianBlock extends Block implements IHasModel {
+    public ObsidianBlock() {
         super(Material.ROCK);
         setUnlocalizedName("obsidianblock");
         setRegistryName("npu:obsidianblock");
@@ -20,8 +20,9 @@ public class ObsidianBlock extends Block implements IHasModel{
         ModBlocks.BLOCKS.add(this);
         setLightLevel(1);
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 

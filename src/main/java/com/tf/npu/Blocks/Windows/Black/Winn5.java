@@ -28,23 +28,20 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import static net.minecraft.block.BlockColored.COLOR;
 
-public class Winn5 extends Block implements IHasModel{
+public class Winn5 extends Block implements IHasModel {
 
 
-    public static enum EnumMaterial implements IStringSerializable
-    {
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
@@ -52,11 +49,12 @@ public class Winn5 extends Block implements IHasModel{
 
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+
     @Override
-    protected BlockStateContainer createBlockState()
-    {
+    protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
     }
+
     //x1,y1,z1,x2,y2,z2均为double类型
     public static final AxisAlignedBB WINN5_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, -1.0D, 1.0D);
 
@@ -64,6 +62,7 @@ public class Winn5 extends Block implements IHasModel{
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return WINN5_AABB;
     }
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
@@ -73,12 +72,13 @@ public class Winn5 extends Block implements IHasModel{
     public boolean isFullCube(IBlockState state) {
         return false;
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public Winn5(){
+    public Winn5() {
         super(Material.ROCK);
         this.setUnlocalizedName("winn5");
         this.setRegistryName("npu:winn5");
@@ -87,14 +87,13 @@ public class Winn5 extends Block implements IHasModel{
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);
-        this.translucent=true;
-
+        this.translucent = true;
 
 
     }
-    public MapColor getMapColor(IBlockState state, IBlockAccess worldIn, BlockPos pos)
-    {
-        return MapColor.getBlockColor((EnumDyeColor)state.getValue(COLOR));
+
+    public MapColor getMapColor(IBlockState state, IBlockAccess worldIn, BlockPos pos) {
+        return MapColor.getBlockColor((EnumDyeColor) state.getValue(COLOR));
     }
 
     @Override
@@ -103,15 +102,13 @@ public class Winn5 extends Block implements IHasModel{
     }
 
     @Override
-    public IBlockState getStateFromMeta(int meta)
-    {
+    public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
     @Override
-    public int getMetaFromState(IBlockState state)
-    {
+    public int getMetaFromState(IBlockState state) {
         int facing = state.getValue(FACING).getHorizontalIndex();
 
         return facing;
@@ -122,13 +119,13 @@ public class Winn5 extends Block implements IHasModel{
                                 ItemStack stack) {
         worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
     }
+
     @SideOnly(Side.CLIENT)
-    public BlockRenderLayer getBlockLayer()
-    {
+    public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.TRANSLUCENT;
     }
-    protected boolean canSilkHarvest()
-    {
+
+    protected boolean canSilkHarvest() {
         return true;
     }
 

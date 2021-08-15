@@ -20,15 +20,16 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class G29 extends Block implements IHasModel{
+public class G29 extends Block implements IHasModel {
 
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+
     @Override
-    protected BlockStateContainer createBlockState()
-    {
+    protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
     }
+
     //x1,y1,z1,x2,y2,z2均为double类型
     public static final AxisAlignedBB G29_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D);
 
@@ -36,17 +37,18 @@ public class G29 extends Block implements IHasModel{
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return G29_AABB;
     }
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
 
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public G29(){
+    public G29() {
         super(Material.ROCK);
         this.setUnlocalizedName("g29");
         this.setRegistryName("npu:g29");
@@ -60,15 +62,13 @@ public class G29 extends Block implements IHasModel{
     }
 
     @Override
-    public IBlockState getStateFromMeta(int meta)
-    {
+    public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
     @Override
-    public int getMetaFromState(IBlockState state)
-    {
+    public int getMetaFromState(IBlockState state) {
         int facing = state.getValue(FACING).getHorizontalIndex();
 
         return facing;

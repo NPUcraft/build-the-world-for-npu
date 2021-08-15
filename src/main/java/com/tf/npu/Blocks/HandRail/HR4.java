@@ -14,7 +14,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class HR4 extends Block implements IHasModel{
+public class HR4 extends Block implements IHasModel {
 
     public static final AxisAlignedBB HR4_AABB = new AxisAlignedBB(0.45D, 0.0D, 0.45D, 0.55D, 1.0D, 0.55D);
 
@@ -22,21 +22,24 @@ public class HR4 extends Block implements IHasModel{
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return HR4_AABB;
     }
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
-public HR4(){
-    super(Material.ROCK);
-    setUnlocalizedName("hr4");
-    setRegistryName("npu:hr4");
-    setCreativeTab(NPU.MY_TAB3);
-    ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-    ModBlocks.BLOCKS.add(this);
-}
-@Override
-    public void registryItemRender(){
-    InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
-}
+
+    public HR4() {
+        super(Material.ROCK);
+        setUnlocalizedName("hr4");
+        setRegistryName("npu:hr4");
+        setCreativeTab(NPU.MY_TAB3);
+        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        ModBlocks.BLOCKS.add(this);
+    }
+
+    @Override
+    public void registryItemRender() {
+        InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
+    }
 
 }

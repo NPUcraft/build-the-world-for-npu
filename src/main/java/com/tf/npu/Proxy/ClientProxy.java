@@ -11,19 +11,20 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 /**
  * @author AoXiang_Soar
- * 
- *¿Í»§¶Ë´úÀí£¬ÔÚÕâÀï×¢²áÄ£ÐÍµÈ
+ * <p>
+ * ï¿½Í»ï¿½ï¿½Ë´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½Ä£ï¿½Íµï¿½
  */
-public class ClientProxy extends CommonProxy{
-    public void registryModel(Item item,int meta,String id){
-        ModelLoader.setCustomModelResourceLocation(item,meta,new ModelResourceLocation(item.getRegistryName(),id));
+public class ClientProxy extends CommonProxy {
+    public void registryModel(Item item, int meta, String id) {
+        ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(item.getRegistryName(), id));
     }
-    @Override
-	public void preInit(FMLPreInitializationEvent event) {
-		super.preInit(event);
-		//×¢²áEntityRenderLoader()
-		new EntityRenderLoader();
-		new ItemRenderLoader();
 
-	}
+    @Override
+    public void preInit(FMLPreInitializationEvent event) {
+        super.preInit(event);
+        //×¢ï¿½ï¿½EntityRenderLoader()
+        new EntityRenderLoader();
+        new ItemRenderLoader();
+
+    }
 }

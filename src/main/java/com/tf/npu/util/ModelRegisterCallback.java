@@ -1,4 +1,5 @@
 package com.tf.npu.util;
+
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;

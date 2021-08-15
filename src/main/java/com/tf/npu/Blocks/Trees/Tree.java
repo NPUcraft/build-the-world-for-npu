@@ -14,7 +14,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class Tree extends Block implements IHasModel{
+public class Tree extends Block implements IHasModel {
 
     public static final AxisAlignedBB TREE_AABB = new AxisAlignedBB(0.3D, 0.0D, 0.3D, 0.7D, 1.0D, 0.7D);
 
@@ -22,21 +22,24 @@ public class Tree extends Block implements IHasModel{
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return TREE_AABB;
     }
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
-public Tree(){
-    super(Material.ROCK);
-    setUnlocalizedName("tree");
-    setRegistryName("npu:tree");
-    setCreativeTab(NPU.MY_TAB3);
-    ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-    ModBlocks.BLOCKS.add(this);
-}
-@Override
-    public void registryItemRender(){
-    InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
-}
+
+    public Tree() {
+        super(Material.ROCK);
+        setUnlocalizedName("tree");
+        setRegistryName("npu:tree");
+        setCreativeTab(NPU.MY_TAB3);
+        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        ModBlocks.BLOCKS.add(this);
+    }
+
+    @Override
+    public void registryItemRender() {
+        InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
+    }
 
 }

@@ -6,7 +6,7 @@ import net.minecraft.potion.PotionEffect;
 import net.minecraft.entity.EntityLivingBase;
 
 public class PigFood extends ItemFood {
-    public PigFood(){
+    public PigFood() {
         super(4, 0.6F, false);
         setUnlocalizedName("pigfood");
 

@@ -15,29 +15,27 @@ import net.minecraft.util.IStringSerializable;
 
 public class XStair extends BlockStairs implements IHasModel {
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
-    public static enum EnumMaterial implements IStringSerializable
-    {
+
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
     }
 
-    public XStair(){
+    public XStair() {
         super((IBlockState) Material.AIR);
         this.setUnlocalizedName("xstair");
         this.setRegistryName("npu:xstair");

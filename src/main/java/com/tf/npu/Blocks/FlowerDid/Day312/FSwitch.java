@@ -25,54 +25,47 @@ import net.minecraft.world.World;
 
 import java.util.Date;
 
-public class FSwitch extends Block implements IHasModel{
+public class FSwitch extends Block implements IHasModel {
     //*******************不用管*********************
-    public static enum EnumMaterial implements IStringSerializable
-    {
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
     //*******************不用管*********************
 
 
-
-
-
-
     //*******************没有方向就删掉*********************
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+
     @Override
-    protected BlockStateContainer createBlockState()
-    {
+    protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
     }
+
     @Override
-    public IBlockState getStateFromMeta(int meta)
-    {
+    public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
     @Override
-    public int getMetaFromState(IBlockState state)
-    {
+    public int getMetaFromState(IBlockState state) {
         int facing = state.getValue(FACING).getHorizontalIndex();
 
         return facing;
@@ -84,8 +77,6 @@ public class FSwitch extends Block implements IHasModel{
         worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
         //*******************没有方向就删掉*********************
     }
-
-
 
 
     //*******************完整方块就删掉*********************
@@ -101,18 +92,15 @@ public class FSwitch extends Block implements IHasModel{
     //*******************完整方块就删掉*********************
 
 
-
-
-
-    public FSwitch(){
+    public FSwitch() {
         super(Material.ROCK);
-    //*******************改*********************
+        //*******************改*********************
         this.setUnlocalizedName("fswitch");
-    //*******************改*********************
+        //*******************改*********************
         this.setRegistryName("npu:fswitch");
-    //*******************2.5F是黑曜石硬度*********************
+        //*******************2.5F是黑曜石硬度*********************
         this.setHardness(2.5F);
-    //*******************改*********************
+        //*******************改*********************
         this.setCreativeTab(NPU.MY_TAB);
 
 
@@ -127,12 +115,13 @@ public class FSwitch extends Block implements IHasModel{
 
 
     }
+
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state,
                                     EntityPlayer playerIn, EnumHand hand,
                                     EnumFacing facing, float hitX, float hitY, float hitZ) {
 
-        if	(!worldIn.isRemote){
-            return	false;
+        if (!worldIn.isRemote) {
+            return false;
         }
 
         playerIn.sendMessage(

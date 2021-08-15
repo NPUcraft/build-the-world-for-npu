@@ -24,16 +24,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
-public abstract class SlabY extends BlockSlab implements IHasModel
-{
+public abstract class SlabY extends BlockSlab implements IHasModel {
     public static final PropertyEnum<SlabY.EnumBlockHalf> HALF = PropertyEnum.<SlabY.EnumBlockHalf>create("half", SlabY.EnumBlockHalf.class);
     protected static final AxisAlignedBB AABB_BOTTOM_HALF = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D);
     protected static final AxisAlignedBB AABB_TOP_HALF = new AxisAlignedBB(0.0D, 0.5D, 0.0D, 1.0D, 1.0D, 1.0D);
 
 
-
-    public SlabY()
-    {
+    public SlabY() {
         super(Material.ROCK);
         this.fullBlock = this.isDouble();
         this.setLightOpacity(255);
@@ -44,19 +41,14 @@ public abstract class SlabY extends BlockSlab implements IHasModel
         ModBlocks.BLOCKS.add(this);
     }
 
-    protected boolean canSilkHarvest()
-    {
+    protected boolean canSilkHarvest() {
         return false;
     }
 
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos)
-    {
-        if (this.isDouble())
-        {
+    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
+        if (this.isDouble()) {
             return FULL_BLOCK_AABB;
-        }
-        else
-        {
+        } else {
             return state.getValue(HALF) == SlabY.EnumBlockHalf.TOP ? AABB_TOP_HALF : AABB_BOTTOM_HALF;
         }
     }
@@ -64,9 +56,8 @@ public abstract class SlabY extends BlockSlab implements IHasModel
     /**
      * Determines if the block is solid enough on the top side to support other blocks, like redstone components.
      */
-    public boolean isTopSolid(IBlockState state)
-    {
-        return ((SlabY)state.getBlock()).isDouble() || state.getValue(HALF) == SlabY.EnumBlockHalf.TOP;
+    public boolean isTopSolid(IBlockState state) {
+        return ((SlabY) state.getBlock()).isDouble() || state.getValue(HALF) == SlabY.EnumBlockHalf.TOP;
     }
 
     /**
@@ -78,18 +69,12 @@ public abstract class SlabY extends BlockSlab implements IHasModel
      *
      * @return an approximation of the form of the given face
      */
-    public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face)
-    {
-        if (((SlabY)state.getBlock()).isDouble())
-        {
+    public BlockFaceShape getBlockFaceShape(IBlockAccess worldIn, IBlockState state, BlockPos pos, EnumFacing face) {
+        if (((SlabY) state.getBlock()).isDouble()) {
             return BlockFaceShape.SOLID;
-        }
-        else if (face == EnumFacing.UP && state.getValue(HALF) == SlabY.EnumBlockHalf.TOP)
-        {
+        } else if (face == EnumFacing.UP && state.getValue(HALF) == SlabY.EnumBlockHalf.TOP) {
             return BlockFaceShape.SOLID;
-        }
-        else
-        {
+        } else {
             return face == EnumFacing.DOWN && state.getValue(HALF) == SlabY.EnumBlockHalf.BOTTOM ? BlockFaceShape.SOLID : BlockFaceShape.UNDEFINED;
         }
     }
@@ -97,18 +82,16 @@ public abstract class SlabY extends BlockSlab implements IHasModel
     /**
      * Used to determine ambient occlusion and culling when rebuilding chunks for render
      */
-    public boolean isOpaqueCube(IBlockState state)
-    {
+    public boolean isOpaqueCube(IBlockState state) {
         return this.isDouble();
     }
 
     @Override
-    public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face)
-    {
+    public boolean doesSideBlockRendering(IBlockState state, IBlockAccess world, BlockPos pos, EnumFacing face) {
         if (net.minecraftforge.common.ForgeModContainer.disableStairSlabCulling)
             return super.doesSideBlockRendering(state, world, pos, face);
 
-        if ( state.isOpaqueCube() )
+        if (state.isOpaqueCube())
             return true;
 
         EnumBlockHalf side = state.getValue(HALF);
@@ -119,75 +102,52 @@ public abstract class SlabY extends BlockSlab implements IHasModel
      * Called by ItemBlocks just before a block is actually set in the world, to allow for adjustments to the
      * IBlockstate
      */
-    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer)
-    {
+    public IBlockState getStateForPlacement(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase placer) {
         IBlockState iblockstate = super.getStateForPlacement(worldIn, pos, facing, hitX, hitY, hitZ, meta, placer).withProperty(HALF, SlabY.EnumBlockHalf.BOTTOM);
 
-        if (this.isDouble())
-        {
+        if (this.isDouble()) {
             return iblockstate;
-        }
-        else
-        {
-            return facing != EnumFacing.DOWN && (facing == EnumFacing.UP || (double)hitY <= 0.5D) ? iblockstate : iblockstate.withProperty(HALF, SlabY.EnumBlockHalf.TOP);
+        } else {
+            return facing != EnumFacing.DOWN && (facing == EnumFacing.UP || (double) hitY <= 0.5D) ? iblockstate : iblockstate.withProperty(HALF, SlabY.EnumBlockHalf.TOP);
         }
     }
 
     /**
      * Returns the quantity of items to drop on block destruction.
      */
-    public int quantityDropped(Random random)
-    {
+    public int quantityDropped(Random random) {
         return this.isDouble() ? 2 : 1;
     }
 
-    public boolean isFullCube(IBlockState state)
-    {
+    public boolean isFullCube(IBlockState state) {
         return this.isDouble();
     }
 
     @SideOnly(Side.CLIENT)
-    public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side)
-    {
-        if (this.isDouble())
-        {
+    public boolean shouldSideBeRendered(IBlockState blockState, IBlockAccess blockAccess, BlockPos pos, EnumFacing side) {
+        if (this.isDouble()) {
             return super.shouldSideBeRendered(blockState, blockAccess, pos, side);
-        }
-        else if (side != EnumFacing.UP && side != EnumFacing.DOWN && !super.shouldSideBeRendered(blockState, blockAccess, pos, side))
-        {
+        } else if (side != EnumFacing.UP && side != EnumFacing.DOWN && !super.shouldSideBeRendered(blockState, blockAccess, pos, side)) {
             return false;
-        }
-        else if (false) // Forge: Additional logic breaks doesSideBlockRendering and is no longer useful.
+        } else if (false) // Forge: Additional logic breaks doesSideBlockRendering and is no longer useful.
         {
             IBlockState iblockstate = blockAccess.getBlockState(pos.offset(side));
             boolean flag = isHalfSlab(iblockstate) && iblockstate.getValue(HALF) == SlabY.EnumBlockHalf.TOP;
             boolean flag1 = isHalfSlab(blockState) && blockState.getValue(HALF) == SlabY.EnumBlockHalf.TOP;
 
-            if (flag1)
-            {
-                if (side == EnumFacing.DOWN)
-                {
+            if (flag1) {
+                if (side == EnumFacing.DOWN) {
                     return true;
-                }
-                else if (side == EnumFacing.UP && super.shouldSideBeRendered(blockState, blockAccess, pos, side))
-                {
+                } else if (side == EnumFacing.UP && super.shouldSideBeRendered(blockState, blockAccess, pos, side)) {
                     return true;
-                }
-                else
-                {
+                } else {
                     return !isHalfSlab(iblockstate) || !flag;
                 }
-            }
-            else if (side == EnumFacing.UP)
-            {
+            } else if (side == EnumFacing.UP) {
                 return true;
-            }
-            else if (side == EnumFacing.DOWN && super.shouldSideBeRendered(blockState, blockAccess, pos, side))
-            {
+            } else if (side == EnumFacing.DOWN && super.shouldSideBeRendered(blockState, blockAccess, pos, side)) {
                 return true;
-            }
-            else
-            {
+            } else {
                 return !isHalfSlab(iblockstate) || flag;
             }
         }
@@ -195,8 +155,7 @@ public abstract class SlabY extends BlockSlab implements IHasModel
     }
 
     @SideOnly(Side.CLIENT)
-    protected static boolean isHalfSlab(IBlockState state)
-    {
+    protected static boolean isHalfSlab(IBlockState state) {
         Block block = state.getBlock();
         return block == Blocks.STONE_SLAB || block == Blocks.WOODEN_SLAB || block == Blocks.STONE_SLAB2 || block == Blocks.PURPUR_SLAB;
     }
@@ -208,21 +167,18 @@ public abstract class SlabY extends BlockSlab implements IHasModel
     public abstract boolean isDouble();
 
 
-    public static enum EnumBlockHalf implements IStringSerializable
-    {
+    public static enum EnumBlockHalf implements IStringSerializable {
         TOP("top"),
         BOTTOM("bottom");
 
         private final String name;
 
-        private EnumBlockHalf(String name)
-        {
+        private EnumBlockHalf(String name) {
             this.name = name;
         }
 
 
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
     }

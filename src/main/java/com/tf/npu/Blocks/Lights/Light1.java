@@ -14,8 +14,8 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class Light1 extends Block implements IHasModel{
-    public Light1(){
+public class Light1 extends Block implements IHasModel {
+    public Light1() {
         super(Material.ROCK);
         setUnlocalizedName("light1");
         setRegistryName("npu:light1");
@@ -24,12 +24,14 @@ public class Light1 extends Block implements IHasModel{
         ModBlocks.BLOCKS.add(this);
         setLightLevel(1);
     }
+
     public static final AxisAlignedBB Light1_AABB = new AxisAlignedBB(0.0D, 1.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return Light1_AABB;
     }
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
@@ -39,8 +41,9 @@ public class Light1 extends Block implements IHasModel{
     public boolean isFullCube(IBlockState state) {
         return false;
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 

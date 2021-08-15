@@ -22,41 +22,34 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class FGallery4 extends Block implements IHasModel{
+public class FGallery4 extends Block implements IHasModel {
     //*******************不用管*********************
-    public static enum EnumMaterial implements IStringSerializable
-    {
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
     //*******************不用管*********************
 
 
-
-
     //*******************碰撞箱，如果是1x1x1就删掉*********************
 
     //*******************碰撞箱，如果是1x1x1就删掉*********************
-
-
-
 
 
     //*******************完整方块就删掉*********************
@@ -72,21 +65,16 @@ public class FGallery4 extends Block implements IHasModel{
     //*******************完整方块就删掉*********************
 
 
-
-
-
-    public FGallery4(){
+    public FGallery4() {
         super(Material.ROCK);
-    //*******************改*********************
+        //*******************改*********************
         this.setUnlocalizedName("fgallery4");
-    //*******************改*********************
+        //*******************改*********************
         this.setRegistryName("npu:fgallery4");
-    //*******************2.5F是黑曜石硬度*********************
+        //*******************2.5F是黑曜石硬度*********************
         this.setHardness(2.5F);
-    //*******************改*********************
+        //*******************改*********************
         this.setCreativeTab(NPU.MY_TAB3);
-
-
 
 
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

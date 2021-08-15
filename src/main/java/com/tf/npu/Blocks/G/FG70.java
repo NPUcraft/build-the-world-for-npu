@@ -22,28 +22,23 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class FG70 extends Block implements IHasModel{
+public class FG70 extends Block implements IHasModel {
 
-    public static enum EnumMaterial implements IStringSerializable
-    {
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
     }
-
-
 
 
     //*******************碰撞箱*********************
@@ -57,57 +52,53 @@ public class FG70 extends Block implements IHasModel{
 
     //*******************不用管*********************
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+
     @Override
-    protected BlockStateContainer createBlockState()
-    {
+    protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
     }
     //*******************不用管*********************
 
 
-
-
     //*******************不用管*********************
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
     //*******************不用管*********************
 
 
-
-    public FG70(){
+    public FG70() {
         super(Material.ROCK);
-    //*******************改*********************
+        //*******************改*********************
         this.setUnlocalizedName("fg70");
-    //*******************改*********************
+        //*******************改*********************
         this.setRegistryName("npu:fg70");
-    //*******************2.5F是黑曜石硬度*********************
+        //*******************2.5F是黑曜石硬度*********************
         this.setHardness(2.5F);
-    //*******************改*********************
+        //*******************改*********************
         this.setCreativeTab(NPU.MY_TAB1);
-    //*******************不用管*********************
+        //*******************不用管*********************
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 
         ModBlocks.BLOCKS.add(this);
 
-    //*******************不用管*********************
-	
+        //*******************不用管*********************
+
 
     }
+
     //*******************不用管*********************
     @Override
-    public IBlockState getStateFromMeta(int meta)
-    {
+    public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
     @Override
-    public int getMetaFromState(IBlockState state)
-    {
+    public int getMetaFromState(IBlockState state) {
         int facing = state.getValue(FACING).getHorizontalIndex();
 
         return facing;
@@ -117,6 +108,6 @@ public class FG70 extends Block implements IHasModel{
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer,
                                 ItemStack stack) {
         worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
-    //*******************不用管*********************
+        //*******************不用管*********************
     }
 }

@@ -7,19 +7,20 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 /**
  * @author AoXiang_Soar
- * 
- * ÔÚÕâ¸öÀà×¢²áÄãµÄÊµÌå
+ * <p>
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½
  */
 public class EntityLoader {
-	//ÎŞĞè¸Ä¶¯
-	private static int id = 0;
-	/**
-	 * ÔÚÕâ¸ö·½·¨×¢²áÊµÌå£¬ÒıºÅÄÚµÄPlaneÊÇÊµÌåÃû³Æ£¬Plane.class¸ÄÎª[ÊµÌåÀàÃû].class
-	 */
-	public EntityLoader() {
-		EntityRegistry.registerModEntity(new ResourceLocation("npu", "Plane"), Plane.class, "Plane", id++, NPU.instance, 256, 1, true);
+    //ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½
+    private static int id = 0;
 
-		EntityRegistry.registerModEntity(new ResourceLocation("npu", "SchoolBus"), SchoolBus.class, "Schoolbus", id++, NPU.instance, 256, 1, true);
+    /**
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½Êµï¿½å£¬ï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½Planeï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½Æ£ï¿½Plane.classï¿½ï¿½Îª[Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½].class
+     */
+    public EntityLoader() {
+        EntityRegistry.registerModEntity(new ResourceLocation("npu", "Plane"), Plane.class, "Plane", id++, NPU.instance, 256, 1, true);
 
-	}
+        EntityRegistry.registerModEntity(new ResourceLocation("npu", "SchoolBus"), SchoolBus.class, "Schoolbus", id++, NPU.instance, 256, 1, true);
+
+    }
 }

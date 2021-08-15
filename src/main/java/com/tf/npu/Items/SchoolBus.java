@@ -10,25 +10,26 @@ import net.minecraft.util.EnumHand;
 import net.minecraft.world.World;
 
 public class SchoolBus extends Item {
-	public SchoolBus() {
-		setCreativeTab(NPU.MY_TAB3);
+    public SchoolBus() {
+        setCreativeTab(NPU.MY_TAB3);
         setUnlocalizedName("schoolbus");
     }
-	/**
-	 * ÉèÖÃÓÒ¼üÎïÆ·Ê±µÄÐÐÎª
-	 */
-	public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
-		ItemStack itemstack = playerIn.getHeldItem(handIn);
-		//********************************************Éú³ÉÊµÌå***************************************************
-		com.tf.npu.entity.SchoolBus entity = new com.tf.npu.entity.SchoolBus(worldIn);
-		if (!worldIn.isRemote) {
-			entity.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, playerIn.rotationYaw, 0.0F);
-			worldIn.spawnEntity(entity);
-			if (!playerIn.capabilities.isCreativeMode) {
-				itemstack.shrink(1);
-			}
-		}
-		//*******************************************************************************************************
-		return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
-	}
+
+    /**
+     * ï¿½ï¿½ï¿½ï¿½ï¿½Ò¼ï¿½ï¿½ï¿½Æ·Ê±ï¿½ï¿½ï¿½ï¿½Îª
+     */
+    public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
+        ItemStack itemstack = playerIn.getHeldItem(handIn);
+        //********************************************ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½***************************************************
+        com.tf.npu.entity.SchoolBus entity = new com.tf.npu.entity.SchoolBus(worldIn);
+        if (!worldIn.isRemote) {
+            entity.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, playerIn.rotationYaw, 0.0F);
+            worldIn.spawnEntity(entity);
+            if (!playerIn.capabilities.isCreativeMode) {
+                itemstack.shrink(1);
+            }
+        }
+        //*******************************************************************************************************
+        return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
+    }
 }

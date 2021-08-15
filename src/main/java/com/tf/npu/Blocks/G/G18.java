@@ -14,29 +14,32 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class G18 extends Block implements IHasModel{
+public class G18 extends Block implements IHasModel {
     public static final AxisAlignedBB G18_AABB = new AxisAlignedBB(0.0D, 0.5D, 0.0D, 1.0D, 1.0D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return G18_AABB;
     }
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
     }
-public G18(){
-    super(Material.ROCK);
-    setUnlocalizedName("g18");
-    setRegistryName("npu:g18");
-    setCreativeTab(NPU.MY_TAB1);
-    ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-    ModBlocks.BLOCKS.add(this);
 
-}
-@Override
-    public void registryItemRender(){
-    InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
-}
+    public G18() {
+        super(Material.ROCK);
+        setUnlocalizedName("g18");
+        setRegistryName("npu:g18");
+        setCreativeTab(NPU.MY_TAB1);
+        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        ModBlocks.BLOCKS.add(this);
+
+    }
+
+    @Override
+    public void registryItemRender() {
+        InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
+    }
 
 }

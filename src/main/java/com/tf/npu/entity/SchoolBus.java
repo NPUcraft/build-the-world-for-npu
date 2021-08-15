@@ -16,58 +16,63 @@ import javax.annotation.Nullable;
 
 /**
  * @author AoXiang_Soar
- * 
- * ÊµÌåÀà
+ * <p>
+ * Êµï¿½ï¿½ï¿½ï¿½
  */
 public class SchoolBus extends EntityLiving {
 
-	public SchoolBus(World worldIn) {
-		super(worldIn);
-		//ÉèÖÃÅö×²Ïä´óĞ¡£¬µÚÒ»¸ö²ÎÊıÊÇ³¤¿í£¬µÚ¶ş¸ö²ÎÊıÊÇ¸ß¶È
-		this.setSize(2.0F, 2.0F);
-	}
-	/**
-	 * ÔÚËÀÍöÊ±´¥·¢£¬´Ë´¦ÉèÖÃÎªµôÂäÒ»¸ö·É»úÎïÆ·
-	 */
-	public void onDeath(DamageSource cause) {
-		ItemStack plane = new ItemStack(ItemLoader.SchoolBus, 1);
-		this.entityDropItem(plane, 1.0F);
-	}
-	/**
-	 * ÉèÖÃÊµÌåµÄÏà¹ØÊôĞÔ£¬´Ë´¦½«ÑªÁ¿ÉèÖÃÎª1
-	 */
-	protected void applyEntityAttributes() {
-		super.applyEntityAttributes();
-		this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20.0D);
-	}
-	/**
-	 * @author AoXiang_Soar
-	 *
-	 *Ä£ĞÍÀà£¬ÔÚÕâ¸öÀà¶¨ÒåÄãµÄÊµÌåÄ£ĞÍ
-	 *Õâ¸öÀà³öÏÖµÄPlane¶¼Ìæ»»ÎªÍâ²¿Àà¼´¿É
-	 */
-	public static class Renderer extends RenderLiving<SchoolBus> {
-		public Renderer(RenderManager p_i47187_1_) {
-			//µÚ¶ş¸ö²ÎÊı´«ÈëÄãµÄÄ£ĞÍÀà¶ÔÏó£¬µÚÈı¸ö²ÎÊıÊÇÒõÓ°´óĞ¡
-			super(p_i47187_1_, new ModelSchoolBus(), 0.5F);
-		}
-		//¶¨ÒåÌùÍ¼Î»ÖÃ
-		private static final ResourceLocation TEX = new ResourceLocation("npu:textures/entity/schoolbus.png");
-		@Override
-		/**
-		 * »ñÈ¡ÌùÍ¼
-		 */
-		protected ResourceLocation getEntityTexture(SchoolBus entity) {
-				return TEX;
-		}
-	}
-	
-	//ÒÔÏÂÁ½¸ö·½·¨ÎŞĞè¸Ä¶¯£¬Ä¿µÄÊÇ·ÀÖ¹ÊµÌå±»ÇåÀí
-	@Nullable
+    public SchoolBus(World worldIn) {
+        super(worldIn);
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×²ï¿½ï¿½ï¿½Ğ¡ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç³ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç¸ß¶ï¿½
+        this.setSize(2.0F, 2.0F);
+    }
+
+    /**
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½É»ï¿½ï¿½ï¿½Æ·
+     */
+    public void onDeath(DamageSource cause) {
+        ItemStack plane = new ItemStack(ItemLoader.SchoolBus, 1);
+        this.entityDropItem(plane, 1.0F);
+    }
+
+    /**
+     * ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½Ë´ï¿½ï¿½ï¿½Ñªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îª1
+     */
+    protected void applyEntityAttributes() {
+        super.applyEntityAttributes();
+        this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20.0D);
+    }
+
+    /**
+     * @author AoXiang_Soar
+     * <p>
+     * Ä£ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à¶¨ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ä£ï¿½ï¿½
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½Planeï¿½ï¿½ï¿½æ»»Îªï¿½â²¿ï¿½à¼´ï¿½ï¿½
+     */
+    public static class Renderer extends RenderLiving<SchoolBus> {
+        public Renderer(RenderManager p_i47187_1_) {
+            //ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½Ğ¡
+            super(p_i47187_1_, new ModelSchoolBus(), 0.5F);
+        }
+
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¼Î»ï¿½ï¿½
+        private static final ResourceLocation TEX = new ResourceLocation("npu:textures/entity/schoolbus.png");
+
+        @Override
+        /**
+         * ï¿½ï¿½È¡ï¿½ï¿½Í¼
+         */
+        protected ResourceLocation getEntityTexture(SchoolBus entity) {
+            return TEX;
+        }
+    }
+
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½Ç·ï¿½Ö¹Êµï¿½å±»ï¿½ï¿½ï¿½ï¿½
+    @Nullable
     public IEntityLivingData onInitialSpawn(DifficultyInstance difficulty, @Nullable IEntityLivingData livingdata) {
-		return super.onInitialSpawn(difficulty, livingdata);
-	}
-	
-	protected void despawnEntity() {
-	}
+        return super.onInitialSpawn(difficulty, livingdata);
+    }
+
+    protected void despawnEntity() {
+    }
 }

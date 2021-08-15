@@ -22,33 +22,29 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class FLight11 extends Block implements IHasModel{
+public class FLight11 extends Block implements IHasModel {
     //*******************不用管*********************
-    public static enum EnumMaterial implements IStringSerializable
-    {
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
     //*******************不用管*********************
-
-
 
 
     //*******************碰撞箱，如果是1x1x1就删掉*********************
@@ -59,9 +55,6 @@ public class FLight11 extends Block implements IHasModel{
         return FLight11_AABB;
     }
     //*******************碰撞箱，如果是1x1x1就删掉*********************
-
-
-
 
 
     //*******************完整方块就删掉*********************
@@ -77,28 +70,24 @@ public class FLight11 extends Block implements IHasModel{
     //*******************完整方块就删掉*********************
 
 
-
-
-
-    public FLight11(){
+    public FLight11() {
         super(Material.ROCK);
-    //*******************改*********************
+        //*******************改*********************
         this.setUnlocalizedName("flight11");
-    //*******************改*********************
+        //*******************改*********************
         this.setRegistryName("npu:flight11");
-    //*******************2.5F是黑曜石硬度*********************
+        //*******************2.5F是黑曜石硬度*********************
         this.setHardness(2.5F);
-    //*******************改*********************
+        //*******************改*********************
         this.setCreativeTab(NPU.MY_TAB3);
-
 
 
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 
         ModBlocks.BLOCKS.add(this);
 
-    //*******************发光就加上这行，不发光就删掉*********************
-       this.setLightLevel(5);
+        //*******************发光就加上这行，不发光就删掉*********************
+        this.setLightLevel(5);
         //*******************发光就加上这行，不发光就删掉*********************
     }
 

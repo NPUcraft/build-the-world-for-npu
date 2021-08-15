@@ -6,17 +6,17 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 /**
  * @author AoXiang_Soar
- * 
- * ×¢²áÄãµÄÊµÌåÄ£ĞÍ
+ * <p>
+ * ×¢ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½Ä£ï¿½ï¿½
  */
 @SideOnly(Side.CLIENT)
 public class EntityRenderLoader {
-	@SuppressWarnings({ "unchecked", "rawtypes" })
-	/**
-	 * ½«Plane.class¸ÄÎª[ÊµÌåÀàÃû].class£¬Plane.Renderer.class¸ÄÎªÊµÌåÀàÀïµÄÄ£ĞÍÀà
-	 */
-	public EntityRenderLoader() {
-		RenderingRegistry.registerEntityRenderingHandler(Plane.class,new EntityRenderFactory(Plane.Renderer.class));
-		RenderingRegistry.registerEntityRenderingHandler(SchoolBus.class,new EntityRenderFactory(SchoolBus.Renderer.class));
-	}
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    /**
+     * ï¿½ï¿½Plane.classï¿½ï¿½Îª[Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½].classï¿½ï¿½Plane.Renderer.classï¿½ï¿½ÎªÊµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½
+     */
+    public EntityRenderLoader() {
+        RenderingRegistry.registerEntityRenderingHandler(Plane.class, new EntityRenderFactory(Plane.Renderer.class));
+        RenderingRegistry.registerEntityRenderingHandler(SchoolBus.class, new EntityRenderFactory(SchoolBus.Renderer.class));
+    }
 }

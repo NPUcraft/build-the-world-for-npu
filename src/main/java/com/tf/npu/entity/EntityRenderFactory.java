@@ -7,22 +7,22 @@ import net.minecraftforge.fml.client.registry.IRenderFactory;
 
 /**
  * @author AoXiang_Soar
- * 
- * Ò»¸ö¹¤³§Àà£¬ÎÞÐè¸Ä¶¯
+ * <p>
+ * Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½
  */
 public class EntityRenderFactory<E extends Entity> implements IRenderFactory<E> {
-	private final Class<? extends Render<E>> renderClass;
- 
-	public EntityRenderFactory(Class<? extends Render<E>> renderClass) {
-		this.renderClass = renderClass;
-	}
+    private final Class<? extends Render<E>> renderClass;
 
-	@Override
-	public Render<E> createRenderFor(RenderManager manager) {
-		try {
-			return renderClass.getConstructor(RenderManager.class).newInstance(manager);
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
-	}
+    public EntityRenderFactory(Class<? extends Render<E>> renderClass) {
+        this.renderClass = renderClass;
+    }
+
+    @Override
+    public Render<E> createRenderFor(RenderManager manager) {
+        try {
+            return renderClass.getConstructor(RenderManager.class).newInstance(manager);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

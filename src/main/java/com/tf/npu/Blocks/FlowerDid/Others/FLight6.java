@@ -16,30 +16,29 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class FLight6 extends Block implements IHasModel{
+public class FLight6 extends Block implements IHasModel {
     //*******************不用管*********************
-    public static enum EnumMaterial implements IStringSerializable
-    {
+    public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
         private String name;
 
-        private EnumMaterial(String material)
-        {
+        private EnumMaterial(String material) {
             this.name = material;
         }
 
         @Override
-        public String getName()
-        {
+        public String getName() {
             return this.name;
         }
 
     }
+
     @Override
-    public void registryItemRender(){
+    public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
+
     //*******************不用管*********************
     public static final AxisAlignedBB FHallScreen2_AABB = new AxisAlignedBB(0.3D, 0.0D, 0.3D, 0.7D, 2.0D, 0.7D);
 
@@ -47,11 +46,6 @@ public class FLight6 extends Block implements IHasModel{
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return FHallScreen2_AABB;
     }
-
-
-
-
-
 
 
     //*******************完整方块就删掉*********************
@@ -67,22 +61,16 @@ public class FLight6 extends Block implements IHasModel{
     //*******************完整方块就删掉*********************
 
 
-
-
-
-    public FLight6(){
+    public FLight6() {
         super(Material.ROCK);
-    //*******************改*********************
+        //*******************改*********************
         this.setUnlocalizedName("flight6");
-    //*******************改*********************
+        //*******************改*********************
         this.setRegistryName("npu:flight6");
-    //*******************2.5F是黑曜石硬度*********************
+        //*******************2.5F是黑曜石硬度*********************
         this.setHardness(2.5F);
-    //*******************改*********************
+        //*******************改*********************
         this.setCreativeTab(NPU.MY_TAB3);
-
-
-
 
 
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
