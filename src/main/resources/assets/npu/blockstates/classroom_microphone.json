@@ -1,8 +1,22 @@
 {
   "variants": {
-    "facing=north": { "model": "npu:classroom_microphone" },
-    "facing=east": { "model": "npu:classroom_microphone", "y": 90, "uvlock": false },
-    "facing=south": { "model": "npu:classroom_microphone", "y": 180, "uvlock": false },
-    "facing=west": { "model": "npu:classroom_microphone", "y": 270, "uvlock": false }
+    "facing=north": {
+      "model": "npu:classroom_microphone"
+    },
+    "facing=east": {
+      "model": "npu:classroom_microphone",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:classroom_microphone",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:classroom_microphone",
+      "y": 270,
+      "uvlock": false
+    }
   }
 }

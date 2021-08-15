@@ -1,4 +1,3 @@
 {
-"parent": "npu:block/platform_chair"
-
+  "parent": "npu:block/platform_chair"
 }

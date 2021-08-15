@@ -1,8 +1,22 @@
 {
   "variants": {
-    "facing=north": { "model": "npu:fstool1" },
-    "facing=east": { "model": "npu:fstool1", "y": 90, "uvlock": false },
-    "facing=south": { "model": "npu:fstool1", "y": 180, "uvlock": false },
-    "facing=west": { "model": "npu:fstool1", "y": 270, "uvlock": false }
+    "facing=north": {
+      "model": "npu:fstool1"
+    },
+    "facing=east": {
+      "model": "npu:fstool1",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:fstool1",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:fstool1",
+      "y": 270,
+      "uvlock": false
+    }
   }
 }

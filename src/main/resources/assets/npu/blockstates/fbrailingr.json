@@ -1,6 +1,8 @@
 {
   "variants": {
-    "facing=north": { "model": "npu:fbrailingr" },
+    "facing=north": {
+      "model": "npu:fbrailingr"
+    },
     "facing=east": {
       "model": "npu:fbrailingr",
       "y": 90,

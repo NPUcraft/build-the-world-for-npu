@@ -1,28 +1,36 @@
 {
-    "display": {
-        "icon": { 
-			"item": "npu:rubpaper"
-        },
-        "title": {
-			"translate": "advancements.npu.get_all.title"
-		},
-        "description": {
-			"translate": "advancements.npu.get_all.description"
-		},
-        "frame":"challenge"
+  "display": {
+    "icon": {
+      "item": "npu:rubpaper"
     },
-    "parent": "npu:get_pigfood",
-    "criteria": {
-        "all": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {"item": "npu:homework"},
-                    {"item": "npu:pigfood"},
-                    {"item": "npu:ash"},
-                  {"item": "npu:rubpaper"}
-                ]
-            }
-        }
+    "title": {
+      "translate": "advancements.npu.get_all.title"
+    },
+    "description": {
+      "translate": "advancements.npu.get_all.description"
+    },
+    "frame": "challenge"
+  },
+  "parent": "npu:get_pigfood",
+  "criteria": {
+    "all": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "npu:homework"
+          },
+          {
+            "item": "npu:pigfood"
+          },
+          {
+            "item": "npu:ash"
+          },
+          {
+            "item": "npu:rubpaper"
+          }
+        ]
+      }
     }
+  }
 }

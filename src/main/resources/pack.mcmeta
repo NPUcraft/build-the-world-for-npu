@@ -1,6 +1,6 @@
 {
-    "pack": {
-        "description": "NPU resources",
-        "pack_format": 3
-    }
+  "pack": {
+    "description": "NPU resources",
+    "pack_format": 3
+  }
 }

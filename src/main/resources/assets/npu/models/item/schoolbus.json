@@ -1,6 +1,6 @@
 {
-    "parent": "item/generated",
-    "textures": {
-        "layer0": "npu:items/schoolbus"
-    }
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "npu:items/schoolbus"
+  }
 }

@@ -1,19 +1,19 @@
 {
-  "type":"minecraft:crafting_shaped",
-  "pattern":[
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
     "XXX",
     "XYX",
     "XXX"
   ],
-  "key":{
-    "X":{
-      "item":"npu:ash"
+  "key": {
+    "X": {
+      "item": "npu:ash"
     },
-    "Y":{
-       "item":"npu:pigfood"
-}
+    "Y": {
+      "item": "npu:pigfood"
+    }
   },
-  "result":{
-    "item":"npu:rubpaper"
+  "result": {
+    "item": "npu:rubpaper"
   }
 }

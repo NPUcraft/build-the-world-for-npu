@@ -1,8 +1,22 @@
 {
   "variants": {
-    "facing=north": { "model": "npu:market_office_cabinet_up" },
-    "facing=east": { "model": "npu:market_office_cabinet_up", "y": 90, "uvlock": false },
-    "facing=south": { "model": "npu:market_office_cabinet_up", "y": 180, "uvlock": false },
-    "facing=west": { "model": "npu:market_office_cabinet_up", "y": 270, "uvlock": false }
+    "facing=north": {
+      "model": "npu:market_office_cabinet_up"
+    },
+    "facing=east": {
+      "model": "npu:market_office_cabinet_up",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:market_office_cabinet_up",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:market_office_cabinet_up",
+      "y": 270,
+      "uvlock": false
+    }
   }
 }

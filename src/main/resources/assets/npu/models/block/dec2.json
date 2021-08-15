@@ -1,29 +1,105 @@
 {
-	"credit": "Made with Blockbench",
-	"textures": {
-		"1": "npu:blocks/donotsmoke",
-		"particle": "npu:blocks/donotsmoke"
-	},
-	"elements": [
-		{
-			"from": [6, 3, 15.75],
-			"to": [11, 5.25, 16],
-			"rotation": {"angle": 0, "axis": "y", "origin": [15, 11, 23]},
-			"faces": {
-				"north": {"uv": [0, 8.875, 16, 16], "texture": "#1"},
-				"east": {"uv": [0, 11.25, 0.25, 14.25], "texture": "#1"},
-				"south": {"uv": [1.125, 11.3125, 2.5625, 9.9375], "texture": "#1"},
-				"west": {"uv": [0, 10.4375, 0.25, 13.4375], "texture": "#1"},
-				"up": {"uv": [0.8125, 10.375, 5.8125, 10.625], "texture": "#1"},
-				"down": {"uv": [0.9375, 10.75, 5.9375, 11], "texture": "#1"}
-			}
-		}
-	],
-	"display": {
-		"gui": {
-			"rotation": [30, -135, 0],
-			"translation": [11.75, 1.5, 0],
-			"scale": [2, 2, 2]
-		}
-	}
+  "credit": "Made with Blockbench",
+  "textures": {
+    "1": "npu:blocks/donotsmoke",
+    "particle": "npu:blocks/donotsmoke"
+  },
+  "elements": [
+    {
+      "from": [
+        6,
+        3,
+        15.75
+      ],
+      "to": [
+        11,
+        5.25,
+        16
+      ],
+      "rotation": {
+        "angle": 0,
+        "axis": "y",
+        "origin": [
+          15,
+          11,
+          23
+        ]
+      },
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            8.875,
+            16,
+            16
+          ],
+          "texture": "#1"
+        },
+        "east": {
+          "uv": [
+            0,
+            11.25,
+            0.25,
+            14.25
+          ],
+          "texture": "#1"
+        },
+        "south": {
+          "uv": [
+            1.125,
+            11.3125,
+            2.5625,
+            9.9375
+          ],
+          "texture": "#1"
+        },
+        "west": {
+          "uv": [
+            0,
+            10.4375,
+            0.25,
+            13.4375
+          ],
+          "texture": "#1"
+        },
+        "up": {
+          "uv": [
+            0.8125,
+            10.375,
+            5.8125,
+            10.625
+          ],
+          "texture": "#1"
+        },
+        "down": {
+          "uv": [
+            0.9375,
+            10.75,
+            5.9375,
+            11
+          ],
+          "texture": "#1"
+        }
+      }
+    }
+  ],
+  "display": {
+    "gui": {
+      "rotation": [
+        30,
+        -135,
+        0
+      ],
+      "translation": [
+        11.75,
+        1.5,
+        0
+      ],
+      "scale": [
+        2,
+        2,
+        2
+      ]
+    }
+  }
 }

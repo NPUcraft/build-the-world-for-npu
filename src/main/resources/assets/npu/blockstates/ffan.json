@@ -1,8 +1,22 @@
 {
   "variants": {
-    "facing=north": { "model": "npu:ffan" },
-    "facing=east": { "model": "npu:ffan", "y": 90, "uvlock": false },
-    "facing=south": { "model": "npu:ffan", "y": 180, "uvlock": false },
-    "facing=west": { "model": "npu:ffan", "y": 270, "uvlock": false }
+    "facing=north": {
+      "model": "npu:ffan"
+    },
+    "facing=east": {
+      "model": "npu:ffan",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:ffan",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:ffan",
+      "y": 270,
+      "uvlock": false
+    }
   }
 }

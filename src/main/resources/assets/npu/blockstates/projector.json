@@ -1,8 +1,22 @@
 {
   "variants": {
-    "facing=north": { "model": "npu:projector" },
-    "facing=east": { "model": "npu:projector", "y": 90, "uvlock": false },
-    "facing=south": { "model": "npu:projector", "y": 180, "uvlock": false },
-    "facing=west": { "model": "npu:projector", "y": 270, "uvlock": false }
+    "facing=north": {
+      "model": "npu:projector"
+    },
+    "facing=east": {
+      "model": "npu:projector",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:projector",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:projector",
+      "y": 270,
+      "uvlock": false
+    }
   }
 }

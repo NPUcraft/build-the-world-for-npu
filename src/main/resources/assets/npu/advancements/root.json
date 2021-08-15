@@ -1,28 +1,28 @@
 {
-    "display": {
-        "icon": {
+  "display": {
+    "icon": {
+      "item": "npu:homework"
+    },
+    "title": {
+      "translate": "advancements.npu.root.title"
+    },
+    "description": {
+      "translate": "advancements.npu.root.description"
+    },
+    "show_toast": false,
+    "announce_to_chat": false,
+    "background": "npu:textures/blocks/obsidianblock.png"
+  },
+  "criteria": {
+    "get_homework": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
             "item": "npu:homework"
-        },
-        "title": {
-            "translate": "advancements.npu.root.title"
-        },
-        "description": {
-            "translate": "advancements.npu.root.description"
-    },
-        "show_toast": false,
-        "announce_to_chat": false,
-        "background": "npu:textures/blocks/obsidianblock.png"
-    },
-    "criteria": {
-        "get_homework": {
-            "trigger": "minecraft:inventory_changed",
-            "conditions": {
-                "items": [
-                    {
-                        "item": "npu:homework"
-                    }
-                ]
-            }
-        }
+          }
+        ]
+      }
     }
+  }
 }

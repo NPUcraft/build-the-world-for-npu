@@ -1,6 +1,10 @@
 {
-    "variants": {
-        "half=bottom": { "model": "npu:half_slab_stone" },
-        "half=top": { "model": "npu:upper_slab_stone" }
+  "variants": {
+    "half=bottom": {
+      "model": "npu:half_slab_stone"
+    },
+    "half=top": {
+      "model": "npu:upper_slab_stone"
     }
+  }
 }
