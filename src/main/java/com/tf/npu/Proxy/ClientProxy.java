@@ -7,6 +7,7 @@ import com.tf.npu.entity.EntityRenderLoader;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 /**
@@ -22,7 +23,7 @@ public class ClientProxy extends CommonProxy {
     @Override
     public void preInit(FMLPreInitializationEvent event) {
         super.preInit(event);
-        //ע��EntityRenderLoader()
+
         new EntityRenderLoader();
         new ItemRenderLoader();
 

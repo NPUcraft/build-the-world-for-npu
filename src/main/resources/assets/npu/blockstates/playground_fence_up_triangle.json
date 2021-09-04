@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:playground_fence_up_triangle"
+    },
+    "facing=east": {
+      "model": "npu:playground_fence_up_triangle",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:playground_fence_up_triangle",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:playground_fence_up_triangle",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

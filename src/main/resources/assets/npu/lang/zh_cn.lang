@@ -36,6 +36,8 @@ itemGroup.blocksonroad=室外相关方块
 itemGroup.windoor=门窗相关方块
 itemGroup.sign=门牌类相关图标
 
+itemGroup.temporary=待分类
+
 tile.obsidianblock.name=黑曜石块
 tile.obsidianframe.name=黑曜石框架
 tile.chair.name=椅子
@@ -802,3 +804,32 @@ tile.top_airconditioner.name=吸顶空调口
 tile.window10.name=十号窗
 tile.window11.name=十一号窗
 
+
+
+tile.gray_brick.name=灰石砖
+tile.playground_badminton_net.name=羽毛球网
+tile.playground_badminton_net_side.name=羽毛球网-边
+tile.playground_door_closed.name=球场围栏大门-关
+tile.playground_door_opened_left.name=球场围栏大门-左开
+tile.playground_door_opened_right.name=球场围栏大门-右开
+tile.playground_fence_down.name=球场围栏-下
+tile.playground_fence_down2.name=球场围栏-下2
+tile.playground_fence_down_clapboard.name=球场围栏-下-隔板
+tile.playground_fence_down_corner.name=球场围栏-下-转角
+tile.playground_fence_down_triangle.name=球场围栏-下-三转角
+tile.playground_fence_up.name=球场围栏-上
+tile.playground_fence_up2.name=球场围栏-上2
+tile.playground_fence_up_clapboard.name=球场围栏-上-隔板
+tile.playground_fence_up_corner.name=球场围栏-上-转角
+tile.playground_fence_up_triangle.name=球场围栏-上-三转角
+tile.playground_green.name=球场地面-绿
+tile.playground_light.name=球场大灯
+tile.playground_red.name=球场地面-红
+tile.playground_sign.name=球场-标识1
+tile.playground_sign2.name=球场-表示2
+tile.playground_volleyball_net.name=排球网
+tile.playground_volleyball_net_side.name=排网-边
+
+tile.sign_yty_yun.name=云天苑-云
+tile.sign_yty_tian.name=云天苑-天
+tile.sign_yty_yuan.name=云天苑-苑

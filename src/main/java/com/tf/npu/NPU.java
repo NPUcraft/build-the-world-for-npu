@@ -5,7 +5,9 @@ import com.tf.npu.Proxy.CommonProxy;
 import com.tf.npu.util.Reference;
 import com.tf.npu.util.Util;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.client.model.obj.OBJLoader;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -65,6 +67,14 @@ public class NPU {
             return new ItemStack(ItemLoader.Homework);
         }
     };
+
+    public static final CreativeTabs TEMPORARY = new CreativeTabs("temporary") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(Blocks.BEDROCK);
+        }
+    };
+
     @Instance
     public static NPU instance;
     @SidedProxy(serverSide = Reference.SERVER_PROXY_CLASS, clientSide = Reference.CLIENT_PROXY_CLASS)
@@ -72,6 +82,10 @@ public class NPU {
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
+        if (event.getSide().isClient())
+        {
+            OBJLoader.INSTANCE.addDomain("NPU");
+        }
         proxy.preInit(event);
         Util.logger = event.getModLog();
         Util.logger.warn("Project Npu Reconstruction!");

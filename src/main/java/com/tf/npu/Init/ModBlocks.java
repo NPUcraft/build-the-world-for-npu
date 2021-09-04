@@ -1,6 +1,7 @@
 package com.tf.npu.Init;
 
 import com.tf.npu.Blocks.BBed.*;
+import com.tf.npu.Blocks.XingCao.*;
 import com.tf.npu.Blocks.Bikes.Bike1;
 import com.tf.npu.Blocks.Bikes.Bike2;
 import com.tf.npu.Blocks.Bikes.Bike3;
@@ -815,4 +816,44 @@ public class ModBlocks {
 
     public static final Block WINDOW10 = new Window10();
     public static final Block WINDOW11 = new Window11();
+
+
+
+    public static final GrayBrick Gray_Brick = new GrayBrick();
+
+    public static final PlaygroundBadmintonNet Playground_Badminton_Net = new PlaygroundBadmintonNet();
+    public static final PlaygroundBadmintonNetSide Playground_Badminton_Net_Side = new PlaygroundBadmintonNetSide();
+
+    public static final PlaygroundDoorClosed Playground_Door_Closed = new PlaygroundDoorClosed();
+    public static final PlaygroundDoorOpenedLeft Playground_Door_Opened_Left = new PlaygroundDoorOpenedLeft();
+    public static final PlaygroundDoorOpenedRight Playground_Door_Opened_Right = new PlaygroundDoorOpenedRight();
+
+    public static final PlaygroundFenceDown Playground_Fence_Down = new PlaygroundFenceDown();
+    public static final PlaygroundFenceDown2 Playground_Fence_Down2 = new PlaygroundFenceDown2();
+    public static final PlaygroundFenceDownClapboard Playground_Fence_Down_Clapboard = new PlaygroundFenceDownClapboard();
+    public static final PlaygroundFenceDownCorner Playground_Fence_Down_Corner = new PlaygroundFenceDownCorner();
+    public static final PlaygroundFenceDownTriangle Playground_Fence_Down_Triangle = new PlaygroundFenceDownTriangle();
+    public static final PlaygroundFenceUp Playground_Fence_Up = new PlaygroundFenceUp();
+    public static final PlaygroundFenceUp2 Playground_Fence_Up2 = new PlaygroundFenceUp2();
+
+    public static final PlaygroundFenceUpClapboard Playground_Fence_Up_Clapboard = new PlaygroundFenceUpClapboard();
+    public static final PlaygroundFenceUpCorner Playground_Fence_Up_Corner = new PlaygroundFenceUpCorner();
+    public static final PlaygroundFenceUpTriangle Playground_Fence_Up_Triangle = new PlaygroundFenceUpTriangle();
+
+    public static final PlaygroundLight Playground_Light = new PlaygroundLight();
+
+    public static final PlaygroundGreen Playground_Green = new PlaygroundGreen();
+    public static final PlaygroundRed Playground_Red = new PlaygroundRed();
+
+    public static final PlaygroundSign Playground_Sign = new PlaygroundSign();
+    public static final PlaygroundSign2 Playground_Sign2 = new PlaygroundSign2();
+
+    public static final PlaygroundVolleyballNet Playground_Volleyball_Net = new PlaygroundVolleyballNet();
+    public static final PlaygroundVolleyballNetSide Playground_Volleyball_Net_Side = new PlaygroundVolleyballNetSide();
+
+    public static final Sign_YTY_Yun SIGN_YTY_YUN = new Sign_YTY_Yun();
+    public static final Sign_YTY_Tian SIGN_YTY_TIAN = new Sign_YTY_Tian();
+    public static final Sign_YTY_Yuan SIGN_YTY_YUAN = new Sign_YTY_Yuan();
+
+
 }

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:sign_yty_yuan"
+    },
+    "facing=east": {
+      "model": "npu:sign_yty_yuan",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:sign_yty_yuan",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:sign_yty_yuan",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}
