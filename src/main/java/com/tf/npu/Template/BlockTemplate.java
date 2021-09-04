@@ -38,7 +38,7 @@ public class BlockTemplate extends Block implements IHasModel {
 
     public BlockTemplate() {
         super(Material.ROCK);
-
+        this.setCreativeTab(NPU.TEMPORARY);
     }
 
     @Override
