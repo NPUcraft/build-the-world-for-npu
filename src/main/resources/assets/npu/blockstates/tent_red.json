@@ -1,0 +1,21 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "custom": { "flip-v": true },
+    "model": "npu:tent/tent_red/tent_red.obj"
+  },
+  "variants": {
+    "angel=0":  { "model": "npu:tent/tent_red/tent_red.obj" },
+    "angel=15":  { "model": "npu:tent/tent_red/tent_red_y15.obj" },
+    "angel=30":  { "model": "npu:tent/tent_red/tent_red_y30.obj" },
+    "angel=45":  { "model": "npu:tent/tent_red/tent_red_y45.obj" },
+    "angel=60":  { "model": "npu:tent/tent_red/tent_red_y60.obj" },
+    "angel=75":  { "model": "npu:tent/tent_red/tent_red_y75.obj" },
+    "angel=90":  { "model": "npu:tent/tent_red/tent_red.obj", "y": 90},
+    "angel=105":  { "model": "npu:tent/tent_red/tent_red_y15.obj", "y": 90},
+    "angel=120":  { "model": "npu:tent/tent_red/tent_red_y30.obj", "y": 90},
+    "angel=135":  { "model": "npu:tent/tent_red/tent_red_y45.obj", "y": 90},
+    "angel=150":  { "model": "npu:tent/tent_red/tent_red_y60.obj", "y": 90},
+    "angel=165":  { "model": "npu:tent/tent_red/tent_red_y75.obj", "y": 90}
+  }
+}

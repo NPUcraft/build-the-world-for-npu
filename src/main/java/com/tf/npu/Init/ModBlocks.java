@@ -70,6 +70,7 @@ import com.tf.npu.Blocks.Windows.Normal.*;
 import com.tf.npu.Blocks.Windows.White.Winw1;
 import com.tf.npu.Blocks.Windows.White.Winw2;
 import com.tf.npu.Blocks.Windows.White.Winw3;
+import com.tf.npu.Blocks.XingCao.Tents.*;
 import com.tf.npu.Blocks.YF.*;
 import net.minecraft.block.Block;
 
@@ -855,5 +856,8 @@ public class ModBlocks {
     public static final Sign_YTY_Tian SIGN_YTY_TIAN = new Sign_YTY_Tian();
     public static final Sign_YTY_Yuan SIGN_YTY_YUAN = new Sign_YTY_Yuan();
 
+    public static final TentBlue_2021baituan TENT_BLUE_2021_BAITUAN = new TentBlue_2021baituan();
+    public static final TentBlue TENT_BLUE = new TentBlue();
+    public static final TentRed TENT_RED = new TentRed();
 
 }

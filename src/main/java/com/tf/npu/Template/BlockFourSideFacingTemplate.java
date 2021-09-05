@@ -30,16 +30,9 @@ public class BlockFourSideFacingTemplate extends Block implements IHasModel {
     public static final AxisAlignedBB FULL_SHAPE = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
             1.0D, 1.0D, 1.0D);
 
+    public static final AxisAlignedBB NULL_SHPAE = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
+            0.0D, 0.0D, 0.0D);
 
-    @Override
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return FULL_SHAPE;
-    }
-
-//    @Override
-//    public AxisAlignedBB getSelectedBoundingBox(IBlockState p_getSelectedBoundingBox_1_, World p_getSelectedBoundingBox_2_, BlockPos p_getSelectedBoundingBox_3_) {
-//        return FULL_SHAPE;
-//    }
 
     @Override
     public boolean isOpaqueCube(IBlockState state) {
@@ -82,4 +75,5 @@ public class BlockFourSideFacingTemplate extends Block implements IHasModel {
                                 ItemStack stack) {
         worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
     }
+
 }
