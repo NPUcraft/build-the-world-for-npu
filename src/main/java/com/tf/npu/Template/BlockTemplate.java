@@ -22,20 +22,6 @@ import net.minecraft.world.World;
 
 public class BlockTemplate extends Block implements IHasModel {
 
-    public static final AxisAlignedBB FULL_SHAPE = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
-            1.0D, 1.0D, 1.0D);
-
-
-    @Override
-    public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return FULL_SHAPE;
-    }
-
-    @Override
-    public boolean isOpaqueCube(IBlockState state) {
-        return false;
-    }
-
     public BlockTemplate() {
         super(Material.ROCK);
         this.setCreativeTab(NPU.TEMPORARY);
