@@ -26,7 +26,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class FWell2 extends Block implements IHasModel {
-    //*******************不用管*********************
+
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
@@ -47,19 +47,14 @@ public class FWell2 extends Block implements IHasModel {
     public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
-    //*******************不用管*********************
 
-
-    //*******************碰撞箱，如果是1x1x1就删掉*********************
     public static final AxisAlignedBB FWell2_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return FWell2_AABB;
     }
-    //*******************碰撞箱，如果是1x1x1就删掉*********************
 
-    //*******************没有方向就删掉*********************
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
     @Override
@@ -84,11 +79,10 @@ public class FWell2 extends Block implements IHasModel {
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer,
                                 ItemStack stack) {
         worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
-        //*******************没有方向就删掉*********************
+
     }
 
 
-    //*******************完整方块就删掉*********************
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
@@ -98,25 +92,20 @@ public class FWell2 extends Block implements IHasModel {
     public boolean isFullCube(IBlockState state) {
         return false;
     }
-    //*******************完整方块就删掉*********************
 
 
     public FWell2() {
         super(Material.ROCK);
-        //*******************改*********************
+
         this.setUnlocalizedName("fwell2");
-        //*******************改*********************
+
         this.setRegistryName("npu:fwell2");
-        //*******************2.5F是黑曜石硬度*********************
+
         this.setHardness(2.5F);
-        //*******************改*********************
+
         this.setCreativeTab(NPU.MY_TAB3);
 
-
-        //*******************没有方向就删掉*********************
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-        //*******************没有方向就删掉*********************
-
 
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 
