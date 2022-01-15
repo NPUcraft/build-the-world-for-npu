@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:facility/trash_classification_medical"
+    },
+    "facing=east": {
+      "model": "npu:facility/trash_classification_medical",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:facility/trash_classification_medical",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:facility/trash_classification_medical",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

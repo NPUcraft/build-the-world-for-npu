@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:fence/fence_warningline_column_double90"
+    },
+    "facing=east": {
+      "model": "npu:fence/fence_warningline_column_double90",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:fence/fence_warningline_column_double90",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:fence/fence_warningline_column_double90",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

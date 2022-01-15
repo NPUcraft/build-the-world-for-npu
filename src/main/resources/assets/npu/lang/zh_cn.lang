@@ -852,3 +852,16 @@ tile.stair_cement_up_lightblue.name=浅蓝水泥缓坡楼梯-高段
 tile.stair_coment_lightblue.name=浅蓝水泥楼梯
 tile.playground_green2.name=塑胶场地-绿
 
+tile.playground_grass_dry.name=操场-干草地
+tile.roadblock_double.name=路障-宽2
+tile.desk_foldable.name=折叠桌
+tile.desk_foldable_covid19.name=折叠桌-核酸检测
+tile.desk_foldable_covid19_pc.name=折叠桌-核酸检测-电脑
+tile.fence_warningline.name=拦线
+tile.fence_warningline_column.name=拦线立柱
+tile.fence_warningline_column_single.name=拦线立柱-单连
+tile.fence_warningline_column_triple.name=拦线立柱-三连
+tile.fence_warningline_column_double90.name=拦线立柱-双连-90
+tile.fence_warningline_column_double180.name=拦线立柱-双连-180
+tile.chair_lightblue.name=蓝色板凳
+tile.trash_classification_medical.name=医疗废物垃圾桶

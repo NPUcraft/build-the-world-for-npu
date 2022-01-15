@@ -1,9 +1,6 @@
 package com.tf.npu;
 
-import com.tf.npu.Init.SUPER2FH.ModBlocks.ChairBlocks;
-import com.tf.npu.Init.SUPER2FH.ModBlocks.CubeBlocks;
-import com.tf.npu.Init.SUPER2FH.ModBlocks.RailingBlocks;
-import com.tf.npu.Init.SUPER2FH.ModBlocks.StairBlocks;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.*;
 import com.tf.npu.Items.ItemLoader;
 import com.tf.npu.Proxy.CommonProxy;
 import com.tf.npu.util.Reference;
@@ -72,6 +69,7 @@ public class NPU {
         }
     };
 
+//    ************************************SUPER2FH*********************************************
     public static final CreativeTabs TEMPORARY = new CreativeTabs("temporary") {
         @Override
         public ItemStack getTabIconItem() {
@@ -90,6 +88,27 @@ public class NPU {
         @Override
         public ItemStack getTabIconItem() {
             return new ItemStack(CubeBlocks.CEMENT_LIGHTBLUE);
+        }
+    };
+
+    public static final CreativeTabs DESK = new CreativeTabs("desk") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(DeskBlocks.DESK_FOLDABLE);
+        }
+    };
+
+    public static final CreativeTabs FACILITY = new CreativeTabs("facility") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(FacilityBlocks.TRASH_CLASSIFICATION_MEDICAL);
+        }
+    };
+
+    public static final CreativeTabs FENCE = new CreativeTabs("fence") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(FenceBlocks.ROADBLOCK_DOUBLE);
         }
     };
 

@@ -72,10 +72,7 @@ import com.tf.npu.Blocks.Windows.White.Winw2;
 import com.tf.npu.Blocks.Windows.White.Winw3;
 import com.tf.npu.Blocks.XingCao.Tents.*;
 import com.tf.npu.Blocks.YF.*;
-import com.tf.npu.Init.SUPER2FH.ModBlocks.ChairBlocks;
-import com.tf.npu.Init.SUPER2FH.ModBlocks.CubeBlocks;
-import com.tf.npu.Init.SUPER2FH.ModBlocks.RailingBlocks;
-import com.tf.npu.Init.SUPER2FH.ModBlocks.StairBlocks;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.*;
 import net.minecraft.block.Block;
 
 import java.util.ArrayList;
@@ -870,8 +867,12 @@ public class ModBlocks {
     public static List<Block> getAllBlocks() {
         BLOCKS.addAll(ChairBlocks.BLOCKS);
         BLOCKS.addAll(CubeBlocks.BLOCKS);
+        BLOCKS.addAll(DeskBlocks.BLOCKS);
+        BLOCKS.addAll(FacilityBlocks.BLOCKS);
+        BLOCKS.addAll(FenceBlocks.BLOCKS);
         BLOCKS.addAll(RailingBlocks.BLOCKS);
         BLOCKS.addAll(StairBlocks.BLOCKS);
+        BLOCKS.addAll(TemporaryBlocks.BLOCKS);
         return BLOCKS;
     }
 }

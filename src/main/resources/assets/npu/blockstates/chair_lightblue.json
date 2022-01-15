@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:chair/chair_lightblue"
+    },
+    "facing=east": {
+      "model": "npu:chair/chair_lightblue",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:chair/chair_lightblue",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:chair/chair_lightblue",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}
