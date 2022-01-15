@@ -33,6 +33,9 @@ public class BlockFourSideFacingTemplate extends Block implements IHasModel {
     public static final AxisAlignedBB NULL_SHPAE = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
             0.0D, 0.0D, 0.0D);
 
+    public static final AxisAlignedBB HALF_SHPAE = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
+            1.0D, 0.5D, 1.0D);
+
 
     @Override
     public boolean isOpaqueCube(IBlockState state) {

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:railing/railing_half"
+    },
+    "facing=east": {
+      "model": "npu:railing/railing_half",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:railing/railing_half",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:railing/railing_half",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

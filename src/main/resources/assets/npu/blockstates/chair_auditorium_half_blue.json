@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:chair/chair_auditorium_half_blue"
+    },
+    "facing=east": {
+      "model": "npu:chair/chair_auditorium_half_blue",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:chair/chair_auditorium_half_blue",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:chair/chair_auditorium_half_blue",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

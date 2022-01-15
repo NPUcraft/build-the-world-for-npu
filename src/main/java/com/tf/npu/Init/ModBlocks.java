@@ -72,6 +72,10 @@ import com.tf.npu.Blocks.Windows.White.Winw2;
 import com.tf.npu.Blocks.Windows.White.Winw3;
 import com.tf.npu.Blocks.XingCao.Tents.*;
 import com.tf.npu.Blocks.YF.*;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.ChairBlocks;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.CubeBlocks;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.RailingBlocks;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.StairBlocks;
 import net.minecraft.block.Block;
 
 import java.util.ArrayList;
@@ -79,6 +83,9 @@ import java.util.List;
 
 public class ModBlocks {
     public static final List<Block> BLOCKS = new ArrayList<>();
+
+
+
     public static final Block OBSIDIANBLOCK = new ObsidianBlock();
     public static final Block OBSIDIANFRAME = new ObsidianFrame();
     public static final Block CHAIR = new Chair();
@@ -860,4 +867,11 @@ public class ModBlocks {
     public static final TentBlue TENT_BLUE = new TentBlue();
     public static final TentRed TENT_RED = new TentRed();
 
+    public static List<Block> getAllBlocks() {
+        BLOCKS.addAll(ChairBlocks.BLOCKS);
+        BLOCKS.addAll(CubeBlocks.BLOCKS);
+        BLOCKS.addAll(RailingBlocks.BLOCKS);
+        BLOCKS.addAll(StairBlocks.BLOCKS);
+        return BLOCKS;
+    }
 }

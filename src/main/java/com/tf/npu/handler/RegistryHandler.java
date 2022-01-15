@@ -2,6 +2,10 @@ package com.tf.npu.handler;
 
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.ChairBlocks;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.CubeBlocks;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.RailingBlocks;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.StairBlocks;
 import com.tf.npu.interfaces.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -14,20 +18,23 @@ import java.util.List;
 
 @EventBusSubscriber
 public class RegistryHandler {
+    public static final List<Block> BLOCKS = ModBlocks.getAllBlocks();
+    public static final List<Item> ITEMS = ModItems.getAllItems();
+
     @SubscribeEvent
     public static void onItenRegistery(RegistryEvent.Register<Item> event) {
-        event.getRegistry().registerAll(ModItems.ITEMS.toArray(new Item[0]));
+        event.getRegistry().registerAll(ITEMS.toArray(new Item[0]));
     }
 
     @SubscribeEvent
     public static void onBlcokRegistery(RegistryEvent.Register<Block> event) {
-        event.getRegistry().registerAll(ModBlocks.BLOCKS.toArray(new Block[0]));
+        event.getRegistry().registerAll(BLOCKS.toArray(new Block[0]));
     }
 
     @SubscribeEvent
     public static void onModelRegistery(ModelRegistryEvent event) {
-        modelRegisteryHelper(ModItems.ITEMS);
-        modelRegisteryHelper(ModBlocks.BLOCKS);
+        modelRegisteryHelper(ITEMS);
+        modelRegisteryHelper(BLOCKS);
     }
 
     private static <T> void modelRegisteryHelper(List<T> list) {

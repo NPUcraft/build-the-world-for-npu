@@ -1,5 +1,9 @@
 package com.tf.npu;
 
+import com.tf.npu.Init.SUPER2FH.ModBlocks.ChairBlocks;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.CubeBlocks;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.RailingBlocks;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.StairBlocks;
 import com.tf.npu.Items.ItemLoader;
 import com.tf.npu.Proxy.CommonProxy;
 import com.tf.npu.util.Reference;
@@ -72,6 +76,34 @@ public class NPU {
         @Override
         public ItemStack getTabIconItem() {
             return new ItemStack(Blocks.BEDROCK);
+        }
+    };
+
+    public static final CreativeTabs CHAIR = new CreativeTabs("chair") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(ChairBlocks.CHAIR_AUDITORIUM_BLUE);
+        }
+    };
+
+    public static final CreativeTabs CUBE = new CreativeTabs("cube") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(CubeBlocks.CEMENT_LIGHTBLUE);
+        }
+    };
+
+    public static final CreativeTabs RAILING = new CreativeTabs("railing") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(RailingBlocks.RAILING_HALF);
+        }
+    };
+
+    public static final CreativeTabs STAIR = new CreativeTabs("stair") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(StairBlocks.STAIR_CEMENT_LIGHTBLUE);
         }
     };
 
