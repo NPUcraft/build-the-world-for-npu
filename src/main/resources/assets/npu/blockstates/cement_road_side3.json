@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:cube/cement_road_side3"
+    },
+    "facing=east": {
+      "model": "npu:cube/cement_road_side3",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:cube/cement_road_side3",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:cube/cement_road_side3",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

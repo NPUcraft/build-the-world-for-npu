@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:sundries/notebook_hero"
+    },
+    "facing=east": {
+      "model": "npu:sundries/notebook_hero",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:sundries/notebook_hero",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:sundries/notebook_hero",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

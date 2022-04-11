@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:rack/flag_cy"
+    },
+    "facing=east": {
+      "model": "npu:rack/flag_cy",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:rack/flag_cy",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:rack/flag_cy",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

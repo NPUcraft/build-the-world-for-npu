@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:sundries/party_membership_application"
+    },
+    "facing=east": {
+      "model": "npu:sundries/party_membership_application",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:sundries/party_membership_application",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:sundries/party_membership_application",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

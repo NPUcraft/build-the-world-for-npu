@@ -1,0 +1,53 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "npu:block/sundries/admission_letter_2021",
+		"particle": "npu:block/sundries/admission_letter_2021"
+	},
+	"elements": [
+		{
+			"from": [2, 0, 3],
+			"to": [14, 0.25, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0.125], "texture": "#0"},
+				"east": {"uv": [0, 0, 9, 0.5], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 9, 0.5], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 10.6875], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15.0625, 10, 15.8125, 10.5], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-80.49, 0.23, -179.89],
+			"translation": [0, 2, 7.75],
+			"scale": [0.81, 0.81, 0.81]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-84.91, -6.98, 171.56],
+			"translation": [-0.5, 0.75, 7.75],
+			"scale": [0.79, 0.79, 0.79]
+		},
+		"firstperson_righthand": {
+			"translation": [2, 2.75, 0],
+			"scale": [0.34, 0.34, 0.34]
+		},
+		"firstperson_lefthand": {
+			"translation": [3.5, 2.5, 0],
+			"scale": [0.3, 0.3, 0.3]
+		},
+		"gui": {
+			"rotation": [-90, 0, -180],
+			"translation": [0, 0.75, 0],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"head": {
+			"translation": [0, -5.75, 0]
+		},
+		"fixed": {
+			"translation": [0, 0, -7],
+			"scale": [0.33, 0.33, 0.33]
+		}
+	}
+}

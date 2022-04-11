@@ -1,0 +1,46 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "npu:block/rack/flag_cy",
+		"particle": "npu:block/rack/flag_cy"
+	},
+	"elements": [
+		{
+			"from": [-14.75, 0, 16],
+			"to": [30.75, 32, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 11.0625], "texture": "#0"},
+				"east": {"uv": [0, 0, 1, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 10.9375], "texture": "#0"},
+				"west": {"uv": [0, 0, 1, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 1], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 1], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.26, 0.26, 0.26]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.34, 0.34, 0.34]
+		},
+		"firstperson_righthand": {
+			"scale": [0.18, 0.18, 0.18]
+		},
+		"firstperson_lefthand": {
+			"scale": [0.21, 0.21, 0.21]
+		},
+		"gui": {
+			"translation": [0, -2.75, 0],
+			"scale": [0.32, 0.32, 0.32]
+		},
+		"head": {
+			"translation": [0, -5.75, 0]
+		},
+		"fixed": {
+			"translation": [0, 0, -7],
+			"scale": [0.33, 0.33, 0.33]
+		}
+	}
+}

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:sundries/pencil"
+    },
+    "facing=east": {
+      "model": "npu:sundries/pencil",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:sundries/pencil",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:sundries/pencil",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

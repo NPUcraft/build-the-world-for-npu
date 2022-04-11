@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:rack/blackboard_core_socialist_values"
+    },
+    "facing=east": {
+      "model": "npu:rack/blackboard_core_socialist_values",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:rack/blackboard_core_socialist_values",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:rack/blackboard_core_socialist_values",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

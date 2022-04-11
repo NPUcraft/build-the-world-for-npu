@@ -1,0 +1,67 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [512, 512],
+	"textures": {
+		"3": "npu:block/sundries/party_membership_application",
+		"particle": "npu:block/sundries/party_membership_application"
+	},
+	"elements": [
+		{
+			"from": [5, 0, 1],
+			"to": [12, 0.25, 11],
+			"faces": {
+				"north": {"uv": [0, 0, 3.5, 0.125], "texture": "#3"},
+				"east": {"uv": [0, 0, 5, 0.125], "texture": "#3"},
+				"south": {"uv": [0, 0, 3.5, 0.125], "texture": "#3"},
+				"west": {"uv": [0, 0, 5, 0.125], "texture": "#3"},
+				"up": {"uv": [0, 0, 3.5, 5], "texture": "#3"},
+				"down": {"uv": [0, 0, 3.5, 5], "texture": "#3"}
+			}
+		},
+		{
+			"from": [5.75, 0.35, 5.75],
+			"to": [11.25, 0.35, 7.75],
+			"faces": {
+				"north": {"uv": [0, 0, 3.5, 0], "texture": "#3"},
+				"east": {"uv": [0, 0, 1.5, 0], "texture": "#3"},
+				"south": {"uv": [0, 0, 3.5, 0], "texture": "#3"},
+				"west": {"uv": [0, 0, 1.5, 0], "texture": "#3"},
+				"up": {"uv": [8, 3.4375, 16, 6.5625], "rotation": 180, "texture": "#3"},
+				"down": {"uv": [0, 0, 3.5, 1.5], "rotation": 180, "texture": "#3"}
+			}
+		},
+		{
+			"from": [6.5, 0.35, 9],
+			"to": [10.75, 0.35, 10.5],
+			"faces": {
+				"north": {"uv": [0, 0, 3.5, 0], "texture": "#3"},
+				"east": {"uv": [0, 0, 1.5, 0], "texture": "#3"},
+				"south": {"uv": [0, 0, 3.5, 0], "texture": "#3"},
+				"west": {"uv": [0, 0, 1.5, 0], "texture": "#3"},
+				"up": {"uv": [8, 0, 16, 2.78125], "rotation": 180, "texture": "#3"},
+				"down": {"uv": [0, 0, 3.5, 1.5], "rotation": 180, "texture": "#3"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-87.74, -0.69, 179.72],
+			"translation": [0.25, 3.5, 6.5],
+			"scale": [0.72, 0.72, 0.72]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.53, 0.53, 0.53]
+		},
+		"firstperson_righthand": {
+			"translation": [3, 5.5, 0]
+		},
+		"firstperson_lefthand": {
+			"translation": [3.5, 5.5, 0]
+		},
+		"gui": {
+			"rotation": [-90, 0, -180],
+			"translation": [0.75, 2.75, 0],
+			"scale": [1.41, 1.41, 1.41]
+		}
+	}
+}
