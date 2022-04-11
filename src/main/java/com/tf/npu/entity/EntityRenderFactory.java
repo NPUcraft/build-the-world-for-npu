@@ -7,8 +7,6 @@ import net.minecraftforge.fml.client.registry.IRenderFactory;
 
 /**
  * @author AoXiang_Soar
- * <p>
- * һ�������࣬����Ķ�
  */
 public class EntityRenderFactory<E extends Entity> implements IRenderFactory<E> {
     private final Class<? extends Render<E>> renderClass;

@@ -16,28 +16,20 @@ import javax.annotation.Nullable;
 
 /**
  * @author AoXiang_Soar
- * <p>
- * ʵ����
  */
 public class SchoolBus extends EntityLiving {
 
     public SchoolBus(World worldIn) {
         super(worldIn);
-        //������ײ���С����һ�������ǳ����ڶ��������Ǹ߶�
         this.setSize(2.0F, 2.0F);
     }
 
-    /**
-     * ������ʱ�������˴�����Ϊ����һ���ɻ���Ʒ
-     */
     public void onDeath(DamageSource cause) {
         ItemStack plane = new ItemStack(ItemLoader.SchoolBus, 1);
         this.entityDropItem(plane, 1.0F);
     }
 
-    /**
-     * ����ʵ���������ԣ��˴���Ѫ������Ϊ1
-     */
+
     protected void applyEntityAttributes() {
         super.applyEntityAttributes();
         this.getEntityAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(20.0D);
@@ -45,29 +37,24 @@ public class SchoolBus extends EntityLiving {
 
     /**
      * @author AoXiang_Soar
-     * <p>
-     * ģ���࣬������ඨ�����ʵ��ģ��
-     * �������ֵ�Plane���滻Ϊ�ⲿ�༴��
      */
     public static class Renderer extends RenderLiving<SchoolBus> {
         public Renderer(RenderManager p_i47187_1_) {
-            //�ڶ��������������ģ������󣬵�������������Ӱ��С
+
             super(p_i47187_1_, new ModelSchoolBus(), 0.5F);
         }
 
-        //������ͼλ��
+
         private static final ResourceLocation TEX = new ResourceLocation("npu:textures/entity/schoolbus.png");
 
         @Override
-        /**
-         * ��ȡ��ͼ
-         */
+
         protected ResourceLocation getEntityTexture(SchoolBus entity) {
             return TEX;
         }
     }
 
-    //����������������Ķ���Ŀ���Ƿ�ֹʵ�屻����
+
     @Nullable
     public IEntityLivingData onInitialSpawn(DifficultyInstance difficulty, @Nullable IEntityLivingData livingdata) {
         return super.onInitialSpawn(difficulty, livingdata);

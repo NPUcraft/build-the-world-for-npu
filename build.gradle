@@ -11,7 +11,7 @@ apply plugin: 'net.minecraftforge.gradle.forge'
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
-version = "3.22.0115"
+version = "3.22.0411"
 group = "com.tf.npu" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "BuildTheWorldForNPU"
 
@@ -32,6 +32,11 @@ minecraft {
     mappings = "snapshot_20171003"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
+
+repositories {
+    maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+}
+
 
 dependencies {
     // you may put jars on which you depend on in ./libs
@@ -54,6 +59,10 @@ dependencies {
     // for more info...
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
+//    deobfCompile 'software.bernie.geckolib:forge-1.12.2-geckolib:3.0.21'
+//    deobfProvided 'software.bernie.geckolib:forge-1.12.2-geckolib:3.0.21'
+//    implementation fg.deobf('software.bernie.geckolib:forge-1.12.2-geckolib:3.0.21')
+    compile 'software.bernie.geckolib:forge-1.12.2-geckolib:3.0.21'
 
 }
 

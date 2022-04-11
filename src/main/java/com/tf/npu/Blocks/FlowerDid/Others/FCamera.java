@@ -14,7 +14,7 @@ import net.minecraft.item.ItemBlock;
 import net.minecraft.util.IStringSerializable;
 
 public class FCamera extends Block implements IHasModel {
-    //*******************不用管*********************
+    
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
@@ -35,10 +35,10 @@ public class FCamera extends Block implements IHasModel {
     public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
-    //*******************不用管*********************
+    
 
 
-    //*******************完整方块就删掉*********************
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
@@ -48,18 +48,18 @@ public class FCamera extends Block implements IHasModel {
     public boolean isFullCube(IBlockState state) {
         return false;
     }
-    //*******************完整方块就删掉*********************
+
 
 
     public FCamera() {
         super(Material.ROCK);
-        //*******************改*********************
+
         this.setUnlocalizedName("fcamera");
-        //*******************改*********************
+
         this.setRegistryName("npu:fcamera");
-        //*******************2.5F是黑曜石硬度*********************
+
         this.setHardness(2.5F);
-        //*******************改*********************
+
         this.setCreativeTab(NPU.MY_TAB3);
 
 

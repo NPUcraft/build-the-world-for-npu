@@ -70,6 +70,7 @@ public class NPU {
     };
 
 //    ************************************SUPER2FH*********************************************
+
     public static final CreativeTabs TEMPORARY = new CreativeTabs("temporary") {
         @Override
         public ItemStack getTabIconItem() {
@@ -77,6 +78,9 @@ public class NPU {
         }
     };
 
+    /**
+     * 椅子
+     */
     public static final CreativeTabs CHAIR = new CreativeTabs("chair") {
         @Override
         public ItemStack getTabIconItem() {
@@ -84,6 +88,9 @@ public class NPU {
         }
     };
 
+    /**
+     * 方块
+     */
     public static final CreativeTabs CUBE = new CreativeTabs("cube") {
         @Override
         public ItemStack getTabIconItem() {
@@ -91,13 +98,9 @@ public class NPU {
         }
     };
 
-    public static final CreativeTabs DESK = new CreativeTabs("desk") {
-        @Override
-        public ItemStack getTabIconItem() {
-            return new ItemStack(DeskBlocks.DESK_FOLDABLE);
-        }
-    };
-
+    /**
+     * 设施
+     */
     public static final CreativeTabs FACILITY = new CreativeTabs("facility") {
         @Override
         public ItemStack getTabIconItem() {
@@ -105,6 +108,19 @@ public class NPU {
         }
     };
 
+    /**
+     * 桌子
+     */
+    public static final CreativeTabs DESK = new CreativeTabs("desk") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(DeskBlocks.DESK_FOLDABLE);
+        }
+    };
+
+    /**
+     * 障碍
+     */
     public static final CreativeTabs FENCE = new CreativeTabs("fence") {
         @Override
         public ItemStack getTabIconItem() {
@@ -112,6 +128,26 @@ public class NPU {
         }
     };
 
+    public static  final CreativeTabs NPUARMOR = new CreativeTabs("npu_armor") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(TemporaryBlocks.MASK_MEDICAL);
+        }
+    };
+
+    /**
+     * 展示相关
+     */
+    public static final CreativeTabs RACK = new CreativeTabs("rack") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(RackBlocks.FLAG_CY);
+        }
+    };
+
+    /**
+     * 栏杆
+     */
     public static final CreativeTabs RAILING = new CreativeTabs("railing") {
         @Override
         public ItemStack getTabIconItem() {
@@ -119,12 +155,42 @@ public class NPU {
         }
     };
 
+    /**
+     * 楼梯
+     */
     public static final CreativeTabs STAIR = new CreativeTabs("stair") {
         @Override
         public ItemStack getTabIconItem() {
             return new ItemStack(StairBlocks.STAIR_CEMENT_LIGHTBLUE);
         }
     };
+
+    /**
+     * 杂物
+     */
+    public static final CreativeTabs SUNDRIES = new CreativeTabs("sundries") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(SundriesBlocks.ADMISSION_LETTER_2021);
+        }
+    };
+
+    /**
+     * 车辆
+     */
+    public static final CreativeTabs VEHICLE = new CreativeTabs("vehicle") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(VehicleBlocks.BIKE1);
+        }
+    };
+
+
+
+
+
+
+
 
     @Instance
     public static NPU instance;

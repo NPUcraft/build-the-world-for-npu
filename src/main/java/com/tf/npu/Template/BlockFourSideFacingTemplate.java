@@ -79,4 +79,10 @@ public class BlockFourSideFacingTemplate extends Block implements IHasModel {
         worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
     }
 
+
+    @Override
+    public AxisAlignedBB getCollisionBoundingBox(IBlockState p_getCollisionBoundingBox_1_, IBlockAccess p_getCollisionBoundingBox_2_, BlockPos p_getCollisionBoundingBox_3_) {
+        return NULL_SHPAE;
+    }
+
 }

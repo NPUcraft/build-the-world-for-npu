@@ -26,7 +26,7 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class FWell extends Block implements IHasModel {
-    //*******************不用管*********************
+    
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 

@@ -37,6 +37,18 @@ itemGroup.windoor=门窗相关方块
 itemGroup.sign=门牌类相关图标
 
 itemGroup.temporary=待分类
+itemGroup.chair=椅子
+itemGroup.cube=方块与半砖
+itemGroup.desk=桌子
+itemGroup.fence=障碍
+itemGroup.npu_armor=装备
+itemGroup.rack=展示相关
+itemGroup.railing=围栏
+itemGroup.stair=楼梯
+itemGroup.sundries=杂物
+itemGroup.vehicle=车辆
+
+
 
 tile.obsidianblock.name=黑曜石块
 tile.obsidianframe.name=黑曜石框架
@@ -865,3 +877,15 @@ tile.fence_warningline_column_double90.name=拦线立柱-双连-90
 tile.fence_warningline_column_double180.name=拦线立柱-双连-180
 tile.chair_lightblue.name=蓝色板凳
 tile.trash_classification_medical.name=医疗废物垃圾桶
+
+
+tile.emblem_cy.name=团徽（物品）
+tile.cement_road_side3.name=水泥路面+路缘石(灰)
+tile.pencil.name=道具笔
+tile.blackboard_core_socialist_values.name=社会主义核心价值观24字
+tile.blackboard_anti_japanese_hero.name=抗日小英雄-粉笔字
+tile.desk_wood2.name=木课桌椅
+tile.party_membership_application.name=入党申请书
+tile.flag_cy.name=团旗
+tile.notebook_hero.name=我也要当小英雄笔记
+tile.admission_letter_2021.name=西工大录取通知书-2021

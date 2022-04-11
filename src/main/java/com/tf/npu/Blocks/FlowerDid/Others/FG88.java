@@ -17,7 +17,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
 public class FG88 extends Block implements IHasModel {
-    //*******************不用管*********************
+
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
@@ -39,7 +39,7 @@ public class FG88 extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    //*******************不用管*********************
+
     public static final AxisAlignedBB FHallScreen2_AABB = new AxisAlignedBB(0.0D, 0.5D, 0.0D, 1.0D, 1.0D, 1.0D);
 
     @Override
@@ -48,7 +48,7 @@ public class FG88 extends Block implements IHasModel {
     }
 
 
-    //*******************完整方块就删掉*********************
+    
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
@@ -58,18 +58,18 @@ public class FG88 extends Block implements IHasModel {
     public boolean isFullCube(IBlockState state) {
         return false;
     }
-    //*******************完整方块就删掉*********************
+    
 
 
     public FG88() {
         super(Material.ROCK);
-        //*******************改*********************
+        
         this.setUnlocalizedName("fg88");
-        //*******************改*********************
+        
         this.setRegistryName("npu:fg88");
-        //*******************2.5F是黑曜石硬度*********************
+        
         this.setHardness(2.5F);
-        //*******************改*********************
+        
         this.setCreativeTab(NPU.MY_TAB1);
 
 

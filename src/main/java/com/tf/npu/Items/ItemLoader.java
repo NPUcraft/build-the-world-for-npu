@@ -8,13 +8,11 @@ import net.minecraftforge.fml.common.registry.ForgeRegistries;
 
 /**
  * @author AoXiang_Soar
- * <p>
  * You can loader your items in this class.
- * �������ע�������Ʒ
  */
 public class ItemLoader {
     //Write item objects here
-    //������Ʒ����
+
     public static Item GoldenEgg = new GoldenEgg();
     public static Item Plane = new Plane();
     public static Item SchoolBus = new SchoolBus();
@@ -28,10 +26,9 @@ public class ItemLoader {
     public static Item RubPaper = new RubPaper();
     public static Item ItemRubbishSword = new ItemRubbishSword();
     public static Item Homework = new Homework();
+//    public static Item EmblemCY = new EmblemCY();
 
-    /**
-     * ע����Ʒ����������Ʒ����
-     */
+
     public ItemLoader() {
         register(GoldenEgg);
         register(Plane);
@@ -46,11 +43,10 @@ public class ItemLoader {
         register(RubPaper);
         register(ItemRubbishSword);
         register(Homework);
+//        register(EmblemCY);
     }
 
-    /**
-     * ע����Ʒ��ģ�ͣ���������Ʒ����
-     */
+
     public static void registerRenders() {
         registerRender(GoldenEgg);
         registerRender(Plane);
@@ -65,6 +61,7 @@ public class ItemLoader {
         registerRender(RubPaper);
         registerRender(ItemRubbishSword);
         registerRender(Homework);
+//        registerRender(EmblemCY);
     }
 
     private static void register(Item item) {

@@ -1,13 +1,13 @@
 package com.tf.npu.Blocks.Decorations;
 
-import javax.annotation.Nullable;
-
 import net.minecraft.nbt.NBTTagCompound;
 import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+
+import javax.annotation.Nullable;
 
 public class TileRealtimeClock_L extends TileEntity {
 
@@ -32,7 +32,7 @@ public class TileRealtimeClock_L extends TileEntity {
     @Override
     public NBTTagCompound writeToNBT(NBTTagCompound tag) {
         super.writeToNBT(tag);
-        // ¥¢¥¤¥Æ¥à¤Î•ø¤­Þz¤ß
+        // ï¿½ï¿½ï¿½ï¿½ï¿½Æ¥ï¿½Î•ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½
         tag.setFloat("size", size);
         return tag;
     }

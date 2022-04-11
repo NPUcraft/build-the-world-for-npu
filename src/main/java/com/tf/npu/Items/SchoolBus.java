@@ -15,12 +15,9 @@ public class SchoolBus extends Item {
         setUnlocalizedName("schoolbus");
     }
 
-    /**
-     * �����Ҽ���Ʒʱ����Ϊ
-     */
+
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
-        //********************************************����ʵ��***************************************************
         com.tf.npu.entity.SchoolBus entity = new com.tf.npu.entity.SchoolBus(worldIn);
         if (!worldIn.isRemote) {
             entity.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, playerIn.rotationYaw, 0.0F);
@@ -29,7 +26,7 @@ public class SchoolBus extends Item {
                 itemstack.shrink(1);
             }
         }
-        //*******************************************************************************************************
+
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
     }
 }

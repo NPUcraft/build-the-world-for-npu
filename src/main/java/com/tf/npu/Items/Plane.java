@@ -1,7 +1,6 @@
 package com.tf.npu.Items;
 
 import com.tf.npu.NPU;
-
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -16,12 +15,10 @@ public class Plane extends Item {
         setUnlocalizedName("plane");
     }
 
-    /**
-     * �����Ҽ���Ʒʱ����Ϊ
-     */
+
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
-        //********************************************����ʵ��***************************************************
+
         com.tf.npu.entity.Plane entity = new com.tf.npu.entity.Plane(worldIn);
         if (!worldIn.isRemote) {
             entity.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, playerIn.rotationYaw, 0.0F);
@@ -30,7 +27,7 @@ public class Plane extends Item {
                 itemstack.shrink(1);
             }
         }
-        //*******************************************************************************************************
+
         return new ActionResult<ItemStack>(EnumActionResult.SUCCESS, itemstack);
     }
 }

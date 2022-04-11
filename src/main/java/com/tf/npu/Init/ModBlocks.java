@@ -1,11 +1,6 @@
 package com.tf.npu.Init;
 
 import com.tf.npu.Blocks.BBed.*;
-import com.tf.npu.Blocks.XingCao.*;
-import com.tf.npu.Blocks.Bikes.Bike1;
-import com.tf.npu.Blocks.Bikes.Bike2;
-import com.tf.npu.Blocks.Bikes.Bike3;
-import com.tf.npu.Blocks.Bikes.Bike4;
 import com.tf.npu.Blocks.Camera.Cam1;
 import com.tf.npu.Blocks.Camera.Cam2;
 import com.tf.npu.Blocks.Ceiling.*;
@@ -50,8 +45,9 @@ import com.tf.npu.Blocks.Platform.*;
 import com.tf.npu.Blocks.Railings.*;
 import com.tf.npu.Blocks.Road.CemH;
 import com.tf.npu.Blocks.Road.CemT;
+import com.tf.npu.Blocks.SUPER2FH.Item.EmblemCY;
+import com.tf.npu.Blocks.SUPER2FH.Stair.*;
 import com.tf.npu.Blocks.Signs.*;
-import com.tf.npu.Blocks.Stair.*;
 import com.tf.npu.Blocks.StarSignPack.*;
 import com.tf.npu.Blocks.StreetLamp.SL1;
 import com.tf.npu.Blocks.StreetLamp.SL2;
@@ -70,7 +66,10 @@ import com.tf.npu.Blocks.Windows.Normal.*;
 import com.tf.npu.Blocks.Windows.White.Winw1;
 import com.tf.npu.Blocks.Windows.White.Winw2;
 import com.tf.npu.Blocks.Windows.White.Winw3;
-import com.tf.npu.Blocks.XingCao.Tents.*;
+import com.tf.npu.Blocks.XingCao.*;
+import com.tf.npu.Blocks.XingCao.Tents.TentBlue;
+import com.tf.npu.Blocks.XingCao.Tents.TentBlue_2021baituan;
+import com.tf.npu.Blocks.XingCao.Tents.TentRed;
 import com.tf.npu.Blocks.YF.*;
 import com.tf.npu.Init.SUPER2FH.ModBlocks.*;
 import net.minecraft.block.Block;
@@ -146,13 +145,7 @@ public class ModBlocks {
     public static final Block WGWALL3 = new WGWall3();
     public static final Block WGWALL4 = new WGWall4();
 
-    public static final Block STAIR = new Stair();
-    public static final Block STAIR1 = new Stair1();
-    public static final Block STAIR2 = new Stair2();
-    public static final Block STAIR3 = new Stair3();
-    public static final Block STAIR4 = new Stair4();
-    public static final Block STAIR5 = new Stair5();
-    public static final Block STAIR6 = new Stair6();
+
 
 
     public static final Block RAILING = new Railing().setLightLevel(0.1F);
@@ -325,8 +318,7 @@ public class ModBlocks {
     public static final Block G21A = new G21a();
     public static final Block G21B = new G21b();
     public static final Block G21C = new G21c();
-    public static final Block G22 = new G22().setLightLevel(0.1F);
-    public static final Block G23 = new G23().setLightLevel(0.1F);
+
     public static final Block G24 = new G24();
     public static final Block G25 = new G25();
     public static final Block G26 = new G26();
@@ -343,12 +335,9 @@ public class ModBlocks {
     public static final Block G37 = new G37();
     public static final Block G38 = new G38();
     public static final Block G39 = new G39();
-    public static final Block G40 = new G40();
-    public static final Block G41 = new G41();
+
     public static final Block G42 = new G42();
-    public static final Block G43 = new G43();
-    public static final Block G44 = new G44();
-    public static final Block G45 = new G45();
+
     public static final Block G46 = new G46();
     public static final Block G47 = new G47();
     public static final Block G48 = new G48();
@@ -370,10 +359,7 @@ public class ModBlocks {
     public static final Block FG60 = new FG60();
     public static final Block FG61 = new FG61();
     public static final Block FG562 = new FG62();
-    public static final Block FG63 = new FG63();
-    public static final Block FG64 = new FG64();
-    public static final Block FG65 = new FG65();
-    public static final Block FG66 = new FG66();
+
     public static final Block FG67 = new FG67();
     public static final Block FG68 = new FG68();
     public static final Block FG69 = new FG69();
@@ -424,10 +410,6 @@ public class ModBlocks {
     public static final Block QH = new QH();
     public static final Block CCH = new CCH();
 
-    public static final Block BIKE1 = new Bike1();
-    public static final Block BIKE2 = new Bike2();
-    public static final Block BIKE3 = new Bike3();
-    public static final Block BIKE4 = new Bike4();
 
     public static final Block TELE = new Tele();
     public static final Block BOARD = new Board();
@@ -864,15 +846,19 @@ public class ModBlocks {
     public static final TentBlue TENT_BLUE = new TentBlue();
     public static final TentRed TENT_RED = new TentRed();
 
+
     public static List<Block> getAllBlocks() {
+        BLOCKS.addAll(TemporaryBlocks.BLOCKS);
         BLOCKS.addAll(ChairBlocks.BLOCKS);
         BLOCKS.addAll(CubeBlocks.BLOCKS);
         BLOCKS.addAll(DeskBlocks.BLOCKS);
         BLOCKS.addAll(FacilityBlocks.BLOCKS);
         BLOCKS.addAll(FenceBlocks.BLOCKS);
+        BLOCKS.addAll(RackBlocks.BLOCKS);
         BLOCKS.addAll(RailingBlocks.BLOCKS);
         BLOCKS.addAll(StairBlocks.BLOCKS);
-        BLOCKS.addAll(TemporaryBlocks.BLOCKS);
+        BLOCKS.addAll(SundriesBlocks.BLOCKS);
+        BLOCKS.addAll(VehicleBlocks.BLOCKS);
         return BLOCKS;
     }
 }

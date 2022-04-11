@@ -1,7 +1,6 @@
 package com.tf.npu.Blocks.SUPER2FH.Facility;
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.FacilityBlocks;
-import com.tf.npu.Init.SUPER2FH.ModItems.FacilityItems;
 import com.tf.npu.NPU;
 import com.tf.npu.Template.BlockFourSideFacingTemplate;
 import net.minecraft.block.state.IBlockState;
@@ -16,7 +15,7 @@ public class TrashClassificationMedical extends BlockFourSideFacingTemplate {
         this.setUnlocalizedName("trash_classification_medical");
         this.setRegistryName("npu:trash_classification_medical");
         this.setCreativeTab(NPU.FACILITY);
-        FacilityItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        FacilityBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         FacilityBlocks.BLOCKS.add(this);
     }
 

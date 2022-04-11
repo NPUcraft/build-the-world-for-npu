@@ -88,7 +88,7 @@ public class FG80 extends Block implements IHasModel {
     public boolean isFullCube(IBlockState state) {
         return false;
     }
-    //*******************完整方块就删掉*********************
+
 
 
     public FG80() {

@@ -17,7 +17,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
 public class FLight3 extends Block implements IHasModel {
-    //*******************不用管*********************
+
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
@@ -38,10 +38,10 @@ public class FLight3 extends Block implements IHasModel {
     public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
-    //*******************不用管*********************
 
 
-    //*******************完整方块就删掉*********************
+
+
     @Override
     public boolean isOpaqueCube(IBlockState state) {
         return false;
@@ -51,7 +51,7 @@ public class FLight3 extends Block implements IHasModel {
     public boolean isFullCube(IBlockState state) {
         return false;
     }
-    //*******************完整方块就删掉*********************
+
 
 
     public static final AxisAlignedBB FHallScreen2_AABB = new AxisAlignedBB(0.3D, 0.0D, 0.3D, 0.7D, 1.0D, 0.7D);
@@ -64,13 +64,13 @@ public class FLight3 extends Block implements IHasModel {
 
     public FLight3() {
         super(Material.ROCK);
-        //*******************改*********************
+
         this.setUnlocalizedName("flight3");
-        //*******************改*********************
+
         this.setRegistryName("npu:flight3");
-        //*******************2.5F是黑曜石硬度*********************
+
         this.setHardness(2.5F);
-        //*******************改*********************
+
         this.setCreativeTab(NPU.MY_TAB3);
 
 

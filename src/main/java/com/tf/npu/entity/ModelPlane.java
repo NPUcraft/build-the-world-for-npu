@@ -6,10 +6,7 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
 
-/**
- * ģ���࣬ʹ��WorkBeach����
- * �ǵü��ϰ������͵�����Ӧ�İ�
- */
+
 public class ModelPlane extends ModelBase {
     private final ModelRenderer bone;
 

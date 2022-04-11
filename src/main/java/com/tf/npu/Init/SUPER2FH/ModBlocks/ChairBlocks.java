@@ -1,14 +1,15 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
 import com.tf.npu.Blocks.SUPER2FH.Chair.*;
-import com.tf.npu.Init.ModBlocks;
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ChairBlocks {
     public static final List<Block> BLOCKS = new ArrayList<>();
+    public static final List<Item> ITEMS = new ArrayList<>();
 
     public static final ChairAuditoriumBlue CHAIR_AUDITORIUM_BLUE = new ChairAuditoriumBlue();
     public static final ChairAuditoriumHalfBlue CHAIR_AUDITORIUM_HALF_BLUE = new ChairAuditoriumHalfBlue();

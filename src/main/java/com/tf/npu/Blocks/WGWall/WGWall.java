@@ -2,8 +2,8 @@ package com.tf.npu.Blocks.WGWall;
 
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
-import com.tf.npu.interfaces.IHasModel;
 import com.tf.npu.NPU;
+import com.tf.npu.interfaces.IHasModel;
 import com.tf.npu.util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

@@ -2,10 +2,6 @@ package com.tf.npu.handler;
 
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
-import com.tf.npu.Init.SUPER2FH.ModBlocks.ChairBlocks;
-import com.tf.npu.Init.SUPER2FH.ModBlocks.CubeBlocks;
-import com.tf.npu.Init.SUPER2FH.ModBlocks.RailingBlocks;
-import com.tf.npu.Init.SUPER2FH.ModBlocks.StairBlocks;
 import com.tf.npu.interfaces.IHasModel;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

@@ -5,10 +5,10 @@ import com.tf.npu.Init.ModItems;
 import com.tf.npu.NPU;
 import com.tf.npu.interfaces.IHasModel;
 import com.tf.npu.util.InitHelper;
-
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
+import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.Item;
@@ -19,7 +19,6 @@ import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
-import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.world.World;
 
 public class Gun extends Block implements IHasModel {

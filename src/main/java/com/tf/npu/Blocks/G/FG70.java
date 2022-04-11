@@ -41,56 +41,56 @@ public class FG70 extends Block implements IHasModel {
     }
 
 
-    //*******************碰撞箱*********************
+    
     public static final AxisAlignedBB FG70_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         return FG70_AABB;
     }
-    //*******************碰撞箱*********************
+    
 
-    //*******************不用管*********************
+
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
     @Override
     protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
     }
-    //*******************不用管*********************
 
 
-    //*******************不用管*********************
+
+
     @Override
     public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
-    //*******************不用管*********************
+
 
 
     public FG70() {
         super(Material.ROCK);
-        //*******************改*********************
+        
         this.setUnlocalizedName("fg70");
-        //*******************改*********************
+        
         this.setRegistryName("npu:fg70");
-        //*******************2.5F是黑曜石硬度*********************
+        
         this.setHardness(2.5F);
-        //*******************改*********************
+        
         this.setCreativeTab(NPU.MY_TAB1);
-        //*******************不用管*********************
+
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
 
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
 
         ModBlocks.BLOCKS.add(this);
 
-        //*******************不用管*********************
+
 
 
     }
 
-    //*******************不用管*********************
+
     @Override
     public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
@@ -108,6 +108,6 @@ public class FG70 extends Block implements IHasModel {
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer,
                                 ItemStack stack) {
         worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
-        //*******************不用管*********************
+
     }
 }

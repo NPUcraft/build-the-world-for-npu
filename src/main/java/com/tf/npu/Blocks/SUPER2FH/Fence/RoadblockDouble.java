@@ -1,7 +1,6 @@
 package com.tf.npu.Blocks.SUPER2FH.Fence;
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.FenceBlocks;
-import com.tf.npu.Init.SUPER2FH.ModItems.FenceItems;
 import com.tf.npu.NPU;
 import com.tf.npu.Template.BlockFourSideFacingTemplate;
 import net.minecraft.block.state.IBlockState;
@@ -16,7 +15,7 @@ public class RoadblockDouble extends BlockFourSideFacingTemplate {
         this.setUnlocalizedName("roadblock_double");
         this.setRegistryName("npu:roadblock_double");
         this.setCreativeTab(NPU.FENCE);
-        FenceItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        FenceBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         FenceBlocks.BLOCKS.add(this);
     }
 

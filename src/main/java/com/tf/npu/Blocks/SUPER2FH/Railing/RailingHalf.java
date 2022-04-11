@@ -1,7 +1,6 @@
 package com.tf.npu.Blocks.SUPER2FH.Railing;
 
-import com.tf.npu.Init.ModBlocks;
-import com.tf.npu.Init.ModItems;
+import com.tf.npu.Init.SUPER2FH.ModBlocks.RailingBlocks;
 import com.tf.npu.NPU;
 import com.tf.npu.Template.BlockFourSideFacingTemplate;
 import net.minecraft.block.state.IBlockState;
@@ -16,8 +15,8 @@ public class RailingHalf extends BlockFourSideFacingTemplate {
         this.setUnlocalizedName("railing_half");
         this.setRegistryName("npu:railing_half");
         this.setCreativeTab(NPU.RAILING);
-        ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
-        ModBlocks.BLOCKS.add(this);
+        RailingBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
+        RailingBlocks.BLOCKS.add(this);
     }
 
     @Override
