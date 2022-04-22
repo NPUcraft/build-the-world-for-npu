@@ -1,9 +1,6 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
-import com.tf.npu.Blocks.SUPER2FH.Sundries.AdmissionLetter2021;
-import com.tf.npu.Blocks.SUPER2FH.Sundries.NotebookHero;
-import com.tf.npu.Blocks.SUPER2FH.Sundries.PartyMembershipApplication;
-import com.tf.npu.Blocks.SUPER2FH.Sundries.Pencil;
+import com.tf.npu.Blocks.SUPER2FH.Sundries.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
@@ -18,4 +15,5 @@ public class SundriesBlocks {
     public static final NotebookHero NOTEBOOK_HERO = new NotebookHero();
     public static final PartyMembershipApplication PARTY_MEMBERSHIP_APPLICATION = new PartyMembershipApplication();
     public static final Pencil PENCIL = new Pencil();
+    public static final PhotoFrameSworn PHOTO_FRAME_SWORN = new PhotoFrameSworn();
 }

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:sundries/photo_frame_sworn"
+    },
+    "facing=east": {
+      "model": "npu:sundries/photo_frame_sworn",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:sundries/photo_frame_sworn",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:sundries/photo_frame_sworn",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}
