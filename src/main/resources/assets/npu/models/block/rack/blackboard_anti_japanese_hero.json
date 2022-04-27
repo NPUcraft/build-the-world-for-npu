@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "npu:block/rack/blackboard_anti_japanese_hero",
-		"particle": "npu:block/rack/blackboard_anti_japanese_hero"
+		"0": "npu:block/rack/blackboard_leifeng",
+		"particle": "npu:block/rack/blackboard_leifeng"
 	},
 	"elements": [
 		{
