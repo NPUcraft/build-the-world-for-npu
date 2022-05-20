@@ -22,7 +22,7 @@ NPUcraft建筑服专属mod
 
 1.  代码作者：TeachingFeelings
 2.  协作者：翱翔——Soar
-3.  其他作者：Mario_RainFlower
+3.  其他作者：Mario_RainFlower,SUPER2FH
 
 
 #### 说明
