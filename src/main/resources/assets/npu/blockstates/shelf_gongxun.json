@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:furniture/shelf_gongxun"
+    },
+    "facing=east": {
+      "model": "npu:furniture/shelf_gongxun",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:furniture/shelf_gongxun",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:furniture/shelf_gongxun",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

@@ -21,6 +21,9 @@ public class ModItems {
         ITEMS.addAll(StairBlocks.ITEMS);
         ITEMS.addAll(SundriesBlocks.ITEMS);
         ITEMS.addAll(VehicleBlocks.ITEMS);
+        ITEMS.addAll(FurnitureBlocks.ITEMS);
+        ITEMS.addAll(LightBlocks.ITEMS);
+        ITEMS.addAll(MachineBlocks.ITEMS);
         return ITEMS;
     }
 }

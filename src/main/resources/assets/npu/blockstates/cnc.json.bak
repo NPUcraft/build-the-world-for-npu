@@ -1,0 +1,50 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:machine/cnc.obj"
+    },
+    "facing=east": {
+      "model": "npu:machine/cnc.obj",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:machine/cnc.obj",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:machine/cnc.obj",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}
+
+{
+  "forge_marker": 1,
+  "defaults": {
+    "custom": { "flip-v": true },
+    "model": "npu:machine/cnc.obj"
+  },
+  "variants": {
+    "facing=north": {
+      "model": "npu:machine/cnc.obj"
+    },
+    "facing=east": {
+      "model": "npu:machine/cnc.obj",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:machine/cnc.obj",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:machine/cnc.obj",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

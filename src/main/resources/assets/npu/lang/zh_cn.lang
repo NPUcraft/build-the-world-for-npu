@@ -48,6 +48,10 @@ itemGroup.stair=楼梯
 itemGroup.sundries=杂物
 itemGroup.vehicle=车辆
 
+itemGroup.furniture=家具相关
+itemGroup.light=灯光相关
+itemGroup.machine=机械机器
+
 
 
 tile.obsidianblock.name=黑曜石块
@@ -890,3 +894,18 @@ tile.flag_cy.name=团旗
 tile.notebook_hero.name=我也要当小英雄笔记-改-学习雷锋
 tile.admission_letter_2021.name=西工大录取通知书-2021
 tile.photo_frame_sworn.name=相框-宣誓
+
+tile.cabinet_workshop.name=车间柜子1
+tile.cabinet_workshop2.name=车间柜子2
+tile.cabinet_workshop3.name=车间柜子3
+tile.pool_cabinet.name=车间柜子洗手池1
+tile.pool_cabinet2.name=车间柜子洗手池2
+tile.desk_workshop.name=车间桌子1
+tile.desk_workshop2.name=车间桌子2
+tile.desk_workshop3.name=车间桌子3
+tile.desk_workshop4.name=车间桌子4
+tile.shelf_gongxun.name=工训架子1
+tile.shelf_gongxun2.name=工训架子2
+tile.airconditioner_vertical.name=立式空调
+tile.light_ceiling_long.name=吸顶灯-长
+tile.cnc.name=数控铣床

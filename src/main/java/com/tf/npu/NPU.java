@@ -1,14 +1,17 @@
 package com.tf.npu;
 
+import com.tf.npu.Blocks.SUPER2FH.Machine.tile.CNCTileEntity;
 import com.tf.npu.Init.SUPER2FH.ModBlocks.*;
 import com.tf.npu.Items.ItemLoader;
 import com.tf.npu.Proxy.CommonProxy;
+import com.tf.npu.client.renderer.CNCRenderer;
 import com.tf.npu.util.Reference;
 import com.tf.npu.util.Util;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.model.obj.OBJLoader;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -16,6 +19,9 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
+import software.bernie.example.registry.ItemRegistry;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class NPU {
@@ -185,6 +191,35 @@ public class NPU {
         }
     };
 
+    /**
+     * 机械机器
+     */
+    public static final CreativeTabs MACHINE = new CreativeTabs("machine") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(Blocks.BEDROCK);
+        }
+    };
+
+    /**
+     * 家具相关
+     */
+    public static final CreativeTabs FURNITURE = new CreativeTabs("furniture") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(FurnitureBlocks.AIRCONDITIONER_VERTICAL);
+        }
+    };
+
+    /**
+     * 灯光相关
+     */
+    public static final CreativeTabs LIGHT = new CreativeTabs("light") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(LightBlocks.LIGHT_CEILING_LONG);
+        }
+    };
 
 
 
@@ -220,5 +255,34 @@ public class NPU {
         Util.logger.warn("Project Npu Reconstruction.");
     }
 
+
+    public static boolean DISABLE_IN_DEV = false;
+    private static CreativeTabs geckolibItemGroup;
+    private boolean deobfuscatedEnvironment;
+
+    public static CreativeTabs getGeckolibItemGroup()
+    {
+        if (geckolibItemGroup == null)
+        {
+            geckolibItemGroup = new CreativeTabs(CreativeTabs.getNextID(), "geckolib_examples")
+            {
+                @Override
+                public ItemStack getTabIconItem()
+                {
+                    return new ItemStack(ItemRegistry.JACK_IN_THE_BOX);
+                }
+            };
+        }
+
+        return geckolibItemGroup;
+    }
+
+    @SideOnly(Side.CLIENT)
+    @Mod.EventHandler
+    public void registerRenderers(FMLPreInitializationEvent event)
+    {
+        ClientRegistry.bindTileEntitySpecialRenderer(CNCTileEntity.class, new CNCRenderer());
+
+    }
 
 }

@@ -859,6 +859,9 @@ public class ModBlocks {
         BLOCKS.addAll(StairBlocks.BLOCKS);
         BLOCKS.addAll(SundriesBlocks.BLOCKS);
         BLOCKS.addAll(VehicleBlocks.BLOCKS);
+        BLOCKS.addAll(FurnitureBlocks.BLOCKS);
+        BLOCKS.addAll(LightBlocks.BLOCKS);
+        BLOCKS.addAll(MachineBlocks.BLOCKS);
         return BLOCKS;
     }
 }

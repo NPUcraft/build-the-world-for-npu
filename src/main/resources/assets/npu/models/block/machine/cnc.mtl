@@ -1,0 +1,5 @@
+# Made in Blockbench 4.2.4
+newmtl m_35
+map_Kd npu:block/machine/cnc
+# map_Kd cnc.png 
+newmtl none

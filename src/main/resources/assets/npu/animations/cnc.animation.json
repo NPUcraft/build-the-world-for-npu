@@ -1,0 +1,331 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"door": {
+			"loop": true,
+			"animation_length": 21.56,
+			"bones": {
+				"door_left": {
+					"position": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"1.04": {
+							"vector": [8, 0, 0]
+						},
+						"18.64": {
+							"vector": [8, 0, 0]
+						},
+						"19.84": {
+							"post": {
+								"vector": [0, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"door_right": {
+					"position": {
+						"0.0": {
+							"post": {
+								"vector": [0, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"1.04": {
+							"vector": [-7, 0, 0]
+						},
+						"18.64": {
+							"vector": [-7, 0, 0]
+						},
+						"19.84": {
+							"post": {
+								"vector": [0, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"z_1": {
+					"position": {
+						"2.08": {
+							"vector": [0, 0, 0]
+						},
+						"2.72": {
+							"vector": [0, 0, -1]
+						},
+						"4.44": {
+							"vector": [0, 0, -1]
+						},
+						"4.76": {
+							"vector": [0, 0, 0]
+						},
+						"6.0": {
+							"vector": [0, 0, 0]
+						},
+						"6.28": {
+							"vector": [0, 0, 0]
+						},
+						"6.92": {
+							"post": {
+								"vector": [0, 0, 1]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"10.36": {
+							"post": {
+								"vector": [0, 0, 1]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"11.08": {
+							"post": {
+								"vector": [0, 0, 0.75]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"11.64": {
+							"post": {
+								"vector": [0, 0, 1.75]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"12.6": {
+							"post": {
+								"vector": [0, 0, 1]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"13.36": {
+							"post": {
+								"vector": [0, 0, 1.25]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"13.56": {
+							"post": {
+								"vector": [0, 0, 2]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"13.76": {
+							"post": {
+								"vector": [0, 0, 1.5]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"14.24": {
+							"post": {
+								"vector": [0, 0, 0.75]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"14.52": {
+							"post": {
+								"vector": [0, 0, 1.25]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"15.04": {
+							"post": {
+								"vector": [0, 0, 2]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"15.68": {
+							"post": {
+								"vector": [0, 0, 1.25]
+							},
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"z_2": {
+					"position": {
+						"2.08": {
+							"vector": [0, 0, 0]
+						},
+						"2.72": {
+							"vector": [0, 0, -2]
+						},
+						"4.44": {
+							"vector": [0, 0, -2]
+						},
+						"4.76": {
+							"vector": [0, 0, -1]
+						}
+					}
+				},
+				"x_1": {
+					"position": {
+						"2.72": {
+							"vector": [0, 0, 0]
+						},
+						"3.68": {
+							"post": {
+								"vector": [-2, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"5.0": {
+							"post": {
+								"vector": [-2, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"5.96": {
+							"post": {
+								"vector": [0, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"10.36": {
+							"post": {
+								"vector": [0, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"11.08": {
+							"post": {
+								"vector": [-0.75, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"11.64": {
+							"post": {
+								"vector": [0, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"12.12": {
+							"post": {
+								"vector": [-1.5, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"13.04": {
+							"post": {
+								"vector": [-0.25, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"13.56": {
+							"post": {
+								"vector": [-1, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"13.76": {
+							"post": {
+								"vector": [-0.25, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"14.04": {
+							"post": {
+								"vector": [-1.25, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"14.4": {
+							"post": {
+								"vector": [0.25, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"14.72": {
+							"post": {
+								"vector": [0.25, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"15.36": {
+							"post": {
+								"vector": [-1, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						},
+						"15.68": {
+							"post": {
+								"vector": [-0.25, 0, 0]
+							},
+							"lerp_mode": "catmullrom"
+						}
+					}
+				},
+				"x_2": {
+					"position": {
+						"2.72": {
+							"vector": [0, 0, 0]
+						},
+						"3.68": {
+							"vector": [-1, 0, 0]
+						},
+						"5.0": {
+							"vector": [-1, 0, 0]
+						},
+						"5.96": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"x_3": {
+					"position": {
+						"2.72": {
+							"vector": [0, 0, 0]
+						},
+						"3.68": {
+							"vector": [-2, 0, 0]
+						},
+						"5.0": {
+							"vector": [-2, 0, 0]
+						},
+						"5.96": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"Zuantou": {
+					"position": {
+						"8.36": {
+							"vector": [0, 0, 0]
+						},
+						"9.84": {
+							"vector": [0, -3, 0]
+						},
+						"16.56": {
+							"post": {
+								"vector": [0, -3, 0]
+							}
+						},
+						"17.8": {
+							"post": {
+								"vector": [0, 0, 0]
+							}
+						}
+					}
+				},
+				"chain": {
+					"position": {
+						"8.36": {
+							"vector": [0, 0, 0]
+						},
+						"9.84": {
+							"vector": [0, -2, 0]
+						},
+						"16.56": {
+							"post": {
+								"vector": [0, -2, 0]
+							}
+						},
+						"17.8": {
+							"post": {
+								"vector": [0, 0, 0]
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
