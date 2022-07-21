@@ -20,9 +20,9 @@ NPUcraft建筑服专属mod
 
 #### 参与贡献
 
-1.  代码作者：TeachingFeelings
+1.  代码作者：TeachingFeelings、SUPER2FH
 2.  协作者：翱翔——Soar
-3.  其他作者：Mario_RainFlower,SUPER2FH
+3.  其他作者：Mario_RainFlower
 
 
 #### 说明
