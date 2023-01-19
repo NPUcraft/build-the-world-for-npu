@@ -24,6 +24,7 @@ public class ModItems {
         ITEMS.addAll(FurnitureBlocks.ITEMS);
         ITEMS.addAll(LightBlocks.ITEMS);
         ITEMS.addAll(MachineBlocks.ITEMS);
+        ITEMS.addAll(WindowBlocks.ITEMS);
         return ITEMS;
     }
 }

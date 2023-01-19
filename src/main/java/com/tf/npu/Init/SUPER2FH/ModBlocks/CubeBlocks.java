@@ -21,5 +21,8 @@ public class CubeBlocks {
     public static final CementRoadSide_g22 CEMENT_ROAD_SIDE_G22 = new CementRoadSide_g22();
     public static final CementRoadSide3 CEMENT_ROAD_SIDE3 = new CementRoadSide3();
 
+    public static final WallStemQuarter WALL_STEM_QUARTER = new WallStemQuarter();
+    public static final BlueBrick BLUE_BRICK = new BlueBrick();
+    public static final BlueBrickHalf BLUE_BRICK_HALF = new BlueBrickHalf();
 
 }

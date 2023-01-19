@@ -221,9 +221,15 @@ public class NPU {
         }
     };
 
-
-
-
+    /**
+     * 窗户相关
+     */
+    public static final CreativeTabs WINDOW = new CreativeTabs("window") {
+        @Override
+        public ItemStack getTabIconItem() {
+            return new ItemStack(WindowBlocks.GLASS_WALL_HALF);
+        }
+    };
 
 
 
@@ -257,32 +263,32 @@ public class NPU {
 
 
     public static boolean DISABLE_IN_DEV = false;
-    private static CreativeTabs geckolibItemGroup;
+//    private static CreativeTabs geckolibItemGroup;
     private boolean deobfuscatedEnvironment;
 
-    public static CreativeTabs getGeckolibItemGroup()
-    {
-        if (geckolibItemGroup == null)
-        {
-            geckolibItemGroup = new CreativeTabs(CreativeTabs.getNextID(), "geckolib_examples")
-            {
-                @Override
-                public ItemStack getTabIconItem()
-                {
-                    return new ItemStack(ItemRegistry.JACK_IN_THE_BOX);
-                }
-            };
-        }
+//    public static CreativeTabs getGeckolibItemGroup()
+//    {
+//        if (geckolibItemGroup == null)
+//        {
+//            geckolibItemGroup = new CreativeTabs(CreativeTabs.getNextID(), "geckolib_examples")
+//            {
+//                @Override
+//                public ItemStack getTabIconItem()
+//                {
+//                    return new ItemStack(ItemRegistry.JACK_IN_THE_BOX);
+//                }
+//            };
+//        }
+//
+//        return geckolibItemGroup;
+//    }
 
-        return geckolibItemGroup;
-    }
-
-    @SideOnly(Side.CLIENT)
-    @Mod.EventHandler
-    public void registerRenderers(FMLPreInitializationEvent event)
-    {
-        ClientRegistry.bindTileEntitySpecialRenderer(CNCTileEntity.class, new CNCRenderer());
-
-    }
+//    @SideOnly(Side.CLIENT)
+//    @Mod.EventHandler
+//    public void registerRenderers(FMLPreInitializationEvent event)
+//    {
+//        ClientRegistry.bindTileEntitySpecialRenderer(CNCTileEntity.class, new CNCRenderer());
+//
+//    }
 
 }

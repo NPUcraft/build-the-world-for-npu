@@ -862,6 +862,7 @@ public class ModBlocks {
         BLOCKS.addAll(FurnitureBlocks.BLOCKS);
         BLOCKS.addAll(LightBlocks.BLOCKS);
         BLOCKS.addAll(MachineBlocks.BLOCKS);
+        BLOCKS.addAll(WindowBlocks.BLOCKS);
         return BLOCKS;
     }
 }
