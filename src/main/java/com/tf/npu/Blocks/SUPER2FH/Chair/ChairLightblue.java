@@ -22,6 +22,6 @@ public class ChairLightblue extends BlockFourSideFacingTemplate {
 
     @Override
     public AxisAlignedBB getCollisionBoundingBox(IBlockState p_getCollisionBoundingBox_1_, IBlockAccess p_getCollisionBoundingBox_2_, BlockPos p_getCollisionBoundingBox_3_) {
-        return HALF_SHPAE;
+        return HALF_SHPAE_BOTTOM;
     }
 }

@@ -90,11 +90,11 @@ public class RegistryHandler {
 
 
 
-    public static <T extends Item> T registerItem(T item, String name)
-    {
-        registerItem(item, new ResourceLocation(GeckoLib.ModID, name));
-        return item;
-    }
+//    public static <T extends Item> T registerItem(T item, String name)
+//    {
+//        registerItem(item, new ResourceLocation(GeckoLib.ModID, name));
+//        return item;
+//    }
 
     public static <T extends Item> T registerItem(T item, ResourceLocation name)
     {
@@ -102,10 +102,10 @@ public class RegistryHandler {
         return item;
     }
 
-    public static void registerBlock(Block block, String name)
-    {
-        registerBlock(block, new ResourceLocation(GeckoLib.ModID, name));
-    }
+//    public static void registerBlock(Block block, String name)
+//    {
+//        registerBlock(block, new ResourceLocation(GeckoLib.ModID, name));
+//    }
 
     public static void registerBlock(Block block, ResourceLocation name)
     {
