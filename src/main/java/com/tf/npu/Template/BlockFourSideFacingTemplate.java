@@ -20,22 +20,25 @@ import net.minecraft.world.World;
 
 public class BlockFourSideFacingTemplate extends Block implements IHasModel {
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
+    public static final AxisAlignedBB FULL_SHAPE = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
+            1.0D, 1.0D, 1.0D);
+    public static final AxisAlignedBB NULL_SHPAE = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
+            0.0D, 0.0D, 0.0D);
+    public static final AxisAlignedBB HALF_SHPAE_BOTTOM = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
+            1.0D, 0.5D, 1.0D);
+    public static final AxisAlignedBB HALF_SHPAE_UP = new AxisAlignedBB(0.0D, 0.0D, 0.5D,
+            1.0D, 1.0D, 1.0D);
 
+    public BlockFourSideFacingTemplate() {
+        super(Material.ROCK);
+        this.setHardness(2.5F);
+        this.setCreativeTab(NPU.TEMPORARY);
+        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
+    }
     @Override
     protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
     }
-
-    //x1,y1,z1,x2,y2,z2均为double类型
-    public static final AxisAlignedBB FULL_SHAPE = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
-            1.0D, 1.0D, 1.0D);
-
-    public static final AxisAlignedBB NULL_SHPAE = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
-            0.0D, 0.0D, 0.0D);
-
-    public static final AxisAlignedBB HALF_SHPAE = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
-            1.0D, 0.5D, 1.0D);
-
 
     @Override
     public boolean isOpaqueCube(IBlockState state) {
@@ -50,14 +53,6 @@ public class BlockFourSideFacingTemplate extends Block implements IHasModel {
     @Override
     public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
-    }
-
-    public BlockFourSideFacingTemplate() {
-        super(Material.ROCK);
-        this.setHardness(2.5F);
-        this.setCreativeTab(NPU.TEMPORARY);
-        this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
-
     }
 
     @Override

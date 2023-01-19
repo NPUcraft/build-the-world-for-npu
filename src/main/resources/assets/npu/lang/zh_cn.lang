@@ -51,7 +51,7 @@ itemGroup.vehicle=车辆
 itemGroup.furniture=家具相关
 itemGroup.light=灯光相关
 itemGroup.machine=机械机器
-
+itemGroup.window=窗户相关
 
 
 tile.obsidianblock.name=黑曜石块
@@ -909,3 +909,21 @@ tile.shelf_gongxun2.name=工训架子2
 tile.airconditioner_vertical.name=立式空调
 tile.light_ceiling_long.name=吸顶灯-长
 tile.cnc.name=数控铣床
+
+tile.window_ceiling.name=玻璃天花板
+tile.glass_wall_half.name=图书馆窗台A0.5
+tile.glass_wall_quarter.name=图书馆窗台A0.25
+tile.wall_stem_quarter.name=图书馆圆形柱子
+tile.glass_frame1.name=玻璃块用窗框
+tile.glass_frame2.name=玻璃片用窗框
+tile.blue_brick.name=蓝砖道路
+tile.blue_brick_half.name=蓝砖道路下半
+
+
+
+
+
+
+
+
+

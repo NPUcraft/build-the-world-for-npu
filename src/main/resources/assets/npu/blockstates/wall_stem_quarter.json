@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:cube/wall_stem_quarter"
+    },
+    "facing=east": {
+      "model": "npu:cube/wall_stem_quarter",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:cube/wall_stem_quarter",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:cube/wall_stem_quarter",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}
