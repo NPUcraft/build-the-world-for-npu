@@ -25,7 +25,7 @@ public class CNCBlock extends BlockDirectional implements ITileEntityProvider
         super(Material.ROCK);
 //        this.setCreativeTab(GeckoLibMod.getGeckolibItemGroup());
         this.setCreativeTab(NPU.TEMPORARY);
-        this.setUnlocalizedName("cnc");
+        this.setTranslationKey("cnc");
         this.setRegistryName("npu:cnc");
         this.translucent = true;
     }
@@ -58,7 +58,7 @@ public class CNCBlock extends BlockDirectional implements ITileEntityProvider
     @Override
     public IBlockState getStateFromMeta(int meta)
     {
-        return this.getDefaultState().withProperty(FACING, EnumFacing.getFront(meta));
+        return this.getDefaultState().withProperty(FACING, EnumFacing.byIndex(meta));
     }
 
     @Override

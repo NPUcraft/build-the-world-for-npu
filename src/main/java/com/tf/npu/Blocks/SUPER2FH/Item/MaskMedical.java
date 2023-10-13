@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class MaskMedical extends BlockFourSideFacingTemplate {
     public MaskMedical() {
         super();
-        this.setUnlocalizedName("mask_medical");
+        this.setTranslationKey("mask_medical");
         this.setRegistryName("npu:mask_medical");
         this.setCreativeTab(NPU.NPUARMOR);
         TemporaryBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

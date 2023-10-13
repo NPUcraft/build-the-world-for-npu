@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 public class CementLightblue extends BlockTemplate {
     public CementLightblue() {
         super();
-        this.setUnlocalizedName("cement_lightblue");
+        this.setTranslationKey("cement_lightblue");
         this.setRegistryName("npu:cement_lightblue");
         this.setCreativeTab(NPU.CUBE);
         CubeBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

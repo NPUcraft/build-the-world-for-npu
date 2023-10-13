@@ -83,7 +83,7 @@ public class FG59 extends Block implements IHasModel {
     public FG59() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fg59");
+        this.setTranslationKey("fg59");
 
         this.setRegistryName("npu:fg59");
 
@@ -105,7 +105,7 @@ public class FG59 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

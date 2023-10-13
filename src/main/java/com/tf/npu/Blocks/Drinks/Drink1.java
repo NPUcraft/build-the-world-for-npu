@@ -71,7 +71,7 @@ public class Drink1 extends Block implements IHasModel {
 
     public Drink1() {
         super(Material.ROCK);
-        this.setUnlocalizedName("drink1");
+        this.setTranslationKey("drink1");
         this.setRegistryName("npu:drink1");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -84,7 +84,7 @@ public class Drink1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

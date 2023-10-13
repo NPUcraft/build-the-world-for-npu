@@ -16,7 +16,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class GlassWallHalf extends BlockEightSideFacingTemplate {
     public GlassWallHalf() {
         this.setCreativeTab(NPU.WINDOW);
-        this.setUnlocalizedName("glass_wall_half");
+        this.setTranslationKey("glass_wall_half");
         this.setRegistryName("npu:glass_wall_half");
         WindowBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         WindowBlocks.BLOCKS.add(this);

@@ -66,7 +66,7 @@ public class FSign8 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -101,7 +101,7 @@ public class FSign8 extends Block implements IHasModel {
     public FSign8() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fsign8");
+        this.setTranslationKey("fsign8");
 
         this.setRegistryName("npu:fsign8");
 

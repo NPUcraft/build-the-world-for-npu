@@ -71,7 +71,7 @@ public class Fence5 extends Block implements IHasModel {
 
     public Fence5() {
         super(Material.ROCK);
-        this.setUnlocalizedName("fence5");
+        this.setTranslationKey("fence5");
         this.setRegistryName("npu:fence5");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
@@ -84,7 +84,7 @@ public class Fence5 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

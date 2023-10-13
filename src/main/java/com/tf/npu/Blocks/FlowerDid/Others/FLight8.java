@@ -66,7 +66,7 @@ public class FLight8 extends Block implements IHasModel {
     public FLight8() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("flight8");
+        this.setTranslationKey("flight8");
 
         this.setRegistryName("npu:flight8");
 

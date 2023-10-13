@@ -21,7 +21,7 @@ public class GlassWallQuarter extends BlockEightSideFacingTemplate {
 
     public GlassWallQuarter() {
         this.setCreativeTab(NPU.WINDOW);
-        this.setUnlocalizedName("glass_wall_quarter");
+        this.setTranslationKey("glass_wall_quarter");
         this.setRegistryName("npu:glass_wall_quarter");
         WindowBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         WindowBlocks.BLOCKS.add(this);

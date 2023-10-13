@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class BlackboardAntiJapaneseHero extends BlockFourSideFacingTemplate {
     public BlackboardAntiJapaneseHero() {
         super();
-        this.setUnlocalizedName("blackboard_anti_japanese_hero");
+        this.setTranslationKey("blackboard_anti_japanese_hero");
         this.setRegistryName("npu:blackboard_anti_japanese_hero");
         this.setCreativeTab(NPU.RACK);
         RackBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

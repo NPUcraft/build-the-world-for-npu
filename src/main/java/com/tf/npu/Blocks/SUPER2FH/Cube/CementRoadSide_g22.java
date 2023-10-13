@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class CementRoadSide_g22 extends BlockFourSideFacingTemplate {
     public CementRoadSide_g22() {
         super();
-        this.setUnlocalizedName("g22");
+        this.setTranslationKey("g22");
         this.setRegistryName("npu:g22");
         this.setCreativeTab(NPU.CUBE);
         this.setLightLevel(0.1f);

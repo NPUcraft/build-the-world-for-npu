@@ -29,7 +29,7 @@ public class G26 extends Block implements IHasModel {
 
     public G26() {
         super(Material.ROCK);
-        setUnlocalizedName("g26");
+        setTranslationKey("g26");
         setRegistryName("npu:g26");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

@@ -80,7 +80,7 @@ public class Winnn6 extends Block implements IHasModel {
 
     public Winnn6() {
         super(Material.ROCK);
-        this.setUnlocalizedName("winnn6");
+        this.setTranslationKey("winnn6");
         this.setRegistryName("npu:winnn6");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB4);
@@ -103,7 +103,7 @@ public class Winnn6 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

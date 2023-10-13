@@ -71,7 +71,7 @@ public class D2 extends Block implements IHasModel {
 
     public D2() {
         super(Material.ROCK);
-        this.setUnlocalizedName("d2");
+        this.setTranslationKey("d2");
         this.setRegistryName("npu:d2");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB4);
@@ -85,7 +85,7 @@ public class D2 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

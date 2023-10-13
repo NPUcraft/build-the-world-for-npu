@@ -17,7 +17,7 @@ import net.minecraft.world.IBlockAccess;
 public class ObsidianFrame extends Block implements IHasModel {
     public ObsidianFrame() {
         super(Material.ROCK);
-        setUnlocalizedName("obsidianframe");
+        setTranslationKey("obsidianframe");
         setRegistryName("npu:obsidianframe");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

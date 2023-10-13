@@ -71,7 +71,7 @@ public class GirlTL extends Block implements IHasModel {
 
     public GirlTL() {
         super(Material.ROCK);
-        this.setUnlocalizedName("girltl");
+        this.setTranslationKey("girltl");
         this.setRegistryName("npu:girltl");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -84,7 +84,7 @@ public class GirlTL extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

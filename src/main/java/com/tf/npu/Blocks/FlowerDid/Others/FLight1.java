@@ -83,7 +83,7 @@ public class FLight1 extends Block implements IHasModel {
     public FLight1() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("flight1");
+        this.setTranslationKey("flight1");
 
         this.setRegistryName("npu:flight1");
 
@@ -105,7 +105,7 @@ public class FLight1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

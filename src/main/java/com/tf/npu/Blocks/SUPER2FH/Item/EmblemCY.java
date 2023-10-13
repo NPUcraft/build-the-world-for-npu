@@ -16,7 +16,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class EmblemCY extends BlockFourSideFacingTemplate {
     public EmblemCY() {
         super();
-        this.setUnlocalizedName("emblem_cy");
+        this.setTranslationKey("emblem_cy");
         this.setRegistryName("npu:emblem_cy");
         this.setCreativeTab(NPU.NPUARMOR);
 

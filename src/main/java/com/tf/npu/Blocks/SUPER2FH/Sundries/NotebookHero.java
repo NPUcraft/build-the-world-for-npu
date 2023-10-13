@@ -11,7 +11,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class NotebookHero extends BlockFourSideFacingTemplate {
     public NotebookHero() {
         super();
-        this.setUnlocalizedName("notebook_hero");
+        this.setTranslationKey("notebook_hero");
         this.setRegistryName("npu:notebook_hero");
         this.setCreativeTab(NPU.SUNDRIES);
         SundriesBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

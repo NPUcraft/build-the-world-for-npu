@@ -13,7 +13,7 @@ import net.minecraft.world.IBlockAccess;
 public class BlueBrick extends BlockTemplate {
     public BlueBrick() {
         super();
-        this.setUnlocalizedName("blue_brick");
+        this.setTranslationKey("blue_brick");
         this.setRegistryName("npu:blue_brick");
         this.setCreativeTab(NPU.CUBE);
         CubeBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

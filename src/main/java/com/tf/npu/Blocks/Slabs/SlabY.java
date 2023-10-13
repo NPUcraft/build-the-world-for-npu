@@ -34,7 +34,7 @@ public abstract class SlabY extends BlockSlab implements IHasModel {
         super(Material.ROCK);
         this.fullBlock = this.isDouble();
         this.setLightOpacity(255);
-        this.setUnlocalizedName("slaby");
+        this.setTranslationKey("slaby");
         this.setRegistryName("npu:slaby");
         this.setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

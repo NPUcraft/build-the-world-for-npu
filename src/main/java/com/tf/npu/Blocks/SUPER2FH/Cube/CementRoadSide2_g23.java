@@ -13,7 +13,7 @@ public class CementRoadSide2_g23 extends BlockFourSideFacingTemplate {
 
     public CementRoadSide2_g23() {
         super();
-        this.setUnlocalizedName("g23");
+        this.setTranslationKey("g23");
         this.setRegistryName("npu:g23");
         this.setCreativeTab(NPU.CUBE);
         this.setLightLevel(0.1f);

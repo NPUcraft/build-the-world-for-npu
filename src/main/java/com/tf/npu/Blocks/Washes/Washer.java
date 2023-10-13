@@ -71,7 +71,7 @@ public class Washer extends Block implements IHasModel {
 
     public Washer() {
         super(Material.ROCK);
-        this.setUnlocalizedName("washer");
+        this.setTranslationKey("washer");
         this.setRegistryName("npu:washer");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -84,7 +84,7 @@ public class Washer extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

@@ -9,7 +9,7 @@ public class TentRed extends TentTemplate {
 
     public TentRed() {
         super();
-        this.setUnlocalizedName("tent_red");
+        this.setTranslationKey("tent_red");
         this.setRegistryName("npu:tent_red");
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);

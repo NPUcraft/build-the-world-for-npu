@@ -13,7 +13,7 @@ import net.minecraft.world.IBlockAccess;
 public class StairIndoor_stair extends BlockFourSideFacingTemplate {
     public StairIndoor_stair() {
         super();
-        this.setUnlocalizedName("stair");
+        this.setTranslationKey("stair");
         this.setRegistryName("npu:stair");
         this.setCreativeTab(NPU.STAIR);
         StairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

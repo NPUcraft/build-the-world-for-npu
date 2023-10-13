@@ -52,7 +52,7 @@ public class WoodDesk5 extends Block implements IHasModel {
 
     public WoodDesk5() {
         super(Material.PISTON);
-        this.setUnlocalizedName("woodclassroomdesk5");
+        this.setTranslationKey("woodclassroomdesk5");
         this.setRegistryName("npu:woodclassroomdesk5");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
@@ -64,7 +64,7 @@ public class WoodDesk5 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

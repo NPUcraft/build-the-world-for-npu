@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 public class StairCementLightblue extends BlockFourSideFacingTemplate {
     public StairCementLightblue() {
         super();
-        this.setUnlocalizedName("stair_coment_lightblue");
+        this.setTranslationKey("stair_coment_lightblue");
         this.setRegistryName("npu:stair_coment_lightblue");
         this.setCreativeTab(NPU.STAIR);
         StairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

@@ -72,7 +72,7 @@ public class WBoard extends Block implements IHasModel {
 
     public WBoard() {
         super(Material.ROCK);
-        this.setUnlocalizedName("wboard");
+        this.setTranslationKey("wboard");
         this.setRegistryName("npu:wboard");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -85,7 +85,7 @@ public class WBoard extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

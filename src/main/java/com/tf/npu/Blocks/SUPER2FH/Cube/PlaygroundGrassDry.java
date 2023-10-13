@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 public class PlaygroundGrassDry extends BlockTemplate {
     public PlaygroundGrassDry() {
         super();
-        this.setUnlocalizedName("playground_grass_dry");
+        this.setTranslationKey("playground_grass_dry");
         this.setRegistryName("npu:playground_grass_dry");
         this.setCreativeTab(NPU.CUBE);
         CubeBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

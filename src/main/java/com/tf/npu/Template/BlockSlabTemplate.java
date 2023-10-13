@@ -19,8 +19,8 @@ public class BlockSlabTemplate extends BlockSlab {
     }
 
     @Override
-    public String getUnlocalizedName(int i) {
-        return this.getUnlocalizedName();
+    public String getTranslationKey(int i) {
+        return this.getTranslationKey();
     }
 
 

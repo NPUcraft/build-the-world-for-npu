@@ -11,7 +11,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class PartyMembershipApplication extends BlockFourSideFacingTemplate {
     public PartyMembershipApplication() {
         super();
-        this.setUnlocalizedName("party_membership_application");
+        this.setTranslationKey("party_membership_application");
         this.setRegistryName("npu:party_membership_application");
         this.setCreativeTab(NPU.SUNDRIES);
         SundriesBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

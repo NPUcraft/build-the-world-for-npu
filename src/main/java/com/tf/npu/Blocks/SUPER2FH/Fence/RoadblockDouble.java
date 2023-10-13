@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class RoadblockDouble extends BlockFourSideFacingTemplate {
     public RoadblockDouble() {
         super();
-        this.setUnlocalizedName("roadblock_double");
+        this.setTranslationKey("roadblock_double");
         this.setRegistryName("npu:roadblock_double");
         this.setCreativeTab(NPU.FENCE);
         FenceBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

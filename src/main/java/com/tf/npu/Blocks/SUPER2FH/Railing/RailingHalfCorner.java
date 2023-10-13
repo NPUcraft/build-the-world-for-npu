@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class RailingHalfCorner extends BlockFourSideFacingTemplate {
     public RailingHalfCorner() {
         super();
-        this.setUnlocalizedName("railing_half_corner");
+        this.setTranslationKey("railing_half_corner");
         this.setRegistryName("npu:railing_half_corner");
         this.setCreativeTab(NPU.RAILING);
         RailingBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

@@ -61,7 +61,7 @@ public class FBrailingr extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -94,7 +94,7 @@ public class FBrailingr extends Block implements IHasModel {
     public FBrailingr() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fbrailingr");
+        this.setTranslationKey("fbrailingr");
 
         this.setRegistryName("npu:fbrailingr");
 

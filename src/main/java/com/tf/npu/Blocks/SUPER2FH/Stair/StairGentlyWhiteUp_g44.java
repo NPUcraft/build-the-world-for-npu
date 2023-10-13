@@ -14,7 +14,7 @@ public class StairGentlyWhiteUp_g44 extends BlockFourSideFacingTemplate {
     // g44
     public StairGentlyWhiteUp_g44() {
         super();
-        this.setUnlocalizedName("g44");
+        this.setTranslationKey("g44");
         this.setRegistryName("npu:g44");
         this.setCreativeTab(NPU.STAIR);
         StairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

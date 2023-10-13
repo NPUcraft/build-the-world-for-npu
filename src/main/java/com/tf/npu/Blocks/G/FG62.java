@@ -25,7 +25,7 @@ public class FG62 extends Block implements IHasModel {
     public FG62() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fg62");
+        this.setTranslationKey("fg62");
 
         this.setRegistryName("npu:fg62");
 

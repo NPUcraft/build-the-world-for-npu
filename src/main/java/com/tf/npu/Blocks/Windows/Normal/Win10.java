@@ -71,7 +71,7 @@ public class Win10 extends Block implements IHasModel {
 
     public Win10() {
         super(Material.ROCK);
-        this.setUnlocalizedName("win10");
+        this.setTranslationKey("win10");
         this.setRegistryName("npu:win10");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB4);
@@ -85,7 +85,7 @@ public class Win10 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

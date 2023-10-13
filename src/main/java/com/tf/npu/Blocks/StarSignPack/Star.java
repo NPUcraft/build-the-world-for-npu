@@ -71,7 +71,7 @@ public class Star extends Block implements IHasModel {
 
     public Star() {
         super(Material.ROCK);
-        this.setUnlocalizedName("star");
+        this.setTranslationKey("star");
         this.setRegistryName("npu:star");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB2);
@@ -84,7 +84,7 @@ public class Star extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

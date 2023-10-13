@@ -13,7 +13,7 @@ import net.minecraft.world.IBlockAccess;
 public class FenceWarninglineColumnDouble90 extends BlockFourSideFacingTemplate {
     public FenceWarninglineColumnDouble90() {
         super();
-        this.setUnlocalizedName("fence_warningline_column_double90");
+        this.setTranslationKey("fence_warningline_column_double90");
         this.setRegistryName("npu:fence_warningline_column_double90");
         this.setCreativeTab(NPU.FENCE);
         FenceBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

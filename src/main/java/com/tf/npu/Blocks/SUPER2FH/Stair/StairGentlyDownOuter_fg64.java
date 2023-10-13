@@ -15,7 +15,7 @@ public class StairGentlyDownOuter_fg64 extends BlockFourSideFacingTemplate {
     // fg64
     public StairGentlyDownOuter_fg64() {
         super();
-        this.setUnlocalizedName("fg64");
+        this.setTranslationKey("fg64");
         this.setRegistryName("npu:fg64");
         this.setCreativeTab(NPU.STAIR);
         StairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

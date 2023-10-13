@@ -17,7 +17,7 @@ import net.minecraft.world.IBlockAccess;
 public class Light1 extends Block implements IHasModel {
     public Light1() {
         super(Material.ROCK);
-        setUnlocalizedName("light1");
+        setTranslationKey("light1");
         setRegistryName("npu:light1");
         setCreativeTab(NPU.MY_TAB);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

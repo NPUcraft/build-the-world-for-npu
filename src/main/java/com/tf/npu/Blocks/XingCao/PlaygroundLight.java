@@ -9,7 +9,7 @@ import net.minecraft.item.ItemBlock;
 public class PlaygroundLight extends BlockFourSideFacingTemplate {
     public PlaygroundLight() {
         super();
-        this.setUnlocalizedName("playground_light");
+        this.setTranslationKey("playground_light");
         this.setRegistryName("npu:playground_light");
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);

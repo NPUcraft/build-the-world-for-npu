@@ -71,7 +71,7 @@ public class Wash1 extends Block implements IHasModel {
 
     public Wash1() {
         super(Material.ROCK);
-        this.setUnlocalizedName("wash1");
+        this.setTranslationKey("wash1");
         this.setRegistryName("npu:wash1");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -84,7 +84,7 @@ public class Wash1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

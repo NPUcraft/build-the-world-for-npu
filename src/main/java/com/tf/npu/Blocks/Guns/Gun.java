@@ -71,7 +71,7 @@ public class Gun extends Block implements IHasModel {
 
     public Gun() {
         super(Material.ROCK);
-        this.setUnlocalizedName("gun");
+        this.setTranslationKey("gun");
         this.setRegistryName("npu:gun");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB3);
@@ -84,8 +84,7 @@ public class Gun extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
-        return this.getDefaultState().withProperty(FGunING, facing);
+        return this.getDefaultState().withProperty(FGunING, meta == 0 ? EnumFacing.WEST : EnumFacing.EAST);
     }
 
     @Override

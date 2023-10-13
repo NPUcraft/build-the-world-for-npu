@@ -71,7 +71,7 @@ public class Chair2 extends Block implements IHasModel {
 
     public Chair2() {
         super(Material.ROCK);
-        this.setUnlocalizedName("chair2");
+        this.setTranslationKey("chair2");
         this.setRegistryName("npu:chair2");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -84,7 +84,7 @@ public class Chair2 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

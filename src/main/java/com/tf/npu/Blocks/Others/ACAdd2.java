@@ -71,7 +71,7 @@ public class ACAdd2 extends Block implements IHasModel {
 
     public ACAdd2() {
         super(Material.ROCK);
-        this.setUnlocalizedName("acadd2");
+        this.setTranslationKey("acadd2");
         this.setRegistryName("npu:acadd2");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -84,7 +84,7 @@ public class ACAdd2 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

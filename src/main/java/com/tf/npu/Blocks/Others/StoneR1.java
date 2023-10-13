@@ -13,7 +13,7 @@ import net.minecraft.item.ItemBlock;
 public class StoneR1 extends Block implements IHasModel {
     public StoneR1() {
         super(Material.ROCK);
-        setUnlocalizedName("stoner1");
+        setTranslationKey("stoner1");
         setRegistryName("npu:stoner1");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 public class Pencil extends BlockFourSideFacingTemplate {
     public Pencil() {
         super();
-        this.setUnlocalizedName("pencil");
+        this.setTranslationKey("pencil");
         this.setRegistryName("npu:pencil");
         this.setCreativeTab(NPU.SUNDRIES);
         SundriesBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

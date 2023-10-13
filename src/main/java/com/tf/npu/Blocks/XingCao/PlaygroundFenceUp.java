@@ -9,7 +9,7 @@ import net.minecraft.item.ItemBlock;
 public class PlaygroundFenceUp extends BlockFourSideFacingTemplate {
     public PlaygroundFenceUp() {
         super();
-        this.setUnlocalizedName("playground_fence_up");
+        this.setTranslationKey("playground_fence_up");
         this.setRegistryName("npu:playground_fence_up");
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);

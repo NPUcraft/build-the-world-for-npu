@@ -66,7 +66,7 @@ public class FDoorSwitch extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -101,7 +101,7 @@ public class FDoorSwitch extends Block implements IHasModel {
     public FDoorSwitch() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("fdoorswitch");
+        this.setTranslationKey("fdoorswitch");
         
         this.setRegistryName("npu:fdoorswitch");
         

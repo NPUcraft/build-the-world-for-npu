@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class CabinetWorkshop2 extends BlockFourSideFacingTemplate {
     public CabinetWorkshop2() {
         super();
-        this.setUnlocalizedName("cabinet_workshop2");
+        this.setTranslationKey("cabinet_workshop2");
         this.setRegistryName("npu:cabinet_workshop2");
         this.setCreativeTab(NPU.FURNITURE);
         FurnitureBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

@@ -60,7 +60,7 @@ public class MarketCabinetFreezer extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -103,7 +103,7 @@ public class MarketCabinetFreezer extends Block implements IHasModel {
     public MarketCabinetFreezer() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("market_cabinet_freezer");
+        this.setTranslationKey("market_cabinet_freezer");
         
         this.setRegistryName("npu:market_cabinet_freezer");
         //*******************12.5F是黑曜石硬度*********************

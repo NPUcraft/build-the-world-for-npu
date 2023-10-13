@@ -80,7 +80,7 @@ public class Winw2 extends Block implements IHasModel {
 
     public Winw2() {
         super(Material.ROCK);
-        this.setUnlocalizedName("winw2");
+        this.setTranslationKey("winw2");
         this.setRegistryName("npu:winw2");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB4);
@@ -103,7 +103,7 @@ public class Winw2 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

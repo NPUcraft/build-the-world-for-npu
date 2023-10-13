@@ -14,7 +14,7 @@ public class StairIndoorInner_stair2 extends BlockFourSideFacingTemplate {
 
     public StairIndoorInner_stair2() {
         super();
-        this.setUnlocalizedName("stair2");
+        this.setTranslationKey("stair2");
         this.setRegistryName("npu:stair2");
         this.setCreativeTab(NPU.STAIR);
         StairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

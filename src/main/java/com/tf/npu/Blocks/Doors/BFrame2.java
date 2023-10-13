@@ -72,7 +72,7 @@ public class BFrame2 extends Block implements IHasModel {
 
     public BFrame2() {
         super(Material.ROCK);
-        this.setUnlocalizedName("bframe2");
+        this.setTranslationKey("bframe2");
         this.setRegistryName("npu:bframe2");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB4);
@@ -86,7 +86,7 @@ public class BFrame2 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

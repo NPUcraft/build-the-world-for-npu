@@ -72,7 +72,7 @@ public class MetalTrashcan extends Block implements IHasModel {
 
     public MetalTrashcan() {
         super(Material.ROCK);
-        this.setUnlocalizedName("metal_trashcan");
+        this.setTranslationKey("metal_trashcan");
         this.setRegistryName("npu:metal_trashcan");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -85,7 +85,7 @@ public class MetalTrashcan extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

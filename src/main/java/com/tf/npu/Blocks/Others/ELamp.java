@@ -72,7 +72,7 @@ public class ELamp extends Block implements IHasModel {
 
     public ELamp() {
         super(Material.ROCK);
-        this.setUnlocalizedName("elamp");
+        this.setTranslationKey("elamp");
         this.setRegistryName("npu:elamp");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -85,7 +85,7 @@ public class ELamp extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

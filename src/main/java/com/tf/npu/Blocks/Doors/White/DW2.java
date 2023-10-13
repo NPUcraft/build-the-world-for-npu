@@ -74,7 +74,7 @@ public class DW2 extends Block implements IHasModel {
 
     public DW2() {
         super(Material.ROCK);
-        this.setUnlocalizedName("dw2");
+        this.setTranslationKey("dw2");
         this.setRegistryName("npu:dw2");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB4);
@@ -88,7 +88,7 @@ public class DW2 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

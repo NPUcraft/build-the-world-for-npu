@@ -30,7 +30,7 @@ public class Light4 extends Block implements IHasModel {
 
     public Light4() {
         super(Material.ROCK);
-        setUnlocalizedName("light4");
+        setTranslationKey("light4");
         setRegistryName("npu:light4");
         setCreativeTab(NPU.MY_TAB);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

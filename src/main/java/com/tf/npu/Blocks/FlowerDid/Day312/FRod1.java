@@ -66,7 +66,7 @@ public class FRod1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -101,7 +101,7 @@ public class FRod1 extends Block implements IHasModel {
     public FRod1() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("frod1");
+        this.setTranslationKey("frod1");
 
         this.setRegistryName("npu:frod1");
 

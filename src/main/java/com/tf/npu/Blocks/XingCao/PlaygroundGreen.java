@@ -9,7 +9,7 @@ import net.minecraft.item.ItemBlock;
 public class PlaygroundGreen extends BlockTemplate {
     public PlaygroundGreen() {
         super();
-        this.setUnlocalizedName("playground_green");
+        this.setTranslationKey("playground_green");
         this.setRegistryName("npu:playground_green");
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);

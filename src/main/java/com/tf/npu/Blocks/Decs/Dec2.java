@@ -72,7 +72,7 @@ public class Dec2 extends Block implements IHasModel {
 
     public Dec2() {
         super(Material.ROCK);
-        this.setUnlocalizedName("dec2");
+        this.setTranslationKey("dec2");
         this.setRegistryName("npu:dec2");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB5);
@@ -85,7 +85,7 @@ public class Dec2 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

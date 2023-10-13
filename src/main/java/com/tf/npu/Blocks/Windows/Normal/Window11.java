@@ -71,7 +71,7 @@ public class Window11 extends Block implements IHasModel {
 
     public Window11() {
         super(Material.ROCK);
-        this.setUnlocalizedName("window11");
+        this.setTranslationKey("window11");
         this.setRegistryName("npu:window11");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB4);
@@ -85,7 +85,7 @@ public class Window11 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

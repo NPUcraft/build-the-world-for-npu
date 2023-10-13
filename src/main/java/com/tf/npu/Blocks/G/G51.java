@@ -62,7 +62,7 @@ public class G51 extends Block implements IHasModel {
 
     public G51() {
         super(Material.ROCK);
-        this.setUnlocalizedName("g51");
+        this.setTranslationKey("g51");
         this.setRegistryName("npu:g51");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
@@ -75,7 +75,7 @@ public class G51 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

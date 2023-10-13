@@ -72,7 +72,7 @@ public class BPDown extends Block implements IHasModel {
 
     public BPDown() {
         super(Material.SNOW);
-        this.setUnlocalizedName("bpdown");
+        this.setTranslationKey("bpdown");
         this.setRegistryName("npu:bpdown");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
@@ -85,7 +85,7 @@ public class BPDown extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

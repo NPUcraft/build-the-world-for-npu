@@ -57,7 +57,7 @@ public class FStove1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -95,7 +95,7 @@ public class FStove1 extends Block implements IHasModel {
         super(Material.ROCK);
         this.inverted = inverted;
 
-        this.setUnlocalizedName("fstove1");
+        this.setTranslationKey("fstove1");
 
         this.setRegistryName("npu:fstove1");
 

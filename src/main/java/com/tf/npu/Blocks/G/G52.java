@@ -13,7 +13,7 @@ import net.minecraft.item.ItemBlock;
 public class G52 extends Block implements IHasModel {
     public G52() {
         super(Material.ROCK);
-        setUnlocalizedName("g52");
+        setTranslationKey("g52");
         setRegistryName("npu:g52");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

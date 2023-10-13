@@ -64,7 +64,7 @@ public class FWell1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -95,7 +95,7 @@ public class FWell1 extends Block implements IHasModel {
     public FWell1() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fwell1");
+        this.setTranslationKey("fwell1");
 
         this.setRegistryName("npu:fwell1");
 

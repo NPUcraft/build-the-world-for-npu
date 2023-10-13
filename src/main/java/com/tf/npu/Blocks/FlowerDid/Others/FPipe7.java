@@ -54,7 +54,7 @@ public class FPipe7 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -89,7 +89,7 @@ public class FPipe7 extends Block implements IHasModel {
     public FPipe7() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("fpipe7");
+        this.setTranslationKey("fpipe7");
         
         this.setRegistryName("npu:fpipe7");
         

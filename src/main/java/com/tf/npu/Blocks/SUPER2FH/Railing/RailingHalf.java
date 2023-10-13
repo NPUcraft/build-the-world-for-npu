@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class RailingHalf extends BlockFourSideFacingTemplate {
     public RailingHalf() {
         super();
-        this.setUnlocalizedName("railing_half");
+        this.setTranslationKey("railing_half");
         this.setRegistryName("npu:railing_half");
         this.setCreativeTab(NPU.RAILING);
         RailingBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

@@ -59,7 +59,7 @@ public class FGallery4 extends Block implements IHasModel {
     public FGallery4() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("fgallery4");
+        this.setTranslationKey("fgallery4");
         
         this.setRegistryName("npu:fgallery4");
         

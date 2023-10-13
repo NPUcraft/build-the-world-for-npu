@@ -69,7 +69,7 @@ public class FYFDoor1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -104,7 +104,7 @@ public class FYFDoor1 extends Block implements IHasModel {
     public FYFDoor1() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("fyfdoor1");
+        this.setTranslationKey("fyfdoor1");
         
         this.setRegistryName("npu:fyfdoor1");
         

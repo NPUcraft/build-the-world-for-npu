@@ -13,7 +13,7 @@ import net.minecraft.world.IBlockAccess;
 public class DeskWood2 extends BlockFourSideFacingTemplate {
     public DeskWood2() {
         super();
-        this.setUnlocalizedName("desk_wood2");
+        this.setTranslationKey("desk_wood2");
         this.setRegistryName("npu:desk_wood2");
         this.setCreativeTab(NPU.DESK);
         DeskBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

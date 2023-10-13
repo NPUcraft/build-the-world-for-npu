@@ -71,7 +71,7 @@ public class InSign3 extends Block implements IHasModel {
 
     public InSign3() {
         super(Material.ROCK);
-        this.setUnlocalizedName("insign3");
+        this.setTranslationKey("insign3");
         this.setRegistryName("npu:insign3");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB5);
@@ -84,7 +84,7 @@ public class InSign3 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

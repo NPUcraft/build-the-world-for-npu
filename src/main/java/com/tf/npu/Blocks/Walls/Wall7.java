@@ -13,7 +13,7 @@ import net.minecraft.item.ItemBlock;
 public class Wall7 extends Block implements IHasModel {
     public Wall7() {
         super(Material.ROCK);
-        setUnlocalizedName("wall7");
+        setTranslationKey("wall7");
         setRegistryName("npu:wall7");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

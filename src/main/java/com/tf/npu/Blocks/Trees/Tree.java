@@ -30,7 +30,7 @@ public class Tree extends Block implements IHasModel {
 
     public Tree() {
         super(Material.ROCK);
-        setUnlocalizedName("tree");
+        setTranslationKey("tree");
         setRegistryName("npu:tree");
         setCreativeTab(NPU.MY_TAB3);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

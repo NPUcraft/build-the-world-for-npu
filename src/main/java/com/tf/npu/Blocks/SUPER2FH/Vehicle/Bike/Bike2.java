@@ -13,7 +13,7 @@ public class Bike2 extends BlockFourSideFacingTemplate {
 
     public Bike2() {
         super();
-        this.setUnlocalizedName("bike2");
+        this.setTranslationKey("bike2");
         this.setRegistryName("npu:bike2");
         this.setCreativeTab(NPU.VEHICLE);
         VehicleBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

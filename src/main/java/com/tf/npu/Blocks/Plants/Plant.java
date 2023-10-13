@@ -74,7 +74,7 @@ public class Plant extends Block implements IHasModel {
 
     public Plant() {
         super(Material.ROCK);
-        this.setUnlocalizedName("plant");
+        this.setTranslationKey("plant");
         this.setRegistryName("npu:plant");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB3);
@@ -87,7 +87,7 @@ public class Plant extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

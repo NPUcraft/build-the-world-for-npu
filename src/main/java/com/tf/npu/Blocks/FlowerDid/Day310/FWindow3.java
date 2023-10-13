@@ -69,7 +69,7 @@ public class FWindow3 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -104,7 +104,7 @@ public class FWindow3 extends Block implements IHasModel {
     public FWindow3() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fwindow3");
+        this.setTranslationKey("fwindow3");
 
         this.setRegistryName("npu:fwindow3");
 

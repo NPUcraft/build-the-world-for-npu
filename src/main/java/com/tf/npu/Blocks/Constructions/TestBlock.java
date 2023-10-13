@@ -72,7 +72,7 @@ public class TestBlock extends Block implements IHasModel {
 
     public TestBlock() {
         super(Material.ROCK);
-        this.setUnlocalizedName("testblock");
+        this.setTranslationKey("testblock");
         this.setRegistryName("npu:testblock");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
@@ -85,7 +85,7 @@ public class TestBlock extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

@@ -13,7 +13,7 @@ import net.minecraft.world.IBlockAccess;
 public class ChairLightblue extends BlockFourSideFacingTemplate {
     public ChairLightblue() {
         super();
-        this.setUnlocalizedName("chair_lightblue");
+        this.setTranslationKey("chair_lightblue");
         this.setRegistryName("npu:chair_lightblue");
         this.setCreativeTab(NPU.CHAIR);
         ChairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

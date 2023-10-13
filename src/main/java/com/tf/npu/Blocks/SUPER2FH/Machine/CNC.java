@@ -13,7 +13,7 @@ import net.minecraft.world.IBlockAccess;
 public class CNC extends BlockFourSideFacingTemplate {
     public CNC() {
         super();
-        this.setUnlocalizedName("cnc");
+        this.setTranslationKey("cnc");
         this.setRegistryName("npu:cnc");
         this.setCreativeTab(NPU.MACHINE);
         MachineBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

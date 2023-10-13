@@ -71,7 +71,7 @@ public class Trash extends Block implements IHasModel {
 
     public Trash() {
         super(Material.ROCK);
-        this.setUnlocalizedName("trash");
+        this.setTranslationKey("trash");
         this.setRegistryName("npu:trash");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB3);
@@ -84,7 +84,7 @@ public class Trash extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

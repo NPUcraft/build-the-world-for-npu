@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class BlueBrickHalf extends BlockTemplate {
     public BlueBrickHalf() {
         super();
-        this.setUnlocalizedName("blue_brick_half");
+        this.setTranslationKey("blue_brick_half");
         this.setRegistryName("npu:blue_brick_half");
         this.setCreativeTab(NPU.CUBE);
         CubeBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

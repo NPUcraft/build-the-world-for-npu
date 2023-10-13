@@ -71,7 +71,7 @@ public class Wall5 extends Block implements IHasModel {
 
     public Wall5() {
         super(Material.ROCK);
-        this.setUnlocalizedName("wall5");
+        this.setTranslationKey("wall5");
         this.setRegistryName("npu:wall5");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
@@ -85,7 +85,7 @@ public class Wall5 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

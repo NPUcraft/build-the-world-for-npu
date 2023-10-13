@@ -71,7 +71,7 @@ public class Pipe4 extends Block implements IHasModel {
 
     public Pipe4() {
         super(Material.ROCK);
-        this.setUnlocalizedName("pipe4");
+        this.setTranslationKey("pipe4");
         this.setRegistryName("npu:pipe4");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB3);
@@ -84,7 +84,7 @@ public class Pipe4 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

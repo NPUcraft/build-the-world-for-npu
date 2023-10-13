@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 public class ChairAuditoriumHalfRed extends BlockFourSideFacingTemplate {
     public ChairAuditoriumHalfRed() {
         super();
-        this.setUnlocalizedName("chair_auditorium_half_red");
+        this.setTranslationKey("chair_auditorium_half_red");
         this.setRegistryName("npu:chair_auditorium_half_red");
         this.setCreativeTab(NPU.CHAIR);
         ChairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

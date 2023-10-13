@@ -71,7 +71,7 @@ public class HWater extends Block implements IHasModel {
 
     public HWater() {
         super(Material.ROCK);
-        this.setUnlocalizedName("hwater");
+        this.setTranslationKey("hwater");
         this.setRegistryName("npu:hwater");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -84,7 +84,7 @@ public class HWater extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

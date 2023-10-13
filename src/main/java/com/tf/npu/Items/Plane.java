@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 public class Plane extends Item {
     public Plane() {
         setCreativeTab(NPU.MY_TAB3);
-        setUnlocalizedName("plane");
+        setTranslationKey("plane");
     }
 
 

@@ -71,7 +71,7 @@ public class SL3 extends Block implements IHasModel {
 
     public SL3() {
         super(Material.ROCK);
-        this.setUnlocalizedName("sl3");
+        this.setTranslationKey("sl3");
         this.setRegistryName("npu:sl3");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB3);
@@ -84,7 +84,7 @@ public class SL3 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

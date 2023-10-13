@@ -13,7 +13,7 @@ import net.minecraft.item.ItemBlock;
 public class Mesh extends Block implements IHasModel {
     public Mesh() {
         super(Material.ROCK);
-        setUnlocalizedName("mesh");
+        setTranslationKey("mesh");
         setRegistryName("npu:mesh");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

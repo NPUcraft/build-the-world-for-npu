@@ -80,7 +80,7 @@ public class FExt1 extends Block implements IHasModel {
 
     public FExt1() {
         super(Material.ROCK);
-        this.setUnlocalizedName("fext1");
+        this.setTranslationKey("fext1");
         this.setRegistryName("npu:fext1");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -103,7 +103,7 @@ public class FExt1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

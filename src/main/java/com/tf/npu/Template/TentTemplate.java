@@ -30,7 +30,7 @@ public class TentTemplate extends Block implements IHasModel {
         return new BlockStateContainer(this, ANGEL);
     }
 
-    //x1,y1,z1,x2,y2,z2均为double类型
+    //x1,y1,z1,x2,y2,z2鍧囦负double绫诲瀷
     public static final AxisAlignedBB SHAPE = new AxisAlignedBB(0.0D, 0.0D, 0.0D,
             0.0D, 0.0D, 0.0D);
 

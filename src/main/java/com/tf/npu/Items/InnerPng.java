@@ -4,6 +4,6 @@ import net.minecraft.item.Item;
 
 public class InnerPng extends Item {
     public InnerPng() {
-        setUnlocalizedName("innerpng");
+        setTranslationKey("innerpng");
     }
 }

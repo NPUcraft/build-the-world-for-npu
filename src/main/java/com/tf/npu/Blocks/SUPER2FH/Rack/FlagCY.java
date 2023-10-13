@@ -9,7 +9,7 @@ import net.minecraft.item.ItemBlock;
 public class FlagCY extends BlockFourSideFacingTemplate {
     public FlagCY() {
         super();
-        this.setUnlocalizedName("flag_cy");
+        this.setTranslationKey("flag_cy");
         this.setRegistryName("npu:flag_cy");
         this.setCreativeTab(NPU.RACK);
         this.setLightLevel(0.1f);

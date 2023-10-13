@@ -61,7 +61,7 @@ public class YF1 extends Block implements IHasModel {
 
     public YF1() {
         super(Material.ROCK);
-        this.setUnlocalizedName("yf1");
+        this.setTranslationKey("yf1");
         this.setRegistryName("npu:yf1");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
@@ -75,7 +75,7 @@ public class YF1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

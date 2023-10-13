@@ -30,7 +30,7 @@ public class NN extends Block implements IHasModel {
 
     public NN() {
         super(Material.ROCK);
-        setUnlocalizedName("nn");
+        setTranslationKey("nn");
         setRegistryName("npu:nn");
         setCreativeTab(NPU.MY_TAB3);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

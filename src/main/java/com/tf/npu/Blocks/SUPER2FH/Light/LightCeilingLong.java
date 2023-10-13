@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class LightCeilingLong extends BlockFourSideFacingTemplate {
     public LightCeilingLong() {
         super();
-        this.setUnlocalizedName("light_ceiling_long");
+        this.setTranslationKey("light_ceiling_long");
         this.setRegistryName("npu:light_ceiling_long");
         this.setLightLevel(1);
         this.setCreativeTab(NPU.LIGHT);

@@ -29,7 +29,7 @@ public class G38 extends Block implements IHasModel {
 
     public G38() {
         super(Material.ROCK);
-        setUnlocalizedName("g38");
+        setTranslationKey("g38");
         setRegistryName("npu:g38");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class FenceWarninglineColumnTriple extends BlockFourSideFacingTemplate {
     public FenceWarninglineColumnTriple() {
         super();
-        this.setUnlocalizedName("Fence_Warningline_column_triple");
+        this.setTranslationKey("Fence_Warningline_column_triple");
         this.setRegistryName("npu:Fence_Warningline_column_triple");
         this.setCreativeTab(NPU.FENCE);
         FenceBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

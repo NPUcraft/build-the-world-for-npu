@@ -72,7 +72,7 @@ public class Mirror extends Block implements IHasModel {
 
     public Mirror() {
         super(Material.ROCK);
-        this.setUnlocalizedName("mirror");
+        this.setTranslationKey("mirror");
         this.setRegistryName("npu:mirror");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -85,7 +85,7 @@ public class Mirror extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

@@ -33,7 +33,7 @@ public abstract class BlockCementSlab extends BlockSlab implements IHasModel {
         super(Material.ROCK);
         this.fullBlock = this.isDouble();
         this.setLightOpacity(255);
-        this.setUnlocalizedName("cementslab");
+        this.setTranslationKey("cementslab");
         this.setRegistryName("npu:cementslab");
 
         IBlockState iblockstate = this.blockState.getBaseState();
@@ -65,8 +65,8 @@ public abstract class BlockCementSlab extends BlockSlab implements IHasModel {
     /**
      * Returns the slab block name with the type associated with it
      */
-    public String getUnlocalizedName(int meta) {
-        return super.getUnlocalizedName() + "." + BlockCementSlab.EnumType.byMetadata(meta).getUnlocalizedName();
+    public String getTranslationKey(int meta) {
+        return super.getTranslationKey() + "." + BlockCementSlab.EnumType.byMetadata(meta).getTranslationKey();
     }
 
     public IProperty<?> getVariantProperty() {
@@ -191,7 +191,7 @@ public abstract class BlockCementSlab extends BlockSlab implements IHasModel {
             return this.name;
         }
 
-        public String getUnlocalizedName() {
+        public String getTranslationKey() {
             return this.unlocalizedName;
         }
 

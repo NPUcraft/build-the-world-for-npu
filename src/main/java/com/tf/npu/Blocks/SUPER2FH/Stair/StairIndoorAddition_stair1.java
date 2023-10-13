@@ -13,7 +13,7 @@ public class StairIndoorAddition_stair1 extends BlockFourSideFacingTemplate {
 
     public StairIndoorAddition_stair1() {
         super();
-        this.setUnlocalizedName("stair1");
+        this.setTranslationKey("stair1");
         this.setRegistryName("npu:stair1");
         this.setCreativeTab(NPU.STAIR);
         StairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

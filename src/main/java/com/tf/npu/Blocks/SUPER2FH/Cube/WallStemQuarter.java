@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class WallStemQuarter extends BlockFourSideFacingTemplate {
     public WallStemQuarter() {
         super();
-        this.setUnlocalizedName("wall_stem_quarter");
+        this.setTranslationKey("wall_stem_quarter");
         this.setRegistryName("npu:wall_stem_quarter");
         this.setCreativeTab(NPU.CUBE);
         CubeBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

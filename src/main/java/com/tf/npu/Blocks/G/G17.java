@@ -29,7 +29,7 @@ public class G17 extends Block implements IHasModel {
 
     public G17() {
         super(Material.ROCK);
-        setUnlocalizedName("g17");
+        setTranslationKey("g17");
         setRegistryName("npu:g17");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

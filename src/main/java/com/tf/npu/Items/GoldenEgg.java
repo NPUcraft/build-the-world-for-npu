@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 public class GoldenEgg extends Item {
     public GoldenEgg() {
-        this.setUnlocalizedName("goldenegg");
+        this.setTranslationKey("goldenegg");
     }
 
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {

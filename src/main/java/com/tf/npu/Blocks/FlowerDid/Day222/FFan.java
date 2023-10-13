@@ -66,7 +66,7 @@ public class FFan extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -101,7 +101,7 @@ public class FFan extends Block implements IHasModel {
     public FFan() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("ffan");
+        this.setTranslationKey("ffan");
 
         this.setRegistryName("npu:ffan");
 

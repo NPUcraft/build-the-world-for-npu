@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 public class DeskFoldable extends BlockFourSideFacingTemplate {
     public DeskFoldable() {
         super();
-        this.setUnlocalizedName("desk_foldable");
+        this.setTranslationKey("desk_foldable");
         this.setRegistryName("npu:desk_foldable");
         this.setCreativeTab(NPU.DESK);
         DeskBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

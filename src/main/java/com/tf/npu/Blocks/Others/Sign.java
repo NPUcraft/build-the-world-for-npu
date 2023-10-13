@@ -73,7 +73,7 @@ public class Sign extends Block implements IHasModel {
 
     public Sign() {
         super(Material.ROCK);
-        this.setUnlocalizedName("sign");
+        this.setTranslationKey("sign");
         this.setRegistryName("npu:sign");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -86,7 +86,7 @@ public class Sign extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

@@ -9,7 +9,7 @@ import net.minecraft.item.ItemBlock;
 public class DeskFoldableCovid19PC extends BlockFourSideFacingTemplate {
     public DeskFoldableCovid19PC() {
         super();
-        this.setUnlocalizedName("desk_foldable_covid19_pc");
+        this.setTranslationKey("desk_foldable_covid19_pc");
         this.setRegistryName("npu:desk_foldable_covid19_pc");
         this.setCreativeTab(NPU.DESK);
         DeskBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

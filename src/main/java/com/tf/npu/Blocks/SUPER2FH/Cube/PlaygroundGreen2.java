@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 public class PlaygroundGreen2 extends BlockTemplate {
     public PlaygroundGreen2() {
         super();
-        this.setUnlocalizedName("playground_green2");
+        this.setTranslationKey("playground_green2");
         this.setRegistryName("npu:playground_green2");
         this.setCreativeTab(NPU.CUBE);
         CubeBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

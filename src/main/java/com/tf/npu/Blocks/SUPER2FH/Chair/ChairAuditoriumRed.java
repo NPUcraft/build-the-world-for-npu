@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class ChairAuditoriumRed extends BlockFourSideFacingTemplate {
     public ChairAuditoriumRed() {
         super();
-        this.setUnlocalizedName("chair_auditorium_red");
+        this.setTranslationKey("chair_auditorium_red");
         this.setRegistryName("npu:chair_auditorium_red");
         this.setCreativeTab(NPU.CHAIR);
         ChairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

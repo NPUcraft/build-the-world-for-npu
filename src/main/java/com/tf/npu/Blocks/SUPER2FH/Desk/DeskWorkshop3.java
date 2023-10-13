@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class DeskWorkshop3 extends BlockFourSideFacingTemplate {
     public DeskWorkshop3() {
         super();
-        this.setUnlocalizedName("desk_workshop3");
+        this.setTranslationKey("desk_workshop3");
         this.setRegistryName("npu:desk_workshop3");
         this.setCreativeTab(NPU.DESK);
         DeskBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

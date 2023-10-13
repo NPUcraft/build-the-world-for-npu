@@ -70,7 +70,7 @@ public class FHallScreen2 extends Block implements IHasModel {
     public FHallScreen2() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("fhallscreen2");
+        this.setTranslationKey("fhallscreen2");
         
         this.setRegistryName("npu:fhallscreen2");
         

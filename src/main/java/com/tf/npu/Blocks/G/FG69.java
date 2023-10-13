@@ -42,7 +42,7 @@ public class FG69 extends Block implements IHasModel {
     public FG69() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("fg69");
+        this.setTranslationKey("fg69");
         
         this.setRegistryName("npu:fg69");
         

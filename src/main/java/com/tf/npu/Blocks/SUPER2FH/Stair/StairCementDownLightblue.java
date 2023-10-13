@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class StairCementDownLightblue extends BlockFourSideFacingTemplate {
     public StairCementDownLightblue() {
         super();
-        this.setUnlocalizedName("stair_cement_down_lightblue");
+        this.setTranslationKey("stair_cement_down_lightblue");
         this.setRegistryName("npu:stair_cement_down_lightblue");
         this.setCreativeTab(NPU.STAIR);
         StairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

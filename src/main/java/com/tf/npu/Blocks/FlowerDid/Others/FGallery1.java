@@ -59,7 +59,7 @@ public class FGallery1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -94,7 +94,7 @@ public class FGallery1 extends Block implements IHasModel {
     public FGallery1() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fgallery1");
+        this.setTranslationKey("fgallery1");
 
         this.setRegistryName("npu:fgallery1");
 

@@ -12,7 +12,7 @@ import net.minecraft.world.World;
 public class SchoolBus extends Item {
     public SchoolBus() {
         setCreativeTab(NPU.MY_TAB3);
-        setUnlocalizedName("schoolbus");
+        setTranslationKey("schoolbus");
     }
 
 

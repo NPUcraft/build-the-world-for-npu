@@ -9,6 +9,6 @@ public class ItemRubbishSword extends ItemPickaxe {
 
     public ItemRubbishSword() {
         super(REDSTONE);
-        this.setUnlocalizedName("rubbishsword");
+        this.setTranslationKey("rubbishsword");
     }
 }

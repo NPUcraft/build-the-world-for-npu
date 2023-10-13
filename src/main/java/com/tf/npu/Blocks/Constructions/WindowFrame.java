@@ -72,7 +72,7 @@ public class WindowFrame extends Block implements IHasModel {
 
     public WindowFrame() {
         super(Material.ROCK);
-        this.setUnlocalizedName("windowframe");
+        this.setTranslationKey("windowframe");
         this.setRegistryName("npu:windowframe");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB4);
@@ -85,7 +85,7 @@ public class WindowFrame extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

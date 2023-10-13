@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class AirconditionerVertical extends BlockFourSideFacingTemplate {
     public AirconditionerVertical() {
         super();
-        this.setUnlocalizedName("airconditioner_vertical");
+        this.setTranslationKey("airconditioner_vertical");
         this.setRegistryName("npu:airconditioner_vertical");
         this.setCreativeTab(NPU.FURNITURE);
         FurnitureBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

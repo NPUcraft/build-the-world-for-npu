@@ -34,7 +34,7 @@ public class CemH extends Block implements IHasModel {
 
     public CemH() {
         super(Material.ROCK);
-        setUnlocalizedName("cemh");
+        setTranslationKey("cemh");
         setRegistryName("npu:cemh");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

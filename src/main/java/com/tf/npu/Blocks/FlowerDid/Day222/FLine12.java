@@ -66,7 +66,7 @@ public class FLine12 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -101,7 +101,7 @@ public class FLine12 extends Block implements IHasModel {
     public FLine12() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fline12");
+        this.setTranslationKey("fline12");
 
         this.setRegistryName("npu:fline12");
 

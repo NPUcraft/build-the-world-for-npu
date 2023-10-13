@@ -12,7 +12,7 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 public class BlackboardCoreSocialistValues extends BlockFourSideFacingTemplate {
     public BlackboardCoreSocialistValues() {
         super();
-        this.setUnlocalizedName("blackboard_core_socialist_values");
+        this.setTranslationKey("blackboard_core_socialist_values");
         this.setRegistryName("npu:blackboard_core_socialist_values");
         this.setCreativeTab(NPU.RACK);
         RackBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

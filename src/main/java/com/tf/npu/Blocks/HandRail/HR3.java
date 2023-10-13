@@ -71,7 +71,7 @@ public class HR3 extends Block implements IHasModel {
 
     public HR3() {
         super(Material.ROCK);
-        this.setUnlocalizedName("hr3");
+        this.setTranslationKey("hr3");
         this.setRegistryName("npu:hr3");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB3);
@@ -84,7 +84,7 @@ public class HR3 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

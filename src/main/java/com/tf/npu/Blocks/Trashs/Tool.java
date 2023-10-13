@@ -71,7 +71,7 @@ public class Tool extends Block implements IHasModel {
 
     public Tool() {
         super(Material.ROCK);
-        this.setUnlocalizedName("tool");
+        this.setTranslationKey("tool");
         this.setRegistryName("npu:tool");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB3);
@@ -84,7 +84,7 @@ public class Tool extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

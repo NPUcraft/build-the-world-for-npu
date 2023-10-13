@@ -18,7 +18,7 @@ public class WindowCeiling extends BlockTemplate {
 
     public WindowCeiling() {
         super();
-        this.setUnlocalizedName("window_ceiling");
+        this.setTranslationKey("window_ceiling");
         this.setRegistryName("npu:window_ceiling");
         this.setCreativeTab(NPU.WINDOW);
         WindowBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

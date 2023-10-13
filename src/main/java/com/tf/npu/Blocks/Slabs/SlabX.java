@@ -33,7 +33,7 @@ public abstract class SlabX extends Block implements IHasModel {
 
     public SlabX() {
         super(Material.ROCK);
-        this.setUnlocalizedName("slabx");
+        this.setTranslationKey("slabx");
         this.setRegistryName("npu:slabx");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB3);
@@ -165,7 +165,7 @@ public abstract class SlabX extends Block implements IHasModel {
     /**
      * Returns the slab block name with the type associated with it
      */
-    public abstract String getUnlocalizedName(int meta);
+    public abstract String getTranslationKey(int meta);
 
     public abstract boolean isDouble();
 

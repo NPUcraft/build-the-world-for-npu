@@ -56,7 +56,7 @@ public class BBed2R1 extends Block implements IHasModel {
 
     public BBed2R1() {
         super(Material.ROCK);
-        this.setUnlocalizedName("bbed2r1");
+        this.setTranslationKey("bbed2r1");
         this.setRegistryName("npu:bbed2r1");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -69,7 +69,7 @@ public class BBed2R1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

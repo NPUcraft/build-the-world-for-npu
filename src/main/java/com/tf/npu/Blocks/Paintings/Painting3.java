@@ -71,7 +71,7 @@ public class Painting3 extends Block implements IHasModel {
 
     public Painting3() {
         super(Material.ROCK);
-        this.setUnlocalizedName("painting3");
+        this.setTranslationKey("painting3");
         this.setRegistryName("npu:painting3");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -84,7 +84,7 @@ public class Painting3 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

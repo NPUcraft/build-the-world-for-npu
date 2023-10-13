@@ -4,6 +4,6 @@ import net.minecraft.item.Item;
 
 public class TitlePng extends Item {
     public TitlePng() {
-        setUnlocalizedName("titlepng");
+        setTranslationKey("titlepng");
     }
 }

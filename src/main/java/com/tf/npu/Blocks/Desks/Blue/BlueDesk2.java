@@ -72,7 +72,7 @@ public class BlueDesk2 extends Block implements IHasModel {
 
     public BlueDesk2() {
         super(Material.ROCK);
-        this.setUnlocalizedName("blueclassroomdesk2");
+        this.setTranslationKey("blueclassroomdesk2");
         this.setRegistryName("npu:blueclassroomdesk2");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
@@ -85,7 +85,7 @@ public class BlueDesk2 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

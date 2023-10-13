@@ -14,7 +14,7 @@ public class StairGentlyDown_g40 extends BlockFourSideFacingTemplate {
     // g40
     public StairGentlyDown_g40() {
         super();
-        this.setUnlocalizedName("g40");
+        this.setTranslationKey("g40");
         this.setRegistryName("npu:g40");
         this.setCreativeTab(NPU.STAIR);
         StairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

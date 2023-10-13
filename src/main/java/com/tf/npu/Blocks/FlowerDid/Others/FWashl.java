@@ -59,7 +59,7 @@ public class FWashl extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -94,7 +94,7 @@ public class FWashl extends Block implements IHasModel {
     public FWashl() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fwashl");
+        this.setTranslationKey("fwashl");
 
         this.setRegistryName("npu:fwashl");
 

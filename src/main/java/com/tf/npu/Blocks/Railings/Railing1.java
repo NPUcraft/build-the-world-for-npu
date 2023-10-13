@@ -72,7 +72,7 @@ public class Railing1 extends Block implements IHasModel {
 
     public Railing1() {
         super(Material.ROCK);
-        this.setUnlocalizedName("railing1");
+        this.setTranslationKey("railing1");
         this.setRegistryName("npu:railing1");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
@@ -86,7 +86,7 @@ public class Railing1 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

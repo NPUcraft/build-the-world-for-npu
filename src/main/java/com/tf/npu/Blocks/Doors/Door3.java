@@ -71,7 +71,7 @@ public class Door3 extends Block implements IHasModel {
 
     public Door3() {
         super(Material.ROCK);
-        this.setUnlocalizedName("door3");
+        this.setTranslationKey("door3");
         this.setRegistryName("npu:door3");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB4);
@@ -85,7 +85,7 @@ public class Door3 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

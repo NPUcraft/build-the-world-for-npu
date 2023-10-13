@@ -55,7 +55,7 @@ public class FCamera5 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -90,7 +90,7 @@ public class FCamera5 extends Block implements IHasModel {
     public FCamera5() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fcamera5");
+        this.setTranslationKey("fcamera5");
 
         this.setRegistryName("npu:fcamera5");
 

@@ -72,7 +72,7 @@ public class TopAirconditioner extends Block implements IHasModel {
 
     public TopAirconditioner() {
         super(Material.ROCK);
-        this.setUnlocalizedName("top_airconditioner");
+        this.setTranslationKey("top_airconditioner");
         this.setRegistryName("npu:top_airconditioner");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -85,7 +85,7 @@ public class TopAirconditioner extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

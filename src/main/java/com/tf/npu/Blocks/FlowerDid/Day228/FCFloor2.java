@@ -66,7 +66,7 @@ public class FCFloor2 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -101,7 +101,7 @@ public class FCFloor2 extends Block implements IHasModel {
     public FCFloor2() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fcfloor2");
+        this.setTranslationKey("fcfloor2");
 
         this.setRegistryName("npu:fcfloor2");
 

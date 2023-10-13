@@ -72,7 +72,7 @@ public class Floor5 extends Block implements IHasModel {
 
     public Floor5() {
         super(Material.ROCK);
-        this.setUnlocalizedName("floor5");
+        this.setTranslationKey("floor5");
         this.setRegistryName("npu:floor5");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB5);
@@ -85,7 +85,7 @@ public class Floor5 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

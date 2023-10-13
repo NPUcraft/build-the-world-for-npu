@@ -54,7 +54,7 @@ public class FCamera extends Block implements IHasModel {
     public FCamera() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fcamera");
+        this.setTranslationKey("fcamera");
 
         this.setRegistryName("npu:fcamera");
 

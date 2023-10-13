@@ -13,7 +13,7 @@ import net.minecraft.item.ItemBlock;
 public class WGWall1 extends Block implements IHasModel {
     public WGWall1() {
         super(Material.ROCK);
-        setUnlocalizedName("wgwall1");
+        setTranslationKey("wgwall1");
         setRegistryName("npu:wgwall1");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

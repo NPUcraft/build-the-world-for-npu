@@ -30,7 +30,7 @@ public class HR2 extends Block implements IHasModel {
 
     public HR2() {
         super(Material.ROCK);
-        setUnlocalizedName("hr2");
+        setTranslationKey("hr2");
         setRegistryName("npu:hr2");
         setCreativeTab(NPU.MY_TAB3);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

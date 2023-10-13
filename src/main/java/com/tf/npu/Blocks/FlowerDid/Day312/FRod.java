@@ -67,7 +67,7 @@ public class FRod extends Block implements IHasModel {
     public FRod() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("frod");
+        this.setTranslationKey("frod");
 
         this.setRegistryName("npu:frod");
 

@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class CementHalfLightblue extends BlockFourSideFacingTemplate {
     public CementHalfLightblue() {
         super();
-        this.setUnlocalizedName("cement_half_lightblue");
+        this.setTranslationKey("cement_half_lightblue");
         this.setRegistryName("npu:cement_half_lightblue");
         this.setCreativeTab(NPU.CUBE);
         CubeBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

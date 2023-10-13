@@ -14,7 +14,7 @@ public class StairWhite_g45 extends BlockFourSideFacingTemplate {
     // g45
     public StairWhite_g45() {
         super();
-        this.setUnlocalizedName("g45");
+        this.setTranslationKey("g45");
         this.setRegistryName("npu:g45");
         this.setCreativeTab(NPU.STAIR);
         StairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

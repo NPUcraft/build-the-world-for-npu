@@ -65,7 +65,7 @@ public class ItemLoader {
     }
 
     private static void register(Item item) {
-        String[] arr = item.getUnlocalizedName().toString().split("\\.");
+        String[] arr = item.getTranslationKey().toString().split("\\.");
         ForgeRegistries.ITEMS.register(item.setRegistryName(arr[1]));
     }
 

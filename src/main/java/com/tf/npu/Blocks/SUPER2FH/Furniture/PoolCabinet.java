@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class PoolCabinet extends BlockFourSideFacingTemplate {
     public PoolCabinet() {
         super();
-        this.setUnlocalizedName("pool_cabinet");
+        this.setTranslationKey("pool_cabinet");
         this.setRegistryName("npu:pool_cabinet");
         this.setCreativeTab(NPU.FURNITURE);
         FurnitureBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

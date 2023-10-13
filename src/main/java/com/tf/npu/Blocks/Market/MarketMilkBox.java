@@ -57,7 +57,7 @@ public class MarketMilkBox extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -99,7 +99,7 @@ public class MarketMilkBox extends Block implements IHasModel {
     public MarketMilkBox() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("market_milk_box");
+        this.setTranslationKey("market_milk_box");
         
         this.setRegistryName("npu:market_milk_box");
         

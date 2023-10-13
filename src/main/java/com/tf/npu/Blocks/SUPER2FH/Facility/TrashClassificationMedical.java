@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class TrashClassificationMedical extends BlockFourSideFacingTemplate {
     public TrashClassificationMedical() {
         super();
-        this.setUnlocalizedName("trash_classification_medical");
+        this.setTranslationKey("trash_classification_medical");
         this.setRegistryName("npu:trash_classification_medical");
         this.setCreativeTab(NPU.FACILITY);
         FacilityBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

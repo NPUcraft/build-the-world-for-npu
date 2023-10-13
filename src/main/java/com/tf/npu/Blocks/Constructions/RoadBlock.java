@@ -30,7 +30,7 @@ public class RoadBlock extends Block implements IHasModel {
 
     public RoadBlock() {
         super(Material.ROCK);
-        setUnlocalizedName("roadblock");
+        setTranslationKey("roadblock");
         setRegistryName("npu:roadblock");
         setCreativeTab(NPU.MY_TAB3);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

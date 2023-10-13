@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class CementRoadSide3 extends BlockFourSideFacingTemplate {
     public CementRoadSide3() {
         super();
-        this.setUnlocalizedName("cement_road_side3");
+        this.setTranslationKey("cement_road_side3");
         this.setRegistryName("npu:cement_road_side3");
         this.setCreativeTab(NPU.CUBE);
         CubeBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

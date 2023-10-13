@@ -71,7 +71,7 @@ public class Light9 extends Block implements IHasModel {
 
     public Light9() {
         super(Material.ROCK);
-        this.setUnlocalizedName("light9");
+        this.setTranslationKey("light9");
         this.setRegistryName("npu:light9");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
@@ -84,7 +84,7 @@ public class Light9 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

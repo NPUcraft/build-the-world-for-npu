@@ -60,7 +60,7 @@ public class MarketCashierDeskRight extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -102,7 +102,7 @@ public class MarketCashierDeskRight extends Block implements IHasModel {
     public MarketCashierDeskRight() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("market_cashier_desk_right");
+        this.setTranslationKey("market_cashier_desk_right");
         
         this.setRegistryName("npu:market_cashier_desk_right");
         

@@ -1,35 +1,42 @@
-buildscript {
-    repositories {
-        jcenter()
-        maven { url = "https://files.minecraftforge.net/maven" }
-    }
-    dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+plugins {
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'wtf.gofancy.fancygradle' version '1.1.+'
+    id 'eclipse'
+    id 'idea'
+}
+
+fancyGradle {
+    patches {
+        resources
+        coremods
     }
 }
-apply plugin: 'net.minecraftforge.gradle.forge'
+
 //Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 
 
 version = "2.23.0119"
 group = "com.tf.npu" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "BuildTheWorldForNPU"
-
 sourceCompatibility = targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
 compileJava {
     sourceCompatibility = targetCompatibility = '1.8'
 }
 
 minecraft {
-    version = "1.12.2-14.23.5.2847"
-    runDir = "run"
+    mappings channel: 'stable', version: '39-1.12'
+
+//    setVersion("1.12.2-14.23.5.2860")
+//    version = "1.12.2-14.23.5.2860"
+//    runDir = "run"
 
     // the mappings can be changed at any time, and must be in the following format.
     // snapshot_YYYYMMDD   snapshot are built nightly.
     // stable_#            stables are built at the discretion of the MCP team.
     // Use non-default mappings at your own risk. they may not always work.
     // simply re-run your setup task after changing the mappings to update your workspace.
-    mappings = "snapshot_20171003"
+//    mappings = "snapshot_20171003"
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 }
 
@@ -39,6 +46,7 @@ repositories {
 
 
 dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2860'
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
@@ -61,26 +69,20 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 //    deobfCompile 'software.bernie.geckolib:forge-1.12.2-geckolib:3.0.21'
 //    deobfProvided 'software.bernie.geckolib:forge-1.12.2-geckolib:3.0.21'
-//    implementation fg.deobf('software.bernie.geckolib:forge-1.12.2-geckolib:3.0.21')
-    compile 'software.bernie.geckolib:forge-1.12.2-geckolib:3.0.21'
+    implementation fg.deobf('software.bernie.geckolib:forge-1.12.2-geckolib:3.0.21')
+//    compile 'software.bernie.geckolib:forge-1.12.2-geckolib:3.0.21'
 
 }
 
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
 processResources {
-    // this will ensure that this task is redone when the versions change.
-    inputs.property "version", project.version
-    inputs.property "mcversion", project.minecraft.version
-
-    // replace stuff in mcmod.info, nothing else
-    from(sourceSets.main.resources.srcDirs) {
-        include 'mcmod.info'
-
-        // replace version and mcversion
-        expand 'version':project.version, 'mcversion':project.minecraft.version
-    }
-
-    // copy everything else except the mcmod.info
-    from(sourceSets.main.resources.srcDirs) {
-        exclude 'mcmod.info'
+    inputs.property "version", "${project.version}"
+    inputs.property "mcversion", "1.12.2"
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    filesMatching(['mcmod.info']) {
+        expand 'version':"${project.version}", 'mcversion':'1.12.2'
     }
 }

@@ -12,7 +12,7 @@ import net.minecraft.world.IBlockAccess;
 public class ShelfGongxun extends BlockFourSideFacingTemplate {
     public ShelfGongxun() {
         super();
-        this.setUnlocalizedName("shelf_gongxun");
+        this.setTranslationKey("shelf_gongxun");
         this.setRegistryName("npu:shelf_gongxun");
         this.setCreativeTab(NPU.FURNITURE);
         FurnitureBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

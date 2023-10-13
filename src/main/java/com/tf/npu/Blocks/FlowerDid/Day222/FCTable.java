@@ -55,7 +55,7 @@ public class FCTable extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -90,7 +90,7 @@ public class FCTable extends Block implements IHasModel {
     public FCTable() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("fctable");
+        this.setTranslationKey("fctable");
         
         this.setRegistryName("npu:fctable");
         

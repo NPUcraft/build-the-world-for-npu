@@ -8,7 +8,7 @@ import net.minecraft.item.ItemBlock;
 public class AdmissionLetter2021 extends BlockFourSideFacingTemplate {
     public AdmissionLetter2021() {
         super();
-        this.setUnlocalizedName("admission_letter_2021");
+        this.setTranslationKey("admission_letter_2021");
         this.setRegistryName("npu:admission_letter_2021");
         this.setCreativeTab(NPU.SUNDRIES);
         SundriesBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

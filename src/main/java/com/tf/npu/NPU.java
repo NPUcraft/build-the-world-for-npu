@@ -39,38 +39,38 @@ public class NPU {
     //****************************************************************************
     public static final CreativeTabs MY_TAB = new CreativeTabs(Reference.MODID) {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(ItemLoader.InnerPng);
         }
     };
 
     public static final CreativeTabs MY_TAB1 = new CreativeTabs("constructions") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(ItemLoader.ConsPng);
         }
     };
     public static final CreativeTabs MY_TAB2 = new CreativeTabs("titles") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(ItemLoader.TitlePng);
         }
     };
     public static final CreativeTabs MY_TAB3 = new CreativeTabs("blocksonroad") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(ItemLoader.OutPng);
         }
     };
     public static final CreativeTabs MY_TAB4 = new CreativeTabs("windoor") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(ItemLoader.WinDoorPng);
         }
     };
     public static final CreativeTabs MY_TAB5 = new CreativeTabs("sign") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(ItemLoader.Homework);
         }
     };
@@ -79,7 +79,7 @@ public class NPU {
 
     public static final CreativeTabs TEMPORARY = new CreativeTabs("temporary") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(Blocks.BEDROCK);
         }
     };
@@ -89,7 +89,7 @@ public class NPU {
      */
     public static final CreativeTabs CHAIR = new CreativeTabs("chair") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(ChairBlocks.CHAIR_AUDITORIUM_BLUE);
         }
     };
@@ -99,7 +99,7 @@ public class NPU {
      */
     public static final CreativeTabs CUBE = new CreativeTabs("cube") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(CubeBlocks.CEMENT_LIGHTBLUE);
         }
     };
@@ -109,7 +109,7 @@ public class NPU {
      */
     public static final CreativeTabs FACILITY = new CreativeTabs("facility") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(FacilityBlocks.TRASH_CLASSIFICATION_MEDICAL);
         }
     };
@@ -119,7 +119,7 @@ public class NPU {
      */
     public static final CreativeTabs DESK = new CreativeTabs("desk") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(DeskBlocks.DESK_FOLDABLE);
         }
     };
@@ -129,14 +129,14 @@ public class NPU {
      */
     public static final CreativeTabs FENCE = new CreativeTabs("fence") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(FenceBlocks.ROADBLOCK_DOUBLE);
         }
     };
 
     public static  final CreativeTabs NPUARMOR = new CreativeTabs("npu_armor") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(TemporaryBlocks.MASK_MEDICAL);
         }
     };
@@ -146,7 +146,7 @@ public class NPU {
      */
     public static final CreativeTabs RACK = new CreativeTabs("rack") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(RackBlocks.FLAG_CY);
         }
     };
@@ -156,7 +156,7 @@ public class NPU {
      */
     public static final CreativeTabs RAILING = new CreativeTabs("railing") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(RailingBlocks.RAILING_HALF);
         }
     };
@@ -166,7 +166,7 @@ public class NPU {
      */
     public static final CreativeTabs STAIR = new CreativeTabs("stair") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(StairBlocks.STAIR_CEMENT_LIGHTBLUE);
         }
     };
@@ -176,7 +176,7 @@ public class NPU {
      */
     public static final CreativeTabs SUNDRIES = new CreativeTabs("sundries") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(SundriesBlocks.ADMISSION_LETTER_2021);
         }
     };
@@ -186,7 +186,7 @@ public class NPU {
      */
     public static final CreativeTabs VEHICLE = new CreativeTabs("vehicle") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(VehicleBlocks.BIKE1);
         }
     };
@@ -196,7 +196,7 @@ public class NPU {
      */
     public static final CreativeTabs MACHINE = new CreativeTabs("machine") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(Blocks.BEDROCK);
         }
     };
@@ -206,7 +206,7 @@ public class NPU {
      */
     public static final CreativeTabs FURNITURE = new CreativeTabs("furniture") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(FurnitureBlocks.AIRCONDITIONER_VERTICAL);
         }
     };
@@ -216,7 +216,7 @@ public class NPU {
      */
     public static final CreativeTabs LIGHT = new CreativeTabs("light") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(LightBlocks.LIGHT_CEILING_LONG);
         }
     };
@@ -226,7 +226,7 @@ public class NPU {
      */
     public static final CreativeTabs WINDOW = new CreativeTabs("window") {
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(WindowBlocks.GLASS_WALL_HALF);
         }
     };
@@ -273,7 +273,7 @@ public class NPU {
 //            geckolibItemGroup = new CreativeTabs(CreativeTabs.getNextID(), "geckolib_examples")
 //            {
 //                @Override
-//                public ItemStack getTabIconItem()
+//                public ItemStack createIcon()
 //                {
 //                    return new ItemStack(ItemRegistry.JACK_IN_THE_BOX);
 //                }

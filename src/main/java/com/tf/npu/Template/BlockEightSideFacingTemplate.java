@@ -66,7 +66,7 @@ public class BlockEightSideFacingTemplate extends Block implements IHasModel {
     public IBlockState getStateFromMeta(int p_getStateFromMeta_1_) {
         IBlockState iblockstate = this.getDefaultState().withProperty(HALF, (p_getStateFromMeta_1_ & 4) > 0 ?
                 EnumHalf.TOP : EnumHalf.BOTTOM);
-        iblockstate = iblockstate.withProperty(FACING, EnumFacing.getFront(5 - (p_getStateFromMeta_1_ & 3)));
+        iblockstate = iblockstate.withProperty(FACING, EnumFacing.byIndex(5 - (p_getStateFromMeta_1_ & 3)));
         return iblockstate;
     }
 

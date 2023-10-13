@@ -71,7 +71,7 @@ public class DB4 extends Block implements IHasModel {
 
     public DB4() {
         super(Material.ROCK);
-        this.setUnlocalizedName("db4");
+        this.setTranslationKey("db4");
         this.setRegistryName("npu:db4");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB4);
@@ -85,7 +85,7 @@ public class DB4 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 

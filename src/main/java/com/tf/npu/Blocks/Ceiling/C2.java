@@ -57,7 +57,7 @@ public class C2 extends Block implements IHasModel {
 
     public C2() {
         super(Material.ROCK);
-        this.setUnlocalizedName("c2");
+        this.setTranslationKey("c2");
         this.setRegistryName("npu:c2");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);

@@ -66,7 +66,7 @@ public class FRadiator extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -101,7 +101,7 @@ public class FRadiator extends Block implements IHasModel {
     public FRadiator() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fradiator");
+        this.setTranslationKey("fradiator");
 
         this.setRegistryName("npu:fradiator");
 

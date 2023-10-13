@@ -13,7 +13,7 @@ import net.minecraft.world.IBlockAccess;
 public class PlaygroundSign2 extends BlockFourSideFacingTemplate {
     public PlaygroundSign2() {
         super();
-        this.setUnlocalizedName("playground_sign2");
+        this.setTranslationKey("playground_sign2");
         this.setRegistryName("npu:playground_sign2");
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);
