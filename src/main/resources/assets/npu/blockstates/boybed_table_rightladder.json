@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:boybed_table_rightladder"
+    },
+    "facing=east": {
+      "model": "npu:boybed_table_rightladder",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:boybed_table_rightladder",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:boybed_table_rightladder",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

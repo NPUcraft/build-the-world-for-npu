@@ -1,6 +1,6 @@
 package com.tf.npu.Init;
 
-import com.tf.npu.Blocks.BBed.*;
+import com.tf.npu.Blocks.BoyBed.*;
 import com.tf.npu.Blocks.Camera.Cam1;
 import com.tf.npu.Blocks.Camera.Cam2;
 import com.tf.npu.Blocks.Ceiling.*;
@@ -45,8 +45,6 @@ import com.tf.npu.Blocks.Platform.*;
 import com.tf.npu.Blocks.Railings.*;
 import com.tf.npu.Blocks.Road.CemH;
 import com.tf.npu.Blocks.Road.CemT;
-import com.tf.npu.Blocks.SUPER2FH.Item.EmblemCY;
-import com.tf.npu.Blocks.SUPER2FH.Stair.*;
 import com.tf.npu.Blocks.Signs.*;
 import com.tf.npu.Blocks.StarSignPack.*;
 import com.tf.npu.Blocks.StreetLamp.SL1;
@@ -97,8 +95,8 @@ public class ModBlocks {
     public static final Block GBED = new GBed().setLightLevel(0.1F);
     public static final Block BBEDL = new BBedL().setLightLevel(0.1F);
     public static final Block BBEDR = new BBedR().setLightLevel(0.1F);
-    public static final Block BBED2L = new BBed2L().setLightLevel(0.1F);
-    public static final Block BBED2R = new BBed2R().setLightLevel(0.1F);
+    public static final Block boybed_table_leftladder = new BoyBedTableLeftLadder().setLightLevel(0.1F);
+    public static final Block BBED2R = new BoyBedTableRightLadder().setLightLevel(0.1F);
     public static final Block BBED2R1 = new BBed2R1().setLightLevel(0.1F);
     public static final Block WINDOWFRAME = new WindowFrame();
     public static final Block CP = new CP().setLightLevel(0.1F);

@@ -348,7 +348,7 @@ tile.sit.name="座"
 tile.bbedl.name=男寝上床下桌（左）
 tile.bbedr.name=男寝上床下桌（右）
 
-tile.bbed2l.name=男寝上床下桌（左梯）
+tile.boybed_table_leftladder.name=男寝上床下桌（左梯）
 tile.bbed2r.name=男寝上床下桌（右梯）
 tile.bbed2r1.name=彩蛋-物理机
 
