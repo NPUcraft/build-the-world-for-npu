@@ -345,8 +345,8 @@ tile.star.name="星"
 tile.sky.name="天苑"
 tile.sit.name="座"
 
-tile.bbedl.name=男寝上床下桌（左）
-tile.bbedr.name=男寝上床下桌（右）
+tile.boybed_left_table.name=男寝上床下桌（左）
+tile.boybed_right_table.name=男寝上床下桌（右）
 
 tile.boybed_left_table_ladder.name=男寝上床下桌（左梯）
 tile.bbed2r.name=男寝上床下桌（右梯）

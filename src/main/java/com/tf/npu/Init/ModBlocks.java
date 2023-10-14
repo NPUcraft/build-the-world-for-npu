@@ -93,8 +93,8 @@ public class ModBlocks {
     public static final Block StraightAheadSign = new StraightAheadSign().setLightLevel(0.1F);
     public static final Block PRINTER = new Printer();
     public static final Block GBED = new GBed().setLightLevel(0.1F);
-    public static final Block BBEDL = new BBedL().setLightLevel(0.1F);
-    public static final Block BBEDR = new BBedR().setLightLevel(0.1F);
+    public static final Block BBEDL = new BoyBedLeftTable().setLightLevel(0.1F);
+    public static final Block BBEDR = new BoyBedRightTable().setLightLevel(0.1F);
     public static final Block boybed_left_table_ladder = new BoyBedLeftTableLadder().setLightLevel(0.1F);
     public static final Block BBED2R = new BoyBedRightTableLadder().setLightLevel(0.1F);
     public static final Block BBED2R1 = new BoyBedRightTableLadderLaptop().setLightLevel(0.1F);
