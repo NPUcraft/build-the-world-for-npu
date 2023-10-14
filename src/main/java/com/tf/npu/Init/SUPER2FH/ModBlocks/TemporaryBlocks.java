@@ -1,7 +1,7 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
-import com.tf.npu.Blocks.SUPER2FH.Item.EmblemCY;
-import com.tf.npu.Blocks.SUPER2FH.Item.MaskMedical;
+import com.tf.npu.Blocks.Decorations.EmblemCY;
+import com.tf.npu.Blocks.Decorations.MaskMedical;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 

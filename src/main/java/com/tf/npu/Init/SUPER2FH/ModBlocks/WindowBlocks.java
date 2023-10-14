@@ -1,8 +1,6 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
-import com.tf.npu.Blocks.SUPER2FH.Window.*;
-import com.tf.npu.Blocks.Slabs.SlabX;
-import com.tf.npu.Blocks.Slabs.SlabY;
+import com.tf.npu.Blocks.Windows.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
