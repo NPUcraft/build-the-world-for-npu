@@ -375,7 +375,7 @@ public class ModBlocks {
     public static final Block CBB = new CBB().setLightLevel(0.1F);
     public static final Block FAN = new Fan();
 
-    public static final Block C1 = new C1();
+    public static final Block C1 = new GrilleCeiling();
     public static final Block C2 = new C2();
     public static final Block C3 = new C3();
     public static final Block C4 = new C4();
