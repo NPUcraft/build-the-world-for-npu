@@ -8,13 +8,13 @@ import com.tf.npu.Blocks.DHalls.*;
 import com.tf.npu.Blocks.DecorationBlocks.Bed.Boy.*;
 import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.GirlBedL;
 import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.GirlBedR;
+import com.tf.npu.Blocks.DecorationBlocks.Desk.Classroom.Blue.*;
+import com.tf.npu.Blocks.DecorationBlocks.Desk.Classroom.Wood.*;
 import com.tf.npu.Blocks.Decorations.*;
 import com.tf.npu.Blocks.DecorationBlocks.Sign.InstitutionSign;
 import com.tf.npu.Blocks.DecorationBlocks.Sign.ForbidSmokingSign;
 import com.tf.npu.Blocks.DecorationBlocks.Sign.InstitutionSignSmall;
 import com.tf.npu.Blocks.DecorationBlocks.Sign.WifiSign;
-import com.tf.npu.Blocks.Desks.Blue.*;
-import com.tf.npu.Blocks.Desks.Wood.*;
 import com.tf.npu.Blocks.Doors.*;
 import com.tf.npu.Blocks.Doors.Black.*;
 import com.tf.npu.Blocks.Doors.White.*;
@@ -689,11 +689,11 @@ public class ModBlocks {
     public static final Block DATE02284 = new BlueDesk2().setLightLevel(0.1F);
     public static final Block DATE02285 = new BlueDesk1().setLightLevel(0.1F);
 
-    public static final Block DATE02286 = new WoodDesk1().setLightLevel(0.1F);
-    public static final Block DATE02287 = new WoodDesk2().setLightLevel(0.1F);
-    public static final Block DATE02288 = new WoodDesk3().setLightLevel(0.1F);
-    public static final Block DATE02289 = new WoodDesk4().setLightLevel(0.1F);
-    public static final Block DATE022810 = new WoodDesk5().setLightLevel(0.1F);
+    public static final Block DATE02286 = new DeskClassroomWoodFlat().setLightLevel(0.1F);
+    public static final Block DATE02287 = new DeskClassroomWoodLow().setLightLevel(0.1F);
+    public static final Block DATE02288 = new DeskClassroomWoodMedium().setLightLevel(0.1F);
+    public static final Block DATE02289 = new DeskClassroomWoodHigh().setLightLevel(0.1F);
+    public static final Block DATE022810 = new DeskClassroomWoodTop().setLightLevel(0.1F);
 
     public static final Block DATE022811 = new FG82();
     public static final Block DATE022812 = new FG83();

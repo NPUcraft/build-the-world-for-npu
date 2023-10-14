@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.DecorationBlocks.Desk;
+package com.tf.npu.Blocks.DecorationBlocks.Desk.Workshop;
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.DeskBlocks;
 import com.tf.npu.NPU;
@@ -9,11 +9,11 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class DeskWorkshopNarrow extends BlockFourSideFacingTemplate {
-    public DeskWorkshopNarrow() {
+public class DeskWorkshopWideSingleDrawer extends BlockFourSideFacingTemplate {
+    public DeskWorkshopWideSingleDrawer() {
         super();
-        this.setTranslationKey("desk_workshop_narrow");
-        this.setRegistryName("npu:desk_workshop_narrow");
+        this.setTranslationKey("desk_workshop_wide_single_drawer");
+        this.setRegistryName("npu:desk_workshop_wide_single_drawer");
         this.setCreativeTab(NPU.DESK);
         DeskBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         DeskBlocks.BLOCKS.add(this);

@@ -1,6 +1,13 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
 import com.tf.npu.Blocks.DecorationBlocks.Desk.*;
+import com.tf.npu.Blocks.DecorationBlocks.Desk.Foldable.DeskFoldable;
+import com.tf.npu.Blocks.DecorationBlocks.Desk.Foldable.DeskFoldableCovid19;
+import com.tf.npu.Blocks.DecorationBlocks.Desk.Foldable.DeskFoldableCovid19Laptop;
+import com.tf.npu.Blocks.DecorationBlocks.Desk.Workshop.DeskWorkshopNarrow;
+import com.tf.npu.Blocks.DecorationBlocks.Desk.Workshop.DeskWorkshopWide;
+import com.tf.npu.Blocks.DecorationBlocks.Desk.Workshop.DeskWorkshopWideDoubleDrawer;
+import com.tf.npu.Blocks.DecorationBlocks.Desk.Workshop.DeskWorkshopWideSingleDrawer;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
