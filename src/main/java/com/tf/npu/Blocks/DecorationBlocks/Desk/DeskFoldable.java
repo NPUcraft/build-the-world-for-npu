@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Desk;
+package com.tf.npu.Blocks.DecorationBlocks.Desk;
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.DeskBlocks;
 import com.tf.npu.NPU;

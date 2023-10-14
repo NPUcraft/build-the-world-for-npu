@@ -1,20 +1,20 @@
 {
   "variants": {
     "facing=north": {
-      "model": "npu:desk/desk_workshop4"
+      "model": "npu:desk/desk_workshop_wide_single_drawer"
     },
     "facing=east": {
-      "model": "npu:desk/desk_workshop4",
+      "model": "npu:desk/desk_workshop_wide_single_drawer",
       "y": 90,
       "uvlock": false
     },
     "facing=south": {
-      "model": "npu:desk/desk_workshop4",
+      "model": "npu:desk/desk_workshop_wide_single_drawer",
       "y": 180,
       "uvlock": false
     },
     "facing=west": {
-      "model": "npu:desk/desk_workshop4",
+      "model": "npu:desk/desk_workshop_wide_single_drawer",
       "y": 270,
       "uvlock": false
     }

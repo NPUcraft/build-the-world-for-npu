@@ -1,20 +1,20 @@
 {
   "variants": {
     "facing=north": {
-      "model": "npu:desk/desk_foldable_covid19_pc"
+      "model": "npu:desk/desk_foldable_covid19_laptop"
     },
     "facing=east": {
-      "model": "npu:desk/desk_foldable_covid19_pc",
+      "model": "npu:desk/desk_foldable_covid19_laptop",
       "y": 90,
       "uvlock": false
     },
     "facing=south": {
-      "model": "npu:desk/desk_foldable_covid19_pc",
+      "model": "npu:desk/desk_foldable_covid19_laptop",
       "y": 180,
       "uvlock": false
     },
     "facing=west": {
-      "model": "npu:desk/desk_foldable_covid19_pc",
+      "model": "npu:desk/desk_foldable_covid19_laptop",
       "y": 270,
       "uvlock": false
     }

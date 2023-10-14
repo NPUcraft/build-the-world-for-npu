@@ -2,7 +2,7 @@
 	"credit": "Made By NPUcraft",
 	"texture_size": [384, 384],
 	"textures": {
-		"12": "npu:block/desk/desk_foldable_covid19_pc"
+		"12": "npu:block/desk/desk_foldable_covid19_laptop"
 	},
 	"elements": [
 		{
