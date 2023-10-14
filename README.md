@@ -8,11 +8,13 @@ NPUcraft建筑服专属mod
 1.12.2-forge-2847，以后可能会有更新版
 
 
-#### 安装教程
+#### Run Guide
+**Only support IDEA**
+1. In IntelliJ, go to File -> Settings -> Build, Execution, Deployment -> Build Tools -> Gradle. Set “Build and run using:” to Intellij IDEA, and check that Gradle JVM is set to some version of JDK 1.8
+2. In IntelliJ, go to File -> Project Structure. Check the SDK is set to 1.8 in here too. Set the compiler output to a folder called “out” in your project root – you’ll probably need to create this folder.
+3. Do Gradle Sync
+4. Do Gradle `genIntellijRuns`
 
-1.  下载代码
-2.  IDEA打包
-3.  运行
 
 #### 使用说明
 

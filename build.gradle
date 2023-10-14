@@ -10,6 +10,9 @@ fancyGradle {
     patches {
         resources
         coremods
+        codeChickenLib
+        asm
+        mergetool
     }
 }
 
@@ -68,6 +71,6 @@ processResources {
     inputs.property "mcversion", "1.12.2"
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     filesMatching(['mcmod.info']) {
-        expand 'version':"${project.version}", 'mcversion':'1.12.2'
+        expand 'version': "${project.version}", 'mcversion': '1.12.2'
     }
 }
