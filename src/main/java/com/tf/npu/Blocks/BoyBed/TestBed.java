@@ -4,7 +4,7 @@ import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
 import net.minecraft.item.ItemBlock;
 
-public class TestBed extends BoyBedTableLeftLadder {
+public class TestBed extends BoyBedLeftTableLadder {
 
     public TestBed() {
         this.setTranslationKey("testbed");

@@ -4,4 +4,4 @@ itemGroup.npu=NPU
 
 tile.obsidian_block.name=Obsidian Block
 tile.obsidian_frame.name=Obsidian Frametile
-tile.boybed_table_leftladder.name=boybed_table_leftladder
+tile.boybed_left_table_ladder.name=boybed_left_table_ladder

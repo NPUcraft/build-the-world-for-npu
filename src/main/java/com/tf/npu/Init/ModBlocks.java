@@ -95,9 +95,9 @@ public class ModBlocks {
     public static final Block GBED = new GBed().setLightLevel(0.1F);
     public static final Block BBEDL = new BBedL().setLightLevel(0.1F);
     public static final Block BBEDR = new BBedR().setLightLevel(0.1F);
-    public static final Block boybed_table_leftladder = new BoyBedTableLeftLadder().setLightLevel(0.1F);
-    public static final Block BBED2R = new BoyBedTableRightLadder().setLightLevel(0.1F);
-    public static final Block BBED2R1 = new BoyBedTableRightLadderLaptop().setLightLevel(0.1F);
+    public static final Block boybed_left_table_ladder = new BoyBedLeftTableLadder().setLightLevel(0.1F);
+    public static final Block BBED2R = new BoyBedRightTableLadder().setLightLevel(0.1F);
+    public static final Block BBED2R1 = new BoyBedRightTableLadderLaptop().setLightLevel(0.1F);
     public static final Block WINDOWFRAME = new WindowFrame();
     public static final Block CP = new CP().setLightLevel(0.1F);
     public static final Block EXIT = new Exit();

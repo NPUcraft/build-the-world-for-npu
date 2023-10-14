@@ -348,9 +348,9 @@ tile.sit.name="座"
 tile.bbedl.name=男寝上床下桌（左）
 tile.bbedr.name=男寝上床下桌（右）
 
-tile.boybed_table_leftladder.name=男寝上床下桌（左梯）
+tile.boybed_left_table_ladder.name=男寝上床下桌（左梯）
 tile.bbed2r.name=男寝上床下桌（右梯）
-tile.boybed_table_rightladder_laptop.name=彩蛋-物理机
+tile.boybed_right_table_ladder_laptop.name=彩蛋-物理机
 
 tile.urinal.name=小便池
 tile.fan.name=宿舍电风扇
