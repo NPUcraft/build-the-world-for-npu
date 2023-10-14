@@ -21,7 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BBed2R1 extends Block implements IHasModel {
+public class BoyBedTableRightLadderLaptop extends Block implements IHasModel {
 
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
@@ -54,10 +54,10 @@ public class BBed2R1 extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public BBed2R1() {
+    public BoyBedTableRightLadderLaptop() {
         super(Material.ROCK);
-        this.setTranslationKey("bbed2r1");
-        this.setRegistryName("npu:bbed2r1");
+        this.setTranslationKey("boybed_table_rightladder_laptop");
+        this.setRegistryName("npu:boybed_table_rightladder_laptop");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
