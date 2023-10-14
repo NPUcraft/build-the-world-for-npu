@@ -1,8 +1,8 @@
 {
   "credit": "Made with Blockbench",
   "textures": {
-    "0": "npu:blocks/dec1",
-    "particle": "npu:blocks/dec1"
+    "0": "npu:blocks/institution_sign",
+    "particle": "npu:blocks/institution_sign"
   },
   "elements": [
     {

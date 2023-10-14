@@ -523,10 +523,10 @@ tile.winw2=白窗-1x1带栏杆
 tile.winw3=空小窗-白
 
 tile.aurora_slab.name=台阶测试
-tile.dec1.name=机构门牌
-tile.dec2.name=禁止吸烟
-tile.dec3.name=小门牌
-tile.dec4.name=wifi覆盖
+tile.institution_sign.name=机构门牌
+tile.forbid_smoking_sign.name=禁止吸烟
+tile.institution_sign_small.name=小门牌
+tile.wifi_sign.name=wifi覆盖
 
 tile.ttable.name=梯形桌子
 tile.girltr.name=女寝卫生间右

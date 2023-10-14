@@ -9,10 +9,10 @@ import com.tf.npu.Blocks.DecorationBlocks.Bed.Boy.*;
 import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.GirlBedL;
 import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.GirlBedR;
 import com.tf.npu.Blocks.Decorations.*;
-import com.tf.npu.Blocks.Decs.Dec1;
-import com.tf.npu.Blocks.Decs.Dec2;
-import com.tf.npu.Blocks.Decs.Dec3;
-import com.tf.npu.Blocks.Decs.Dec4;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.InstitutionSign;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.ForbidSmokingSign;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.InstitutionSignSmall;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.WifiSign;
 import com.tf.npu.Blocks.Desks.Blue.*;
 import com.tf.npu.Blocks.Desks.Wood.*;
 import com.tf.npu.Blocks.Doors.*;
@@ -511,10 +511,10 @@ public class ModBlocks {
 
     public static final Block NN = new NN();
 
-    public static final Block DEC1 = new Dec1();
-    public static final Block DEC2 = new Dec2();
-    public static final Block DEC3 = new Dec3();
-    public static final Block DEC4 = new Dec4();
+    public static final Block DEC1 = new InstitutionSign();
+    public static final Block DEC2 = new ForbidSmokingSign();
+    public static final Block DEC3 = new InstitutionSignSmall();
+    public static final Block DEC4 = new WifiSign();
 
 
     public static final Block TT = new TTable().setLightLevel(0.1F);

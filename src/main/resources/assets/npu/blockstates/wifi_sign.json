@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:wifi_sign"
+    },
+    "facing=east": {
+      "model": "npu:wifi_sign",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:wifi_sign",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:wifi_sign",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}
