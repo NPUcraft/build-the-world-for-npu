@@ -72,8 +72,8 @@ public class InstitutionSignSmall extends Block implements IHasModel {
 
     public InstitutionSignSmall() {
         super(Material.ROCK);
-        this.setTranslationKey("dec3");
-        this.setRegistryName("npu:dec3");
+        this.setTranslationKey("institution_sign_small");
+        this.setRegistryName("npu:institution_sign_small");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB5);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));

@@ -72,8 +72,8 @@ public class InstitutionSign extends Block implements IHasModel {
 
     public InstitutionSign() {
         super(Material.ROCK);
-        this.setTranslationKey("dec1");
-        this.setRegistryName("npu:dec1");
+        this.setTranslationKey("institution_sign");
+        this.setRegistryName("npu:institution_sign");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB5);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
