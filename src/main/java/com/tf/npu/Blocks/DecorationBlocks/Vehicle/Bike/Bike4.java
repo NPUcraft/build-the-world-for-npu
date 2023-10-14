@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Bike;
+package com.tf.npu.Blocks.DecorationBlocks.Vehicle.Bike;
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.VehicleBlocks;
 import com.tf.npu.NPU;
@@ -9,12 +9,12 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class Bike1 extends BlockFourSideFacingTemplate {
+public class Bike4 extends BlockFourSideFacingTemplate {
 
-    public Bike1() {
+    public Bike4() {
         super();
-        this.setTranslationKey("bike1");
-        this.setRegistryName("npu:bike1");
+        this.setTranslationKey("bike4");
+        this.setRegistryName("npu:bike4");
         this.setCreativeTab(NPU.VEHICLE);
         VehicleBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         VehicleBlocks.BLOCKS.add(this);

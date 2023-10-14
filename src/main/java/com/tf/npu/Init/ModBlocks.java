@@ -1,11 +1,13 @@
 package com.tf.npu.Init;
 
-import com.tf.npu.Blocks.BoyBed.*;
-import com.tf.npu.Blocks.Camera.CameraWall;
-import com.tf.npu.Blocks.Camera.CameraCeil;
-import com.tf.npu.Blocks.Ceiling.*;
+import com.tf.npu.Blocks.BuildBlocks.Ceiling.*;
+import com.tf.npu.Blocks.DecorationBlocks.Camera.CameraWall;
+import com.tf.npu.Blocks.DecorationBlocks.Camera.CameraCeil;
 import com.tf.npu.Blocks.Constructions.*;
 import com.tf.npu.Blocks.DHalls.*;
+import com.tf.npu.Blocks.DecorationBlocks.Bed.Boy.*;
+import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.GirlBedL;
+import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.GirlBedR;
 import com.tf.npu.Blocks.Decorations.*;
 import com.tf.npu.Blocks.Decs.Dec1;
 import com.tf.npu.Blocks.Decs.Dec2;

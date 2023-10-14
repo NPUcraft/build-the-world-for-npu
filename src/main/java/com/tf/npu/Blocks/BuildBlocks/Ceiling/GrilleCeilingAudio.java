@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Ceiling;
+package com.tf.npu.Blocks.BuildBlocks.Ceiling;
 
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
@@ -15,7 +15,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class GrilleCeiling extends Block implements IHasModel {
+public class GrilleCeilingAudio extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -34,11 +34,11 @@ public class GrilleCeiling extends Block implements IHasModel {
     }
 
     //x1,y1,z1,x2,y2,z2均为double类型
-    public static final AxisAlignedBB C1_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D);
+    public static final AxisAlignedBB C5_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return C1_AABB;
+        return C5_AABB;
     }
 
     @Override
@@ -56,10 +56,10 @@ public class GrilleCeiling extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public GrilleCeiling() {
+    public GrilleCeilingAudio() {
         super(Material.ROCK);
-        this.setTranslationKey("grille_ceiling");
-        this.setRegistryName("npu:grille_ceiling");
+        this.setTranslationKey("grille_ceiling_audio");
+        this.setRegistryName("npu:grille_ceiling_audio");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
@@ -67,5 +67,6 @@ public class GrilleCeiling extends Block implements IHasModel {
 
 
     }
+
 
 }

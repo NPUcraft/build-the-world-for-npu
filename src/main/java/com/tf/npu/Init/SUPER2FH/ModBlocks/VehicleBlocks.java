@@ -1,9 +1,9 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
-import com.tf.npu.Blocks.Bike.Bike1;
-import com.tf.npu.Blocks.Bike.Bike2;
-import com.tf.npu.Blocks.Bike.Bike3;
-import com.tf.npu.Blocks.Bike.Bike4;
+import com.tf.npu.Blocks.DecorationBlocks.Vehicle.Bike.Bike1;
+import com.tf.npu.Blocks.DecorationBlocks.Vehicle.Bike.Bike2;
+import com.tf.npu.Blocks.DecorationBlocks.Vehicle.Bike.Bike3;
+import com.tf.npu.Blocks.DecorationBlocks.Vehicle.Bike.Bike4;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 

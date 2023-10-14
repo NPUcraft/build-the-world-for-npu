@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Camera;
+package com.tf.npu.Blocks.DecorationBlocks.Bed.Boy;
 
 
 import com.tf.npu.Init.ModBlocks;
@@ -16,29 +16,13 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumFacing;
-import net.minecraft.util.IStringSerializable;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class CameraCeil extends Block implements IHasModel {
+public class BoyBedLeftTable extends Block implements IHasModel {
 
-    public static enum EnumMaterial implements IStringSerializable {
-        IRON("iron");
-
-        private String name;
-
-        private EnumMaterial(String material) {
-            this.name = material;
-        }
-
-        @Override
-        public String getName() {
-            return this.name;
-        }
-
-    }
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
@@ -48,11 +32,11 @@ public class CameraCeil extends Block implements IHasModel {
     }
 
     //x1,y1,z1,x2,y2,z2均为double类型
-    public static final AxisAlignedBB CAM2_AABB = new AxisAlignedBB(0.0D, 1.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+    public static final AxisAlignedBB BBedL_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return CAM2_AABB;
+        return BBedL_AABB;
     }
 
     @Override
@@ -70,10 +54,10 @@ public class CameraCeil extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public CameraCeil() {
+    public BoyBedLeftTable() {
         super(Material.ROCK);
-        this.setTranslationKey("camera_ceil");
-        this.setRegistryName("npu:camera_ceil");
+        this.setTranslationKey("boybed_left_table");
+        this.setRegistryName("npu:boybed_left_table");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));

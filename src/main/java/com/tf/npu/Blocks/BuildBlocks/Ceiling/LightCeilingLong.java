@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Ceiling;
+package com.tf.npu.Blocks.BuildBlocks.Ceiling;
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.LightBlocks;
 import com.tf.npu.NPU;

@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Ceiling;
+package com.tf.npu.Blocks.BuildBlocks.Ceiling;
 
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
@@ -15,7 +15,7 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class GrilleCeilingSmallLight extends Block implements IHasModel {
+public class GrilleCeilingBigLight extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -33,12 +33,11 @@ public class GrilleCeilingSmallLight extends Block implements IHasModel {
 
     }
 
-
-    public static final AxisAlignedBB C4_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D);
+    public static final AxisAlignedBB C2_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.5D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return C4_AABB;
+        return C2_AABB;
     }
 
     @Override
@@ -56,10 +55,10 @@ public class GrilleCeilingSmallLight extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public GrilleCeilingSmallLight() {
+    public GrilleCeilingBigLight() {
         super(Material.ROCK);
-        this.setTranslationKey("grille_ceiling_smalllight");
-        this.setRegistryName("npu:grille_ceiling_smalllight");
+        this.setTranslationKey("grille_ceiling_biglight");
+        this.setRegistryName("npu:grille_ceiling_biglight");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

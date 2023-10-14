@@ -30,3 +30,10 @@ NPUcraft建筑服专属mod
 #### 说明
 
 1.  该mod是NPUcraft建筑服专属mod，很多元素和模型是西工大特有的，如果想修改成自己的可以联系邮箱1309251370@qq.com，另外，mod里有防伪措施。
+
+
+### Structures
+#### Blocks
+##### DecorationBlocks
+These blocks are just decoration for the building structure, remove any of them from the building will be hardly noticeable.  
+

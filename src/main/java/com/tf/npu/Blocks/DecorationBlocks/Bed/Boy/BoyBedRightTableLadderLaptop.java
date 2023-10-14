@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.BoyBed;
+package com.tf.npu.Blocks.DecorationBlocks.Bed.Boy;
 
 
 import com.tf.npu.Init.ModBlocks;

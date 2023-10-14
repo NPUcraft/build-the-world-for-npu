@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Bike;
+package com.tf.npu.Blocks.DecorationBlocks.Vehicle.Bike;
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.VehicleBlocks;
 import com.tf.npu.NPU;
