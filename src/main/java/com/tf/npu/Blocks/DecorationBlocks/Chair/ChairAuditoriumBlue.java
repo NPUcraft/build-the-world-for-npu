@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Chair;
+package com.tf.npu.Blocks.DecorationBlocks.Chair;
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.ChairBlocks;
 import com.tf.npu.NPU;
@@ -9,11 +9,11 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class ChairAuditoriumRed extends BlockFourSideFacingTemplate {
-    public ChairAuditoriumRed() {
+public class ChairAuditoriumBlue extends BlockFourSideFacingTemplate {
+    public ChairAuditoriumBlue() {
         super();
-        this.setTranslationKey("chair_auditorium_red");
-        this.setRegistryName("npu:chair_auditorium_red");
+        this.setTranslationKey("chair_auditorium_blue");
+        this.setRegistryName("npu:chair_auditorium_blue");
         this.setCreativeTab(NPU.CHAIR);
         ChairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ChairBlocks.BLOCKS.add(this);

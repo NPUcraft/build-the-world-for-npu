@@ -1,6 +1,6 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
-import com.tf.npu.Blocks.Chair.*;
+import com.tf.npu.Blocks.DecorationBlocks.Chair.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
