@@ -683,11 +683,11 @@ public class ModBlocks {
     public static final Block DATE022230 = new FLine10();
     public static final Block DATE022231 = new FLine24();
 
-    public static final Block DATE02281 = new BlueDesk5().setLightLevel(0.1F);
-    public static final Block DATE02282 = new BlueDesk4().setLightLevel(0.1F);
-    public static final Block DATE02283 = new BlueDesk3().setLightLevel(0.1F);
-    public static final Block DATE02284 = new BlueDesk2().setLightLevel(0.1F);
-    public static final Block DATE02285 = new BlueDesk1().setLightLevel(0.1F);
+    public static final Block DATE02281 = new DeskClassroomBlueTop().setLightLevel(0.1F);
+    public static final Block DATE02282 = new DeskClassroomBlueHigh().setLightLevel(0.1F);
+    public static final Block DATE02283 = new DeskClassroomBlueMedium().setLightLevel(0.1F);
+    public static final Block DATE02284 = new DeskClassroomBlueLow().setLightLevel(0.1F);
+    public static final Block DATE02285 = new DeskClassroomBlueFlat().setLightLevel(0.1F);
 
     public static final Block DATE02286 = new DeskClassroomWoodFlat().setLightLevel(0.1F);
     public static final Block DATE02287 = new DeskClassroomWoodLow().setLightLevel(0.1F);

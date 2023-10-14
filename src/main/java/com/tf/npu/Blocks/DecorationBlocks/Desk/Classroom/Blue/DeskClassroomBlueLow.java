@@ -22,7 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BlueDesk3 extends Block implements IHasModel {
+public class DeskClassroomBlueLow extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -70,10 +70,10 @@ public class BlueDesk3 extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public BlueDesk3() {
+    public DeskClassroomBlueLow() {
         super(Material.ROCK);
-        this.setTranslationKey("blueclassroomdesk3");
-        this.setRegistryName("npu:blueclassroomdesk3");
+        this.setTranslationKey("desk_classroom_blue_low");
+        this.setRegistryName("npu:desk_classroom_blue_low");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB1);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));

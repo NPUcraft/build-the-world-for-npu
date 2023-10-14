@@ -697,11 +697,11 @@ tile.fline23.name=道路划线-箭头-左转箭头
 tile.fline24.name=道路划线-箭头-直-偏心
 
 
-tile.blueclassroomdesk1.name=教室排桌-蓝-高度1
-tile.blueclassroomdesk2.name=教室排桌-蓝-高度2
-tile.blueclassroomdesk3.name=教室排桌-蓝-高度3
-tile.blueclassroomdesk4.name=教室排桌-蓝-高度4
-tile.blueclassroomdesk5.name=教室排桌-蓝-高度5
+tile.desk_classroom_blue_flat.name=教室排桌-蓝-高度1
+tile.desk_classroom_blue_low.name=教室排桌-蓝-高度2
+tile.desk_classroom_blue_medium.name=教室排桌-蓝-高度3
+tile.desk_classroom_blue_high.name=教室排桌-蓝-高度4
+tile.desk_classroom_blue_top.name=教室排桌-蓝-高度5
 
 tile.desk_classroom_wood_flat.name=教室排桌-木-高度1
 tile.desk_classroom_wood_low.name=教室排桌-木-高度2
