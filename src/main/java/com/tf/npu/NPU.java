@@ -1,17 +1,14 @@
 package com.tf.npu;
 
-import com.tf.npu.Blocks.SUPER2FH.Machine.tile.CNCTileEntity;
 import com.tf.npu.Init.SUPER2FH.ModBlocks.*;
 import com.tf.npu.Items.ItemLoader;
 import com.tf.npu.Proxy.CommonProxy;
-import com.tf.npu.client.renderer.CNCRenderer;
-import com.tf.npu.util.Reference;
-import com.tf.npu.util.Util;
+import com.tf.npu.Util.Reference;
+import com.tf.npu.Util.LoggerUtil;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.client.model.obj.OBJLoader;
-import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -19,9 +16,6 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
-import software.bernie.example.registry.ItemRegistry;
 
 @Mod(modid = Reference.MODID, name = Reference.NAME, version = Reference.VERSION)
 public class NPU {
@@ -245,20 +239,20 @@ public class NPU {
             OBJLoader.INSTANCE.addDomain("NPU");
         }
         proxy.preInit(event);
-        Util.logger = event.getModLog();
-        Util.logger.warn("Project Npu Reconstruction!");
+        LoggerUtil.logger = event.getModLog();
+        LoggerUtil.logger.warn("Project Npu Reconstruction!");
     }
 
     @EventHandler
     public void init(FMLInitializationEvent event) {
         proxy.init(event);
-        Util.logger.warn("Project Npu Reconstruction.");
+        LoggerUtil.logger.warn("Project Npu Reconstruction.");
     }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
         proxy.postInit(event);
-        Util.logger.warn("Project Npu Reconstruction.");
+        LoggerUtil.logger.warn("Project Npu Reconstruction.");
     }
 
 

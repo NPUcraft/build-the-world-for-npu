@@ -1,11 +1,10 @@
 package com.tf.npu.Template;
 
 import com.tf.npu.NPU;
-import com.tf.npu.interfaces.IHasModel;
-import com.tf.npu.util.InitHelper;
+import com.tf.npu.Interfaces.IHasModel;
+import com.tf.npu.Util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
-import net.minecraft.block.BlockStairs;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.properties.PropertyEnum;

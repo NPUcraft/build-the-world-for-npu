@@ -18,7 +18,7 @@ public class SchoolBus extends Item {
 
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
-        com.tf.npu.entity.SchoolBus entity = new com.tf.npu.entity.SchoolBus(worldIn);
+        com.tf.npu.Entity.SchoolBus entity = new com.tf.npu.Entity.SchoolBus(worldIn);
         if (!worldIn.isRemote) {
             entity.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, playerIn.rotationYaw, 0.0F);
             worldIn.spawnEntity(entity);

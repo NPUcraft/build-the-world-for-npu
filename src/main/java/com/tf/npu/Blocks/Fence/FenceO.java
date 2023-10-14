@@ -3,8 +3,8 @@ package com.tf.npu.Blocks.Fence;
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
 import com.tf.npu.NPU;
-import com.tf.npu.interfaces.IHasModel;
-import com.tf.npu.util.InitHelper;
+import com.tf.npu.Interfaces.IHasModel;
+import com.tf.npu.Util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockFenceGate;
 import net.minecraft.block.material.Material;
@@ -153,7 +153,7 @@ public class FenceO extends Block implements IHasModel {
     }
 
     /**
-     * Determines if an entity can path through this block
+     * Determines if an Entity can path through this block
      */
     public boolean isPassable(IBlockAccess worldIn, BlockPos pos) {
         return false;

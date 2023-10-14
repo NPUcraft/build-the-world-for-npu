@@ -133,7 +133,7 @@ public class FenceX extends Block {
     }
 
     /**
-     * Determines if an entity can path through this block
+     * Determines if an Entity can path through this block
      */
     public boolean isPassable(IBlockAccess worldIn, BlockPos pos) {
         return false;

@@ -1,8 +1,8 @@
 package com.tf.npu.Items;
 
 import com.tf.npu.NPU;
-import com.tf.npu.entity.EntityGoldenChicken;
-import com.tf.npu.inventory.GuiElementLoader;
+import com.tf.npu.Entity.EntityGoldenChicken;
+import com.tf.npu.Inventory.GuiElementLoader;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
