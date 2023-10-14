@@ -3,7 +3,7 @@
   "textures": {
     "0": "npu:blocks/iron_block",
     "2": "npu:blocks/coal_block",
-    "4": "npu:blocks/gun",
+    "4": "npu:blocks/gun_body",
     "5": "npu:blocks/dropper_front_vertical",
     "6": "npu:blocks/wool_colored_gray",
     "7": "npu:blocks/door_acacia_lower",

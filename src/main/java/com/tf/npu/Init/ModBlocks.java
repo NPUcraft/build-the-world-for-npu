@@ -29,16 +29,16 @@ import com.tf.npu.Blocks.FlowerDid.Day312.*;
 import com.tf.npu.Blocks.FlowerDid.Others.*;
 import com.tf.npu.Blocks.G.*;
 import com.tf.npu.Blocks.Girl.*;
-import com.tf.npu.Blocks.Guns.Gun;
-import com.tf.npu.Blocks.Guns.Gun1;
+import com.tf.npu.Blocks.DecorationBlocks.Gun.GunBody;
+import com.tf.npu.Blocks.DecorationBlocks.Gun.GunBarrel;
 import com.tf.npu.Blocks.HandRail.*;
 import com.tf.npu.Blocks.Lights.*;
 import com.tf.npu.Blocks.Market.*;
 import com.tf.npu.Blocks.Others.*;
-import com.tf.npu.Blocks.Paintings.Painting;
-import com.tf.npu.Blocks.Paintings.Painting1;
-import com.tf.npu.Blocks.Paintings.Painting2;
-import com.tf.npu.Blocks.Paintings.Painting3;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.Painting;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.Painting1;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.Painting2;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.Painting3;
 import com.tf.npu.Blocks.Pipe.*;
 import com.tf.npu.Blocks.Plants.Plant;
 import com.tf.npu.Blocks.Plants.Plant1;
@@ -210,8 +210,8 @@ public class ModBlocks {
     public static final Block FLIGHT9 = new FLight9();
     public static final Block FLIGHT10 = new FLight10();
 
-    public static final Block GUN = new Gun();
-    public static final Block GUN1 = new Gun1();
+    public static final Block GUN = new GunBody();
+    public static final Block GUN1 = new GunBarrel();
 
     public static final Block ATABLE = new ATable().setLightLevel(0.1F);
 

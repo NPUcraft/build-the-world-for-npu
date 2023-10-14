@@ -180,8 +180,8 @@ tile.flight1.name=教东白格栅顶-灯
 tile.flight2.name=教东木格栅顶-灯
 
 
-tile.gun.name=75mm炮-炮身
-tile.gun1.name=75mm炮-炮管
+tile.gun_body.name=75mm炮-炮身
+tile.gun_barrel.name=75mm炮-炮管
 
 tile.atable.name=宿管桌子
 
