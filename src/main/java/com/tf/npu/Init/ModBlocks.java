@@ -1,8 +1,8 @@
 package com.tf.npu.Init;
 
 import com.tf.npu.Blocks.BoyBed.*;
-import com.tf.npu.Blocks.Camera.Cam1;
-import com.tf.npu.Blocks.Camera.Cam2;
+import com.tf.npu.Blocks.Camera.CameraWall;
+import com.tf.npu.Blocks.Camera.CameraCeil;
 import com.tf.npu.Blocks.Ceiling.*;
 import com.tf.npu.Blocks.Constructions.*;
 import com.tf.npu.Blocks.DHalls.*;
@@ -421,8 +421,8 @@ public class ModBlocks {
     public static final Block WASH3 = new Wash3();
     public static final Block WASHER = new Washer();
 
-    public static final Block CAM1 = new Cam1();
-    public static final Block CAM2 = new Cam2();
+    public static final Block CAM1 = new CameraWall();
+    public static final Block CAM2 = new CameraCeil();
 
     public static final Block WALL1 = new Wall1();
     public static final Block WALL2 = new Wall2();

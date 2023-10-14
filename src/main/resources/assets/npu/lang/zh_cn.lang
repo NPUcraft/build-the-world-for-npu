@@ -11,7 +11,6 @@ advancements.npu.get_sword.description=得到学术垃圾剑
 
 entity.Plane.name=飞机
 entity.SchoolBus.name=校车
-entity.GoldenChicken.name=黄金鸡
 item.plane.name=飞机
 item.schoolbus.name=校车
 item.ash.name=灰烬
@@ -384,8 +383,8 @@ tile.wash2.name=洗手池-中
 tile.wash3.name=洗手池-右
 tile.washer.name=洗衣机
 
-tile.cam1.name=监控摄像头（靠墙）
-tile.cam2.name=监控摄像头（吊顶）
+tile.camera_wall.name=监控摄像头（靠墙）
+tile.camera_ceil.name=监控摄像头（吊顶）
 
 tile.wall1.name=青砖墙
 tile.wall2.name=青砖墙竖半砖
@@ -926,4 +925,5 @@ tile.blue_brick_half.name=蓝砖道路下半
 
 
 
-
+tile.obsidian_block.name=Obsidian Block
+tile.obsidian_frame.name=Obsidian Frametile
