@@ -330,10 +330,10 @@ tile.alu.name=可折叠铝展架
 tile.cbb.name=椅子黑板
 
 tile.grille_ceiling.name=格栅天花板
-tile.c2.name=格栅天花板-大灯
-tile.c3.name=格栅天花板-摄像头
-tile.c4.name=格栅天花板-小灯
-tile.c5.name=格栅天花板-音响
+tile.grille_ceiling_biglight.name=格栅天花板-大灯
+tile.grille_ceiling_camera.name=格栅天花板-摄像头
+tile.grille_ceiling_smalllight.name=格栅天花板-小灯
+tile.grille_ceiling_audio.name=格栅天花板-音响
 
 
 tile.a.name="A"

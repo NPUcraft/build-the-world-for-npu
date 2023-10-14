@@ -376,10 +376,10 @@ public class ModBlocks {
     public static final Block FAN = new Fan();
 
     public static final Block C1 = new GrilleCeiling();
-    public static final Block C2 = new C2();
-    public static final Block C3 = new C3();
-    public static final Block C4 = new C4();
-    public static final Block C5 = new C5();
+    public static final Block C2 = new GrilleCeilingBigLight();
+    public static final Block C3 = new GrilleCeilingCamera();
+    public static final Block C4 = new GrilleCeilingSmallLight();
+    public static final Block C5 = new GrilleCeilingAudio();
 
     public static final Block A = new A();
     public static final Block B = new B();
