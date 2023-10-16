@@ -40,10 +40,10 @@ import com.tf.npu.Blocks.DecorationBlocks.Gun.GunBarrel;
 import com.tf.npu.Blocks.HandRail.*;
 import com.tf.npu.Blocks.Market.*;
 import com.tf.npu.Blocks.Others.*;
-import com.tf.npu.Blocks.DecorationBlocks.Painting.Painting;
-import com.tf.npu.Blocks.DecorationBlocks.Painting.Painting1;
-import com.tf.npu.Blocks.DecorationBlocks.Painting.Painting2;
-import com.tf.npu.Blocks.DecorationBlocks.Painting.Painting3;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.PaintingCorridor;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.PaintingExhibitionType1;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.PaintingExhibitionType2;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.PaintingExhibitionType3;
 import com.tf.npu.Blocks.Pipe.*;
 import com.tf.npu.Blocks.Plants.Plant;
 import com.tf.npu.Blocks.Plants.Plant1;
@@ -287,10 +287,10 @@ public class ModBlocks {
     public static final Block WINW2 = new Winw2().setLightLevel(0.1F);
     public static final Block WINW3 = new Winw3().setLightLevel(0.1F);
 
-    public static final Block PAINTING = new Painting();
-    public static final Block PAINTING1 = new Painting1();
-    public static final Block PAINTING2 = new Painting2();
-    public static final Block PAINTING3 = new Painting3();
+    public static final Block PAINTING = new PaintingCorridor();
+    public static final Block PAINTING1 = new PaintingExhibitionType1();
+    public static final Block PAINTING2 = new PaintingExhibitionType2();
+    public static final Block PAINTING3 = new PaintingExhibitionType3();
 
     public static final Block D1 = new D1();
     public static final Block D2 = new D2();

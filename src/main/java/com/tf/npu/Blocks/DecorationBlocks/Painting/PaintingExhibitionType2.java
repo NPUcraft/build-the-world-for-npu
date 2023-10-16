@@ -21,7 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Painting1 extends Block implements IHasModel {
+public class PaintingExhibitionType2 extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -47,11 +47,11 @@ public class Painting1 extends Block implements IHasModel {
     }
 
     //x1,y1,z1,x2,y2,z2均为double类型
-    public static final AxisAlignedBB P1_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, -1.0D, 1.0D);
+    public static final AxisAlignedBB P2_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, -1.0D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return P1_AABB;
+        return P2_AABB;
     }
 
     @Override
@@ -69,10 +69,10 @@ public class Painting1 extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public Painting1() {
+    public PaintingExhibitionType2() {
         super(Material.ROCK);
-        this.setTranslationKey("painting1");
-        this.setRegistryName("npu:painting1");
+        this.setTranslationKey("painting_exhibition_type_2");
+        this.setRegistryName("npu:painting_exhibition_type_2");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));

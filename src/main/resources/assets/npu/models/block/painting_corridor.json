@@ -3,7 +3,7 @@
   "textures": {
     "0": "npu:blocks/gold_block",
     "1": "npu:blocks/hardened_clay_stained_white",
-    "2": "npu:blocks/painting",
+    "2": "npu:blocks/painting_corridor",
     "particle": "npu:blocks/gold_block"
   },
   "elements": [

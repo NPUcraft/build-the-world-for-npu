@@ -216,10 +216,10 @@ tile.d5.name=宿舍大门-双右
 tile.d6.name=宿舍大门-双左
 tile.d7.name=宿舍大门-天窗
 
-tile.painting.name=走廊挂画
-tile.painting1.name=展板1
-tile.painting2.name=展板2
-tile.painting3.name=展板3
+tile.painting_corridor.name=走廊挂画
+tile.painting_exhibition_type_1.name=展板1
+tile.painting_exhibition_type_2.name=展板2
+tile.painting_exhibition_type_3.name=展板3
 
 tile.g1.name=大理石地砖
 tile.g2.name=大理石地砖黑

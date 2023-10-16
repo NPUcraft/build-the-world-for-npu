@@ -4,7 +4,7 @@
     "0": "npu:blocks/iron_block",
     "1": "npu:blocks/wool_colored_silver",
     "2": "npu:blocks/concrete_white",
-    "4": "npu:blocks/painting2",
+    "3": "npu:blocks/painting_exhibition_type_1",
     "particle": "npu:blocks/iron_block"
   },
   "elements": [
@@ -510,7 +510,7 @@
             7.27344,
             16
           ],
-          "texture": "#4"
+          "texture": "#3"
         },
         "east": {
           "uv": [
