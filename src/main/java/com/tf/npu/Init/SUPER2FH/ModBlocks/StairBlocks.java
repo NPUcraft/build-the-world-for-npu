@@ -1,6 +1,6 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
-import com.tf.npu.Blocks.Stair.*;
+import com.tf.npu.Blocks.DecorationBlocks.Stair.*;
 import com.tf.npu.Init.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

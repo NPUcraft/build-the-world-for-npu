@@ -78,8 +78,6 @@ public class CCH extends Block implements IHasModel {
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);
-
-
     }
 
     @Override

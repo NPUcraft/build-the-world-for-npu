@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Stair;
+package com.tf.npu.Blocks.DecorationBlocks.Stair;
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.StairBlocks;
 import com.tf.npu.NPU;

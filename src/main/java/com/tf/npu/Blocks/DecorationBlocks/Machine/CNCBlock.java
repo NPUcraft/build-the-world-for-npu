@@ -1,6 +1,5 @@
-package com.tf.npu.Blocks.Machine;
+package com.tf.npu.Blocks.DecorationBlocks.Machine;
 
-import com.tf.npu.Blocks.Machine.tile.CNCTileEntity;
 import com.tf.npu.NPU;
 import net.minecraft.block.BlockDirectional;
 import net.minecraft.block.ITileEntityProvider;

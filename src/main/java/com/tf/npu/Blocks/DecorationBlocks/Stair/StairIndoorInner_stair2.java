@@ -1,4 +1,5 @@
-package com.tf.npu.Blocks.Stair;
+package com.tf.npu.Blocks.DecorationBlocks.Stair;
+
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.StairBlocks;
 import com.tf.npu.NPU;
@@ -9,13 +10,12 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class StairGentlyUp_g41 extends BlockFourSideFacingTemplate {
+public class StairIndoorInner_stair2 extends BlockFourSideFacingTemplate {
 
-    // g41
-    public StairGentlyUp_g41() {
+    public StairIndoorInner_stair2() {
         super();
-        this.setTranslationKey("g41");
-        this.setRegistryName("npu:g41");
+        this.setTranslationKey("stair2");
+        this.setRegistryName("npu:stair2");
         this.setCreativeTab(NPU.STAIR);
         StairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         StairBlocks.BLOCKS.add(this);
@@ -23,6 +23,6 @@ public class StairGentlyUp_g41 extends BlockFourSideFacingTemplate {
 
     @Override
     public AxisAlignedBB getCollisionBoundingBox(IBlockState p_getCollisionBoundingBox_1_, IBlockAccess p_getCollisionBoundingBox_2_, BlockPos p_getCollisionBoundingBox_3_) {
-        return FULL_SHAPE;
+        return HALF_SHPAE_BOTTOM;
     }
 }

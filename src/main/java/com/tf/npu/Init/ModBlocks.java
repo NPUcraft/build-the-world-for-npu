@@ -117,7 +117,6 @@ public class ModBlocks {
     public static final Block BFRAME1 = new BFrame1();
     public static final Block BFRAME2 = new BFrame2();
     public static final Block BRAILING = new BRailing().setLightLevel(0.1F);
-    public static final Block TESTBLOCK = new TestBlock();
     public static final Block AIRCONOUT = new AirConOut().setLightLevel(0.1F);
     public static final Block AIRCONOUT1 = new AirConOut1().setLightLevel(0.1F);
     public static final Block AIRCONOUT2 = new AirConOut2().setLightLevel(0.1F);

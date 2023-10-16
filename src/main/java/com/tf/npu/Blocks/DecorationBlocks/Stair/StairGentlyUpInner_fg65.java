@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Stair;
+package com.tf.npu.Blocks.DecorationBlocks.Stair;
 
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.StairBlocks;
@@ -10,11 +10,13 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class StairIndoor_stair extends BlockFourSideFacingTemplate {
-    public StairIndoor_stair() {
+public class StairGentlyUpInner_fg65 extends BlockFourSideFacingTemplate {
+
+    // fg65
+    public StairGentlyUpInner_fg65() {
         super();
-        this.setTranslationKey("stair");
-        this.setRegistryName("npu:stair");
+        this.setTranslationKey("fg65");
+        this.setRegistryName("npu:fg65");
         this.setCreativeTab(NPU.STAIR);
         StairBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         StairBlocks.BLOCKS.add(this);

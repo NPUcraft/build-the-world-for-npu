@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Machine.tile;
+package com.tf.npu.Blocks.DecorationBlocks.Machine;
 
 import net.minecraft.tileentity.TileEntity;
 import software.bernie.geckolib3.core.IAnimatable;

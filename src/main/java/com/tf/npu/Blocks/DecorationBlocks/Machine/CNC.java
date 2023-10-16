@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.Machine;
+package com.tf.npu.Blocks.DecorationBlocks.Machine;
 
 import com.tf.npu.Init.SUPER2FH.ModBlocks.ChairBlocks;
 import com.tf.npu.Init.SUPER2FH.ModBlocks.MachineBlocks;
