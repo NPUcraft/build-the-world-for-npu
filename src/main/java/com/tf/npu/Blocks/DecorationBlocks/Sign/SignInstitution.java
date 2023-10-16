@@ -22,7 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class WifiSign extends Block implements IHasModel {
+public class SignInstitution extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -48,7 +48,7 @@ public class WifiSign extends Block implements IHasModel {
     }
 
     //x1,y1,z1,x2,y2,z2均为double类型
-    public static final AxisAlignedBB DEC1_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 0.0D, 1.0D);
+    public static final AxisAlignedBB DEC1_AABB = new AxisAlignedBB(0.0D, 1.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
@@ -70,10 +70,10 @@ public class WifiSign extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public WifiSign() {
+    public SignInstitution() {
         super(Material.ROCK);
-        this.setTranslationKey("wifi_sign");
-        this.setRegistryName("npu:wifi_sign");
+        this.setTranslationKey("sign_institution");
+        this.setRegistryName("npu:sign_institution");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB5);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));

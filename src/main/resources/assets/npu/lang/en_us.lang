@@ -174,8 +174,8 @@ tile.light_dormitory_corridor.name=宿舍走廊灯
 tile.light_dormitory_ceiling.name=宿舍吊灯
 tile.light_floor_ray.name=地面射灯
 tile.light_floor.name=地灯
-tile.light5.name=女寝骑2格偏心灯
-tile.light6.name=女寝骑4格偏心灯
+tile.light_dormitory_off_2_center.name=女寝骑2格偏心灯
+tile.light_dormitory_off_4_center.name=女寝骑4格偏心灯
 tile.flight1.name=教东白格栅顶-灯
 tile.flight2.name=教东木格栅顶-灯
 
@@ -526,10 +526,10 @@ tile.winw2=白窗-1x1带栏杆
 tile.winw3=空小窗-白
 
 tile.aurora_slab.name=台阶测试
-tile.institution_sign.name=机构门牌
-tile.forbid_smoking_sign.name=禁止吸烟
-tile.institution_sign_small.name=小门牌
-tile.wifi_sign.name=wifi覆盖
+tile.sign_institution.name=机构门牌
+tile.sign_forbid_smoking.name=禁止吸烟
+tile.sign_institution_small.name=小门牌
+tile.sign_wifi.name=wifi覆盖
 
 tile.ttable.name=梯形桌子
 tile.girltr.name=女寝卫生间右
@@ -756,9 +756,9 @@ tile.insign4.name=食堂海报1-偏心
 tile.insign5.name=食堂海报2
 tile.insign6.name=食堂海报2-偏心
 
-tile.light7.name=灭蝇灯-挂顶
-tile.light8.name=灭蝇灯-贴墙
-tile.light9.name=食堂电子牌
+tile.light_common_fly_killer_ceiling.name=灭蝇灯-挂顶
+tile.light_common_fly_killer_wall.name=灭蝇灯-贴墙
+tile.sign_dining_hall.name=食堂电子牌
 tile.plant.name=盆栽1
 tile.plant1.name=盆栽2
 tile.plant2.name=盆栽3

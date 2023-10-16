@@ -10,14 +10,17 @@ import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.GirlBedL;
 import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.GirlBedR;
 import com.tf.npu.Blocks.DecorationBlocks.Desk.Classroom.Blue.*;
 import com.tf.npu.Blocks.DecorationBlocks.Desk.Classroom.Wood.*;
+import com.tf.npu.Blocks.DecorationBlocks.Light.Common.LightCommonFlyKillerCeiling;
+import com.tf.npu.Blocks.DecorationBlocks.Light.Common.LightCommonFlyKillerWall;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.SignDiningHall;
 import com.tf.npu.Blocks.DecorationBlocks.Light.Dormitory.*;
 import com.tf.npu.Blocks.DecorationBlocks.Light.Floor.LightFloorRay;
 import com.tf.npu.Blocks.DecorationBlocks.Light.Floor.LightFloor;
 import com.tf.npu.Blocks.Decorations.*;
-import com.tf.npu.Blocks.DecorationBlocks.Sign.InstitutionSign;
-import com.tf.npu.Blocks.DecorationBlocks.Sign.ForbidSmokingSign;
-import com.tf.npu.Blocks.DecorationBlocks.Sign.InstitutionSignSmall;
-import com.tf.npu.Blocks.DecorationBlocks.Sign.WifiSign;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.SignInstitution;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.SignForbidSmoking;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.SignInstitutionSmall;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.SignWifi;
 import com.tf.npu.Blocks.Doors.*;
 import com.tf.npu.Blocks.Doors.Black.*;
 import com.tf.npu.Blocks.Doors.White.*;
@@ -195,11 +198,11 @@ public class ModBlocks {
     public static final Block LIGHT2 = new LightDormitoryCeiling();
     public static final Block LIGHT3 = new LightFloorRay();
     public static final Block LIGHT4 = new LightFloor();
-    public static final Block LIGHT5 = new Light5();
-    public static final Block LIGHT6 = new Light6();
-    public static final Block LIGHT7 = new Light7();
-    public static final Block LIGHT8 = new Light8();
-    public static final Block LIGHT9 = new Light9();
+    public static final Block LIGHT5 = new LightDormitoryOff2Center();
+    public static final Block LIGHT6 = new LightDormitoryOff4Center();
+    public static final Block LIGHT7 = new LightCommonFlyKillerCeiling();
+    public static final Block LIGHT8 = new LightCommonFlyKillerWall();
+    public static final Block LIGHT9 = new SignDiningHall();
 
     public static final Block FLIGHT1 = new FLight1();
     public static final Block FLIGHT2 = new FLight2();
@@ -513,10 +516,10 @@ public class ModBlocks {
 
     public static final Block NN = new NN();
 
-    public static final Block DEC1 = new InstitutionSign();
-    public static final Block DEC2 = new ForbidSmokingSign();
-    public static final Block DEC3 = new InstitutionSignSmall();
-    public static final Block DEC4 = new WifiSign();
+    public static final Block DEC1 = new SignInstitution();
+    public static final Block DEC2 = new SignForbidSmoking();
+    public static final Block DEC3 = new SignInstitutionSmall();
+    public static final Block DEC4 = new SignWifi();
 
 
     public static final Block TT = new TTable().setLightLevel(0.1F);

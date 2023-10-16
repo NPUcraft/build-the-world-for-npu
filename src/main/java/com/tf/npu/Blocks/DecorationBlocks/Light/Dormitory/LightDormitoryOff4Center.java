@@ -21,7 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Light7 extends Block implements IHasModel {
+public class LightDormitoryOff4Center extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -47,7 +47,7 @@ public class Light7 extends Block implements IHasModel {
     }
 
     //x1,y1,z1,x2,y2,z2均为double类型
-    public static final AxisAlignedBB Light3_AABB = new AxisAlignedBB(0.0D, 0.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+    public static final AxisAlignedBB Light3_AABB = new AxisAlignedBB(0.0D, 1.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
@@ -69,16 +69,16 @@ public class Light7 extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public Light7() {
+    public LightDormitoryOff4Center() {
         super(Material.ROCK);
-        this.setTranslationKey("light7");
-        this.setRegistryName("npu:light7");
+        this.setTranslationKey("light_dormitory_off_4_center");
+        this.setRegistryName("npu:light_dormitory_off_4_center");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);
-        setLightLevel(2);
+        setLightLevel(1);
 
 
     }

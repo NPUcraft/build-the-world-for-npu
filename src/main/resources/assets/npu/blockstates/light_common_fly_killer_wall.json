@@ -1,20 +1,20 @@
 {
   "variants": {
     "facing=north": {
-      "model": "npu:institution_sign"
+      "model": "npu:light_common_fly_killer_wall"
     },
     "facing=east": {
-      "model": "npu:institution_sign",
+      "model": "npu:light_common_fly_killer_wall",
       "y": 90,
       "uvlock": false
     },
     "facing=south": {
-      "model": "npu:institution_sign",
+      "model": "npu:light_common_fly_killer_wall",
       "y": 180,
       "uvlock": false
     },
     "facing=west": {
-      "model": "npu:institution_sign",
+      "model": "npu:light_common_fly_killer_wall",
       "y": 270,
       "uvlock": false
     }

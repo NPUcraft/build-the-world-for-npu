@@ -22,7 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class InstitutionSignSmall extends Block implements IHasModel {
+public class SignWifi extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -70,10 +70,10 @@ public class InstitutionSignSmall extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public InstitutionSignSmall() {
+    public SignWifi() {
         super(Material.ROCK);
-        this.setTranslationKey("institution_sign_small");
-        this.setRegistryName("npu:institution_sign_small");
+        this.setTranslationKey("sign_wifi");
+        this.setRegistryName("npu:sign_wifi");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB5);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));

@@ -1,20 +1,20 @@
 {
   "variants": {
     "facing=north": {
-      "model": "npu:institution_sign_small"
+      "model": "npu:light_dormitory_off_2_center"
     },
     "facing=east": {
-      "model": "npu:institution_sign_small",
+      "model": "npu:light_dormitory_off_2_center",
       "y": 90,
       "uvlock": false
     },
     "facing=south": {
-      "model": "npu:institution_sign_small",
+      "model": "npu:light_dormitory_off_2_center",
       "y": 180,
       "uvlock": false
     },
     "facing=west": {
-      "model": "npu:institution_sign_small",
+      "model": "npu:light_dormitory_off_2_center",
       "y": 270,
       "uvlock": false
     }

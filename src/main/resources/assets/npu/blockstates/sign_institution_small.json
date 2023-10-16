@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:sign_institution_small"
+    },
+    "facing=east": {
+      "model": "npu:sign_institution_small",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:sign_institution_small",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:sign_institution_small",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

@@ -21,7 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Light5 extends Block implements IHasModel {
+public class LightDormitoryOff2Center extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -69,10 +69,10 @@ public class Light5 extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public Light5() {
+    public LightDormitoryOff2Center() {
         super(Material.ROCK);
-        this.setTranslationKey("light5");
-        this.setRegistryName("npu:light5");
+        this.setTranslationKey("light_dormitory_off_2_center");
+        this.setRegistryName("npu:light_dormitory_off_2_center");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));

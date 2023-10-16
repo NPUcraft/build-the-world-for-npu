@@ -1,4 +1,4 @@
-package com.tf.npu.Blocks.DecorationBlocks.Light.Dormitory;
+package com.tf.npu.Blocks.DecorationBlocks.Light.Common;
 
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
@@ -21,7 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Light9 extends Block implements IHasModel {
+public class LightCommonFlyKillerWall extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -69,15 +69,16 @@ public class Light9 extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public Light9() {
+    public LightCommonFlyKillerWall() {
         super(Material.ROCK);
-        this.setTranslationKey("light9");
-        this.setRegistryName("npu:light9");
+        this.setTranslationKey("light_common_fly_killer_wall");
+        this.setRegistryName("npu:light_common_fly_killer_wall");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);
+        setLightLevel(2);
 
 
     }
