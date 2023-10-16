@@ -208,7 +208,7 @@ public class NPU {
     /**
      * 灯光相关
      */
-    public static final CreativeTabs LIGHT = new CreativeTabs("light") {
+    public static final CreativeTabs LIGHT = new CreativeTabs("light_dormitory_bathroom") {
         @Override
         public ItemStack createIcon() {
             return new ItemStack(LightBlocks.LIGHT_CEILING_LONG);
