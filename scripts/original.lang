@@ -169,9 +169,9 @@ tile.db8.name=黑小木门右-关-1x3
 
 tile.light.name=宿舍厕所灯
 tile.light_dormitory_corridor.name=宿舍走廊灯
-tile.light2.name=宿舍吊灯
-tile.light3.name=地面射灯
-tile.light4.name=地灯
+tile.light_dormitory_ceiling.name=宿舍吊灯
+tile.light_floor_ray.name=地面射灯
+tile.light_floor.name=地灯
 tile.light5.name=女寝骑2格偏心灯
 tile.light6.name=女寝骑4格偏心灯
 tile.flight1.name=教东白格栅顶-灯
