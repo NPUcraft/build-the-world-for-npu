@@ -11,7 +11,7 @@ import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.GirlBedR;
 import com.tf.npu.Blocks.DecorationBlocks.Desk.Classroom.Blue.*;
 import com.tf.npu.Blocks.DecorationBlocks.Desk.Classroom.Wood.*;
 import com.tf.npu.Blocks.DecorationBlocks.Light.Dormitory.LightDormitoryBathroom;
-import com.tf.npu.Blocks.DecorationBlocks.Light.Dormitory.Light1;
+import com.tf.npu.Blocks.DecorationBlocks.Light.Dormitory.LightDormitoryCorridor;
 import com.tf.npu.Blocks.DecorationBlocks.Light.Dormitory.Light2;
 import com.tf.npu.Blocks.Decorations.*;
 import com.tf.npu.Blocks.DecorationBlocks.Sign.InstitutionSign;
@@ -192,7 +192,7 @@ public class ModBlocks {
 
 
     public static final Block LIGHT = new LightDormitoryBathroom();
-    public static final Block LIGHT1 = new Light1();
+    public static final Block LIGHT1 = new LightDormitoryCorridor();
     public static final Block LIGHT2 = new Light2();
     public static final Block LIGHT3 = new Light3();
     public static final Block LIGHT4 = new Light4();

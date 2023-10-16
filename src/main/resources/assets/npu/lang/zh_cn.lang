@@ -167,7 +167,7 @@ tile.db8.name=黑小木门右-关-1x3
 
 
 tile.light_dormitory_bathroom.name=宿舍厕所灯
-tile.light1.name=宿舍走廊灯
+tile.light_dormitory_corridor.name=宿舍走廊灯
 tile.light2.name=宿舍吊灯
 tile.light3.name=地面射灯
 tile.light4.name=地灯

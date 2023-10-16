@@ -14,11 +14,11 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class Light1 extends Block implements IHasModel {
-    public Light1() {
+public class LightDormitoryCorridor extends Block implements IHasModel {
+    public LightDormitoryCorridor() {
         super(Material.ROCK);
-        setTranslationKey("light1");
-        setRegistryName("npu:light1");
+        setTranslationKey("light_dormitory_corridor");
+        setRegistryName("npu:light_dormitory_corridor");
         setCreativeTab(NPU.MY_TAB);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);
