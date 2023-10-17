@@ -1,20 +1,20 @@
 {
   "variants": {
     "facing=north": {
-      "model": "npu:boybed_right_table"
+      "model": "npu:bedboy_right_table"
     },
     "facing=east": {
-      "model": "npu:boybed_right_table",
+      "model": "npu:bedboy_right_table",
       "y": 90,
       "uvlock": false
     },
     "facing=south": {
-      "model": "npu:boybed_right_table",
+      "model": "npu:bedboy_right_table",
       "y": 180,
       "uvlock": false
     },
     "facing=west": {
-      "model": "npu:boybed_right_table",
+      "model": "npu:bedboy_right_table",
       "y": 270,
       "uvlock": false
     }

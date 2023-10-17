@@ -344,12 +344,12 @@ tile.star.name="星"
 tile.sky.name="天苑"
 tile.sit.name="座"
 
-tile.boybed_left_table.name=男寝上床下桌（左）
-tile.boybed_right_table.name=男寝上床下桌（右）
+tile.bedboy_left_table.name=男寝上床下桌（左）
+tile.bedboy_right_table.name=男寝上床下桌（右）
 
-tile.boybed_left_table_ladder.name=男寝上床下桌（左梯）
+tile.bedboy_left_table_ladder.name=男寝上床下桌（左梯）
 tile.bbed2r.name=男寝上床下桌（右梯）
-tile.boybed_right_table_ladder_laptop.name=彩蛋-物理机
+tile.bedboy_right_table_ladder_laptop.name=彩蛋-物理机
 
 tile.urinal.name=小便池
 tile.fan.name=宿舍电风扇
@@ -454,8 +454,8 @@ tile.treehole.name=树坑
 tile.electric.name=配电箱
 
 tile.girlshelf.name=女寝柜子
-tile.girlbedl.name=女寝双人床左
-tile.girlbedr.name=女寝双人床右
+tile.bedgirll.name=女寝双人床左
+tile.bedgirlr.name=女寝双人床右
 tile.girlwash.name=女寝洗手台
 
 tile.fence1.name=通用围栏-低

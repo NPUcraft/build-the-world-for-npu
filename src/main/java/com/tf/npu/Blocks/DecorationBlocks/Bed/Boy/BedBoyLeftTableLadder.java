@@ -21,7 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class BoyBedRightTable extends Block implements IHasModel {
+public class BedBoyLeftTableLadder extends Block implements IHasModel {
 
 
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
@@ -32,11 +32,11 @@ public class BoyBedRightTable extends Block implements IHasModel {
     }
 
     //x1,y1,z1,x2,y2,z2均为double类型
-    public static final AxisAlignedBB BBedR_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+    public static final AxisAlignedBB BBed2R_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return BBedR_AABB;
+        return BBed2R_AABB;
     }
 
     @Override
@@ -54,11 +54,11 @@ public class BoyBedRightTable extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public BoyBedRightTable() {
+    public BedBoyLeftTableLadder() {
         super(Material.ROCK);
-        this.setTranslationKey("boybed_right_table");
-        this.setRegistryName("npu:boybed_right_table");
-        this.setHardness(12.5F);
+        this.setTranslationKey("bedboy_left_table_ladder");
+        this.setRegistryName("npu:bedboy_left_table_ladder");
+        this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

@@ -455,8 +455,8 @@ tile.treehole.name=树坑
 tile.electric.name=配电箱
 
 tile.girlshelf.name=女寝柜子
-tile.girlbedl.name=女寝双人床左
-tile.girlbedr.name=女寝双人床右
+tile.bedgirll.name=女寝双人床左
+tile.bedgirlr.name=女寝双人床右
 tile.girlwash.name=女寝洗手台
 
 tile.fence1.name=通用围栏-低

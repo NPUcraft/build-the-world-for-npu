@@ -1,20 +1,20 @@
 {
   "variants": {
     "facing=north": {
-      "model": "npu:boybed_right_table_ladder_laptop"
+      "model": "npu:bedboy_right_table_ladder_laptop"
     },
     "facing=east": {
-      "model": "npu:boybed_right_table_ladder_laptop",
+      "model": "npu:bedboy_right_table_ladder_laptop",
       "y": 90,
       "uvlock": false
     },
     "facing=south": {
-      "model": "npu:boybed_right_table_ladder_laptop",
+      "model": "npu:bedboy_right_table_ladder_laptop",
       "y": 180,
       "uvlock": false
     },
     "facing=west": {
-      "model": "npu:boybed_right_table_ladder_laptop",
+      "model": "npu:bedboy_right_table_ladder_laptop",
       "y": 270,
       "uvlock": false
     }

@@ -6,8 +6,8 @@ import com.tf.npu.Blocks.DecorationBlocks.Camera.CameraCeil;
 import com.tf.npu.Blocks.Constructions.*;
 import com.tf.npu.Blocks.DHalls.*;
 import com.tf.npu.Blocks.DecorationBlocks.Bed.Boy.*;
-import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.GirlBedL;
-import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.GirlBedR;
+import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.BedGirlL;
+import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.BedGirlR;
 import com.tf.npu.Blocks.DecorationBlocks.Desk.Classroom.Blue.*;
 import com.tf.npu.Blocks.DecorationBlocks.Desk.Classroom.Wood.*;
 import com.tf.npu.Blocks.DecorationBlocks.Light.Common.LightCommonFlyKillerCeiling;
@@ -100,11 +100,11 @@ public class ModBlocks {
     public static final Block StraightAheadSign = new StraightAheadSign().setLightLevel(0.1F);
     public static final Block PRINTER = new Printer();
     public static final Block GBED = new GBed().setLightLevel(0.1F);
-    public static final Block BBEDL = new BoyBedLeftTable().setLightLevel(0.1F);
-    public static final Block BBEDR = new BoyBedRightTable().setLightLevel(0.1F);
-    public static final Block boybed_left_table_ladder = new BoyBedLeftTableLadder().setLightLevel(0.1F);
-    public static final Block BBED2R = new BoyBedRightTableLadder().setLightLevel(0.1F);
-    public static final Block BBED2R1 = new BoyBedRightTableLadderLaptop().setLightLevel(0.1F);
+    public static final Block BBEDL = new BedBoyLeftTable().setLightLevel(0.1F);
+    public static final Block BBEDR = new BedBoyRightTable().setLightLevel(0.1F);
+    public static final Block bedboy_left_table_ladder = new BedBoyLeftTableLadder().setLightLevel(0.1F);
+    public static final Block BBED2R = new BedBoyRightTableLadder().setLightLevel(0.1F);
+    public static final Block BBED2R1 = new BedBoyRightTableLadderLaptop().setLightLevel(0.1F);
     public static final Block WINDOWFRAME = new WindowFrame();
     public static final Block CP = new CP().setLightLevel(0.1F);
     public static final Block EXIT = new Exit();
@@ -493,8 +493,8 @@ public class ModBlocks {
     public static final Block ROADBLOCK = new RoadBlock();
     public static final Block MESH = new Mesh();
 
-    public static final Block GIRLBEDR = new GirlBedR().setLightLevel(0.1F);
-    public static final Block GIRLBEDL = new GirlBedL().setLightLevel(0.1F);
+    public static final Block bedgirlR = new BedGirlR().setLightLevel(0.1F);
+    public static final Block bedgirlL = new BedGirlL().setLightLevel(0.1F);
     public static final Block GIRLWASH = new GirlWash();
     public static final Block GIRLSHELF = new GirlShelf();
 
