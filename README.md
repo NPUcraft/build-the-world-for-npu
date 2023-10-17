@@ -1,20 +1,17 @@
 # BuildTheWorldForNPU
 
 #### 介绍
-NPUcraft建筑服专属mod
-版本：1.12.2-Forge-2847
+NPUcraft建筑服专属模组。
 
-#### 软件架构
-1.12.2-forge-2847，以后可能会有更新版
+#### 适配版本
+Forge：1.12.2-forge-2847
 
-
-#### Run Guide
-**Only support IDEA**
-1. In IntelliJ, go to File -> Settings -> Build, Execution, Deployment -> Build Tools -> Gradle. Set “Build and run using:” to Intellij IDEA, and check that Gradle JVM is set to some version of JDK 1.8
-2. In IntelliJ, go to File -> Project Structure. Check the SDK is set to 1.8 in here too. Set the compiler output to a folder called “out” in your project root – you’ll probably need to create this folder.
-3. Do Gradle Sync
-4. Do Gradle `genIntellijRuns`
-
+#### 运行指南
+**仅支持 IntelliJ IDEA**
+1. 在 IntelliJ 中，前往 "文件" -> "设置" -> "构建，执行，部署" -> "构建工具" -> "Gradle"。将 "使用以下方式构建和运行：" 设置为 IntelliJ IDEA，并确认 Gradle JVM 已设置为某个 JDK 1.8 的版本。
+2. 在 IntelliJ 中，前往 "文件" -> "项目结构"。确保 SDK 也在这里设置为 1.8。将编译器输出设置为一个名为 "out" 的文件夹，位于项目根目录 - 你可能需要创建此文件夹。
+3. 执行 Gradle 同步
+4. 执行 Gradle `genIntellijRuns`
 
 #### 使用说明
 
@@ -26,14 +23,14 @@ NPUcraft建筑服专属mod
 2.  协作者：翱翔——Soar
 3.  其他作者：Mario_RainFlower
 
-
 #### 说明
 
-1.  该mod是NPUcraft建筑服专属mod，很多元素和模型是西工大特有的，如果想修改成自己的可以联系邮箱1309251370@qq.com，另外，mod里有防伪措施。
+1.  该模组是NPUcraft建筑服专属模组，元素和模型为西工大特有。
+2.  如果想修改发布，可联系邮箱1309251370@qq.com。
+3.  模组内含防伪措施。
 
-
-### Structures
+### 结构
 #### Blocks
 ##### DecorationBlocks
-These blocks are just decoration for the building structure, remove any of them from the building will be hardly noticeable.  
+这些方块仅用于建筑结构的装饰，从建筑中移除它们几乎不会引起明显变化。
 

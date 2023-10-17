@@ -1,37 +1,34 @@
 # BuildTheWorldForNPU
 
-#### Description
-NPUcraft建筑服专属mod
-版本：1.12.2Forge
+#### Introduction
+NPUcraft exclusive mod for building servers
+Version: 1.12.2-Forge-2847
 
 #### Software Architecture
-Software architecture description
+1.12.2-forge-2847, there may be updates in the future.
 
-#### Installation
+#### Run Guide
+**Only supports IntelliJ IDEA**
+1. In IntelliJ, go to "File" -> "Settings" -> "Build, Execution, Deployment" -> "Build Tools" -> "Gradle". Set "Build and run using:" to IntelliJ IDEA and make sure that Gradle JVM is set to some version of JDK 1.8.
+2. In IntelliJ, go to "File" -> "Project Structure". Ensure that the SDK is also set to 1.8. Set the compiler output to a folder named "out" in your project root – you'll probably need to create this folder.
+3. Perform Gradle Sync.
+4. Execute Gradle `genIntellijRuns`.
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+#### Usage Guidelines
 
-#### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. It is prohibited to spread this mod with only name changes.
 
 #### Contribution
 
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+1. Code Authors: TeachingFeelings, SUPER2FH
+2. Collaborator: 翱翔——Soar
+3. Other Authors: Mario_RainFlower
 
+#### Note
 
-#### Gitee Feature
+1. This mod is exclusive to the NPUcraft building server and many elements and models are specific to Xi'an University of Technology. If you want to modify it for your own use, please contact the email 1309251370@qq.com. Additionally, the mod contains anti-counterfeiting measures.
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### Structure
+#### Blocks
+##### Decoration Blocks
+These blocks are purely for decorative purposes within the building. Removing any of them from a structure will hardly result in noticeable changes.
