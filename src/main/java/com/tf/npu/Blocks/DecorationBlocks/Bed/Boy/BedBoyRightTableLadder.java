@@ -32,11 +32,11 @@ public class BedBoyRightTableLadder extends Block implements IHasModel {
     }
 
     //x1,y1,z1,x2,y2,z2均为double类型
-    public static final AxisAlignedBB BBed2R_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, 1.0D, 1.0D);
+    public static final AxisAlignedBB BedBoyRightTableLadder_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, 1.0D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return BBed2R_AABB;
+        return BedBoyRightTableLadder_AABB;
     }
 
     @Override
