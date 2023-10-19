@@ -1,7 +1,7 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
 
-import com.tf.npu.Blocks.Cube.*;
+import com.tf.npu.Blocks.BuildBlocks.Cube.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 

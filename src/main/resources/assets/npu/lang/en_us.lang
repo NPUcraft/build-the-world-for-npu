@@ -351,7 +351,7 @@ tile.bedboy_left_table.name=男寝上床下桌（左）
 tile.bedboy_right_table.name=男寝上床下桌（右）
 
 tile.bedboy_left_table_ladder.name=男寝上床下桌（左梯）
-tile.bbed2r.name=男寝上床下桌（右梯）
+tile.bedboy_right_table_ladde.name=男寝上床下桌（右梯）
 tile.bedboy_right_table_ladder_laptop.name=彩蛋-物理机
 
 tile.urinal.name=小便池

@@ -1,8 +1,8 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
-import com.tf.npu.Blocks.Fence.RailingHalf;
-import com.tf.npu.Blocks.Fence.RailingHalfCorner;
-import com.tf.npu.Blocks.Fence.RailingHalfDouble;
+import com.tf.npu.Blocks.BuildBlocks.Fence.RailingHalf;
+import com.tf.npu.Blocks.BuildBlocks.Fence.RailingHalfCorner;
+import com.tf.npu.Blocks.BuildBlocks.Fence.RailingHalfDouble;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 

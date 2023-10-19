@@ -1,6 +1,6 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
-import com.tf.npu.Blocks.Fence.*;
+import com.tf.npu.Blocks.BuildBlocks.Fence.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 
