@@ -927,3 +927,5 @@ tile.blue_brick_half.name=蓝砖道路下半
 
 tile.obsidian_block.name=Obsidian Block
 tile.obsidian_frame.name=Obsidian Frametile
+
+tile.mask_medical.name=医用口罩
