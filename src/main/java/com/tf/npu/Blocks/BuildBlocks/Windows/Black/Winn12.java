@@ -12,13 +12,12 @@ import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumDyeColor;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.BlockRenderLayer;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.IStringSerializable;
+import net.minecraft.util.*;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
@@ -56,16 +55,36 @@ public class Winn12 extends Block implements IHasModel {
     }
 
     //x1,y1,z1,x2,y2,z2均为double类型
-    public static final AxisAlignedBB WINN12_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, -1.0D, 1.0D);
+    public static final AxisAlignedBB WEST_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, 2.0D, 2.0D);
+    public static final AxisAlignedBB EAST_AABB = new AxisAlignedBB(0.0D, -1.0D, -1.0D, 1.0D, 2.0D, 1.0D);
+    public static final AxisAlignedBB SOUTH_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 2.0D, 2.0D, 1.0D);
+    public static final AxisAlignedBB NORTH_AABB = new AxisAlignedBB(-1.0D, -1.0D, 0.0D, 1.0D, 2.0D, 1.0D);
 
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
-        return WINN12_AABB;
+        EnumFacing currentFacing = EnumFacing.byHorizontalIndex(getMetaFromState(state) & 3);
+//        System.out.println(currentFacing);
+        switch (currentFacing) {
+            case EAST:
+                return EAST_AABB;
+            case WEST:
+                return WEST_AABB;
+            case SOUTH:
+                return SOUTH_AABB;
+            case NORTH:
+                return NORTH_AABB;
+        }
+        return WEST_AABB;
+    }
+
+    @Override
+    public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
+        return null;
     }
 
     @Override
     public boolean isOpaqueCube(IBlockState state) {
-        return false;
+        return true;
     }
 
     @Override
@@ -129,4 +148,29 @@ public class Winn12 extends Block implements IHasModel {
         return true;
     }
 
+    @Override
+    public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+        IBlockState newState = Block.getBlockFromName("npu:winn13").getDefaultState();
+
+        EnumFacing currentFacing = EnumFacing.byHorizontalIndex(getMetaFromState(state) & 3);
+        if (currentFacing == EnumFacing.WEST) {
+            System.out.println("rotate");
+            System.out.println(newState.getValue(FACING).getName());
+            newState = newState.withProperty(FACING, EnumFacing.WEST);
+            System.out.println(newState.getValue(FACING).getName());
+        } else if (currentFacing == EnumFacing.EAST) {
+            System.out.println("rotate");
+            System.out.println(newState.getValue(FACING).getName());
+            newState = newState.withProperty(FACING, EnumFacing.EAST);
+            System.out.println(newState.getValue(FACING).getName());
+        }
+        worldIn.setBlockState(pos, newState);
+        // Post placement event
+        worldIn.notifyBlockUpdate(pos, state, newState, 3);
+
+        // Notify neighbors
+        worldIn.notifyNeighborsOfStateChange(pos, this, false);
+
+        return true;
+    }
 }
