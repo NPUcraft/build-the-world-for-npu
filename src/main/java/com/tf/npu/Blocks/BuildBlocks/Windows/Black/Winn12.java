@@ -150,18 +150,22 @@ public class Winn12 extends Block implements IHasModel {
 
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
-        IBlockState newState = Block.getBlockFromName("npu:winn13").getDefaultState();
+        IBlockState newState = Block.getBlockFromName("npu:winn11").getDefaultState();
 
         EnumFacing currentFacing = EnumFacing.byHorizontalIndex(getMetaFromState(state) & 3);
         if (currentFacing == EnumFacing.WEST) {
-            System.out.println("rotate");
+//            System.out.println("rotate");
             System.out.println(newState.getValue(FACING).getName());
             newState = newState.withProperty(FACING, EnumFacing.WEST);
             System.out.println(newState.getValue(FACING).getName());
         } else if (currentFacing == EnumFacing.EAST) {
-            System.out.println("rotate");
+//            System.out.println("rotate");
             System.out.println(newState.getValue(FACING).getName());
             newState = newState.withProperty(FACING, EnumFacing.EAST);
+            System.out.println(newState.getValue(FACING).getName());
+        } else if (currentFacing == EnumFacing.SOUTH) {
+            System.out.println(newState.getValue(FACING).getName());
+            newState = newState.withProperty(FACING, EnumFacing.SOUTH);
             System.out.println(newState.getValue(FACING).getName());
         }
         worldIn.setBlockState(pos, newState);
