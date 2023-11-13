@@ -65,6 +65,7 @@ public class Winn11 extends Block implements IHasModel {
     public static final AxisAlignedBB EAST_AABB = new AxisAlignedBB(0.0D, -1.0D, -1.0D, 1.0D, 2.0D, 1.0D);
     public static final AxisAlignedBB SOUTH_AABB = new AxisAlignedBB(-1.0D, -1.0D, 0.0D, 1.0D, 2.0D, 1.0D);
     public static final AxisAlignedBB NORTH_AABB = new AxisAlignedBB(-1.0D, -1.0D, 0.0D, 1.0D, 2.0D, 1.0D);
+
     /**
      * 获取方块的包围盒，根据方块朝向返回相应的AABB。
      */
