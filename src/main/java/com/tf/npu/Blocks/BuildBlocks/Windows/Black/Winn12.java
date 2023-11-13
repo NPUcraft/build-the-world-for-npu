@@ -69,10 +69,10 @@ public class Winn12 extends Block implements IHasModel {
     /**
      * 表示方块在不同朝向下的包围盒。
      */
-    public static final AxisAlignedBB WEST_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, 2.0D, 2.0D);
-    public static final AxisAlignedBB EAST_AABB = new AxisAlignedBB(0.0D, -1.0D, -1.0D, 1.0D, 2.0D, 1.0D);
-    public static final AxisAlignedBB SOUTH_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 2.0D, 2.0D, 1.0D);
-    public static final AxisAlignedBB NORTH_AABB = new AxisAlignedBB(-1.0D, -1.0D, 0.0D, 1.0D, 2.0D, 1.0D);
+    public static final AxisAlignedBB WEST_AABB = new AxisAlignedBB(0.0D, -1.0D, -1.0D, 2.0D, 2.0D, 1.0D);
+    public static final AxisAlignedBB EAST_AABB = new AxisAlignedBB(0.0D, -1.0D, -1.0D, 2.0D, 2.0D, 1.0D);
+    public static final AxisAlignedBB SOUTH_AABB = new AxisAlignedBB(-1.0D, -1.0D, 0.0D, 1.0D, 2.0D, 2.0D);
+    public static final AxisAlignedBB NORTH_AABB = new AxisAlignedBB(-1.0D, -1.0D, 0.0D, 1.0D, 2.0D, 2.0D);
 
     /**
      * 获取指定方块状态在世界中的包围盒。

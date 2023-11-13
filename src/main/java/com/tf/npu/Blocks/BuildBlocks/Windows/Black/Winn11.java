@@ -60,31 +60,11 @@ public class Winn11 extends Block implements IHasModel {
         return new BlockStateContainer(this, FACING);
     }
 
-    // 定义四个方向的AABB
-    /**
-     * 西方向的边界框。
-     * 坐标：（minX，minY，minZ）到（maxX，maxY，maxZ）
-     */
-    public static final AxisAlignedBB WEST_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, 2.0D, 2.0D);
-
-    /**
-     * 东方向的边界框。
-     * 坐标：（minX，minY，minZ）到（maxX，maxY，maxZ）
-     */
+    // 定义四个方向的AABB, 坐标：（minX，minY，minZ）到（maxX，maxY，maxZ）
+    public static final AxisAlignedBB WEST_AABB = new AxisAlignedBB(0.0D, -1.0D, -1.0D, 1.0D, 2.0D, 1.0D);
     public static final AxisAlignedBB EAST_AABB = new AxisAlignedBB(0.0D, -1.0D, -1.0D, 1.0D, 2.0D, 1.0D);
-
-    /**
-     * 南方向的边界框。
-     * 坐标：（minX，minY，minZ）到（maxX，maxY，maxZ）
-     */
-    public static final AxisAlignedBB SOUTH_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 2.0D, 2.0D, 1.0D);
-
-    /**
-     * 北方向的边界框。
-     * 坐标：（minX，minY，minZ）到（maxX，maxY，maxZ）
-     */
+    public static final AxisAlignedBB SOUTH_AABB = new AxisAlignedBB(-1.0D, -1.0D, 0.0D, 1.0D, 2.0D, 1.0D);
     public static final AxisAlignedBB NORTH_AABB = new AxisAlignedBB(-1.0D, -1.0D, 0.0D, 1.0D, 2.0D, 1.0D);
-
     /**
      * 获取方块的包围盒，根据方块朝向返回相应的AABB。
      */
