@@ -27,9 +27,14 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 import static net.minecraft.block.BlockColored.COLOR;
 
+/**
+ * 表示名为 "Winn12" 的方块的类。
+ */
 public class Winn12 extends Block implements IHasModel {
 
-
+    /**
+     * 表示方块的材质枚举。
+     */
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
 
@@ -46,24 +51,40 @@ public class Winn12 extends Block implements IHasModel {
 
     }
 
-
+    /**
+     * 表示方块朝向的属性。
+     */
     public static final PropertyDirection FACING = PropertyDirection.create("facing", EnumFacing.Plane.HORIZONTAL);
 
+    /**
+     * 创建方块状态容器，包含朝向属性。
+     *
+     * @return 方块状态容器
+     */
     @Override
     protected BlockStateContainer createBlockState() {
         return new BlockStateContainer(this, FACING);
     }
 
-    //x1,y1,z1,x2,y2,z2均为double类型
+    /**
+     * 表示方块在不同朝向下的包围盒。
+     */
     public static final AxisAlignedBB WEST_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 1.0D, 2.0D, 2.0D);
     public static final AxisAlignedBB EAST_AABB = new AxisAlignedBB(0.0D, -1.0D, -1.0D, 1.0D, 2.0D, 1.0D);
     public static final AxisAlignedBB SOUTH_AABB = new AxisAlignedBB(0.0D, -1.0D, 0.0D, 2.0D, 2.0D, 1.0D);
     public static final AxisAlignedBB NORTH_AABB = new AxisAlignedBB(-1.0D, -1.0D, 0.0D, 1.0D, 2.0D, 1.0D);
 
+    /**
+     * 获取指定方块状态在世界中的包围盒。
+     *
+     * @param state  方块状态
+     * @param source 世界
+     * @param pos    方块位置
+     * @return 指定方块状态的包围盒
+     */
     @Override
     public AxisAlignedBB getBoundingBox(IBlockState state, IBlockAccess source, BlockPos pos) {
         EnumFacing currentFacing = EnumFacing.byHorizontalIndex(getMetaFromState(state) & 3);
-//        System.out.println(currentFacing);
         switch (currentFacing) {
             case EAST:
                 return EAST_AABB;
@@ -77,26 +98,52 @@ public class Winn12 extends Block implements IHasModel {
         return WEST_AABB;
     }
 
+    /**
+     * 获取碰撞箱，返回null表示没有碰撞箱。
+     *
+     * @param blockState 方块状态
+     * @param worldIn    世界
+     * @param pos        方块位置
+     * @return 碰撞箱
+     */
     @Override
     public AxisAlignedBB getCollisionBoundingBox(IBlockState blockState, IBlockAccess worldIn, BlockPos pos) {
         return null;
     }
 
+    /**
+     * 判断方块是否是不透明的。
+     *
+     * @param state 方块状态
+     * @return 是否不透明
+     */
     @Override
     public boolean isOpaqueCube(IBlockState state) {
-        return true;
+        return false;
     }
 
+    /**
+     * 判断方块是否是实心的。
+     *
+     * @param state 方块状态
+     * @return 是否实心
+     */
     @Override
     public boolean isFullCube(IBlockState state) {
         return false;
     }
 
+    /**
+     * 注册物品渲染。
+     */
     @Override
     public void registryItemRender() {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
+    /**
+     * 创建名为 "Winn12" 的方块对象。
+     */
     public Winn12() {
         super(Material.ROCK);
         this.setTranslationKey("winn12");
@@ -107,71 +154,113 @@ public class Winn12 extends Block implements IHasModel {
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);
         this.translucent = true;
-
-
     }
 
+    /**
+     * 获取方块的映射颜色。
+     *
+     * @param state  方块状态
+     * @param worldIn 世界
+     * @param pos    方块位置
+     * @return 方块的映射颜色
+     */
     public MapColor getMapColor(IBlockState state, IBlockAccess worldIn, BlockPos pos) {
         return MapColor.getBlockColor((EnumDyeColor) state.getValue(COLOR));
     }
 
+    /**
+     * 判断方块是否是实心的。
+     *
+     * @param state 方块状态
+     * @return 是否实心
+     */
     @Override
     public boolean isFullBlock(IBlockState state) {
         return super.isFullBlock(state);
     }
 
+    /**
+     * 从元数据中获取方块状态。
+     *
+     * @param meta 元数据
+     * @return 方块状态
+     */
     @Override
     public IBlockState getStateFromMeta(int meta) {
         EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
+    /**
+     * 将方块状态转换为元数据。
+     *
+     * @param state 方块状态
+     * @return 元数据
+     */
     @Override
     public int getMetaFromState(IBlockState state) {
         int facing = state.getValue(FACING).getHorizontalIndex();
-
         return facing;
     }
 
+    /**
+     * 方块被放置时的处理。
+     *
+     * @param worldIn  世界
+     * @param pos      方块位置
+     * @param state    方块状态
+     * @param placer   放置方块的实体
+     * @param stack    手持的物品栈
+     */
     @Override
     public void onBlockPlacedBy(World worldIn, BlockPos pos, IBlockState state, EntityLivingBase placer,
                                 ItemStack stack) {
         worldIn.setBlockState(pos, state.withProperty(FACING, placer.getHorizontalFacing().getOpposite()), 2);
     }
 
+    /**
+     * 获取方块渲染的图层，用于透明方块的渲染。
+     *
+     * @return 方块渲染的图层
+     */
     @SideOnly(Side.CLIENT)
     public BlockRenderLayer getBlockLayer() {
         return BlockRenderLayer.TRANSLUCENT;
     }
 
+    /**
+     * 判断是否可以用丝线采集该方块。
+     *
+     * @return 是否可以用丝线采集
+     */
     protected boolean canSilkHarvest() {
         return true;
     }
 
+    /**
+     * 方块被激活时的处理。
+     *
+     * @param worldIn   世界
+     * @param pos       方块位置
+     * @param state     方块状态
+     * @param playerIn  激活方块的玩家
+     * @param hand      手
+     * @param facing    方向
+     * @param hitX      点击的X坐标
+     * @param hitY      点击的Y坐标
+     * @param hitZ      点击的Z坐标
+     * @return 是否成功处理
+     */
     @Override
     public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, EnumHand hand, EnumFacing facing, float hitX, float hitY, float hitZ) {
+        // 获取原朝向
         IBlockState newState = Block.getBlockFromName("npu:winn11").getDefaultState();
-
+        // 设置新朝向
         EnumFacing currentFacing = EnumFacing.byHorizontalIndex(getMetaFromState(state) & 3);
-        if (currentFacing == EnumFacing.WEST) {
-//            System.out.println("rotate");
-            System.out.println(newState.getValue(FACING).getName());
-            newState = newState.withProperty(FACING, EnumFacing.WEST);
-            System.out.println(newState.getValue(FACING).getName());
-        } else if (currentFacing == EnumFacing.EAST) {
-//            System.out.println("rotate");
-            System.out.println(newState.getValue(FACING).getName());
-            newState = newState.withProperty(FACING, EnumFacing.EAST);
-            System.out.println(newState.getValue(FACING).getName());
-        } else if (currentFacing == EnumFacing.SOUTH) {
-            System.out.println(newState.getValue(FACING).getName());
-            newState = newState.withProperty(FACING, EnumFacing.SOUTH);
-            System.out.println(newState.getValue(FACING).getName());
-        }
+        newState = newState.withProperty(FACING, currentFacing);
         worldIn.setBlockState(pos, newState);
         // Post placement event
         worldIn.notifyBlockUpdate(pos, state, newState, 3);
-
         // Notify neighbors
         worldIn.notifyNeighborsOfStateChange(pos, this, false);
 
