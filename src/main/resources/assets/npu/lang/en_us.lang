@@ -921,4 +921,4 @@ tile.glass_frame2.name=玻璃片用窗框
 tile.blue_brick.name=蓝砖道路
 tile.blue_brick_half.name=蓝砖道路下半
 
-tile.mask_medical.name=医用口罩
+tile.medical_mask.name=医用口罩

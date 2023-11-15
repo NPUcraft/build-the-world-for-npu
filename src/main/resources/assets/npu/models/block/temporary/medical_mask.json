@@ -2,7 +2,7 @@
 	"credit": "Made By NPUcraft",
 	"texture_size": [32, 32],
 	"textures": {
-		"3": "npu:block/temporary/mask_medical"
+		"3": "npu:block/temporary/medical_mask"
 	},
 	"elements": [
 		{

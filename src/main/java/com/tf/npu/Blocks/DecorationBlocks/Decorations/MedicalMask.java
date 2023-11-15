@@ -9,11 +9,11 @@ import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 
-public class MaskMedical extends BlockFourSideFacingTemplate {
-    public MaskMedical() {
+public class MedicalMask extends BlockFourSideFacingTemplate {
+    public MedicalMask() {
         super();
-        this.setTranslationKey("mask_medical");
-        this.setRegistryName("npu:mask_medical");
+        this.setTranslationKey("medical_mask");
+        this.setRegistryName("npu:medical_mask");
         this.setCreativeTab(NPU.NPUARMOR);
         TemporaryBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         TemporaryBlocks.BLOCKS.add(this);

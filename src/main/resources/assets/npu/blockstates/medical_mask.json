@@ -1,20 +1,20 @@
 {
   "variants": {
     "facing=north": {
-      "model": "npu:temporary/mask_medical"
+      "model": "npu:temporary/medical_mask"
     },
     "facing=east": {
-      "model": "npu:temporary/mask_medical",
+      "model": "npu:temporary/medical_mask",
       "y": 90,
       "uvlock": false
     },
     "facing=south": {
-      "model": "npu:temporary/mask_medical",
+      "model": "npu:temporary/medical_mask",
       "y": 180,
       "uvlock": false
     },
     "facing=west": {
-      "model": "npu:temporary/mask_medical",
+      "model": "npu:temporary/medical_mask",
       "y": 270,
       "uvlock": false
     }
