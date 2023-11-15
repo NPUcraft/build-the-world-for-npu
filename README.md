@@ -34,7 +34,7 @@ Forge：1.12.2-forge-2847
   - [ ] BuildBlocks
     - [x] Ceiling
     - [ ] Constructions
-    - [ ] Cube
+    - [x] Cube
     - [ ] Fence
     - [ ] Floors
     - [ ] Railings
