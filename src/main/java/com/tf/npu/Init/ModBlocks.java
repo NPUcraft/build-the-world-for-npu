@@ -416,7 +416,7 @@ public class ModBlocks {
 
 
     public static final Block TELE = new Tele();
-    public static final Block BOARD = new Board();
+    public static final Block BOARD = new BulletinBoard();
     public static final Block WBOARD = new WBoard();
     public static final Block CAL = new Cal();
 

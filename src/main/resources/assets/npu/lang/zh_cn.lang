@@ -373,7 +373,7 @@ tile.bike3.name=小红车
 tile.bike4.name=山地车
 
 tile.tele.name=壁挂电视
-tile.board.name=公告扎板
+tile.bulletin_board.name=公告扎板
 tile.wboard.name=支架白板
 tile.cal.name=电子万年历
 
