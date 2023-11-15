@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:digital_calendar"
+    },
+    "facing=east": {
+      "model": "npu:digital_calendar",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:digital_calendar",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:digital_calendar",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

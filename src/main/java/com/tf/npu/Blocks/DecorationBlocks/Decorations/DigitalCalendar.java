@@ -22,7 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Cal extends Block implements IHasModel {
+public class DigitalCalendar extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -70,10 +70,10 @@ public class Cal extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public Cal() {
+    public DigitalCalendar() {
         super(Material.ROCK);
-        this.setTranslationKey("cal");
-        this.setRegistryName("npu:cal");
+        this.setTranslationKey("digital_calendar");
+        this.setRegistryName("npu:digital_calendar");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));

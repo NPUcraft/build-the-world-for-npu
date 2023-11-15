@@ -6,7 +6,7 @@
   ],
   "textures": {
     "0": "npu:blocks/fuck",
-    "1": "npu:blocks/cal",
+    "1": "npu:blocks/digital_calendar",
     "2": "npu:blocks/concrete_white",
     "particle": "npu:blocks/fuck"
   },

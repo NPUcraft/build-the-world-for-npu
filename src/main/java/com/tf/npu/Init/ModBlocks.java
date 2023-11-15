@@ -418,7 +418,7 @@ public class ModBlocks {
     public static final Block TELE = new Tele();
     public static final Block BOARD = new BulletinBoard();
     public static final Block WBOARD = new WBoard();
-    public static final Block CAL = new Cal();
+    public static final Block CAL = new DigitalCalendar();
 
     public static final Block HWATER = new HWater().setLightLevel(0.1F);
 
