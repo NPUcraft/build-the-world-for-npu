@@ -13,11 +13,11 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 
-public class EmblemCY extends BlockFourSideFacingTemplate {
-    public EmblemCY() {
+public class LeagueBadge extends BlockFourSideFacingTemplate {
+    public LeagueBadge() {
         super();
-        this.setTranslationKey("emblem_cy");
-        this.setRegistryName("npu:emblem_cy");
+        this.setTranslationKey("league_badge");
+        this.setRegistryName("npu:league_badge");
         this.setCreativeTab(NPU.NPUARMOR);
 
         TemporaryBlocks.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

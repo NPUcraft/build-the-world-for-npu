@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [256, 256],
 	"textures": {
-		"0": "npu:block/temporary/emblem_cy",
-		"particle": "npu:block/temporary/emblem_cy"
+		"0": "npu:block/temporary/league_badge",
+		"particle": "npu:block/temporary/league_badge"
 	},
 	"elements": [
 		{
