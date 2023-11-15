@@ -204,7 +204,7 @@ public class FenceX extends Block {
     }
 
     /**
-     * Returns the blockstate with the given mirror of the passed blockstate. If inapplicable, returns the passed
+     * Returns the blockstate with the given full_length_mirror of the passed blockstate. If inapplicable, returns the passed
      * blockstate.
      */
     public IBlockState withMirror(IBlockState state, Mirror mirrorIn) {

@@ -22,7 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Mirror extends Block implements IHasModel {
+public class FullLengthMirror extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -70,17 +70,15 @@ public class Mirror extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public Mirror() {
+    public FullLengthMirror() {
         super(Material.ROCK);
-        this.setTranslationKey("mirror");
-        this.setRegistryName("npu:mirror");
+        this.setTranslationKey("full_length_mirror");
+        this.setRegistryName("npu:full_length_mirror");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);
-
-
     }
 
     @Override

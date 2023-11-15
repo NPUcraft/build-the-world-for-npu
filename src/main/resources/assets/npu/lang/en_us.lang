@@ -324,7 +324,7 @@ tile.fyfdoor5.name=云F宿舍门后偏补上
 
 tile.n1.name=管理条例告示板1
 tile.n2.name=管理条例告示板2
-tile.mirror.name=全身镜
+tile.full_length_mirror.name=全身镜
 
 tile.display_stand_foldable_aluminium.name=可折叠铝展架
 tile.chair_with_board.name=椅子黑板

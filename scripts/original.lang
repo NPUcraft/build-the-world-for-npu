@@ -355,7 +355,7 @@ tile.bbed2r1.name=彩蛋-物理机
 tile.urinal.name=小便池
 tile.fan.name=宿舍电风扇
 
-tile.fire_cabinet.name=消防柜-小
+tile.fc.name=消防柜-小
 tile.voltage.name=电表
 tile.sc.name=楼梯柜
 tile.wtable.name=木制办公桌
