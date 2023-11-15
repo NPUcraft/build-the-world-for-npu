@@ -22,7 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class CBB extends Block implements IHasModel {
+public class ChairWithBoard extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -70,10 +70,10 @@ public class CBB extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public CBB() {
+    public ChairWithBoard() {
         super(Material.ROCK);
-        this.setTranslationKey("cbb");
-        this.setRegistryName("npu:cbb");
+        this.setTranslationKey("chair_with_board");
+        this.setRegistryName("npu:chair_with_board");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
