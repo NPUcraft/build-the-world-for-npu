@@ -22,7 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class FC extends Block implements IHasModel {
+public class FireCabinet extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -70,10 +70,10 @@ public class FC extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public FC() {
+    public FireCabinet() {
         super(Material.ROCK);
-        this.setTranslationKey("fc");
-        this.setRegistryName("npu:fc");
+        this.setTranslationKey("fire_cabinet");
+        this.setRegistryName("npu:fire_cabinet");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));

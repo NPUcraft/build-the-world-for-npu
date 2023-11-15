@@ -400,7 +400,7 @@ public class ModBlocks {
 
     public static final Block URINAL = new Urinal();
 
-    public static final Block FC = new FC();
+    public static final Block FC = new FireCabinet();
     public static final Block VOLTAGE = new Voltage();
 
     public static final Block SC = new SC().setLightLevel(0.1F);

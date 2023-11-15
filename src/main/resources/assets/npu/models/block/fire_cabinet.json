@@ -5,8 +5,8 @@
     64
   ],
   "textures": {
-    "3": "npu:blocks/fc",
-    "particle": "npu:blocks/fc"
+    "3": "npu:blocks/fire_cabinet",
+    "particle": "npu:blocks/fire_cabinet"
   },
   "elements": [
     {
