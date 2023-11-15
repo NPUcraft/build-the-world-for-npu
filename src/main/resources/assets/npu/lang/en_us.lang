@@ -355,7 +355,7 @@ tile.bedboy_right_table_ladder.name=男寝上床下桌（右梯）
 tile.bedboy_right_table_ladder_laptop.name=彩蛋-物理机
 
 tile.urinal.name=小便池
-tile.fan.name=宿舍电风扇
+tile.dormitory_fan.name=宿舍电风扇
 
 tile.fc.name=消防柜-小
 tile.voltage.name=电表

@@ -379,7 +379,7 @@ public class ModBlocks {
     public static final Block MIRROR = new Mirror();
     public static final Block ALU = new FoldableAluminiumDisplayStand().setLightLevel(0.1F);
     public static final Block CBB = new ChairWithBoard().setLightLevel(0.1F);
-    public static final Block FAN = new Fan();
+    public static final Block FAN = new DormitoryFan();
 
     public static final Block C1 = new GrilleCeiling();
     public static final Block C2 = new GrilleCeilingBigLight();
