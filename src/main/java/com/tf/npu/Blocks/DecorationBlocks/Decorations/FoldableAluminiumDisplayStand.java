@@ -22,7 +22,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Alu extends Block implements IHasModel {
+public class FoldableAluminiumDisplayStand extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -70,10 +70,10 @@ public class Alu extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public Alu() {
+    public FoldableAluminiumDisplayStand() {
         super(Material.ROCK);
-        this.setTranslationKey("alu");
-        this.setRegistryName("npu:alu");
+        this.setTranslationKey("display_stand_foldable_aluminium");
+        this.setRegistryName("npu:display_stand_foldable_aluminium");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:display_stand_foldable_aluminium"
+    },
+    "facing=east": {
+      "model": "npu:display_stand_foldable_aluminium",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:display_stand_foldable_aluminium",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:display_stand_foldable_aluminium",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

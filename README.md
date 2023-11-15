@@ -32,7 +32,7 @@ Forge：1.12.2-forge-2847
 ### Todo
 - [ ] 重构
   - [ ] BuildBlocks
-    - [ ] Ceiling
+    - [x] Ceiling
     - [ ] Constructions
     - [ ] Cube
     - [ ] Fence
@@ -44,11 +44,11 @@ Forge：1.12.2-forge-2847
     - [ ] WGWall
     - [ ] Windows
   - [ ] DecorationBlocks
-    - [ ] Bed
-    - [ ] Camera
-    - [ ] Chair
+    - [x] Bed
+    - [x] Camera
+    - [x] Chair
     - [ ] Decorations
-    - [ ] Desk
+    - [x] Desk
     - [ ] DHalls
     - [ ] Doors
     - [ ] Drinks

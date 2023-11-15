@@ -6,7 +6,7 @@
   ],
   "textures": {
     "1": "npu:blocks/aluhaibao1",
-    "2": "npu:blocks/alu",
+    "2": "npu:blocks/display_stand_foldable_aluminium",
     "particle": "npu:blocks/aluhaibao1"
   },
   "elements": [

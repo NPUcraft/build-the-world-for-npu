@@ -326,7 +326,7 @@ tile.n1.name=管理条例告示板1
 tile.n2.name=管理条例告示板2
 tile.mirror.name=全身镜
 
-tile.alu.name=可折叠铝展架
+tile.display_stand_foldable_aluminium.name=可折叠铝展架
 tile.cbb.name=椅子黑板
 
 tile.grille_ceiling.name=格栅天花板
