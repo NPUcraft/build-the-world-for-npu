@@ -21,7 +21,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 
-public class Exit extends Block implements IHasModel {
+public class SafetyExitSign extends Block implements IHasModel {
 
     public static enum EnumMaterial implements IStringSerializable {
         IRON("iron");
@@ -69,18 +69,16 @@ public class Exit extends Block implements IHasModel {
         InitHelper.itemModelRegistry(Item.getItemFromBlock(this));
     }
 
-    public Exit() {
+    public SafetyExitSign() {
         super(Material.ROCK);
-        this.setTranslationKey("exit");
-        this.setRegistryName("npu:exit");
+        this.setTranslationKey("safety_exit_sign");
+        this.setRegistryName("npu:safety_exit_sign");
         this.setHardness(2.5F);
         this.setCreativeTab(NPU.MY_TAB);
         this.setDefaultState(this.blockState.getBaseState().withProperty(FACING, EnumFacing.NORTH));
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);
         this.setLightLevel(5);
-
-
     }
 
     @Override

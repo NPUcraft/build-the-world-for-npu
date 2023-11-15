@@ -107,7 +107,7 @@ public class ModBlocks {
     public static final Block BBED2R1 = new BedBoyRightTableLadderLaptop().setLightLevel(0.1F);
     public static final Block WINDOWFRAME = new WindowFrame();
     public static final Block CP = new CP().setLightLevel(0.1F);
-    public static final Block EXIT = new Exit();
+    public static final Block EXIT = new SafetyExitSign();
     public static final Block ELAMP = new ELamp();
     public static final Block BPDOWN = new BPDown().setLightLevel(0.1F);
     public static final Block BPUP = new BPUp();

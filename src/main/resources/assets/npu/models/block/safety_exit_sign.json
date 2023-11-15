@@ -5,8 +5,8 @@
     32
   ],
   "textures": {
-    "0": "npu:blocks/exit",
-    "particle": "npu:blocks/exit"
+    "0": "npu:blocks/safety_exit_sign",
+    "particle": "npu:blocks/safety_exit_sign"
   },
   "elements": [
     {
