@@ -1,9 +1,9 @@
 package com.tf.npu.Proxy;
 
 import com.tf.npu.Items.ItemLoader;
-import com.tf.npu.crafting.CraftingLoader;
-import com.tf.npu.entity.EntityLoader;
-import com.tf.npu.inventory.GuiElementLoader;
+import com.tf.npu.Crafting.CraftingLoader;
+import com.tf.npu.Entity.EntityLoader;
+import com.tf.npu.Inventory.GuiElementLoader;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;

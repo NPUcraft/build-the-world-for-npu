@@ -3,8 +3,8 @@ package com.tf.npu.Blocks.G;
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
 import com.tf.npu.NPU;
-import com.tf.npu.interfaces.IHasModel;
-import com.tf.npu.util.InitHelper;
+import com.tf.npu.Interfaces.IHasModel;
+import com.tf.npu.Util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -29,7 +29,7 @@ public class G19 extends Block implements IHasModel {
 
     public G19() {
         super(Material.ROCK);
-        setUnlocalizedName("g19");
+        setTranslationKey("g19");
         setRegistryName("npu:g19");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

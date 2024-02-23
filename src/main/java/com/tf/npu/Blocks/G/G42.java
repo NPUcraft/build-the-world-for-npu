@@ -3,8 +3,8 @@ package com.tf.npu.Blocks.G;
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
 import com.tf.npu.NPU;
-import com.tf.npu.interfaces.IHasModel;
-import com.tf.npu.util.InitHelper;
+import com.tf.npu.Interfaces.IHasModel;
+import com.tf.npu.Util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -13,7 +13,7 @@ import net.minecraft.item.ItemBlock;
 public class G42 extends Block implements IHasModel {
     public G42() {
         super(Material.ROCK);
-        setUnlocalizedName("g42");
+        setTranslationKey("g42");
         setRegistryName("npu:g42");
         setCreativeTab(NPU.MY_TAB1);
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));

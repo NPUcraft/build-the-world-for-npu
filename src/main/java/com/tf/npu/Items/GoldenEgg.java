@@ -1,8 +1,8 @@
 package com.tf.npu.Items;
 
 import com.tf.npu.NPU;
-import com.tf.npu.entity.EntityGoldenChicken;
-import com.tf.npu.inventory.GuiElementLoader;
+import com.tf.npu.Entity.EntityGoldenChicken;
+import com.tf.npu.Inventory.GuiElementLoader;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -14,7 +14,7 @@ import net.minecraft.world.World;
 
 public class GoldenEgg extends Item {
     public GoldenEgg() {
-        this.setUnlocalizedName("goldenegg");
+        this.setTranslationKey("goldenegg");
     }
 
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {

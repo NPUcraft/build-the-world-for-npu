@@ -2,7 +2,7 @@ package com.tf.npu.Proxy;
 
 
 import com.tf.npu.Items.ItemRenderLoader;
-import com.tf.npu.entity.EntityRenderLoader;
+import com.tf.npu.Entity.EntityRenderLoader;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;

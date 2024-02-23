@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:temporary/league_badge"
+    },
+    "facing=east": {
+      "model": "npu:temporary/league_badge",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:temporary/league_badge",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:temporary/league_badge",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

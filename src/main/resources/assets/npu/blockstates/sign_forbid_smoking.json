@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:sign_forbid_smoking"
+    },
+    "facing=east": {
+      "model": "npu:sign_forbid_smoking",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:sign_forbid_smoking",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:sign_forbid_smoking",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

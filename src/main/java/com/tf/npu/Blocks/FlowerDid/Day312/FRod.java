@@ -4,8 +4,8 @@ package com.tf.npu.Blocks.FlowerDid.Day312;
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
 import com.tf.npu.NPU;
-import com.tf.npu.interfaces.IHasModel;
-import com.tf.npu.util.InitHelper;
+import com.tf.npu.Interfaces.IHasModel;
+import com.tf.npu.Util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -67,7 +67,7 @@ public class FRod extends Block implements IHasModel {
     public FRod() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("frod");
+        this.setTranslationKey("frod");
 
         this.setRegistryName("npu:frod");
 

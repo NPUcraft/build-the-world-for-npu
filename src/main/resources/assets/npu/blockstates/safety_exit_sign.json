@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:safety_exit_sign"
+    },
+    "facing=east": {
+      "model": "npu:safety_exit_sign",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:safety_exit_sign",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:safety_exit_sign",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

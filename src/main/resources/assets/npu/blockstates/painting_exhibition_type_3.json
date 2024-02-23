@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:painting_exhibition_type_3"
+    },
+    "facing=east": {
+      "model": "npu:painting_exhibition_type_3",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:painting_exhibition_type_3",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:painting_exhibition_type_3",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

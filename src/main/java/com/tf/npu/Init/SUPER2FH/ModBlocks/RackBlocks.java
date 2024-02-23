@@ -1,8 +1,8 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
-import com.tf.npu.Blocks.SUPER2FH.Rack.BlackboardAntiJapaneseHero;
-import com.tf.npu.Blocks.SUPER2FH.Rack.BlackboardCoreSocialistValues;
-import com.tf.npu.Blocks.SUPER2FH.Rack.FlagCY;
+import com.tf.npu.Blocks.DecorationBlocks.Decorations.BlackboardAntiJapaneseHero;
+import com.tf.npu.Blocks.DecorationBlocks.Decorations.BlackboardCoreSocialistValues;
+import com.tf.npu.Blocks.DecorationBlocks.Decorations.FlagCY;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 

@@ -4,8 +4,8 @@ package com.tf.npu.Blocks.FlowerDid.Others;
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
 import com.tf.npu.NPU;
-import com.tf.npu.interfaces.IHasModel;
-import com.tf.npu.util.InitHelper;
+import com.tf.npu.Interfaces.IHasModel;
+import com.tf.npu.Util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -40,7 +40,7 @@ public class FG92 extends Block implements IHasModel {
     public FG92() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("fg92");
+        this.setTranslationKey("fg92");
         
         this.setRegistryName("npu:fg92");
         

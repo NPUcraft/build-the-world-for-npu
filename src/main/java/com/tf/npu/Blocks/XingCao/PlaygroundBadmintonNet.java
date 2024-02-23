@@ -9,7 +9,7 @@ import net.minecraft.item.ItemBlock;
 public class PlaygroundBadmintonNet extends BlockFourSideFacingTemplate {
     public PlaygroundBadmintonNet() {
         super();
-        this.setUnlocalizedName("playground_badminton_net");
+        this.setTranslationKey("playground_badminton_net");
         this.setRegistryName("npu:playground_badminton_net");
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);

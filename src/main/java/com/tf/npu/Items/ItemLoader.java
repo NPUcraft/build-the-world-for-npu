@@ -26,7 +26,7 @@ public class ItemLoader {
     public static Item RubPaper = new RubPaper();
     public static Item ItemRubbishSword = new ItemRubbishSword();
     public static Item Homework = new Homework();
-//    public static Item EmblemCY = new EmblemCY();
+//    public static Item LeagueBadge = new LeagueBadge();
 
 
     public ItemLoader() {
@@ -43,7 +43,7 @@ public class ItemLoader {
         register(RubPaper);
         register(ItemRubbishSword);
         register(Homework);
-//        register(EmblemCY);
+//        register(LeagueBadge);
     }
 
 
@@ -61,11 +61,11 @@ public class ItemLoader {
         registerRender(RubPaper);
         registerRender(ItemRubbishSword);
         registerRender(Homework);
-//        registerRender(EmblemCY);
+//        registerRender(LeagueBadge);
     }
 
     private static void register(Item item) {
-        String[] arr = item.getUnlocalizedName().toString().split("\\.");
+        String[] arr = item.getTranslationKey().toString().split("\\.");
         ForgeRegistries.ITEMS.register(item.setRegistryName(arr[1]));
     }
 

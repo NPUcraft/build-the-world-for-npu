@@ -9,7 +9,7 @@ import net.minecraft.item.ItemBlock;
 public class PlaygroundDoorOpenedRight extends BlockFourSideFacingTemplate {
     public PlaygroundDoorOpenedRight() {
         super();
-        this.setUnlocalizedName("playground_door_opened_right");
+        this.setTranslationKey("playground_door_opened_right");
         this.setRegistryName("npu:playground_door_opened_right");
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);

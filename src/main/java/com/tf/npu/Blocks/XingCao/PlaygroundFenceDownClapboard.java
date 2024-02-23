@@ -9,7 +9,7 @@ import net.minecraft.item.ItemBlock;
 public class PlaygroundFenceDownClapboard extends BlockFourSideFacingTemplate {
     public PlaygroundFenceDownClapboard() {
         super();
-        this.setUnlocalizedName("playground_fence_down_clapboard");
+        this.setTranslationKey("playground_fence_down_clapboard");
         this.setRegistryName("npu:playground_fence_down_clapboard");
         ModItems.ITEMS.add(new ItemBlock(this).setRegistryName(this.getRegistryName()));
         ModBlocks.BLOCKS.add(this);

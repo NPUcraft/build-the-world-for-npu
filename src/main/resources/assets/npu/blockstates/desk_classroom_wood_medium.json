@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:desk_classroom_wood_medium"
+    },
+    "facing=east": {
+      "model": "npu:desk_classroom_wood_medium",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:desk_classroom_wood_medium",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:desk_classroom_wood_medium",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

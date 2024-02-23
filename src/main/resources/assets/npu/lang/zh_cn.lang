@@ -11,7 +11,6 @@ advancements.npu.get_sword.description=得到学术垃圾剑
 
 entity.Plane.name=飞机
 entity.SchoolBus.name=校车
-entity.GoldenChicken.name=黄金鸡
 item.plane.name=飞机
 item.schoolbus.name=校车
 item.ash.name=灰烬
@@ -75,7 +74,7 @@ tile.printer.name=共享打印机
 tile.gbed.name=女寝双人床
 tile.windowframe.name=窗框
 tile.cp.name=连廊支柱
-tile.exit.name=安全出口标志
+tile.safety_exit_sign.name=安全出口标志
 tile.elamp.name=应急灯
 tile.bpdown.name=阳台隔墙下
 tile.bpup.name=阳台隔墙上
@@ -167,19 +166,19 @@ tile.db8.name=黑小木门右-关-1x3
 
 
 
-tile.light.name=宿舍厕所灯
-tile.light1.name=宿舍走廊灯
-tile.light2.name=宿舍吊灯
-tile.light3.name=地面射灯
-tile.light4.name=地灯
-tile.light5.name=女寝骑2格偏心灯
-tile.light6.name=女寝骑4格偏心灯
+tile.light_dormitory_bathroom.name=宿舍厕所灯
+tile.light_dormitory_corridor.name=宿舍走廊灯
+tile.light_dormitory_ceiling.name=宿舍吊灯
+tile.light_floor_ray.name=地面射灯
+tile.light_floor.name=地灯
+tile.light_dormitory_off_2_center.name=女寝骑2格偏心灯
+tile.light_dormitory_off_4_center.name=女寝骑4格偏心灯
 tile.flight1.name=教东白格栅顶-灯
 tile.flight2.name=教东木格栅顶-灯
 
 
 tile.gun.name=75mm炮-炮身
-tile.gun1.name=75mm炮-炮管
+tile.gun_barrel.name=75mm炮-炮管
 
 tile.atable.name=宿管桌子
 
@@ -216,10 +215,10 @@ tile.d5.name=宿舍大门-双右
 tile.d6.name=宿舍大门-双左
 tile.d7.name=宿舍大门-天窗
 
-tile.painting.name=走廊挂画
-tile.painting1.name=展板1
-tile.painting2.name=展板2
-tile.painting3.name=展板3
+tile.painting_corridor.name=走廊挂画
+tile.painting_exhibition_type_1.name=展板1
+tile.painting_exhibition_type_2.name=展板2
+tile.painting_exhibition_type_3.name=展板3
 
 tile.g1.name=大理石地砖
 tile.g2.name=大理石地砖黑
@@ -322,16 +321,16 @@ tile.fyfdoor5.name=云F宿舍门后偏补上
 
 tile.n1.name=管理条例告示板1
 tile.n2.name=管理条例告示板2
-tile.mirror.name=全身镜
+tile.full_length_mirror.name=全身镜
 
-tile.alu.name=可折叠铝展架
-tile.cbb.name=椅子黑板
+tile.display_stand_foldable_aluminium.name=可折叠铝展架
+tile.chair_with_board.name=椅子黑板
 
-tile.c1.name=格栅天花板
-tile.c2.name=格栅天花板-大灯
-tile.c3.name=格栅天花板-摄像头
-tile.c4.name=格栅天花板-小灯
-tile.c5.name=格栅天花板-音响
+tile.grille_ceiling.name=格栅天花板
+tile.grille_ceiling_biglight.name=格栅天花板-大灯
+tile.grille_ceiling_camera.name=格栅天花板-摄像头
+tile.grille_ceiling_smalllight.name=格栅天花板-小灯
+tile.grille_ceiling_audio.name=格栅天花板-音响
 
 
 tile.a.name="A"
@@ -345,17 +344,17 @@ tile.star.name="星"
 tile.sky.name="天苑"
 tile.sit.name="座"
 
-tile.bbedl.name=男寝上床下桌（左）
-tile.bbedr.name=男寝上床下桌（右）
+tile.bedboy_left_table.name=男寝上床下桌（左）
+tile.bedboy_right_table.name=男寝上床下桌（右）
 
-tile.bbed2l.name=男寝上床下桌（左梯）
-tile.bbed2r.name=男寝上床下桌（右梯）
-tile.bbed2r1.name=彩蛋-物理机
+tile.bedboy_left_table_ladder.name=男寝上床下桌（左梯）
+tile.bedboy_right_table_ladder.name=男寝上床下桌（右梯）
+tile.bedboy_right_table_ladder_laptop.name=彩蛋-物理机
 
 tile.urinal.name=小便池
-tile.fan.name=宿舍电风扇
+tile.dormitory_fan.name=宿舍电风扇
 
-tile.fc.name=消防柜-小
+tile.fire_cabinet.name=消防柜-小
 tile.voltage.name=电表
 tile.sc.name=楼梯柜
 tile.wtable.name=木制办公桌
@@ -374,9 +373,9 @@ tile.bike3.name=小红车
 tile.bike4.name=山地车
 
 tile.tele.name=壁挂电视
-tile.board.name=公告扎板
+tile.bulletin_board.name=公告扎板
 tile.wboard.name=支架白板
-tile.cal.name=电子万年历
+tile.digital_calendar.name=电子万年历
 
 tile.hwater.name=开水机
 tile.wash1.name=洗手池-左
@@ -384,8 +383,8 @@ tile.wash2.name=洗手池-中
 tile.wash3.name=洗手池-右
 tile.washer.name=洗衣机
 
-tile.cam1.name=监控摄像头（靠墙）
-tile.cam2.name=监控摄像头（吊顶）
+tile.camera_wall.name=监控摄像头（靠墙）
+tile.camera_ceil.name=监控摄像头（吊顶）
 
 tile.wall1.name=青砖墙
 tile.wall2.name=青砖墙竖半砖
@@ -455,8 +454,8 @@ tile.treehole.name=树坑
 tile.electric.name=配电箱
 
 tile.girlshelf.name=女寝柜子
-tile.girlbedl.name=女寝双人床左
-tile.girlbedr.name=女寝双人床右
+tile.bedgirll.name=女寝双人床左
+tile.bedgirlr.name=女寝双人床右
 tile.girlwash.name=女寝洗手台
 
 tile.fence1.name=通用围栏-低
@@ -524,10 +523,10 @@ tile.winw2=白窗-1x1带栏杆
 tile.winw3=空小窗-白
 
 tile.aurora_slab.name=台阶测试
-tile.dec1.name=机构门牌
-tile.dec2.name=禁止吸烟
-tile.dec3.name=小门牌
-tile.dec4.name=wifi覆盖
+tile.sign_institution.name=机构门牌
+tile.sign_forbid_smoking.name=禁止吸烟
+tile.sign_institution_small.name=小门牌
+tile.sign_wifi.name=wifi覆盖
 
 tile.ttable.name=梯形桌子
 tile.girltr.name=女寝卫生间右
@@ -695,17 +694,17 @@ tile.fline23.name=道路划线-箭头-左转箭头
 tile.fline24.name=道路划线-箭头-直-偏心
 
 
-tile.blueclassroomdesk1.name=教室排桌-蓝-高度1
-tile.blueclassroomdesk2.name=教室排桌-蓝-高度2
-tile.blueclassroomdesk3.name=教室排桌-蓝-高度3
-tile.blueclassroomdesk4.name=教室排桌-蓝-高度4
-tile.blueclassroomdesk5.name=教室排桌-蓝-高度5
+tile.desk_classroom_blue_flat.name=教室排桌-蓝-高度1
+tile.desk_classroom_blue_low.name=教室排桌-蓝-高度2
+tile.desk_classroom_blue_medium.name=教室排桌-蓝-高度3
+tile.desk_classroom_blue_high.name=教室排桌-蓝-高度4
+tile.desk_classroom_blue_top.name=教室排桌-蓝-高度5
 
-tile.woodclassroomdesk1.name=教室排桌-木-高度1
-tile.woodclassroomdesk2.name=教室排桌-木-高度2
-tile.woodclassroomdesk3.name=教室排桌-木-高度3
-tile.woodclassroomdesk4.name=教室排桌-木-高度4
-tile.woodclassroomdesk5.name=教室排桌-木-高度5
+tile.desk_classroom_wood_flat.name=教室排桌-木-高度1
+tile.desk_classroom_wood_low.name=教室排桌-木-高度2
+tile.desk_classroom_wood_medium.name=教室排桌-木-高度3
+tile.desk_classroom_wood_high.name=教室排桌-木-高度4
+tile.desk_classroom_wood_top.name=教室排桌-木-高度5
 
 tile.fyfdoor6.name=云F框架侧滑门后偏
 tile.fyfdoor7.name=云F框架侧滑门后偏补上
@@ -754,9 +753,9 @@ tile.insign4.name=食堂海报1-偏心
 tile.insign5.name=食堂海报2
 tile.insign6.name=食堂海报2-偏心
 
-tile.light7.name=灭蝇灯-挂顶
-tile.light8.name=灭蝇灯-贴墙
-tile.light9.name=食堂电子牌
+tile.light_common_fly_killer_ceiling.name=灭蝇灯-挂顶
+tile.light_common_fly_killer_wall.name=灭蝇灯-贴墙
+tile.sign_dining_hall.name=食堂电子牌
 tile.plant.name=盆栽1
 tile.plant1.name=盆栽2
 tile.plant2.name=盆栽3
@@ -872,7 +871,7 @@ tile.playground_grass_dry.name=操场-干草地
 tile.roadblock_double.name=路障-宽2
 tile.desk_foldable.name=折叠桌
 tile.desk_foldable_covid19.name=折叠桌-核酸检测
-tile.desk_foldable_covid19_pc.name=折叠桌-核酸检测-电脑
+tile.desk_foldable_covid19_laptop.name=折叠桌-核酸检测-电脑
 tile.fence_warningline.name=拦线
 tile.fence_warningline_column.name=拦线立柱
 tile.fence_warningline_column_single.name=拦线立柱-单连
@@ -883,12 +882,12 @@ tile.chair_lightblue.name=蓝色板凳
 tile.trash_classification_medical.name=医疗废物垃圾桶
 
 
-tile.emblem_cy.name=团徽（物品）
+tile.league_badge.name=团徽（物品）
 tile.cement_road_side3.name=水泥路面+路缘石(灰)
 tile.pencil.name=道具笔
 tile.blackboard_core_socialist_values.name=社会主义核心价值观24字
 tile.blackboard_anti_japanese_hero.name=抗日小英雄-粉笔字-改-学习雷锋
-tile.desk_wood2.name=木课桌椅
+tile.desk_wood.name=木课桌椅
 tile.party_membership_application.name=入党申请书
 tile.flag_cy.name=团旗
 tile.notebook_hero.name=我也要当小英雄笔记-改-学习雷锋
@@ -901,9 +900,9 @@ tile.cabinet_workshop3.name=车间柜子3
 tile.pool_cabinet.name=车间柜子洗手池1
 tile.pool_cabinet2.name=车间柜子洗手池2
 tile.desk_workshop.name=车间桌子1
-tile.desk_workshop2.name=车间桌子2
-tile.desk_workshop3.name=车间桌子3
-tile.desk_workshop4.name=车间桌子4
+tile.desk_workshop_narrow.name=车间桌子2
+tile.desk_workshop_wide_double_drawer.name=车间桌子3
+tile.desk_workshop_wide_single_drawer.name=车间桌子4
 tile.shelf_gongxun.name=工训架子1
 tile.shelf_gongxun2.name=工训架子2
 tile.airconditioner_vertical.name=立式空调
@@ -926,4 +925,7 @@ tile.blue_brick_half.name=蓝砖道路下半
 
 
 
+tile.obsidian_block.name=Obsidian Block
+tile.obsidian_frame.name=Obsidian Frametile
 
+tile.medical_mask.name=医用口罩

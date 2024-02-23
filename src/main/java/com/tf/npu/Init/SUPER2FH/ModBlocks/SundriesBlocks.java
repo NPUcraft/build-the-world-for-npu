@@ -1,6 +1,6 @@
 package com.tf.npu.Init.SUPER2FH.ModBlocks;
 
-import com.tf.npu.Blocks.SUPER2FH.Sundries.*;
+import com.tf.npu.Blocks.DecorationBlocks.Sundries.*;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 

@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:desk/desk_workshop_narrow"
+    },
+    "facing=east": {
+      "model": "npu:desk/desk_workshop_narrow",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:desk/desk_workshop_narrow",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:desk/desk_workshop_narrow",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

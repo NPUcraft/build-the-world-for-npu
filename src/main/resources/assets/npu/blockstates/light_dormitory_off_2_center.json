@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:light_dormitory_off_2_center"
+    },
+    "facing=east": {
+      "model": "npu:light_dormitory_off_2_center",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:light_dormitory_off_2_center",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:light_dormitory_off_2_center",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

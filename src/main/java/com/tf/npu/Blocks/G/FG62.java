@@ -4,8 +4,8 @@ package com.tf.npu.Blocks.G;
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
 import com.tf.npu.NPU;
-import com.tf.npu.interfaces.IHasModel;
-import com.tf.npu.util.InitHelper;
+import com.tf.npu.Interfaces.IHasModel;
+import com.tf.npu.Util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.item.Item;
@@ -25,7 +25,7 @@ public class FG62 extends Block implements IHasModel {
     public FG62() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fg62");
+        this.setTranslationKey("fg62");
 
         this.setRegistryName("npu:fg62");
 

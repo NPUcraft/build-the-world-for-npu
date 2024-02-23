@@ -1,11 +1,10 @@
 package com.tf.npu.Template;
 
 import com.tf.npu.NPU;
-import com.tf.npu.interfaces.IHasModel;
-import com.tf.npu.util.InitHelper;
+import com.tf.npu.Interfaces.IHasModel;
+import com.tf.npu.Util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockHorizontal;
-import net.minecraft.block.BlockStairs;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
 import net.minecraft.block.properties.PropertyEnum;
@@ -66,7 +65,7 @@ public class BlockEightSideFacingTemplate extends Block implements IHasModel {
     public IBlockState getStateFromMeta(int p_getStateFromMeta_1_) {
         IBlockState iblockstate = this.getDefaultState().withProperty(HALF, (p_getStateFromMeta_1_ & 4) > 0 ?
                 EnumHalf.TOP : EnumHalf.BOTTOM);
-        iblockstate = iblockstate.withProperty(FACING, EnumFacing.getFront(5 - (p_getStateFromMeta_1_ & 3)));
+        iblockstate = iblockstate.withProperty(FACING, EnumFacing.byIndex(5 - (p_getStateFromMeta_1_ & 3)));
         return iblockstate;
     }
 

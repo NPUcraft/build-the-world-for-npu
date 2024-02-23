@@ -12,14 +12,14 @@ import net.minecraft.world.World;
 public class Plane extends Item {
     public Plane() {
         setCreativeTab(NPU.MY_TAB3);
-        setUnlocalizedName("plane");
+        setTranslationKey("plane");
     }
 
 
     public ActionResult<ItemStack> onItemRightClick(World worldIn, EntityPlayer playerIn, EnumHand handIn) {
         ItemStack itemstack = playerIn.getHeldItem(handIn);
 
-        com.tf.npu.entity.Plane entity = new com.tf.npu.entity.Plane(worldIn);
+        com.tf.npu.Entity.Plane entity = new com.tf.npu.Entity.Plane(worldIn);
         if (!worldIn.isRemote) {
             entity.setLocationAndAngles(playerIn.posX, playerIn.posY, playerIn.posZ, playerIn.rotationYaw, 0.0F);
             worldIn.spawnEntity(entity);

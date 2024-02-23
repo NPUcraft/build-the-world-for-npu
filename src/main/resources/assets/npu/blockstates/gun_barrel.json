@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "npu:gun_barrel"
+    },
+    "facing=east": {
+      "model": "npu:gun_barrel",
+      "y": 90,
+      "uvlock": false
+    },
+    "facing=south": {
+      "model": "npu:gun_barrel",
+      "y": 180,
+      "uvlock": false
+    },
+    "facing=west": {
+      "model": "npu:gun_barrel",
+      "y": 270,
+      "uvlock": false
+    }
+  }
+}

@@ -1,24 +1,32 @@
 package com.tf.npu.Init;
 
-import com.tf.npu.Blocks.BBed.*;
-import com.tf.npu.Blocks.Camera.Cam1;
-import com.tf.npu.Blocks.Camera.Cam2;
-import com.tf.npu.Blocks.Ceiling.*;
-import com.tf.npu.Blocks.Constructions.*;
-import com.tf.npu.Blocks.DHalls.*;
-import com.tf.npu.Blocks.Decorations.*;
-import com.tf.npu.Blocks.Decs.Dec1;
-import com.tf.npu.Blocks.Decs.Dec2;
-import com.tf.npu.Blocks.Decs.Dec3;
-import com.tf.npu.Blocks.Decs.Dec4;
-import com.tf.npu.Blocks.Desks.Blue.*;
-import com.tf.npu.Blocks.Desks.Wood.*;
-import com.tf.npu.Blocks.Doors.*;
-import com.tf.npu.Blocks.Doors.Black.*;
-import com.tf.npu.Blocks.Doors.White.*;
-import com.tf.npu.Blocks.Drinks.*;
-import com.tf.npu.Blocks.Fence.*;
-import com.tf.npu.Blocks.Floors.*;
+import com.tf.npu.Blocks.BuildBlocks.Ceiling.*;
+import com.tf.npu.Blocks.DecorationBlocks.Camera.CameraWall;
+import com.tf.npu.Blocks.DecorationBlocks.Camera.CameraCeil;
+import com.tf.npu.Blocks.BuildBlocks.Constructions.*;
+import com.tf.npu.Blocks.DecorationBlocks.DHalls.*;
+import com.tf.npu.Blocks.DecorationBlocks.Bed.Boy.*;
+import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.BedGirlL;
+import com.tf.npu.Blocks.DecorationBlocks.Bed.Girl.BedGirlR;
+import com.tf.npu.Blocks.DecorationBlocks.Desk.Classroom.Blue.*;
+import com.tf.npu.Blocks.DecorationBlocks.Desk.Classroom.Wood.*;
+import com.tf.npu.Blocks.DecorationBlocks.Light.Common.LightCommonFlyKillerCeiling;
+import com.tf.npu.Blocks.DecorationBlocks.Light.Common.LightCommonFlyKillerWall;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.SignDiningHall;
+import com.tf.npu.Blocks.DecorationBlocks.Light.Dormitory.*;
+import com.tf.npu.Blocks.DecorationBlocks.Light.Floor.LightFloorRay;
+import com.tf.npu.Blocks.DecorationBlocks.Light.Floor.LightFloor;
+import com.tf.npu.Blocks.DecorationBlocks.Decorations.*;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.SignInstitution;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.SignForbidSmoking;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.SignInstitutionSmall;
+import com.tf.npu.Blocks.DecorationBlocks.Sign.SignWifi;
+import com.tf.npu.Blocks.DecorationBlocks.Doors.*;
+import com.tf.npu.Blocks.DecorationBlocks.Doors.Black.*;
+import com.tf.npu.Blocks.DecorationBlocks.Doors.White.*;
+import com.tf.npu.Blocks.DecorationBlocks.Drinks.*;
+import com.tf.npu.Blocks.BuildBlocks.Fence.*;
+import com.tf.npu.Blocks.BuildBlocks.Floors.*;
 import com.tf.npu.Blocks.FlowerDid.Day221.*;
 import com.tf.npu.Blocks.FlowerDid.Day222.*;
 import com.tf.npu.Blocks.FlowerDid.Day228.*;
@@ -26,46 +34,43 @@ import com.tf.npu.Blocks.FlowerDid.Day310.*;
 import com.tf.npu.Blocks.FlowerDid.Day312.*;
 import com.tf.npu.Blocks.FlowerDid.Others.*;
 import com.tf.npu.Blocks.G.*;
-import com.tf.npu.Blocks.Girl.*;
-import com.tf.npu.Blocks.Guns.Gun;
-import com.tf.npu.Blocks.Guns.Gun1;
-import com.tf.npu.Blocks.HandRail.*;
-import com.tf.npu.Blocks.Lights.*;
-import com.tf.npu.Blocks.Market.*;
+import com.tf.npu.Blocks.DecorationBlocks.Girl.*;
+import com.tf.npu.Blocks.DecorationBlocks.Gun.GunBody;
+import com.tf.npu.Blocks.DecorationBlocks.Gun.GunBarrel;
+import com.tf.npu.Blocks.DecorationBlocks.HandRail.*;
+import com.tf.npu.Blocks.DecorationBlocks.Market.*;
 import com.tf.npu.Blocks.Others.*;
-import com.tf.npu.Blocks.Paintings.Painting;
-import com.tf.npu.Blocks.Paintings.Painting1;
-import com.tf.npu.Blocks.Paintings.Painting2;
-import com.tf.npu.Blocks.Paintings.Painting3;
-import com.tf.npu.Blocks.Pipe.*;
-import com.tf.npu.Blocks.Plants.Plant;
-import com.tf.npu.Blocks.Plants.Plant1;
-import com.tf.npu.Blocks.Plants.Plant2;
-import com.tf.npu.Blocks.Platform.*;
-import com.tf.npu.Blocks.Railings.*;
-import com.tf.npu.Blocks.Road.CemH;
-import com.tf.npu.Blocks.Road.CemT;
-import com.tf.npu.Blocks.SUPER2FH.Item.EmblemCY;
-import com.tf.npu.Blocks.SUPER2FH.Stair.*;
-import com.tf.npu.Blocks.Signs.*;
-import com.tf.npu.Blocks.StarSignPack.*;
-import com.tf.npu.Blocks.StreetLamp.SL1;
-import com.tf.npu.Blocks.StreetLamp.SL2;
-import com.tf.npu.Blocks.StreetLamp.SL3;
-import com.tf.npu.Blocks.Trashs.*;
-import com.tf.npu.Blocks.Trees.*;
-import com.tf.npu.Blocks.WGWall.*;
-import com.tf.npu.Blocks.Walls.*;
-import com.tf.npu.Blocks.Washes.Wash1;
-import com.tf.npu.Blocks.Washes.Wash2;
-import com.tf.npu.Blocks.Washes.Wash3;
-import com.tf.npu.Blocks.Washes.Washer;
-import com.tf.npu.Blocks.Windows.Black.*;
-import com.tf.npu.Blocks.Windows.Blue.*;
-import com.tf.npu.Blocks.Windows.Normal.*;
-import com.tf.npu.Blocks.Windows.White.Winw1;
-import com.tf.npu.Blocks.Windows.White.Winw2;
-import com.tf.npu.Blocks.Windows.White.Winw3;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.PaintingCorridor;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.PaintingExhibitionType1;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.PaintingExhibitionType2;
+import com.tf.npu.Blocks.DecorationBlocks.Painting.PaintingExhibitionType3;
+import com.tf.npu.Blocks.DecorationBlocks.Pipe.*;
+import com.tf.npu.Blocks.DecorationBlocks.Plants.Plant;
+import com.tf.npu.Blocks.DecorationBlocks.Plants.Plant1;
+import com.tf.npu.Blocks.DecorationBlocks.Plants.Plant2;
+import com.tf.npu.Blocks.DecorationBlocks.Platform.*;
+import com.tf.npu.Blocks.BuildBlocks.Railings.*;
+import com.tf.npu.Blocks.BuildBlocks.Road.CemH;
+import com.tf.npu.Blocks.BuildBlocks.Road.CemT;
+import com.tf.npu.Blocks.DecorationBlocks.Signs.*;
+import com.tf.npu.Blocks.DecorationBlocks.StarSignPack.*;
+import com.tf.npu.Blocks.DecorationBlocks.StreetLamp.SL1;
+import com.tf.npu.Blocks.DecorationBlocks.StreetLamp.SL2;
+import com.tf.npu.Blocks.DecorationBlocks.StreetLamp.SL3;
+import com.tf.npu.Blocks.DecorationBlocks.Trashs.*;
+import com.tf.npu.Blocks.DecorationBlocks.Trees.*;
+import com.tf.npu.Blocks.BuildBlocks.WGWall.*;
+import com.tf.npu.Blocks.BuildBlocks.Walls.*;
+import com.tf.npu.Blocks.DecorationBlocks.Washes.Wash1;
+import com.tf.npu.Blocks.DecorationBlocks.Washes.Wash2;
+import com.tf.npu.Blocks.DecorationBlocks.Washes.Wash3;
+import com.tf.npu.Blocks.DecorationBlocks.Washes.Washer;
+import com.tf.npu.Blocks.BuildBlocks.Windows.Black.*;
+import com.tf.npu.Blocks.BuildBlocks.Windows.Blue.*;
+import com.tf.npu.Blocks.BuildBlocks.Windows.Normal.*;
+import com.tf.npu.Blocks.BuildBlocks.Windows.White.Winw1;
+import com.tf.npu.Blocks.BuildBlocks.Windows.White.Winw2;
+import com.tf.npu.Blocks.BuildBlocks.Windows.White.Winw3;
 import com.tf.npu.Blocks.XingCao.*;
 import com.tf.npu.Blocks.XingCao.Tents.TentBlue;
 import com.tf.npu.Blocks.XingCao.Tents.TentBlue_2021baituan;
@@ -95,14 +100,14 @@ public class ModBlocks {
     public static final Block StraightAheadSign = new StraightAheadSign().setLightLevel(0.1F);
     public static final Block PRINTER = new Printer();
     public static final Block GBED = new GBed().setLightLevel(0.1F);
-    public static final Block BBEDL = new BBedL().setLightLevel(0.1F);
-    public static final Block BBEDR = new BBedR().setLightLevel(0.1F);
-    public static final Block BBED2L = new BBed2L().setLightLevel(0.1F);
-    public static final Block BBED2R = new BBed2R().setLightLevel(0.1F);
-    public static final Block BBED2R1 = new BBed2R1().setLightLevel(0.1F);
+    public static final Block BBEDL = new BedBoyLeftTable().setLightLevel(0.1F);
+    public static final Block BBEDR = new BedBoyRightTable().setLightLevel(0.1F);
+    public static final Block bedboy_left_table_ladder = new BedBoyLeftTableLadder().setLightLevel(0.1F);
+    public static final Block BBED2R = new BedBoyRightTableLadder().setLightLevel(0.1F);
+    public static final Block BBED2R1 = new BedBoyRightTableLadderLaptop().setLightLevel(0.1F);
     public static final Block WINDOWFRAME = new WindowFrame();
     public static final Block CP = new CP().setLightLevel(0.1F);
-    public static final Block EXIT = new Exit();
+    public static final Block EXIT = new SafetyExitSign();
     public static final Block ELAMP = new ELamp();
     public static final Block BPDOWN = new BPDown().setLightLevel(0.1F);
     public static final Block BPUP = new BPUp();
@@ -112,7 +117,6 @@ public class ModBlocks {
     public static final Block BFRAME1 = new BFrame1();
     public static final Block BFRAME2 = new BFrame2();
     public static final Block BRAILING = new BRailing().setLightLevel(0.1F);
-    public static final Block TESTBLOCK = new TestBlock();
     public static final Block AIRCONOUT = new AirConOut().setLightLevel(0.1F);
     public static final Block AIRCONOUT1 = new AirConOut1().setLightLevel(0.1F);
     public static final Block AIRCONOUT2 = new AirConOut2().setLightLevel(0.1F);
@@ -188,16 +192,16 @@ public class ModBlocks {
     public static final Block DW10 = new DW10().setLightLevel(0.1F);
 
 
-    public static final Block LIGHT = new Light();
-    public static final Block LIGHT1 = new Light1();
-    public static final Block LIGHT2 = new Light2();
-    public static final Block LIGHT3 = new Light3();
-    public static final Block LIGHT4 = new Light4();
-    public static final Block LIGHT5 = new Light5();
-    public static final Block LIGHT6 = new Light6();
-    public static final Block LIGHT7 = new Light7();
-    public static final Block LIGHT8 = new Light8();
-    public static final Block LIGHT9 = new Light9();
+    public static final Block LIGHT = new LightDormitoryBathroom();
+    public static final Block LIGHT1 = new LightDormitoryCorridor();
+    public static final Block LIGHT2 = new LightDormitoryCeiling();
+    public static final Block LIGHT3 = new LightFloorRay();
+    public static final Block LIGHT4 = new LightFloor();
+    public static final Block LIGHT5 = new LightDormitoryOff2Center();
+    public static final Block LIGHT6 = new LightDormitoryOff4Center();
+    public static final Block LIGHT7 = new LightCommonFlyKillerCeiling();
+    public static final Block LIGHT8 = new LightCommonFlyKillerWall();
+    public static final Block LIGHT9 = new SignDiningHall();
 
     public static final Block FLIGHT1 = new FLight1();
     public static final Block FLIGHT2 = new FLight2();
@@ -210,8 +214,8 @@ public class ModBlocks {
     public static final Block FLIGHT9 = new FLight9();
     public static final Block FLIGHT10 = new FLight10();
 
-    public static final Block GUN = new Gun();
-    public static final Block GUN1 = new Gun1();
+    public static final Block GUN = new GunBody();
+    public static final Block GUN1 = new GunBarrel();
 
     public static final Block ATABLE = new ATable().setLightLevel(0.1F);
 
@@ -282,10 +286,10 @@ public class ModBlocks {
     public static final Block WINW2 = new Winw2().setLightLevel(0.1F);
     public static final Block WINW3 = new Winw3().setLightLevel(0.1F);
 
-    public static final Block PAINTING = new Painting();
-    public static final Block PAINTING1 = new Painting1();
-    public static final Block PAINTING2 = new Painting2();
-    public static final Block PAINTING3 = new Painting3();
+    public static final Block PAINTING = new PaintingCorridor();
+    public static final Block PAINTING1 = new PaintingExhibitionType1();
+    public static final Block PAINTING2 = new PaintingExhibitionType2();
+    public static final Block PAINTING3 = new PaintingExhibitionType3();
 
     public static final Block D1 = new D1();
     public static final Block D2 = new D2();
@@ -372,16 +376,16 @@ public class ModBlocks {
 
     public static final Block N1 = new N1();
     public static final Block N2 = new N2();
-    public static final Block MIRROR = new Mirror();
-    public static final Block ALU = new Alu().setLightLevel(0.1F);
-    public static final Block CBB = new CBB().setLightLevel(0.1F);
-    public static final Block FAN = new Fan();
+    public static final Block MIRROR = new FullLengthMirror();
+    public static final Block ALU = new FoldableAluminiumDisplayStand().setLightLevel(0.1F);
+    public static final Block CBB = new ChairWithBoard().setLightLevel(0.1F);
+    public static final Block FAN = new DormitoryFan();
 
-    public static final Block C1 = new C1();
-    public static final Block C2 = new C2();
-    public static final Block C3 = new C3();
-    public static final Block C4 = new C4();
-    public static final Block C5 = new C5();
+    public static final Block C1 = new GrilleCeiling();
+    public static final Block C2 = new GrilleCeilingBigLight();
+    public static final Block C3 = new GrilleCeilingCamera();
+    public static final Block C4 = new GrilleCeilingSmallLight();
+    public static final Block C5 = new GrilleCeilingAudio();
 
     public static final Block A = new A();
     public static final Block B = new B();
@@ -396,7 +400,7 @@ public class ModBlocks {
 
     public static final Block URINAL = new Urinal();
 
-    public static final Block FC = new FC();
+    public static final Block FC = new FireCabinet();
     public static final Block VOLTAGE = new Voltage();
 
     public static final Block SC = new SC().setLightLevel(0.1F);
@@ -412,9 +416,9 @@ public class ModBlocks {
 
 
     public static final Block TELE = new Tele();
-    public static final Block BOARD = new Board();
+    public static final Block BOARD = new BulletinBoard();
     public static final Block WBOARD = new WBoard();
-    public static final Block CAL = new Cal();
+    public static final Block CAL = new DigitalCalendar();
 
     public static final Block HWATER = new HWater().setLightLevel(0.1F);
 
@@ -423,8 +427,8 @@ public class ModBlocks {
     public static final Block WASH3 = new Wash3();
     public static final Block WASHER = new Washer();
 
-    public static final Block CAM1 = new Cam1();
-    public static final Block CAM2 = new Cam2();
+    public static final Block CAM1 = new CameraWall();
+    public static final Block CAM2 = new CameraCeil();
 
     public static final Block WALL1 = new Wall1();
     public static final Block WALL2 = new Wall2();
@@ -489,8 +493,8 @@ public class ModBlocks {
     public static final Block ROADBLOCK = new RoadBlock();
     public static final Block MESH = new Mesh();
 
-    public static final Block GIRLBEDR = new GirlBedR().setLightLevel(0.1F);
-    public static final Block GIRLBEDL = new GirlBedL().setLightLevel(0.1F);
+    public static final Block bedgirlR = new BedGirlR().setLightLevel(0.1F);
+    public static final Block bedgirlL = new BedGirlL().setLightLevel(0.1F);
     public static final Block GIRLWASH = new GirlWash();
     public static final Block GIRLSHELF = new GirlShelf();
 
@@ -511,10 +515,10 @@ public class ModBlocks {
 
     public static final Block NN = new NN();
 
-    public static final Block DEC1 = new Dec1();
-    public static final Block DEC2 = new Dec2();
-    public static final Block DEC3 = new Dec3();
-    public static final Block DEC4 = new Dec4();
+    public static final Block DEC1 = new SignInstitution();
+    public static final Block DEC2 = new SignForbidSmoking();
+    public static final Block DEC3 = new SignInstitutionSmall();
+    public static final Block DEC4 = new SignWifi();
 
 
     public static final Block TT = new TTable().setLightLevel(0.1F);
@@ -683,17 +687,17 @@ public class ModBlocks {
     public static final Block DATE022230 = new FLine10();
     public static final Block DATE022231 = new FLine24();
 
-    public static final Block DATE02281 = new BlueDesk5().setLightLevel(0.1F);
-    public static final Block DATE02282 = new BlueDesk4().setLightLevel(0.1F);
-    public static final Block DATE02283 = new BlueDesk3().setLightLevel(0.1F);
-    public static final Block DATE02284 = new BlueDesk2().setLightLevel(0.1F);
-    public static final Block DATE02285 = new BlueDesk1().setLightLevel(0.1F);
+    public static final Block DATE02281 = new DeskClassroomBlueTop().setLightLevel(0.1F);
+    public static final Block DATE02282 = new DeskClassroomBlueHigh().setLightLevel(0.1F);
+    public static final Block DATE02283 = new DeskClassroomBlueMedium().setLightLevel(0.1F);
+    public static final Block DATE02284 = new DeskClassroomBlueLow().setLightLevel(0.1F);
+    public static final Block DATE02285 = new DeskClassroomBlueFlat().setLightLevel(0.1F);
 
-    public static final Block DATE02286 = new WoodDesk1().setLightLevel(0.1F);
-    public static final Block DATE02287 = new WoodDesk2().setLightLevel(0.1F);
-    public static final Block DATE02288 = new WoodDesk3().setLightLevel(0.1F);
-    public static final Block DATE02289 = new WoodDesk4().setLightLevel(0.1F);
-    public static final Block DATE022810 = new WoodDesk5().setLightLevel(0.1F);
+    public static final Block DATE02286 = new DeskClassroomWoodFlat().setLightLevel(0.1F);
+    public static final Block DATE02287 = new DeskClassroomWoodLow().setLightLevel(0.1F);
+    public static final Block DATE02288 = new DeskClassroomWoodMedium().setLightLevel(0.1F);
+    public static final Block DATE02289 = new DeskClassroomWoodHigh().setLightLevel(0.1F);
+    public static final Block DATE022810 = new DeskClassroomWoodTop().setLightLevel(0.1F);
 
     public static final Block DATE022811 = new FG82();
     public static final Block DATE022812 = new FG83();

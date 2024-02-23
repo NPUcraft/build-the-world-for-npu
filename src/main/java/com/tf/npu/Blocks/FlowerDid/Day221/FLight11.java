@@ -4,8 +4,8 @@ package com.tf.npu.Blocks.FlowerDid.Day221;
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
 import com.tf.npu.NPU;
-import com.tf.npu.interfaces.IHasModel;
-import com.tf.npu.util.InitHelper;
+import com.tf.npu.Interfaces.IHasModel;
+import com.tf.npu.Util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
@@ -59,7 +59,7 @@ public class FLight11 extends Block implements IHasModel {
     public FLight11() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("flight11");
+        this.setTranslationKey("flight11");
 
         this.setRegistryName("npu:flight11");
 

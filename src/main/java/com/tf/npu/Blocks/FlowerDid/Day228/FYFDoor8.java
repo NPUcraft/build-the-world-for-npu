@@ -4,8 +4,8 @@ package com.tf.npu.Blocks.FlowerDid.Day228;
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
 import com.tf.npu.NPU;
-import com.tf.npu.interfaces.IHasModel;
-import com.tf.npu.util.InitHelper;
+import com.tf.npu.Interfaces.IHasModel;
+import com.tf.npu.Util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
@@ -69,7 +69,7 @@ public class FYFDoor8 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -104,7 +104,7 @@ public class FYFDoor8 extends Block implements IHasModel {
     public FYFDoor8() {
         super(Material.ROCK);
 
-        this.setUnlocalizedName("fyfdoor8");
+        this.setTranslationKey("fyfdoor8");
 
         this.setRegistryName("npu:fyfdoor8");
 

@@ -4,8 +4,8 @@ package com.tf.npu.Blocks.FlowerDid.Day310;
 import com.tf.npu.Init.ModBlocks;
 import com.tf.npu.Init.ModItems;
 import com.tf.npu.NPU;
-import com.tf.npu.interfaces.IHasModel;
-import com.tf.npu.util.InitHelper;
+import com.tf.npu.Interfaces.IHasModel;
+import com.tf.npu.Util.InitHelper;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.properties.PropertyDirection;
@@ -58,7 +58,7 @@ public class FContainer2 extends Block implements IHasModel {
 
     @Override
     public IBlockState getStateFromMeta(int meta) {
-        EnumFacing facing = EnumFacing.getHorizontal(meta & 3);
+        EnumFacing facing = EnumFacing.byHorizontalIndex(meta & 3);
         return this.getDefaultState().withProperty(FACING, facing);
     }
 
@@ -93,7 +93,7 @@ public class FContainer2 extends Block implements IHasModel {
     public FContainer2() {
         super(Material.ROCK);
         
-        this.setUnlocalizedName("fcontainer2");
+        this.setTranslationKey("fcontainer2");
         
         this.setRegistryName("npu:fcontainer2");
         
